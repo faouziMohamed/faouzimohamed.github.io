@@ -1,13 +1,3 @@
-.theme-light{
-    --main-bg:rgba(111, 173, 153, 0.808);
-    --main-header-color:rgb(114, 245, 97);
-    --main-header-bg:rgb(73, 104, 97);
-    --main-section-h2-color:#030e4d;
-    --main-section-bg:rgb(186, 226, 231);
-    --main-aside-bg:rgba(111, 173, 153, 0.808);
-    --main-aside-nav-bg:rgba(20, 20, 20, 0.856);
-    --main-aside-nav-color:rgb(255, 255, 255);
-}
 .theme-dark{
     --main-bg:rgba(12, 12, 20, 0.808);
     --main-header-color:rgb(236, 163, 3);
@@ -19,11 +9,16 @@
     --main-aside-nav-color:rgb(255, 255, 255);
 }
 
-
-
-
-
-
+.theme-light{
+    --main-bg:rgba(111, 173, 153, 0.808);
+    --main-header-color:rgb(114, 245, 97);
+    --main-header-bg:rgb(73, 104, 97);
+    --main-section-h2-color:#030e4d;
+    --main-section-bg:rgb(186, 226, 231);
+    --main-aside-bg:rgba(111, 173, 153, 0.808);
+    --main-aside-nav-bg:rgba(20, 20, 20, 0.856);
+    --main-aside-nav-color:rgb(255, 255, 255);
+}
 
 main{
      /*rig ht: 40px;*/
