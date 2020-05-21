@@ -1,0 +1,115 @@
+.theme-light{
+    --main-bg:rgba(111, 173, 153, 0.808);
+    --main-header-color:rgb(114, 245, 97);
+    --main-header-bg:rgb(73, 104, 97);
+    --main-section-h2-color:#030e4d;
+    --main-section-bg:rgb(186, 226, 231);
+    --main-aside-bg:rgba(111, 173, 153, 0.808);
+    --main-aside-nav-bg:rgba(20, 20, 20, 0.856);
+    --main-aside-nav-color:rgb(255, 255, 255);
+}
+.theme-dark{
+    --main-bg:rgba(12, 12, 20, 0.808);
+    --main-header-color:rgb(236, 163, 3);
+    --main-header-bg:rgb(50, 64, 77);
+    --main-section-h2-color:#071125;
+    --main-section-bg:rgb(135, 145, 143);
+    --main-aside-bg:rgb(50, 64, 77);
+    --main-aside-nav-bg:rgba(0, 17, 43, 0.856);
+    --main-aside-nav-color:rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+main{
+     /*rig ht: 40px;*/
+     margin: 30px auto;
+     padding-top: 1px;
+     padding-bottom: 1px;
+     width:73%;
+     background-color: var(--main-bg);
+     border-radius: 4px;;
+     font-family: 'Times New Roman', Times, serif;
+     margin-left: 340px;
+     border-radius: 15px 15px 20px 20px;
+
+ }
+
+ main>header{
+     position: relative;
+     margin: 28px auto ;
+     width: 60%;
+     text-align: center;
+     padding: 2px 5px;
+     font-size: 90%;
+     color: var(--main-header-color);
+     background-color: var(--main-header-bg);
+     border-radius: 15px;;
+    }
+
+main>section>h2{
+    color: var(--main-section-h2-color);
+}
+
+ main>section>p{
+     text-align: justify;
+ }
+ main>section>:nth-child(2)::first-letter{
+     padding-left: 5%;
+ }
+ main>section>:first-child{
+     background-color: initial;
+ }
+
+ .main-section{
+     background-color: var(--main-section-bg);
+     padding: 10px;
+     margin: auto;
+     width: 92%;
+     border-radius: 8px;
+     margin-bottom: 30px;
+     border: 2px solid rgb(66, 66, 117);
+ }
+
+ .main-section:last-child{
+     margin-bottom: 10px;;
+ }
+
+aside#main-aside{
+    position: fixed;
+    top:30px;
+    left: 0px;
+    z-index: 100;
+    width: 310px;
+    font-size: 70%;
+    background-color: var(--main-aside-bg);
+    height: 92%;;
+    padding:10px 1px ;
+    border-radius: 20px;
+}
+
+aside#main-aside>nav{
+    background-color: var(--main-aside-nav-bg);
+    height: 97%;
+    border-radius: 9px;
+    color: var(--main-aside-nav-color);
+}
+
+nav#aside-nav>h1{
+    padding:10px 0px 0px 4px;
+}
+
+nav#aside-nav>ul>li{
+    list-style-type: none;
+    padding-left: 0px;;
+}
+
+nav#aside-nav>ul{
+    padding:0px 3px 3px 8px ;
+}
+
+.bold{font-weight: bold;}
