@@ -23,7 +23,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #1ad2f3;
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -41,13 +41,13 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
     box-shadow: 0 0px 15px #2020203d;
-    background: white url('../img/night.png');
+    background: white url('../img/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+        background-color: rgb(154, 157, 158);
 }
 
 input:focus + .slider {
@@ -58,7 +58,7 @@ input:checked + .slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
-    background: white url('../img/sunny.png');
+    background: white url('../img/night.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -68,6 +68,6 @@ input:checked + .slider:before {
     border-radius: 34px;
 }
 
-    .slider.round:before {
-        border-radius: 50%;
-    }
+.slider.round:before {
+    border-radius: 50%;
+}
