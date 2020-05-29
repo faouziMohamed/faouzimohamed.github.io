@@ -1,26 +1,46 @@
 .theme-dark{
-    --body-bg:#ccc;
     --nav-header-bg: rgba(24, 1, 124, 0.959);
     --main-list-a-color:rgb(214, 216, 190);
     --main-list-a-bg-hover:#02323d;
     --submenu-li-a-bg:rgba(77, 46, 0, 0.89);
     --submenu-a-bg-hover:#044913; 
+    --github-img:url("../img/github-icon-white.png");
+    --github-width:29px;
+    --github-right:7px;
+    --github-top:8px;
+    --home-img:url("../img/house_white.png");
 }
 
 .theme-light{
-    --body-bg:#ccc;
-    --nav-header-bg: rgb(199, 219, 150);
+    --nav-header-bg: rgb(93, 189, 106);
     --main-list-a-color:rgb(0, 25, 32);
     --main-list-a-bg-hover:#08b975;
     --submenu-li-a-bg:rgba(102, 235, 49, 0.89);
     --submenu-a-bg-hover:#356d92dc;
+    --github-img:url("../img/github_logo.png");
+    --github-width:45px;
+    --github-right:0px;
+    --github-top:0px;
+    --home-img:url("../img/house_white_1.png");
+}
+
+nav#header-nav>a#github img{
+    width: var(--github-width);
+    position: absolute;
+    right: var(--github-right);
+    top:var(--github-top);
+    content: var(--github-img);
+}
+
+img#home{
+    content: var(--home-img);
+    margin-top: -3px;
+    padding-top: 0px;
+    width: 23px;
+    height: 19px;
 }
 
 
-
-body{
-    background-color: var(--body-bg);
-}
 nav#header-nav{
     position: fixed;
     background-color: var(--nav-header-bg);
@@ -61,20 +81,6 @@ ul#main-list>li>a{
     display: block;
     padding:12px 15px;
 }
-img#home{
-    margin-top: -3px;
-    padding-top: 0px;
-    width: 23px;
-    height: 19px;
-}
-
-nav#header-nav>a#github img{
-    width: 40px;
-    position: absolute;
-    right: 0px;
-    top:2px;
-}
-
 
 ul#main-list>li>a:hover{
     background-color: var(--main-list-a-bg-hover);

@@ -3,16 +3,16 @@
     <head>
         <title>Fz Classification</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/nav.css">
         <link rel="stylesheet" type="text/css" href="css/body.css">
         <link rel="stylesheet" type="text/css" href="css/switch.css">
-
     </head>
     <body>
         <nav id='header-nav'>
             <ul id="main-list">
                 <li><a href="index.html">
-                        <img src="img/house.png" id='home' alt="Logo home"> 
+                        <img src="img/ house.png" id='home' alt="Logo home"> 
                     </a>
                 </li>
                 <li><a href="#">Contexte</a></li>
@@ -30,79 +30,81 @@
                 <input type="checkbox" onchange="toggleTheme()" id="slider">
                 <span class="slider round"></span>
             </label>
-            <a href="#" id="github"><img src="img/github.png" alt="Logo de github"></a>
+            <a href="#" id="github"><img src="img/git hub.png" alt="Logo de github"></a>
         </nav>
-        <aside id="main-aside">
-            <nav id="aside-nav">
-                <h1>
-                    Plan du site
-                </h1>
-                <ul id="ul-aside-nav">
-                    <li>Qu'est-ce qu c'est la classification automatique ?</li>
-                    <li>Et le deep learning en tout ça ?</li>
-                </ul>
-            </nav>
-        
-        </aside>
+        <!--Main content-->
         <main>
-            <header>
-                <h1>La classification automatique</h1>
-            </header>
-            <section class="main-section">
-                <h2>Qu'est-ce que c'est la classification automatique ?</h2>
-                <p>
-                    La classification (automatique) des images fait référence à la tâche d'extraction des classes
-    d'informations d'une image. Elle est un problème fondamental en vision par ordinateur, qui a de nombreuses
-    applications concrètes. On retrouve ainsi la classification d’objets, de scènes, de textures, la reconnaissance
-    de visages, d’empreintes digitale et de caractères. Elle est une application de la reconnaissance de formes
-    consistant attribuer automatiquement une classe a une image à l’aide d’un système de classification.</p>
-                <p>
-                    Vous avez généralement le choix entre deux approches : la classification non-supervisée et supervisé.</p>
-                <p>
-                    La classification non-supervisée consiste à laisser l'ordinateur calculer automatiquement les classes sur la
-    base de plusieurs (en tout cas plus d'une). Cela vous laisse la tâche d'identifier le bon nombre et la nature
-    réelle des classes obtenues. Dans l’approche supervisée, chaque image est associée à une étiquette qui décrit
-    sa classe d’appartenance. Dans notre travail on s’intéresse uniquement sur l’approche supervisée.
-                </p>
-            </section>
+            <aside id="left-aside">
+                <nav id="aside-nav">
+                    <h1>
+                        Plan du site
+                    </h1>
+                    <ul id="ul-aside-nav">
+                        <li>Qu'est-ce qu c'est la classification automatique ?</li>
+                        <li>Et le deep learning en tout ça ?</li>
+                    </ul>
+                </nav>
+            </aside>
+            <article class="main-article">
+                <header>
+                    <h1>La classification automatique</h1>
+                </header>
+                <section class="main-section">
+                    <h2>Qu'est-ce que c'est la classification automatique ?</h2>
+                    <p>
+                        La classification (automatique) des images fait référence à la tâche d'extraction des classes
+        d'informations d'une image. Elle est un problème fondamental en vision par ordinateur, qui a de nombreuses
+        applications concrètes. On retrouve ainsi la classification d’objets, de scènes, de textures, la reconnaissance
+        de visages, d’empreintes digitale et de caractères. Elle est une application de la reconnaissance de formes
+        consistant attribuer automatiquement une classe a une image à l’aide d’un système de classification.</p>
+                    <p>
+                        Vous avez généralement le choix entre deux approches : la classification non-supervisée et supervisé.</p>
+                    <p>
+                        La classification non-supervisée consiste à laisser l'ordinateur calculer automatiquement les classes sur la
+        base de plusieurs (en tout cas plus d'une). Cela vous laisse la tâche d'identifier le bon nombre et la nature
+        réelle des classes obtenues. Dans l’approche supervisée, chaque image est associée à une étiquette qui décrit
+        sa classe d’appartenance. Dans notre travail on s’intéresse uniquement sur l’approche supervisée.
+                    </p>
+                </section>
 
-            <section class="main-section">
-                <h2>Et le deep learning en tout ça ?</h2>
-                <p>
-                    Le problème de l’approche classique de la reconnaissance des images est qu’un bon extracteur de
-caractéristiques est très difficile à construire, et qu’il doit être repensé pour chaque nouvelle application.
-C’est là qu’intervient l’apprentissage profond ou deep learning en anglais. C’est une classe de méthodes
-dont les principes sont connus depuis la fin des années 1980, mais dont l’utilisation ne s’est vraiment
-généralisée que depuis 2012, environ. L’idée est très simple : le système entraînable est constitué d’une
-série de modules, chacun représentant une étape de traitement. Chaque module est entraînable, comportant
-des paramètres ajustables similaires aux poids des classifieurs linéaires. Le système est entraîné de bout en
-bout : à chaque exemple, tous les paramètres de tous les modules sont ajustés de manière à rapprocher la
-sortie produite par le système de la sortie désirée. Le qualificatif profond vient de l’arrangement de ces
-modules en couches successives.
-                </p>
-                <p>
-                    Pour pouvoir entraîner le système de cette manière, il faut savoir dans quelle direction et de combien ajuster
-chaque paramètre de chaque module. Pour cela il faut calculer un gradient, c’est-à-dire pour chaque
-paramètre ajustable, la quantité par laquelle l’erreur en sortie augmentera ou diminuera lorsqu’on modifiera
-le paramètre d’une quantité donnée.
-                </p>
-                <p>
-                    Ce qui fait l’avantage des architectures profondes, c’est leur capacité d’apprendre à représenter le
-monde de manière hiérarchique. Comme toutes les couches sont entraînables, nul besoin de construire un
-extracteur de caractéristiques à la main. L’entraînement s’en chargera. De plus, les premières couches
-extrairont des caractéristiques simples (présence de contours) que les couches suivantes combineront pour
-former des concepts de plus en plus complexes et abstraits : assemblages de contours en motifs, de motifs
-en parties d’objets, de parties d’objets en objets, etc. Nous verrons plus en détails ces couches dans le
-prochain chapitre.
-                </p>
-            </section>
-            <footer>
-                <p>Coded by 
-                    <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
-                        FAOUZI MOHAMED
-                    </a>
-                </p>
-            </footer>            
+                <section class="main-section">
+                    <h2>Et le deep learning en tout ça ?</h2>
+                    <p>
+                        Le problème de l’approche classique de la reconnaissance des images est qu’un bon extracteur de
+    caractéristiques est très difficile à construire, et qu’il doit être repensé pour chaque nouvelle application.
+    C’est là qu’intervient l’apprentissage profond ou deep learning en anglais. C’est une classe de méthodes
+    dont les principes sont connus depuis la fin des années 1980, mais dont l’utilisation ne s’est vraiment
+    généralisée que depuis 2012, environ. L’idée est très simple : le système entraînable est constitué d’une
+    série de modules, chacun représentant une étape de traitement. Chaque module est entraînable, comportant
+    des paramètres ajustables similaires aux poids des classifieurs linéaires. Le système est entraîné de bout en
+    bout : à chaque exemple, tous les paramètres de tous les modules sont ajustés de manière à rapprocher la
+    sortie produite par le système de la sortie désirée. Le qualificatif profond vient de l’arrangement de ces
+    modules en couches successives.
+                    </p>
+                    <p>
+                        Pour pouvoir entraîner le système de cette manière, il faut savoir dans quelle direction et de combien ajuster
+    chaque paramètre de chaque module. Pour cela il faut calculer un gradient, c’est-à-dire pour chaque
+    paramètre ajustable, la quantité par laquelle l’erreur en sortie augmentera ou diminuera lorsqu’on modifiera
+    le paramètre d’une quantité donnée.
+                    </p>
+                    <p>
+                        Ce qui fait l’avantage des architectures profondes, c’est leur capacité d’apprendre à représenter le
+    monde de manière hiérarchique. Comme toutes les couches sont entraînables, nul besoin de construire un
+    extracteur de caractéristiques à la main. L’entraînement s’en chargera. De plus, les premières couches
+    extrairont des caractéristiques simples (présence de contours) que les couches suivantes combineront pour
+    former des concepts de plus en plus complexes et abstraits : assemblages de contours en motifs, de motifs
+    en parties d’objets, de parties d’objets en objets, etc. Nous verrons plus en détails ces couches dans le
+    prochain chapitre.
+                    </p>
+                </section>
+                <footer>
+                    <p>Coded by 
+                        <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
+                            FAOUZI MOHAMED
+                        </a>
+                    </p>
+                </footer>
+            </article>
         </main>
         
     
