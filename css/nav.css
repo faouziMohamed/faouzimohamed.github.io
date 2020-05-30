@@ -41,6 +41,7 @@ a>svg#home{
 }
 
 .li-label,
+ul#main-list>li:nth-child(2)~li svg,
 #menu>svg{
     display: none;
 }

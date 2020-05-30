@@ -23,16 +23,17 @@ function openMenu()
 {
     var li = document.querySelectorAll("ul#main-list>li");
 
-    for (var i=0, c=li.length; i<c;i++){
-        li[i].setAttribute("style","display:block");
+    for (var i=1, c=li.length; i<c;i++){
+        li[i].setAttribute("style","display:block;");
+        li[i].setAttribute("onmouseout","closeMenu()");
+        li[i].setAttribute("onmouseover","openMenu()");
     }
 }
 
 function closeMenu()
 {
     var li = document.querySelectorAll("ul#main-list>li");
-    var ul = document.querySelectorAll("ul#main-list");
-    for (var i=0, c=li.length; i<c;i++){
-    //   li[i].setAttribute("style","display:none");
+    for (var i=1, c=li.length; i<c;i++){
+        li[i].setAttribute("style","display:none");
     }
 }
