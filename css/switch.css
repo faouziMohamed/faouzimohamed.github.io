@@ -4,7 +4,7 @@
     display: inline-block;
     width: 52px;
     height: 24px;
-    right: 70px;
+    right: 55px;
     top:5px;
 }
 
@@ -51,7 +51,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #2b9efd;
 }
 
 input:checked + .slider:before {
@@ -65,9 +65,9 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 34px;
+    border-radius: 65px;
 }
 
 .slider.round:before {
-    border-radius: 50%;
+    border-radius: 60%;
 }

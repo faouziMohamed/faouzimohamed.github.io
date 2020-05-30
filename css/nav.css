@@ -1,46 +1,51 @@
 .theme-dark{
     --nav-header-bg: rgba(24, 1, 124, 0.959);
     --main-list-a-color:rgb(214, 216, 190);
-    --main-list-a-bg-hover:#02323d;
+    --main-list-a-bg-hover:#03343f;
     --submenu-li-a-bg:rgba(77, 46, 0, 0.89);
     --submenu-a-bg-hover:#044913; 
-    --github-img:url("../img/github-icon-white.png");
-    --github-width:29px;
-    --github-right:7px;
-    --github-top:8px;
+    --github-img:url("../img/github_logo.png");
+    --github-fill:rgb(255, 255, 255);
     --home-img:url("../img/house_white.png");
+    --home-fill:rgb(227, 246, 252);
 }
 
 .theme-light{
     --nav-header-bg: rgb(93, 189, 106);
     --main-list-a-color:rgb(0, 25, 32);
-    --main-list-a-bg-hover:#08b975;
+    --main-list-a-bg-hover:#7ab3ff;
     --submenu-li-a-bg:rgba(102, 235, 49, 0.89);
     --submenu-a-bg-hover:#356d92dc;
     --github-img:url("../img/github_logo.png");
-    --github-width:45px;
-    --github-right:0px;
-    --github-top:0px;
-    --home-img:url("../img/house_white_1.png");
+    --github-fill:rgb(0, 27, 53);
+    --home-img:url("../img/house_white.png");
+    --home-fill:rgb(0, 49, 114);
 }
 
-nav#header-nav>a#github img{
-    width: var(--github-width);
+/*Images */
+a#github >svg{
+    width: 29px;
     position: absolute;
-    right: var(--github-right);
-    top:var(--github-top);
-    content: var(--github-img);
+    right: 7px;
+    top:6px;
+    fill: var(--github-fill);
 }
 
-img#home{
-    content: var(--home-img);
-    margin-top: -3px;
+a>svg#home{
+    position: relative;
+    top: -5px;
     padding-top: 0px;
-    width: 23px;
-    height: 19px;
+    width: 30px;
+    height: 25px;
+    fill:var(--home-fill);
 }
 
+.li-label,
+#menu>svg{
+    display: none;
+}
 
+/*The menu*/
 nav#header-nav{
     position: fixed;
     background-color: var(--nav-header-bg);
@@ -54,6 +59,11 @@ nav#header-nav::after{
     content: '';
     display: block;
     clear: both;
+}
+
+#main-list>li:first-child+li a{
+    padding-top: 13px;;
+    padding-bottom: 2px;
 }
 
 ul#main-list{
@@ -119,13 +129,3 @@ nav#header-nav li:hover .submenu{
     display: block;
 }
 
-@media only screen and (max-width:536px)
-{
-    ul#main-list{
-        position: absolute;
-    }
-
-    ul#main-list>li{
-        float: none;
-    }
-}

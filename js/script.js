@@ -18,3 +18,21 @@ function toggleTheme()
     { setTheme('theme-dark'); } else
     { setTheme('theme-light'); }
 })();
+
+function openMenu()
+{
+    var li = document.querySelectorAll("ul#main-list>li");
+
+    for (var i=0, c=li.length; i<c;i++){
+        li[i].setAttribute("style","display:block");
+    }
+}
+
+function closeMenu()
+{
+    var li = document.querySelectorAll("ul#main-list>li");
+    var ul = document.querySelectorAll("ul#main-list");
+    for (var i=0, c=li.length; i<c;i++){
+    //   li[i].setAttribute("style","display:none");
+    }
+}

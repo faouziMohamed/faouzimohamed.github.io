@@ -1,132 +1,55 @@
-.theme-dark{
-    --nav-header-bg: rgba(24, 1, 124, 0.959);
-    --main-list-a-color:rgb(214, 216, 190);
-    --main-list-a-bg-hover:#02323d;
-    --submenu-li-a-bg:rgba(77, 46, 0, 0.89);
-    --submenu-a-bg-hover:#044913; 
-    --github-img:url("../img/github_logo.png");
-    --github-fill:rgb(255, 245, 153);
-    --home-img:url("../img/house_white.png");
+/*.theme-dark{
+
 }
 
 .theme-light{
-    --nav-header-bg: rgb(93, 189, 106);
-    --main-list-a-color:rgb(0, 25, 32);
-    --main-list-a-bg-hover:#08b975;
-    --submenu-li-a-bg:rgba(102, 235, 49, 0.89);
-    --submenu-a-bg-hover:#356d92dc;
-    --github-img:url("../img/github_logo.png");
-    --github-fill:rgb(0, 27, 53);
-    --home-img:url("../img/house_white.png");
+
+}*/
+
+#menu>svg{
+    position: relative;
+    top:5px;
+    fill:var(--home-fill);
+    margin-left: 15px;
 }
 
-a#github >svg{
-    width: 29px;
-    position: absolute;
-    right: 7px;
-    top:6px;
-    fill: var(--github-fill);
-
-}
-
-img#home{
-    content: var(--home-img);
-    margin-top: -3px;
-    padding-top: 0px;
-    width: 23px;
-    height: 19px;
-}
-
-nav#header-nav{
-    position: fixed;
-    background-color: var(--nav-header-bg);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0px;
-    z-index: 10000;
-}
-nav#header-nav::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
-ul#main-list{
-    padding: 0px;
-    margin: 0px;
-}
-
-ul#main-list>li{
-    display: block;
-    float: left;
-    padding: 0px;
-    margin: 0px;
-}
-
-ul#main-list li {
-    list-style-type: none;
-}
-
-ul#main-list a{
-    text-decoration: none;
-    color: var(--main-list-a-color);
-}
-
-ul#main-list>li>a{
-    display: block;
-    padding:12px 15px;
-}
-
-ul#main-list>li>a:hover{
-    background-color: var(--main-list-a-bg-hover);
-}
-
-.submenu{
-    position: absolute;
-    top:98%;
-    padding-left: 0px;
-}
-
-.submenu>li>a{
-    background-color: var(--submenu-li-a-bg);
-    display: block;
-    padding: 10px 15px;
-}
-
-.submenu>li:not(:first-child) a{
-    padding-top: 5px;
-}
-
-.submenu a:hover{
-    background: var(--submenu-a-bg-hover);
-}
-
-.submenu a>img{
-    width: 20px;
-    height: 20px;
-}
-
-.submenu{
-    display: none;
-}
-
-nav#header-nav li:hover .submenu{
-    display: block;
-}
 
 @media only screen and (max-width:536px)
 {
+    .li-label,
+    #menu>svg{
+        display: inline-flex;
+    }
     ul#main-list{
         position: absolute;
-        background- color: red;
+        width: 100%;
     }
+
     nav#header-nav{
-        background -color: blue;
         height: 23%;
     }
 
     ul#main-list>li{
         float: none;
     }
+
+    ul#main-list>li>a{
+        display: block;
+        padding:12px 15px;
+    }
+
+    ul#main-list>li:not(:first-child){
+        display: none;
+        background-color: rgb(102, 167, 142);
+    }
+    
+    nav#header-nav{
+        height: 43px;
+        padding-bottom: 0px;
+    }
+
+    nav#header-nav>ul#main-list:hover>li{
+        display: block;
+    }
+
 }

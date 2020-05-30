@@ -22,16 +22,6 @@
     --main-aside-nav-color:rgb(231, 231, 231);
 }
 
-.octic on {
-    position: absolute;
-    top: 5px;;
-    fill: red;
-    display: inline-block;
-}
-
-.v-align-middle {
-    vertical-align: middle !important;
-}
 
 * {
     box-sizing: border-box;
@@ -40,6 +30,7 @@ body{
     background-color: var(--body-bg);
     margin: 0px;
     font-size: 96%;
+    min-width: 300px;
 }
 
 main{
