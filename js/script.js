@@ -28,12 +28,18 @@ function openMenu()
         li[i].setAttribute("onmouseout","closeMenu()");
         li[i].setAttribute("onmouseover","openMenu()");
     }
+
+    var section = document.querySelectorAll(".main-section>p")
+    
+    for (var i=0, c=section.length; i < c;++i){
+        section[i].setAttribute("onmouseover","closeMenu()")
+    }
 }
 
 function closeMenu()
 {
-    var li = document.querySelectorAll("ul#main-list>li");
-    for (var i=1, c=li.length; i<c;i++){
-        li[i].setAttribute("style","display:none");
+    var li = document.querySelectorAll("ul#main-list>li:first-child~li");
+    for (var i=0, c=li.length; i<c;i++){
+        li[i].setAttribute("style","disp lay:none");
     }
 }
