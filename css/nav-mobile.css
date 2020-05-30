@@ -27,15 +27,15 @@
         font-weight: bold;
 
     }
-.li-label{
-    top: -8px;
-    left: -2px;
-}
+    .li-label{
+        top: -8px;
+        left: -2px;
+    }
 
-span.li-txt{
-    left: 2px;
-    top: -4px;
-}
+    span.li-txt{
+        left: 2px;
+        top: -4px;
+    }
 
     ul#main-list>li:nth-child(2)~li svg{
         display: inline-block;
@@ -77,9 +77,4 @@ span.li-txt{
         height: 43px;
         padding-bottom: 0px;
     }
-
-
-    /*nav#header-nav>ul#main-list:hover>li{
-        display: block;
-    }*/
 }

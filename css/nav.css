@@ -48,6 +48,7 @@ ul#main-list>li:nth-child(2)~li svg,
 
 /*The menu*/
 nav#header-nav{
+    display: block;
     position: fixed;
     background-color: var(--nav-header-bg);
     top: 0px;
