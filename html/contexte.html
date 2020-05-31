@@ -649,15 +649,80 @@ manière générale, on préfère donner une fraction d'erreurs à un nombre tot
                 </section>
 
                 <section class="main-section">
-                    <h2>Et le deep learning en tout ça ?</h2>
+                    <h2>Classification automatique d'images et apprentissage machine</h2>
                     <p>
+                        A première vue, la classification des données ne semble pas difficile. Les humains sont bien
+meilleurs que les machines pour comprendre le contexte des éléments à classifier. Cependant, à mesure que
+le nombre d’actifs, les niveaux et les règles de classification se développent, la classification des données
+se complique rapidement et les processus manuels se corrompent. Les méthodes manuelles se sont avérées
+très difficiles à appliquer pour des tâches en apparence très simples comme la classification des images, la
+reconnaissance d’objets dans les images ou la reconnaissance vocale. Les données venant du monde réel
+les échantillons d’un son ou les pixels d’une image sont complexes, variables et entachées de bruit.
+                    </p>
+                    <p>
+                        Pour un ordinateur, les images ne sont que des tableaux de nombres ayant certaines caractéristiques
+tels que la couleur, la luminosité de pixel chaque pixel. Nous, humains, pouvons lui montrer qu’il peut s’en
+servir de ces pixels pour identifier des objets sur l’image et donc de pouvoir reconnaitre ce qui se trouve
+sur l’image.
+                    </p>
+                    <p>
+                        Comment une machine peut-elle identifier un chien ou une chaise dans le tableau de nombres d’une image
+quand l’apparence d’un chien ou d’une chaise et des objets qui les entourent peut varier infiniment ? On
+pourrait penser à écrire un programme qui fonctionnera de manière robuste pour classifier des images. Ceci
+sera tout simplement impossible. Ça prendra des milliers de ligne de code juste pour un petit problème de
+classification. La solution ultime pour faire ce travail c’est l’apprentissage machine qui va entrainer la
+machine à faire la classification.
+                    </p>
+                    <p>
+                        L’apprentissage machine consiste à créer un ensemble d’algorithmes qui vont apprendre à faire la
+classification. Ce qui nous donne un système entrainable. Un système entraînable peut être vu comme une
+boite noire avec une entrée, par exemple une image, un son, ou un texte, et une sortie qui peut représenter
+la catégorie de l’objet dans l’image, le mot prononcé, ou le sujet dont parle le texte. On parle alors de
+systèmes de classification ou de reconnaissance des formes.
+                    </p>
+                    <p>
+                        L’apprentissage machine c’est elle qui anime les systèmes de toutes les grandes entreprises
+d’Internet. Elles l’utilisent depuis longtemps pour filtrer les contenus indésirables, ordonner des réponses à
+une recherche, faire des recommandations, ou sélectionner les informations intéressantes pour chaque
+utilisateur. Dans sa forme la plus utilisée, l’apprentissage machine est supervisé : on montre en entrée de la
+machine une photo d’un objet, par exemple une voiture, et on lui donne la sortie désirée pour une voiture.
+Puis on lui montre la photo d’un chien avec la sortie désirée pour un chien. Après chaque exemple, la
+machine ajuste ses paramètres internes de manière à rapprocher sa sortie de la sortie désirée. Après avoir
+montré à la machine des milliers ou des millions d’exemples étiquetés avec leur catégorie, la machine
+devient capable de classifier correctement la plupart d’entre eux. Mais ce qui est plus intéressant, c’est
+qu’elle peut aussi classifier correctement des images de voiture ou de chien qu’elle n’a jamais vues durant
+la phase l’apprentissage. C’est ce qu’on appelle la capacité de généralisation.
+                    </p>
+                    <p>
+                        Jusqu’à récemment, les systèmes de reconnaissance des images classiques étaient composés de
+deux blocs : un extracteur de caractéristiques (feature extractor en anglais), suivi d’un classifieur entraînable
+simple. L’extracteur de caractéristiques est programmé « à la main », et transforme le tableau de nombres
+représentant l’image en une série de nombres, un vecteur de caractéristiques, dont chacun indique la
+présence ou l’absence d’un motif simple dans l’image. Ce vecteur est envoyé au classifieur, dont un type
+commun est le classifieur linéaire. Ce dernier calcule une somme pondérée des caractéristiques : chaque
+nombre est multiplié par un poids (positif ou négatif) avant d’être sommé. Si la somme est supérieure à un
+seuil, la classe est reconnue. Les poids forment une sorte de « prototype » pour la classe à laquelle le vecteur
+de caractéristiques est comparé. Les poids sont différents pour les classifieurs de chaque catégorie, et ce
+sont eux qui sont modifiés lors de l’apprentissage. Les premières méthodes de classification linéaire
+entraînable datent de la fin des années cinquante et sont toujours largement utilisées aujourd’hui. Elles
+prennent les deux noms de perceptron ou régression logistique.
                     </p>
                 </section>
 
-                <section class="main-section">
-                    <h2>Et le deep learning en tout ça ?</h2>
+                <section class="main-section conclusion">
+                    <h2 class="center">Conclusion</h2>
                     <p>
+                        Dans cet article nous avons présenté la notion de classification ainsi que son application dans
+nombreux domaines notamment dans l’industrie d’internet. Nous avons vu aussi vu que pour faire de la
+classification des images, il nous faudra utiliser des réseaux de neurones pour simplifier la tâche et trouver
+des meilleurs résultats.
+                    </p>
+                </section>
 
+
+                <section class="main-section">
+                    <h2></h2>
+                    <p>
                     </p>
                 </section>
                 <footer>

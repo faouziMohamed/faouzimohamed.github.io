@@ -10,6 +10,7 @@
     --main-aside-bg:rgb(26, 29, 31);
     --main-aside-nav-bg:rgb(6, 9, 15);
     --main-aside-nav-color:rgb(255, 255, 255);
+    --main-section-h2-conclusion-color:rgb(29, 73, 67);
 }
 
 .theme-light{
@@ -24,6 +25,7 @@
     --main-aside-bg:rgb(3, 92, 99);
     --main-aside-nav-bg:rgb(3, 92, 99);
     --main-aside-nav-color:rgb(231, 231, 231);
+    --main-section-h2-conclusion-color:rgb(10, 95, 29);
 }
 
 
@@ -91,11 +93,13 @@ section.main-section h3{
     margin-left: 10px;
 }
 section.main-section h4{
-    color: var(--main-section-h4-color);
+    color: var(--main-section-h3-color);
     font-size: 115%;
     margin-left: 18px;
 }
-
+section.conclusion>h2{
+    color: var(--main-section-h2-conclusion-color);
+}
 section.main-section h2,
 section.main-section h3,
 section.main-section h4{
