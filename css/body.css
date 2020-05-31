@@ -30,7 +30,7 @@ body{
     background-color: var(--body-bg);
     margin: 0px;
     font-size: 96%;
-    min-width: 300px;
+    min-width: 360px;
 }
 
 main{
@@ -76,23 +76,23 @@ section.main-section{
     border: 2px solid rgb(66, 66, 117);
 }
 
-section.main-section>h2{
+section.main-section h2{
     color: var(--main-section-h2-color);
 }
 
-section.main-section>p{
-     text-align: justify;
- }
-section.main-section>:nth-child(2)::first-letter{
-     padding-left: 5%;
- }
-section.main-section:not(:nth-child(2)){
-    margin-top: -25px;
-}
+.main-section p,p,li{text-align: justify;}
 
- section.main-section:last-child{
-     margin-bottom: 10px;;
- }
+.main-section h1+p::first-letter,
+.main-section h2+p::first-letter,
+.main-section h3+p::first-letter,
+.main-section h4+p::first-letter,
+.main-section h5+p::first-letter,
+.alinea{padding-left: 5%;}
+.main-section:not(:nth-child(2))
+{margin-top: -25px;}
+
+.main-section:last-child
+{margin-bottom: 10px;}
 
 aside#left-aside{
     position: fixed;
@@ -135,10 +135,18 @@ nav#aside-nav>ul{
 }
 
 .bold{font-weight: bold;}
+.center{text-align: center;}
 
+.flex-bloc{
+    display: flex;
+}
 
+.flex-bloc #list ul{
+    padding-left: 20px;
+}
 
 /*Media queries*/
+
 @media only screen and (max-width:888px)
 {
     article.main-article{
