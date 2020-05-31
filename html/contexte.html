@@ -15,7 +15,7 @@
               svg: {fontCache: 'global'}
             };
             </script>
-            <script id="MathJax-script" async src="../mathjax/es5/tex-svg.js"></script>
+            <script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>
             <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     </head>
     <body>
@@ -626,15 +626,23 @@ la lecture : dans ce cas, un système de classification sera d'autant meilleur q
 s'approchera d'une matrice diagonale.
                             </p>
                             <p>
-                                Notons que la matrice de confusion est aussi généralisable lorsqu’il y a k > 2 classes à prédire (Nombre de
-classe). À partir de la matrice de confusion on peut dériver tout un tas de critères de performance. De
-manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs. Voici quelques
-exemples de mesures de performance souvent utilisées :
+                                Notons que la matrice de confusion est aussi généralisable lorsqu’il y a k > 2 classes à prédire (Nombre de classe). À partir de la matrice de confusion on peut dériver tout un tas de critères de performance. De
+manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs. Voici quelques exemples de mesures de performance souvent utilisées :
                             </p>
                             <div class="math-p">
                                 <p>
                                     La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi les points que l’on a prédits positifs :
+                                    $$précision = {VP \over VP + FP}.$$
                                 </p>
+                                <p>
+                                    Rappel. Proportion d’éléments bien classés par rapport au nombre d’éléments de la classe à prédire : 
+                                    $$Rappel = {VP \over VP + FN}$$
+                                </p>
+                                <p>
+                                    F-mesure. Mesure de compromis entre précision et rappel :
+                                    $$F - mesure = 2×{Précision × Rapel \over Précision + Rapel}$$
+                                </p>
+                                
                             </div>
                         </section>
                     </section>
@@ -644,7 +652,7 @@ exemples de mesures de performance souvent utilisées :
                     <h2>Et le deep learning en tout ça ?</h2>
                     <p>
                         When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
                     </p>
                 </section>
                 <footer>
