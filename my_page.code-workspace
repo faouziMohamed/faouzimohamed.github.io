@@ -2,24 +2,24 @@
 	"folders": [
 		{
 			"name": "faouzimohamed.github.io",
-			"path": ".."
+			"path": "."
 		}
 	],
 	"settings": {
 		"workbench.colorCustomizations": {
-			"activityBar.background": "#010c03",
-			"titleBar.activeBackground": "#04420e",
+			"activityBar.background": "#4c2100",
+			"titleBar.activeBackground": "#190b00",
 			"titleBar.activeForeground": "#e7e7e7",
-			"activityBar.activeBackground": "#020722",
+			"activityBar.activeBackground": "#4c2100",
 			"activityBar.activeBorder": "#008037",
 			"activityBar.foreground": "#e7e7e7",
 			"activityBar.inactiveForeground": "#e7e7e799",
 			"activityBarBadge.background": "#008037",
 			"activityBarBadge.foreground": "#e7e7e7",
-			"statusBar.background": "#000f19",
+			"statusBar.background": "#190b00",
 			"statusBar.border": "#190b00",
-			"statusBar.foreground": "#b1aeae",
-			"statusBarItem.hoverBackground": "#011e31",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#4c2100",
 			"titleBar.border": "#190b00",
 			"titleBar.inactiveBackground": "#190b0099",
 			"titleBar.inactiveForeground": "#e7e7e799"

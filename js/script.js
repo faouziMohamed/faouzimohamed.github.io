@@ -42,4 +42,4 @@ function closeMenu()
     for (var i=0, c=li.length; i<c;i++){
         li[i].setAttribute("style","disp lay:none");
     }
-}
+}  
