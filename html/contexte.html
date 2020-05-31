@@ -209,6 +209,7 @@
                 <header>
                     <h1>Revenons au source</h1>
                 </header>
+
                 <section class="main-section">
                     <h2>L'intelligence artificiel</h2>
                     <section>
@@ -452,7 +453,88 @@ Pour ce faire nous allons rassembler nos données à classifier en une sorte de 
                             </div>
                         </section>
                     </section>
-                </section><section class="main-section">
+                </section>
+
+                <section class="main-section">
+                    <h2>Indicateur de performance</h2>
+                    <section>
+                        <h3>Matrice de confusion</h3>
+                        <p>
+                            Une matrice de confusion est une matrice qui mesure la qualité d'un système de classification, il
+représente les performances d’un modèle de classification dans une matrice dite de confusion. Chaque ligne
+correspond à une classe réelle, chaque colonne correspond à une classe estimée. La cellule ligne L, colonne
+C contient le nombre d'éléments de la classe réelle L qui ont été estimés comme appartenant à la classe C.
+                        </p>
+                        <p>
+                            Un des intérêts de la matrice de confusion est qu'elle montre rapidement si un système de classification
+parvient à classifier correctement.
+                        </p>
+                        <div class="list-p">
+                            <p>
+                                Prenons l’exemple d’un classifieur binaire, c’est-à-dire, qui prédit 2 classes notées classe 0 et classe
+    1. Pour mesurer les performances de ce classifieur, il est d’usage de distinguer 4 types d’éléments classés
+    pour la classe voulue :
+                            </p>
+                            <ul class="align-left">
+                                <li>
+                                    <strong>Vrai positif (VP)</strong> &nbsp;&nbsp;&nbsp;:
+                                    Elément de la classe 1 correctement prédit
+                                </li>
+                                <li>
+                                    <strong>Vrai Négatif (VN)</strong> &nbsp;:
+                                    Elément de la classe 0 correctement prédit
+                                </li>
+                                <li>
+                                    <strong>Faux positif (FP)</strong>&nbsp; &nbsp;:
+                                    Elément de la classe 0 correctement prédit
+                                </li>
+                                <li>
+                                    <strong>Faux Négatif (FN)</strong> :
+                                    Elément de la classe 0 correctement prédit
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="table-p">
+                            <p>
+                                Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une matrice de confusion.
+Dans le cas d’un classifieur binaire, on obtient :
+                            </p>
+                            <figure class="table-center">
+                                <figcaption>Matrice de confusion</figcaption>
+                                <table>
+                                    <thead rowspan="2">
+                                        <tr>
+                                            <td colspan="2" rowspan="2" class="empty"></td>
+                                            <th scope="col" colspan="2">
+                                                Classe prédite
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Classe 0</th>
+                                            <th scope="col">Classe 1</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
+                                            <th scope="row">Classe 0</th>
+                                            <td>VN</th>
+                                            <td>FN</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Classe 1</th>
+                                            <td>FP</th>
+                                            <td>VP</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </figure>
+                    </section>
+                </section>
+
+                <section class="main-section">
                     <h2>Et le deep learning en tout ça ?</h2>
                     <p>
 

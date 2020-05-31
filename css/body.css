@@ -157,6 +157,7 @@ nav#aside-nav>ul{
 
 .bold,strong{font-weight: bold;}
 .center{text-align: center;}
+.align-left,ul.align-left>li{text-align: left;}
 em{font-style: italic;}
 .flex-bloc{
     display: flex;
@@ -165,6 +166,41 @@ em{font-style: italic;}
 .flex-bloc #list ul{
     padding-left: 20px;
 }
+
+table, table td, table th{
+    border: 1px solid #222;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    min-width: 270px;
+    max-width: 300px;
+}
+
+table,td.empty{
+    border-top: none;
+    border-left: none;
+}
+
+#rotate{
+    transform: rotate(-15deg);
+    height: 40px;
+    padding: 0px;
+}
+
+.table-center,.table-center figcaption{
+    width: 300px;
+    margin: auto;
+}
+.table-center figcaption{
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+
+
 
 /*Media queries*/
 
