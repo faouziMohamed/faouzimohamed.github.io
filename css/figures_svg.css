@@ -1,3 +1,36 @@
+
+.theme-dark{
+    --chart-title-color:#032e05;
+    --train-set-color:rgb(0, 52, 141);
+    --test-set-color:#18202e;
+    --val-set-color:rgb(114, 0, 6);
+    --figcaption-color:rgb(31, 29, 29);
+}
+
+.theme-light{
+    --chart-title-color:#194d1c;
+    --train-set-color:rgb(0, 2, 116);
+    --test-set-color:#4f5f65;
+    --val-set-color:rgb(177, 2, 11);
+    --figcaption-color:rgb(66, 66, 66);
+}
+
+.pie-chart-title{
+    fill:var(--chart-title-color);
+}
+
+.train-set{
+    fill:var(--train-set-color);
+}
+
+.test-set{
+    fill:var(--test-set-color);
+}
+
+.validation-set{
+    fill:var(--val-set-color);
+}
+
 .flex-bloc #pie-chart{
     padding: 0px;
     margin: 0px;
@@ -14,7 +47,7 @@ figcaption{
     border-bottom: rgb(1, 119, 109) 1px solid;
     display: inline-block;
     font-style: italic;
-    color: rgb(66, 66, 66);
+    color: var(--figcaption-color);
 }
 @media only screen and (max-width:1264px){
     figure#pie-chart{
