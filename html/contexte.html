@@ -500,7 +500,7 @@ parvient à classifier correctement.
                                 Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une matrice de confusion.
 Dans le cas d’un classifieur binaire, on obtient :
                             </p>
-                            <figure class="table-center">
+                            <figure class="table-center center">
                                 <figcaption>Matrice de confusion</figcaption>
                                 <table>
                                     <thead rowspan="2">
@@ -519,7 +519,7 @@ Dans le cas d’un classifieur binaire, on obtient :
                                         <tr>
                                             <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
                                             <th scope="row">Classe 0</th>
-                                            <td>VN</th>
+                                            <td>VN</td>
                                             <td>FN</td>
                                         </tr>
                                         <tr>
@@ -529,8 +529,106 @@ Dans le cas d’un classifieur binaire, on obtient :
                                         </tr>
                                     </tbody>
                                 </table>
+                            </figure>
+                        </div>
+                        
+                        <section>
+                            <h4>Exemple</h4>
+                            <p>
+                                Pour bien comprendre la notion de matrice de confusion, prenons cet exemple tiré sur
+                                <a href="https://fr.wikipedia.org/wiki/Matrice_de_confusion#Exemple" title="Exemple sur wikipedia">
+                                Wikipédia</a>
+                            </p>
+                            <p class="alinea">
+                                On souhaite mesurer la qualité d'un système de classification de courriers électroniques. Les courriers sont
+    classifiés selon deux classes : courriel pertinent ou pourriel intempestif. Supposons que notre classificateur
+    est testé avec un jeu de 200 mails, dont 100 sont des courriels pertinents et les 100 autres sont des pourriels.
+                            </p>
+                            <div class="liste-p">
+                                <p>Pour cela, on veut savoir :</p>
+                                <ul>
+                                    <li>Combien de courriels seront faussement estimés comme des pourriels (fausses alarmes) et</li>
+                                    <li>Combien de pourriels ne seront pas estimés comme tels et classifiés à tort comme courriels.</li>
+                                </ul>
+                                <p>
+                                    La matrice de confusion suivante se lit alors comme suit :
+                                </p>
+                                <ul>
+                                    <li>
+                                        Horizontalement, sur les 100 courriels initiaux (i.e. : 95+5), 95 ont été estimés par le système de
+classification comme tels et 5 ont été estimés comme pourriels (i.e. : 5 faux-négatifs),
+                                    </li>
+                                    <li>
+                                        Horizontalement, sur les 100 pourriels initiaux (i.e. : 3+97), 3 ont été estimés comme courriels
+(i.e. : 3 faux-positifs) et 97 ont été estimés comme pourriels,
+                                    </li>
+                                    <li>
+                                        Verticalement, sur les 98 mails (i.e. : 95+3) estimés par le système comme courriels, 3 sont en fait
+des pourriels,
+                                    </li>
+                                    <li>
+                                        Verticalement, sur les 102 mails (i.e. : 5+97) estimés par le système comme pourriels, 5 sont en fait
+des courriels.
+                                    </li>
+                                    <li>
+                                        Diagonalement (du haut gauche, au bas droit), sur les 200 courriels initiaux, 192 (95 + 97) ont été
+                                        estimés correctement par le système.
+                                    </li>
+                                </ul>
                             </div>
-                        </figure>
+                            <div class="table-p">
+                                <p>
+                                    Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une matrice de confusion.
+    Dans le cas d’un classifieur binaire, on obtient :
+                                </p>
+                                <figure class="table-center-2 center">
+                                    <figcaption>Exemple de matrice de confusion</figcaption>
+                                    <table id="table-2">
+                                        <thead rowspan="2">
+                                            <tr>
+                                                <td colspan="2" rowspan="2" class="empty"></td>
+                                                <th scope="col" colspan="2">
+                                                    Classe estimée par le classificateur
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">Courriel</th>
+                                                <th scope="col">Pourriel</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
+                                                <th scope="row">Courriel</th>
+                                                <td>95 (vrais positifs)</td>
+                                                <td>5 (faux négatifs)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Pourriel</th>
+                                                <td>3 (faux positifs)</th>
+                                                <td>97 (vrais négatifs)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </figure>
+                            </div>
+                            <p class="alinea">
+                                Cette notion s'étend à un nombre quelconque de classes. On peut normaliser cette matrice pour en simplifier
+la lecture : dans ce cas, un système de classification sera d'autant meilleur que sa matrice de confusion
+s'approchera d'une matrice diagonale.
+                            </p>
+                            <p>
+                                Notons que la matrice de confusion est aussi généralisable lorsqu’il y a k > 2 classes à prédire (Nombre de
+classe). À partir de la matrice de confusion on peut dériver tout un tas de critères de performance. De
+manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs. Voici quelques
+exemples de mesures de performance souvent utilisées :
+                            </p>
+                            <div class="math-p">
+                                <p>
+                                    La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi les points que l’on a prédits positifs :
+                                </p>
+                            </div>
+                        </section>
                     </section>
                 </section>
 

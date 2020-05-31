@@ -39,11 +39,11 @@
 
     ul#main-list>li:nth-child(2)~li svg{
         display: inline-block;
-            position: relative;
-            top:-0px;
-            width: 30px;
-            height: 25px;
-            fill:var(--home-fill);
+        position: relative;
+        top:-0px;
+        width: 30px;
+        height: 25px;
+        fill:var(--home-fill);
     }
 
     ul#main-list>li:nth-child(2)+li svg{

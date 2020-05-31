@@ -101,14 +101,15 @@ section.main-section h3,
 section.main-section h4{
     margin-bottom: -5px;
 }
-.main-section p,p,li{text-align: justify;}
+.main-section p,li{text-align: justify;}
 
 .main-section h1+p::first-letter,
 .main-section h2+p::first-letter,
 .main-section h3+p::first-letter,
 .main-section h4+p::first-letter,
 .main-section h5+p::first-letter,
-.alinea{padding-left: 5%;}
+.alinea::first-letter{padding-left: 5%;}
+
 .main-section:not(:nth-child(2))
 {margin-top: -25px;}
 
@@ -167,9 +168,8 @@ em{font-style: italic;}
     padding-left: 20px;
 }
 
-table, table td, table th{
+table td, table th{
     border: 1px solid #222;
-    border-collapse: collapse;
     text-align: center;
 }
 
@@ -177,9 +177,15 @@ table{
     width: 100%;
     min-width: 270px;
     max-width: 300px;
+    border-collapse: collapse;
 }
 
-table,td.empty{
+
+#table-2{
+    max-width: 450px;
+}
+
+td.empty{
     border-top: none;
     border-left: none;
 }
@@ -194,11 +200,17 @@ table,td.empty{
     width: 300px;
     margin: auto;
 }
-.table-center figcaption{
-    text-align: center;
-    margin-bottom: 9px;
+
+.table-center-2>figcaption,
+.table-center-2{
+    width: 400px;
+    margin: auto;
 }
 
+.table-center figcaption,
+.table-center-2 figcaption{
+    margin-bottom: 9px;
+}
 
 
 
