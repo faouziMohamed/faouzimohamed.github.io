@@ -28,11 +28,12 @@ function openMenu()
         li[i].setAttribute("onmouseout","closeMenu()");
         li[i].setAttribute("onmouseover","openMenu()");
     }
-
+    
     var section = document.querySelectorAll(".main-section>p")
     
     for (var i=0, c=section.length; i < c;++i){
         section[i].setAttribute("onmouseover","closeMenu()")
+        section[i].setAttribute("onclick","closeMenu()")
     }
 }
 
