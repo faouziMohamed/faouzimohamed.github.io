@@ -250,6 +250,17 @@ td.empty{
     }
 }
 
+@media only screen and (max-width:478px){
+    #fig-table-2,
+    .table-center{
+        width: 100%;
+    }
+    .table-center-2>figcaption,
+    .table-center figcaption{
+        width:inherit;
+    }
+}
+
 /*
 @media only screen and (max -width:716px)
 {
