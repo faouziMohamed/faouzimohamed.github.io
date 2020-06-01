@@ -19,6 +19,9 @@ function toggleTheme()
     { setTheme('theme-light'); }
 })();
 
+
+var open = false
+var close = true
 function openMenu()
 {
     var li = document.querySelectorAll("ul#main-list>li");
@@ -29,12 +32,14 @@ function openMenu()
         li[i].setAttribute("onmouseover","openMenu()");
     }
     
-    var section = document.querySelectorAll(".main-section>p")
+    var section = document.querySelectorAll(".main-section>*")
     
     for (var i=0, c=section.length; i < c;++i){
         section[i].setAttribute("onmouseover","closeMenu()")
-        section[i].setAttribute("onclick","closeMenu()")
+        section[i].setAttribute("onclick","open_close_Menu()")
     }
+    open  = true
+    close = false
 }
 
 function closeMenu()
@@ -43,4 +48,12 @@ function closeMenu()
     for (var i=0, c=li.length; i<c;i++){
         li[i].setAttribute("style","disp lay:none");
     }
+
+    open  = false
+    close = true    
 }  
+
+function open_close_Menu(){
+    if(open) closeMenu()
+    else     openMenu()
+}
