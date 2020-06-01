@@ -36,7 +36,7 @@ function openMenu()
     
     for (var i=0, c=section.length; i < c;++i){
         section[i].setAttribute("onmouseover","closeMenu()")
-        section[i].setAttribute("onclick","open_close_Menu()")
+        section[i].setAttribute("onclick","closeMenu()")
     }
     open  = true
     close = false
