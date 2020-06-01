@@ -9,7 +9,7 @@
     --main-section-bg:rgb(135, 145, 143);
     --main-aside-bg:rgb(26, 29, 31);
     --main-aside-nav-bg:rgb(6, 9, 15);
-    --main-aside-nav-color:rgb(255, 255, 255);
+    --main-aside-nav-color:rgb(170, 233, 186);
     --main-section-h2-conclusion-color:rgb(29, 73, 67);
     --nav-aside-hv-color:rgb(65, 250, 250);
     --nav-aside--li-hv-color:rgb(152, 228, 137);
@@ -27,7 +27,7 @@
     --main-section-bg:rgb(188, 205, 207);
     --main-aside-bg:rgb(3, 92, 99);
     --main-aside-nav-bg:rgb(3, 92, 99);
-    --main-aside-nav-color:rgb(231, 231, 231);
+    --main-aside-nav-color:rgb(224, 255, 243);
     --main-section-h2-conclusion-color:rgb(10, 95, 29);
     --nav-aside-hv-color:rgb(136, 255, 0);
     --nav-aside--li-hv-color:rgb(255, 166, 0);
@@ -135,6 +135,7 @@ aside#left-aside{
     min-width: 215px;
     font-size: 85%;
     background-color: var(--main-aside-bg);
+    font-weight: bold;
 }
 
 aside#left-aside>nav{

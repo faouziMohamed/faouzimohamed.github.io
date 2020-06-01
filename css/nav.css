@@ -75,6 +75,7 @@ nav#header-nav::after{
 }
 
 ul#main-list{
+    font-weight: bold;
     padding: 0px;
     margin: 0px;
 }
