@@ -16,6 +16,12 @@
 
 @media only screen and (max-width:536px)
 {
+    ul#main-list{display: none;}
+
+    ul#main-list>li{
+        background-color: var(--main-list-li-bg);
+    }
+    
     .li-label,
     #menu>svg{
         display: inline-block;
@@ -66,13 +72,7 @@
     ul#main-list>li>a{
         display: block;
         padding:12px 15px;
-    }
-
-    ul#main-list>li:not(:first-child){
-        display: none;
-        background-color: var(--main-list-li-bg);
-    }
-    
+    }    
     nav#header-nav{
         height: 43px;
         padding-bottom: 0px;
