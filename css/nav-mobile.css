@@ -63,7 +63,7 @@
     ul#main-list>li:nth-child(1)+li>a>svg,
     .li-txt{top:-4px;}
 
-    ul#main-list>li:not(:last-child)>a
+    ul#main-list>li>a
     {padding-bottom: 0px;}
 
     ul#main-list>li:nth-child(2) .li-txt,
@@ -72,12 +72,7 @@
 
     .submenu{
         top:100%;
-        position: relative;
-    }
-    .subm enu li a{
-        position: relative;
-        top: 40px;
         z-index: 2;
-
+        position: absolute;
     }
 }

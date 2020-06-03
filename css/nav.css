@@ -77,7 +77,6 @@ ul#main-list{
     font-weight: bold;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -121,6 +120,7 @@ nav#header-nav li:hover .submenu{
     background-color: var(--submenu-li-a-bg);
     display: block;
     padding: 10px 15px;
+    width: 100%;
 }
 
 .submenu>li:not(:nth-child(2)) a{
