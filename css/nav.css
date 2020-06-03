@@ -118,7 +118,7 @@ nav#header-nav li:hover .submenu{
 
 .submenu>li>a{
     background-color: var(--submenu-li-a-bg);
-    display: block;
+    display: inline-block;
     padding: 10px 15px;
     width: 100%;
 }
@@ -134,14 +134,4 @@ nav#header-nav li:hover .submenu{
 .submenu a>img{
     width: 20px;
     height: 20px;
-}
-
-
-@media only screen and (min-width:538px)
-{
-    ul#main-list,
-    nav#header-nav{
-        display: block;
-    }
-
 }
