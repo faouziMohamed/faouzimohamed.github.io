@@ -50,6 +50,7 @@ function open_close_Menu(){
         else {
             ul.style.display = 'none';
         }
+        alerte("oui")
     }
     var x = window.matchMedia("(min-width: 538px)");
     display_menu(x);
@@ -79,7 +80,7 @@ function open_close_Menu(){
 
     var y = window.matchMedia("(max-width: 536px)");
     tune_submenu(y);
-    y.addListener(display_menu);
+    y.addListener(tune_submenu);
 })();
 
 

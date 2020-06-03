@@ -106,7 +106,7 @@ section.main-section h3,
 section.main-section h4{
     margin-bottom: -5px;
 }
-.main-section p{text-align: justify;}
+.main-section{text-align: justify;}
 
 .main-section h1+p::first-letter,
 .main-section h2+p::first-letter,
