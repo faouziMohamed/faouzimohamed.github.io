@@ -1,85 +1,99 @@
-.theme-dark{
-    --main-list-li-bg:rgb(8, 78, 87);
+.theme-dark {
+    --main-list-li-bg: rgb(8, 78, 87);
 }
 
-.theme-light{
-    --main-list-li-bg:rgb(80, 172, 137);
+.theme-light {
+    --main-list-li-bg: rgb(80, 172, 137);
 }
 
-#menu>svg{
+#menu>svg {
     position: relative;
-    top:5px;
-    fill:var(--home-fill);
+    top: 5px;
+    fill: var(--home-fill);
     margin-left: 15px;
 }
 
 
-@media only screen and (max-width:536px)
-{
-    nav#header-nav{
+@media only screen and (max-width:536px) {
+    nav#header-nav {
         height: 43px;
         padding-bottom: 0px;
     }
-    ul#main-list{
+
+    ul#main-list {
         display: none;
         width: 100%;
         position: absolute;
     }
-    ul#main-list>li{
+
+    ul#main-list>li {
         background-color: var(--main-list-li-bg);
         float: none;
 
     }
+
     .li-label,
-    #menu>svg{
+    #menu>svg {
         display: inline-block;
     }
 
     .li-label,
-    span.li-txt{
+    span.li-txt {
         position: relative;
         font-weight: bold;
 
     }
-    span.li-txt{
+
+    span.li-txt {
         left: 2px;
         top: -4px;
     }
-    .li-label{
+
+    .li-label {
         top: -8px;
         left: -2px;
     }
 
-    ul#main-list>li:nth-child(1)~li svg{
+    ul#main-list>li:nth-child(1)~li svg {
         display: inline-block;
         position: relative;
         width: 30px;
         height: 25px;
-        fill:var(--home-fill);
+        fill: var(--home-fill);
     }
-    a.li-txt{position: relative;}
 
-    ul#main-list>li:nth-child(1)>a{bottom: 0px;}
+    a.li-txt {
+        position: relative;
+    }
+
+    ul#main-list>li:nth-child(1)>a {
+        bottom: 0px;
+    }
+
     ul#main-list>li:nth-child(1)+li>a>svg,
-    .li-txt{top:-4px;}
+    .li-txt {
+        top: -4px;
+    }
 
-    ul#main-list>li>a
-    {padding-bottom: 0px;}
+    ul#main-list>li>a {
+        padding-bottom: 0px;
+    }
 
     ul#main-list>li:nth-child(2) .li-txt,
-    ul#main-list>li:nth-child(2) .li-txt
-    {top:-10px;}
+    ul#main-list>li:nth-child(2) .li-txt {
+        top: -10px;
+    }
 
-    .submenu{
+    .submenu {
         z-index: 101;
     }
 }
 
-.subMenuParent{
+.subMenuParent {
     position: relative;
 }
 
-.subMenuParent li a{
-    top:100%;
+.subMenuParent li a {
+    top: 100%;
     background-color: red;
 }

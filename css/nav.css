@@ -1,58 +1,59 @@
-.theme-dark{
+.theme-dark {
     --nav-header-bg: rgba(24, 1, 124, 0.959);
-    --main-list-a-color:rgb(214, 216, 190);
-    --main-list-a-bg-hover:#03343f;
-    --submenu-li-a-bg:rgba(77, 46, 0, 0.89);
-    --submenu-a-bg-hover:#044913; 
-    --github-img:url("../img/github_logo.png");
-    --github-fill:rgb(255, 255, 255);
-    --github-hover-fill:rgb(184, 193, 197);
-    --home-img:url("../img/house_white.png");
-    --home-fill:rgb(227, 246, 252);
+    --main-list-a-color: rgb(214, 216, 190);
+    --main-list-a-bg-hover: #03343f;
+    --submenu-li-a-bg: rgba(77, 46, 0, 0.89);
+    --submenu-a-bg-hover: #044913;
+    --github-img: url("../img/github_logo.png");
+    --github-fill: rgb(255, 255, 255);
+    --github-hover-fill: rgb(184, 193, 197);
+    --home-img: url("../img/house_white.png");
+    --home-fill: rgb(227, 246, 252);
 }
 
-.theme-light{
+.theme-light {
     --nav-header-bg: rgb(99, 204, 113);
-    --main-list-a-color:rgb(0, 25, 32);
-    --main-list-a-bg-hover:#7ab3ff;
-    --submenu-li-a-bg:rgba(102, 235, 49, 0.89);
-    --submenu-a-bg-hover:#356d92dc;
-    --github-img:url("../img/github_logo.png");
-    --github-fill:rgb(0, 27, 53);
-    --github-hover-fill:rgb(25, 97, 100);
-    --home-img:url("../img/house_white.png");
-    --home-fill:rgb(0, 49, 114);
+    --main-list-a-color: rgb(0, 25, 32);
+    --main-list-a-bg-hover: #7ab3ff;
+    --submenu-li-a-bg: rgba(102, 235, 49, 0.89);
+    --submenu-a-bg-hover: #356d92dc;
+    --github-img: url("../img/github_logo.png");
+    --github-fill: rgb(0, 27, 53);
+    --github-hover-fill: rgb(25, 97, 100);
+    --home-img: url("../img/house_white.png");
+    --home-fill: rgb(0, 49, 114);
 }
+
 /*Images */
-a#github>svg{
+a#github>svg {
     width: 29px;
     position: absolute;
     right: 7px;
-    top:6px;
+    top: 6px;
     fill: var(--github-fill);
 }
 
-a#github>svg:hover{
+a#github>svg:hover {
     fill: var(--github-hover-fill);
 }
 
-a>svg#home{
+a>svg#home {
     position: relative;
     top: -7px;
     padding-top: 0px;
     width: 30px;
     height: 25px;
-    fill:var(--home-fill);
+    fill: var(--home-fill);
 }
 
 .li-label,
 ul#main-list>li:nth-child(1)~li svg,
-#menu>svg{
+#menu>svg {
     display: none;
 }
 
 /*The menu*/
-nav#header-nav{
+nav#header-nav {
     display: block;
     position: fixed;
     background-color: var(--nav-header-bg);
@@ -62,25 +63,27 @@ nav#header-nav{
     padding: 0px;
     z-index: 100;
 }
-nav#header-nav::after{
+
+nav#header-nav::after {
     content: '';
     display: block;
     clear: both;
 }
 
-#main-list>li:first-child>a{
-    padding-top: 13px;;
+#main-list>li:first-child>a {
+    padding-top: 13px;
+    ;
     padding-bottom: 1px;
 }
 
-ul#main-list{
+ul#main-list {
     font-weight: bold;
     padding: 0px;
     margin: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-ul#main-list>li{
+ul#main-list>li {
     display: block;
     float: left;
     padding: 0px;
@@ -91,47 +94,50 @@ ul#main-list li {
     list-style-type: none;
 }
 
-ul#main-list a{
+ul#main-list a {
     text-decoration: none;
     color: var(--main-list-a-color);
 }
 
-ul#main-list>li>a{
+ul#main-list>li>a {
     display: block;
-    padding:13px 15px;
+    padding: 13px 15px;
 }
 
-ul#main-list>li>a:hover{
+ul#main-list>li>a:hover {
     background-color: var(--main-list-a-bg-hover);
 }
 
-.submenu{
+.submenu {
     display: none;
     position: absolute;
-    top:98%;
+    top: 98%;
     padding-left: 0px;
 }
 
-nav#header-nav li:hover .submenu{
+nav#header-nav li:hover .submenu {
     display: block;
 }
 
-.submenu>li>a{
+.submenu>li>a {
     background-color: var(--submenu-li-a-bg);
     display: inline-block;
     padding: 10px 15px;
     width: 100%;
 }
 
-.submenu>li:not(:nth-child(2)) a{
+.submenu>li:not(:nth-child(2)) a {
     padding-top: 5px;
 }
 
-.submenu a:hover{
+.submenu a:hover {
     background: var(--submenu-a-bg-hover);
 }
 
-.submenu a>img{
+.submenu a>img {
     width: 20px;
     height: 20px;
+    z-index: 45
+
 }
+

@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Contexte</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../css/nav.css">
-        <link rel="stylesheet" type="text/css" href="../css/nav-mobile.css">
-        <link rel="stylesheet" type="text/css" href="../css/body.css">
-        <link rel="stylesheet" type="text/css" href="../css/figures_svg.css">
-        <link rel="stylesheet" type="text/css" href="../css/switch.css">
-        <script>
-            MathJax = {
-              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
-              svg: {fontCache: 'global'}
-            };
-        </script>
-        <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    </head>
-    <body>
-        <nav id='header-nav'>
-            <div id="menu" onclick="open_close_Menu()">
-                <svg
-                    version="1.1"
-                    x="0px" y="0px" 
-                    viewBox="0 0 1000 1000" 
-                    enable-background="new 0 0 1000 1000" 
-                    xml:space="preserve"
-                    width="32"
-                    height='32'>
-                    <g>
+
+<head>
+    <title>Contexte</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../css/body.css">
+    <link rel="stylesheet" type="text/css" href="../css/figures_svg.css">
+    <link rel="stylesheet" type="text/css" href="../css/switch.css">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<body>
+    <nav id='header-nav'>
+        <div id="menu" onclick="open_close_Menu()">
+            <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
+                xml:space="preserve" width="32" height='32'>
+                <g>
                     <path d="M896.6,291.5H103.5c-51.5,0-93.5-41.9-93.5-93.5c0-51.5,
                         41.9-93.5,93.5-93.5h793.1c51.5,0,93.4,41.9,93.4,93.5C990,249.5,
                         948.1,291.5,896.6,291.5z M103.5,130.8c-37.1,0-67.2,30.2-67.2,
                         67.2s30.2,67.2,67.2,67.2h793.1c37,0,67.2-30.2,
-                        67.2-67.2s-30.1-67.2-67.2-67.2H103.5z"/>
-                        <path d="M733.7,593.5H103.5C51.9,593.5,10,551.5,10,500c0-51.5,
+                        67.2-67.2s-30.1-67.2-67.2-67.2H103.5z" />
+                    <path d="M733.7,593.5H103.5C51.9,593.5,10,551.5,10,500c0-51.5,
                         41.9-93.4,93.5-93.4h630.2c51.5,0,93.4,41.9,93.4,93.4C827.1,551.5,
                         785.2,593.5,733.7,593.5z M103.5,432.8c-37.1,0-67.2,30.2-67.2,67.2c0,
                         37.1,30.2,67.2,67.2,67.2h630.2c37.1,0,67.2-30.2,
-                        67.2-67.2c0-37-30.1-67.2-67.2-67.2H103.5z"/>
-                        <path d="M570.9,895.4H103.5c-51.5,0-93.5-41.9-93.5-93.4c0-51.5,41.9-93.5,
+                        67.2-67.2c0-37-30.1-67.2-67.2-67.2H103.5z" />
+                    <path d="M570.9,895.4H103.5c-51.5,0-93.5-41.9-93.5-93.4c0-51.5,41.9-93.5,
                         93.5-93.5h467.4c51.5,0.1,93.4,42,93.4,93.5C664.3,853.6,622.4,895.4,570.9,
                         895.4z M103.5,734.8c-37.1,0-67.2,30.2-67.2,67.2c0,37,30.2,67.1,67.2,67.1h467.4c37,
-                        0,67.2-30.1,67.2-67.1s-30.1-67.2-67.2-67.2H103.5z"/>
-                    </g>
-                </svg>
-            </div>
-            <ul id="main-list">
-                <li>
-                    <a href="../index.html">
-                        <svg
-                        id="home"
-                        version="1.1"
-                        x="0px" 
-                        y="0px" 
-                        viewBox="0 0 1000 1000" 
-                        enable-background="new 0 0 1000 1000" 
-                        xml:space="preserve"
-                        width="25"
-                        height="25">
-                        <g><path d="M834.6,812.2V413.9L488.3,253.7L140.7,422.6v389.6c0,47.8,19.7,86.6,
+                        0,67.2-30.1,67.2-67.1s-30.1-67.2-67.2-67.2H103.5z" />
+                </g>
+            </svg>
+        </div>
+        <ul id="main-list">
+            <li>
+                <a href="../index.html">
+                    <svg id="home" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000"
+                        enable-background="new 0 0 1000 1000" xml:space="preserve" width="25" height="25">
+                        <g>
+                            <path d="M834.6,812.2V413.9L488.3,253.7L140.7,422.6v389.6c0,47.8,19.7,86.6,
                             43.9,86.6h43.9V634.5c0-9.5,7.7-17.1,17.1-17.1h151.9c9.5,0,17.1,7.7,17.1,
                             17.1v264.3h333.4C795.9,898.8,834.6,860,834.6,812.2z M624.7,786.1c0,9.5-7.7,
                             17.1-17.1,17.1h-47.2c-9.4,0-17.1-7.7-17.1-17.1v-47.2c0-9.4,7.7-17.1,
@@ -70,131 +66,103 @@
                             17.1h-47.2c-9.5,0-17.1-7.7-17.1-17.1v-47.2c0-9.4,7.7-17.1,17.1-17.1h47.2c9.4,0,
                             17.1,7.7,17.1,17.1V786.1z M727.8,683.4c0,9.5-7.7,17.1-17.1,17.1h-47.2c-9.5,
                             0-17.1-7.7-17.1-17.1v-47.2c0-9.4,7.7-17.1,17.1-17.1h47.2c9.4,0,17.1,7.7,17.1,
-                            17.1V683.4z"/>
-                        <path d="M960.6,317.6l-126-59.6v-44c0-32.8-23-59.3-51.4-59.3c-27,0-49,24.2-51,
+                            17.1V683.4z" />
+                            <path d="M960.6,317.6l-126-59.6v-44c0-32.8-23-59.3-51.4-59.3c-27,0-49,24.2-51,
                             54.9L513.8,106.1c-14.2-6.7-30.6-6.6-44.6,0.3L38.7,318c-25.5,12.5-36,43.3-23.5,
                             68.7c12.5,25.4,43.3,35.9,68.7,23.5l408.3-200.6l424.4,200.9c7.1,3.4,14.6,4.9,22,
-                            4.9c19.2,0,37.7-10.8,46.4-29.4C997.2,360.4,986.2,329.8,960.6,317.6z"/></g>
-                        </svg> 
-                        <span class="li-label">Acceuil</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contexte.html">
-                        <svg 
-                        version="1.1" 
-                        x="0px" y="0px" 
-                        viewBox="0 0 1000 1000" 
-                        enable-background="new 0 0 1000 1000" 
-                        xml:space="preserve"
-                        width="32"
-                        height="32">
-                        <g><g 
-                            transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
-                            <path d="M290.7,3020.7c-83.7-36.8-169.5-140.9-183.8-222.6c-6.1-36.8-8.2-1270.4-6.1-2744.9c6.1-2669.4,
+                            4.9c19.2,0,37.7-10.8,46.4-29.4C997.2,360.4,986.2,329.8,960.6,317.6z" />
+                        </g>
+                    </svg>
+                    <span class="li-label">Acceuil</span>
+                </a>
+            </li>
+            <li>
+                <a href="contexte.html">
+                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
+                        xml:space="preserve" width="32" height="32">
+                        <g>
+                            <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                                <path d="M290.7,3020.7c-83.7-36.8-169.5-140.9-183.8-222.6c-6.1-36.8-8.2-1270.4-6.1-2744.9c6.1-2669.4,
                                 6.1-2679.6,49-2734.7c22.5-30.6,67.4-75.6,98-98l55.1-42.9l3986.7-6.1c2193.5-2.1,
                                 4015.3,0,4052,6.1c145,26.6,161.3,53.1,876.2,1484.8C9767.2-236.8,9900,43,9900,
                                 108.3c0,65.4-132.8,345.2-682.1,1444c-375.8,751.6-702.6,1384.7-729.1,1409.2c-26.6,
                                 24.5-75.6,53.1-106.2,65.4c-40.8,16.3-1268.3,22.5-4043.9,22.5C1070.9,3047.3,341.8,
                                 3043.2,290.7,3020.7z M8633.7,
                                 1252.1l571.9-1143.7l-571.9-1143.7l-571.9-1143.7H4406.1H750.2V108.3v2287.4h3655.8h3655.8L8633.7,
-                                1252.1z"/>
-                            <path d="M7042.7,1056C6526,917.1,6205.4,380,6336.1-126.5c136.8-520.8,674-847.6,1180.5-714.8c181.8,
+                                1252.1z" />
+                                <path d="M7042.7,1056C6526,917.1,6205.4,380,6336.1-126.5c136.8-520.8,674-847.6,1180.5-714.8c181.8,
                                 47,318.6,126.6,455.4,263.5c251.2,251.2,349.2,590.2,263.5,917C8098.6,868.1,7555.4,1194.9,7042.7,
                                 1056z M7414.4,406.5c210.4-87.8,261.4-361.5,98-524.9c-132.8-132.8-320.6-132.8-453.4,0C6805.8,132.9,
-                                7085.6,545.4,7414.4,406.5z"/>
-                        </g></g>
-                        </svg><span class="li-txt">Contexte</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <svg 
-                    version="1.1" 
-                    x="0px" 
-                    y="0px" 
-                    viewBox="0 0 1000 1000" 
-                    enable-background="new 0 0 1000 1000" 
-                    xml:space="preserve"
-                    width="32"
-                    height="32">
-                    <g>
-                        <path d="M504,483.9c-3.4,
+                                7085.6,545.4,7414.4,406.5z" />
+                            </g>
+                        </g>
+                    </svg><span class="li-txt">Contexte</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
+                        xml:space="preserve" width="32" height="32">
+                        <g>
+                            <path d="M504,483.9c-3.4,
                             0-6.7-0.7-9.9-2.2l-452-213c-8.1-3.7-13.2-11.7-13.4-20.8c-0.1-9.1,
                             5-17.2,13.1-21.2L490.4,12.3c6.3-3,13.8-3,
                             20.1,0L958,225.2c8.2,3.9,13.2,11.9,13.2,21c0,
                             9.1-5.1,17.1-13.3,21L514.2,481.6C510.9,
                             483.1,507.5,483.9,504,483.9L504,483.9L504,
                             483.9z M82.1,247.6L504,446.4l414.1-200.1L500.5,
-                            47.5L82.1,247.6L82.1,247.6L82.1,247.6z"/>
-                        <path d="M503.8,990c-3.4,0-6.8-0.7-10-2.2L39.6,
+                            47.5L82.1,247.6L82.1,247.6L82.1,247.6z" />
+                            <path d="M503.8,990c-3.4,0-6.8-0.7-10-2.2L39.6,
                         774.3c-8.1-3.7-13.2-11.7-13.4-20.8c-0.1-9.1,
                             5-17.2,13.1-21.2l100.2-48l15.6,32.6l-75.6,36.2l424.1,199.3l417-202l-76-36.1l15.5-32.6l100.3,
                             47.6c8.2,3.9,13.3,11.9,13.3,21c0,9.1-5,17.1-13.2,21L513.9,987.6C510.7,989.2,507.3,
-                            990,503.8,990"/>
-                        <path d="M75,755.3l-22.5-29.3l146.9-70.6l42.2,20.2L75,755.3z"/>
-                        <path d="M921.6,751.2l-158.4-75.2l41.5-20.7l150.5,71.5L921.6,751.2z"/>
-                        <path d="M503.7,734.7c-3.2,0-6.5-0.7-9.5-2L39.6,519.1c-8.2-3.9-13.3-11.9-13.4-21c0-9.1,
+                            990,503.8,990" />
+                            <path d="M75,755.3l-22.5-29.3l146.9-70.6l42.2,20.2L75,755.3z" />
+                            <path d="M921.6,751.2l-158.4-75.2l41.5-20.7l150.5,71.5L921.6,751.2z" />
+                            <path d="M503.7,734.7c-3.2,0-6.5-0.7-9.5-2L39.6,519.1c-8.2-3.9-13.3-11.9-13.4-21c0-9.1,
                             5.1-17.2,13.3-21l100.1-48l15.6,32.6L79.5,498l424.1,199.3l417-202l-76-36.1l15.5-32.6l100.3,
                             47.6c8.1,3.9,13.2,11.9,13.3,20.9c0,9.1-4.9,17.1-13.1,21L513.9,732.4C510.6,734,507.2,
-                            734.7,503.7,734.7"/>
-                        <path d="M804.3,400.3l150.1,70.9l-32.8,24.7l-158.4-75.2L804.3,400.3z"/>
-                        <path d="M76.9,499.2l-18.7-31.1l142.1-68.2l41.2,20.5L76.9,499.2z"/>
-                    </g>
+                            734.7,503.7,734.7" />
+                            <path d="M804.3,400.3l150.1,70.9l-32.8,24.7l-158.4-75.2L804.3,400.3z" />
+                            <path d="M76.9,499.2l-18.7-31.1l142.1-68.2l41.2,20.5L76.9,499.2z" />
+                        </g>
                     </svg><span class="li-txt">Deep learning</span>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="nn.html">Réseaux de neruones</a></li>
-                        <li><a href="cnn.html">Réseaux de neruones convolutionnels</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg 
-                        version="1.1" 
-                        x="0px" 
-                        y="0px" 
-                        viewBox="0 0 1000 1000" 
-                        enable-background="new 0 0 1000 1000" 
-                        xml:space="preserve"
-                        width="32"
-                        height="32">
+                </a>
+                <ul class="submenu">
+                    <li><a href="nn.html">Réseaux de neruones</a></li>
+                    <li><a href="cnn.html">Réseaux de neruones convolutionnels</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
+                        xml:space="preserve" width="32" height="32">
                         <g>
-                        <path d="M761.3,663.3H238.7v65.3h522.7V663.3z M696,
+                            <path d="M761.3,663.3H238.7v65.3h522.7V663.3z M696,
                             271.3H565.3V10H434.7v261.3H304l196,196L696,271.3z M761.3,336.9v65.4l65.3,
                             65h-65.3v65.3h65.3v392H173.3v-588h65.3v-65.3H108V990h784V468L761.3,
-                            336.9z M238.7,859.3h522.7V794H238.7V859.3z"/>
+                            336.9z M238.7,859.3h522.7V794H238.7V859.3z" />
                         </g>
-                        </svg><span class="li-txt">Télécharger</span>
-                    </a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Le contenu du site en pdf</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label> 
-            <a href="#" id="github">
-                <svg 
-                    version="1.1" 
-                    x="0px" 
-                    y="0px" 
-                    width="32"
-                    height="32"
-                    viewBox="0 0 1000 1000"
-                    aria-hidden="true"
-                    enable-background="new 0 0 1000 1000" 
-                    xml:space="preserve">
-                    <g><g 
-                        transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
-                        <path 
-                        fill-rule="evenodd" 
-                        clip-rule="evenodd"
-                        d="M4553.4,
+                    </svg><span class="li-txt">Télécharger</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Le contenu du site en pdf</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+        <a href="#" id="github">
+            <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 1000 1000" aria-hidden="true"
+                enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <g>
+                    <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4553.4,
                         4863.8c-619.6-51.6-1218.5-223.7-1769.3-499.1c-805.5-406.2-1404.4-946.6-1903.6-1707.3c-358-543.9-602.4-1160-722.9-1827.8C78.5,399.3,82-447.5,
                         161.1-864c330.5-1724.5,1483.6-3122.1,3077.3-3721c261.6-99.8,364.9-103.3,
                         454.4-13.8c62,62,68.8,113.6,68.8,526.7v454.4h-437.2c-378.6,0-464.7,10.3-602.4,
@@ -209,553 +177,671 @@
                         316.7-571.4,316.7-1163.5c-3.4-433.7-13.8-561.1-79.2-791.7c-192.8-671.2-602.4-1108.4-1253-1345.9c-82.6-31-306.4-89.5-502.5-130.8l-354.6-75.7l75.7-92.9c41.3-55.1,
                         106.7-179,144.6-275.4c68.8-161.8,75.7-261.6,86.1-1074c6.9-599,24.1-908.8,51.6-939.7c117.1-144.6,278.8-117.1,836.5,148c671.2,313.2,
                         1363.1,881.2,1820.9,1493.9c426.8,564.5,771.1,1363.1,898.4,2068.8c79.2,437.2,
-                        79.2,1215.1,0,1652.3c-199.6,1105-815.8,2182.4-1655.7,2888C7162.6,4560.9,5861.4,4980.8,4553.4,4863.8z"/>
-                    </g></g>
-                </svg>               
-            </a> 
-        </nav>
-        <!--Main content-->
-        <main>
-            <aside id="left-aside">
-                <nav id="aside-nav">
-                    <h1>Plan du site</h1>
-                    <ul id="ul-aside-nav"></ul>
-                </nav>
-            </aside>
-            <article class="main-article">
-                <header>
-                    <h1>Revenons au source</h1>
-                </header>
+                        79.2,1215.1,0,1652.3c-199.6,1105-815.8,2182.4-1655.7,2888C7162.6,4560.9,5861.4,4980.8,4553.4,4863.8z" />
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </nav>
+    <!--Main content-->
+    <main>
+        <aside id="left-aside">
+            <nav id="aside-nav">
+                <h1>Plan du site</h1>
+                <ul id="ul-aside-nav"></ul>
+            </nav>
+        </aside>
+        <article class="main-article">
+            <header>
+                <h1>Revenons au source</h1>
+            </header>
 
-                <section class="main-section">
-                    <h2>L'intelligence artificiel</h2>
-                    <section>
-                        <h3>Contexte et apprentissage</h3>
-                        <p>
-                            L'intelligence artificielle on en parle depuis plus de 50 ans maintenant. L'histoire du domaine est
-    un peu agitée et bruyante. Ça a commencé par une période de grand enthousiasme où on s'imaginait qu'on
-    arriverait très vite à faire des choses assez incroyables. Puis ça a été suivi par une période un peu plus
-    sombre de désillusion où on a finalement constaté qu'on avait un peu sous-estimé les difficultés. Dans les
-    années 90, le domaine a subi une renaissance sous le nom « machine learning ou apprentissage automatique
-    en français ». Le machine learning c’est un domaine de l’intelligence artificiel qui étudie comment des
-    algorithmes peuvent apprendre en se basant sur "des exemples". Et le « deep learning ou apprentissage
-    profond » en est une manière particulière pour faire du machine learning. Celui-ci, pousse cet apprentissage
-    encore plus profond pour pouvoir grossièrement s’approcher de l’intelligence humaine.
-                        </p>
-                        <p>
-                            L’idée folle de faire du deep learning a été rejetée depuis longtemps car a priori elle ne pouvait pas
-    fonctionner. Mais Il y a eu quand même des gens qui ont voulu essayer. Un de ces pionniers, c'est un
-    français qui s'appelle Yann Le Cun. Celui-ci a développé un type de réseau de neurone particulier qui
-    s’appelle « le réseau de neurone convolutionnel (CNN) ». Ces réseaux sont une forme particulière de réseau
-    neuronal multicouche dont l’architecture des connexions est inspirée de celle du cortex visuel des
-    mammifères. Par exemple, chaque élément n’est connecté qu’à un petit nombre d’éléments voisins dans la
-    couche précédente. En 1995, Yan le Cun et deux autres ingénieurs ont développé un système automatique
-    de lecture de chèques qui a été déployé largement dans le monde. À la fin des années 90, ce système lisait
-    entre 10 et 20 % de tous les chèques émis aux États-Unis. Mais ces méthodes étaient plutôt difficiles à
-    mettre en œuvre avec les ordinateurs de l’époque, et malgré ce succès, les réseaux convolutionnels et les
-    réseaux neuronaux plus généralement ont été délaissés par la communauté de la recherche entre 1997 et
-    2012.
-                        </p>
-                    </section>
-                    <section>
-                    <h3>La période de renaissance</h3>
-                        <p>
-                            Depuis 2010, l’intelligence artificiel connaît toutefois un nouvel essor du fait, principalement, de
-    l’amélioration considérable de la puissance de calcul des ordinateurs et d’un accès à des quantités massives
-    de données. Ce dernier a permis de pouvoir utiliser des algorithmes de classification d’images et de
-    reconnaissance d’un chat par exemple, il fallait auparavant réaliser soi-même un échantillonnage.
-    Aujourd’hui, une simple recherche sur Google permet d’en trouver des millions. Ensuite la découverte de
-    la très grande efficacité des processeurs de cartes graphiques des ordinateurs pour accélérer le calcul des
-    algorithmes d’apprentissage. Le processus étant très itératif, cela pouvait prendre des semaines avant 2010
-    pour traiter l’intégralité d’un échantillonnage. La puissance de calcul de ces cartes, (capables de plus de
-    mille milliards d’opérations par seconde) a permis un progrès considérable pour un coût financier restreint
-    (moins de 1000 euros la carte)
-                        </p>
-                        <p>
-                            Parmi les techniques d’apprentissage machine (machine learning), c’est celle de l’apprentissage
-    profond qui paraît la plus prometteuse pour un certain nombre d’application (dont la reconnaissance de voix
-    ou d’images). En effet dès 2003 des expériences sont menées simultanément par Microsoft, Google et IBM
-    avec l’aide du laboratoire de Toronto de Hinton qui ont montré que les réseaux profonds pouvaient diminuer
-    de moitié les taux d’erreurs des systèmes de reconnaissance vocale. Et le fait que plusieurs records en
-    reconnaissance d’image ont été obtenus par des algorithmes basées sur des réseaux de neurones
-    convolutionnels.
-                        </p>
-                        <p>
-                            La diminution des taux d’erreurs était telle une véritable révolution que du jour au lendemain, la
-    majorité des équipes de recherche en parole et en vision ont abandonné leurs méthodes préférées et sont
-    passées aux réseaux de neurones convolutionnels et autres réseaux neuronaux. L’industrie d’Internet a
-    immédiatement saisi l’opportunité et a commencé à investir massivement dans des équipes de recherche et
-    développements en apprentissage profond.
-                        </p>
-                    </section>
+            <section class="main-section">
+                <h2>L'intelligence artificiel</h2>
+                <section>
+                    <h3>Contexte et apprentissage</h3>
+                    <p>
+                        L'intelligence artificielle on en parle depuis plus de 50 ans maintenant. L'histoire du domaine
+                        est
+                        un peu agitée et bruyante. Ça a commencé par une période de grand enthousiasme où on s'imaginait
+                        qu'on
+                        arriverait très vite à faire des choses assez incroyables. Puis ça a été suivi par une période
+                        un peu plus
+                        sombre de désillusion où on a finalement constaté qu'on avait un peu sous-estimé les
+                        difficultés. Dans les
+                        années 90, le domaine a subi une renaissance sous le nom « machine learning ou apprentissage
+                        automatique
+                        en français ». Le machine learning c’est un domaine de l’intelligence artificiel qui étudie
+                        comment des
+                        algorithmes peuvent apprendre en se basant sur "des exemples". Et le « deep learning ou
+                        apprentissage
+                        profond » en est une manière particulière pour faire du machine learning. Celui-ci, pousse cet
+                        apprentissage
+                        encore plus profond pour pouvoir grossièrement s’approcher de l’intelligence humaine.
+                    </p>
+                    <p>
+                        L’idée folle de faire du deep learning a été rejetée depuis longtemps car a priori elle ne
+                        pouvait pas
+                        fonctionner. Mais Il y a eu quand même des gens qui ont voulu essayer. Un de ces pionniers,
+                        c'est un
+                        français qui s'appelle Yann Le Cun. Celui-ci a développé un type de réseau de neurone
+                        particulier qui
+                        s’appelle « le réseau de neurone convolutionnel (CNN) ». Ces réseaux sont une forme particulière
+                        de réseau
+                        neuronal multicouche dont l’architecture des connexions est inspirée de celle du cortex visuel
+                        des
+                        mammifères. Par exemple, chaque élément n’est connecté qu’à un petit nombre d’éléments voisins
+                        dans la
+                        couche précédente. En 1995, Yan le Cun et deux autres ingénieurs ont développé un système
+                        automatique
+                        de lecture de chèques qui a été déployé largement dans le monde. À la fin des années 90, ce
+                        système lisait
+                        entre 10 et 20 % de tous les chèques émis aux États-Unis. Mais ces méthodes étaient plutôt
+                        difficiles à
+                        mettre en œuvre avec les ordinateurs de l’époque, et malgré ce succès, les réseaux
+                        convolutionnels et les
+                        réseaux neuronaux plus généralement ont été délaissés par la communauté de la recherche entre
+                        1997 et
+                        2012.
+                    </p>
                 </section>
+                <section>
+                    <h3>La période de renaissance</h3>
+                    <p>
+                        Depuis 2010, l’intelligence artificiel connaît toutefois un nouvel essor du fait,
+                        principalement, de
+                        l’amélioration considérable de la puissance de calcul des ordinateurs et d’un accès à des
+                        quantités massives
+                        de données. Ce dernier a permis de pouvoir utiliser des algorithmes de classification d’images
+                        et de
+                        reconnaissance d’un chat par exemple, il fallait auparavant réaliser soi-même un
+                        échantillonnage.
+                        Aujourd’hui, une simple recherche sur Google permet d’en trouver des millions. Ensuite la
+                        découverte de
+                        la très grande efficacité des processeurs de cartes graphiques des ordinateurs pour accélérer le
+                        calcul des
+                        algorithmes d’apprentissage. Le processus étant très itératif, cela pouvait prendre des semaines
+                        avant 2010
+                        pour traiter l’intégralité d’un échantillonnage. La puissance de calcul de ces cartes, (capables
+                        de plus de
+                        mille milliards d’opérations par seconde) a permis un progrès considérable pour un coût
+                        financier restreint
+                        (moins de 1000 euros la carte)
+                    </p>
+                    <p>
+                        Parmi les techniques d’apprentissage machine (machine learning), c’est celle de l’apprentissage
+                        profond qui paraît la plus prometteuse pour un certain nombre d’application (dont la
+                        reconnaissance de voix
+                        ou d’images). En effet dès 2003 des expériences sont menées simultanément par Microsoft, Google
+                        et IBM
+                        avec l’aide du laboratoire de Toronto de Hinton qui ont montré que les réseaux profonds
+                        pouvaient diminuer
+                        de moitié les taux d’erreurs des systèmes de reconnaissance vocale. Et le fait que plusieurs
+                        records en
+                        reconnaissance d’image ont été obtenus par des algorithmes basées sur des réseaux de neurones
+                        convolutionnels.
+                    </p>
+                    <p>
+                        La diminution des taux d’erreurs était telle une véritable révolution que du jour au lendemain,
+                        la
+                        majorité des équipes de recherche en parole et en vision ont abandonné leurs méthodes préférées
+                        et sont
+                        passées aux réseaux de neurones convolutionnels et autres réseaux neuronaux. L’industrie
+                        d’Internet a
+                        immédiatement saisi l’opportunité et a commencé à investir massivement dans des équipes de
+                        recherche et
+                        développements en apprentissage profond.
+                    </p>
+                </section>
+            </section>
 
-                <section class="main-section">
-                    <h2>La classification automatique</h2>
+            <section class="main-section">
+                <h2>La classification automatique</h2>
+                <section>
+                    <h3>Objectif et motivations</h3>
+                    <p>
+                        L’objectif de la classification d’images est d’élaborer un système capable d’affecter une classe
+                        automatiquement à une image. Ainsi, ce système permet d’effectuer une tâche d’expertise qui peut
+                        s’avérer
+                        couteuse à acquérir pour un être humain en raison notamment de contraintes physiques comme la
+                        concentration, la fatigue ou le temps nécessité par un volume important de données images.
+                    </p>
+                    <p>
+                        Les applications de la classification automatique d’images sont nombreuses et le point commun à
+                        toutes
+                        ces applications est qu’elles nécessitent la mise en place d’une chaîne de traitement à partir
+                        des images
+                        disponibles composées de plusieurs étapes afin de fournir en sortie une décision. Chaque étape
+                        de la mise
+                        en place d’un tel système de classification nécessite la recherche de méthodes appropriées pour
+                        une
+                        performance globale optimale à savoir la phase d’extraction de caractéristiques et la phase
+                        d’apprentissage.
+                    </p>
+                    <p>
+                        Typiquement, nous disposons de données images desquelles il nous faut extraire des informations
+                        pertinentes traduites sous formes de vecteurs numériques. Cette phase d’extraction nous permet
+                        de travailler
+                        dans un espace numérique. Il s’agit ensuite d’élaborer, dans la phase d’apprentissage, à partir
+                        de ces données
+                        initiales, une fonction de décision pour décider de l’appartenance d’une donnée nouvelle a l’une
+                        des classes
+                        en présences. La phase d’extraction de caractéristiques peut être précédée d’une phase dite de
+                        pré-
+                        traitement. Cette phase a pour but de nettoyer l’image, c’est-à-dire d’isoler le contenu
+                        informatif ou d’intérêt
+                        dans l’image. Cette opération permet ainsi d’occulter ou d’atténuer toute information
+                        susceptible de nuire
+                        à la description du contenu pertinent lors de la phase d’extraction de caractéristiques.
+                    </p>
+                    <p>
+                        On retrouve la classification automatique sur divers domaines notamment sur des applications
+                        dans
+                        le domaine médical comme la reconnaissance de cellules, dans le domaine du document comme la
+                        reconnaissance d’écriture manuscrite pour les chèques, les codes postaux, les cartes, dans le
+                        domaine urbain
+                        comme la reconnaissance de piétons, la détection de véhicules ; dans le domaine de la biométrie
+                        comme la
+                        reconnaissance de visage.
+                    </p>
+                </section>
+                <section>
+                    <h3>La classification supervisée</h3>
                     <section>
-                        <h3>Objectif et motivations</h3>
+                        <h4>Objectif</h4>
                         <p>
-                            L’objectif de la classification d’images est d’élaborer un système capable d’affecter une classe
-    automatiquement à une image. Ainsi, ce système permet d’effectuer une tâche d’expertise qui peut s’avérer
-    couteuse à acquérir pour un être humain en raison notamment de contraintes physiques comme la
-    concentration, la fatigue ou le temps nécessité par un volume important de données images.
-                        </p>
-                        <p>
-                            Les applications de la classification automatique d’images sont nombreuses et le point commun à toutes
-    ces applications est qu’elles nécessitent la mise en place d’une chaîne de traitement à partir des images
-    disponibles composées de plusieurs étapes afin de fournir en sortie une décision. Chaque étape de la mise
-    en place d’un tel système de classification nécessite la recherche de méthodes appropriées pour une
-    performance globale optimale à savoir la phase d’extraction de caractéristiques et la phase d’apprentissage.
-                        </p>
-                        <p>
-                            Typiquement, nous disposons de données images desquelles il nous faut extraire des informations
-    pertinentes traduites sous formes de vecteurs numériques. Cette phase d’extraction nous permet de travailler
-    dans un espace numérique. Il s’agit ensuite d’élaborer, dans la phase d’apprentissage, à partir de ces données
-    initiales, une fonction de décision pour décider de l’appartenance d’une donnée nouvelle a l’une des classes
-    en présences. La phase d’extraction de caractéristiques peut être précédée d’une phase dite de pré-
-    traitement. Cette phase a pour but de nettoyer l’image, c’est-à-dire d’isoler le contenu informatif ou d’intérêt
-    dans l’image. Cette opération permet ainsi d’occulter ou d’atténuer toute information susceptible de nuire
-    à la description du contenu pertinent lors de la phase d’extraction de caractéristiques.
-                        </p>
-                        <p>
-                            On retrouve la classification automatique sur divers domaines notamment sur des applications dans
-    le domaine médical comme la reconnaissance de cellules, dans le domaine du document comme la
-    reconnaissance d’écriture manuscrite pour les chèques, les codes postaux, les cartes, dans le domaine urbain
-    comme la reconnaissance de piétons, la détection de véhicules ; dans le domaine de la biométrie comme la
-    reconnaissance de visage.
+                            L'objectif de la classification supervisée est principalement de définir des règles
+                            permettant de
+                            classer des objets dans des classes à partir de variables qualitatives ou quantitatives
+                            caractérisant ces objets.
+                            Elle est l'outil essentiel utilisé pour extraire des informations quantitatives à partir de
+                            données d'images. Le
+                            fait que pour l’humain, plusieurs facteurs peuvent l’empêcher de faire une classification,
+                            il est nécessaire
+                            de montrer à des algorithmes comment reconnaitre des objets et comment les classifier. Et
+                            cette tâche est
+                            ce qu’on appelle la phase d’apprentissage. Nous utiliserons un réseau de neurones
+                            convolutionnels
+                            (CNN) pour réaliser cet apprentissage.
                         </p>
                     </section>
                     <section>
-                        <h3>La classification supervisée</h3>
-                        <section>
-                            <h4>Objectif</h4>
-                            <p>
-                                L'objectif de la classification supervisée est principalement de définir des règles permettant de
-                                classer des objets dans des classes à partir de variables qualitatives ou quantitatives caractérisant ces objets.
-                                Elle est l'outil essentiel utilisé pour extraire des informations quantitatives à partir de données d'images. Le
-                                fait que pour l’humain, plusieurs facteurs peuvent l’empêcher de faire une classification, il est nécessaire
-                                de montrer à des algorithmes comment reconnaitre des objets et comment les classifier. Et cette tâche est
-                                ce qu’on appelle la phase d’apprentissage. Nous utiliserons un réseau de neurones convolutionnels
-                                (CNN) pour réaliser cet apprentissage. 
-                            </p>
-                        </section>
-                        <section>
-                            <h4>Phase d'apprentissage</h4>
-                            <p>
-                                On dispose au départ d'un <strong>échantillon</strong> dit d'<strong>apprentissage</strong> dont le classement est connu. Cet
-échantillon est utilisé pour l'apprentissage des règles de classement.
-                            </p>
+                        <h4>Phase d'apprentissage</h4>
+                        <p>
+                            On dispose au départ d'un <strong>échantillon</strong> dit d'<strong>apprentissage</strong>
+                            dont le classement est connu. Cet
+                            échantillon est utilisé pour l'apprentissage des règles de classement.
+                        </p>
 
-                            <div class="list-p">
+                        <div class="list-p">
                             <p>
                                 La procédure est la suivante :
                             </p>
                             <ul>
                                 <li>
-                                    On montre à un algorithme d’apprentissage automatique des objets à classifier en lui donnant aussi
-les étiquettes d’appartenance d’une classe pour chaque objet.
+                                    On montre à un algorithme d’apprentissage automatique des objets à classifier en lui
+                                    donnant aussi
+                                    les étiquettes d’appartenance d’une classe pour chaque objet.
                                 </li>
                                 <li>
-                                    Cet algorithme va chercher tout seul les règles qui permettent de reconnaitre ces objets pour bien
-les classer.
+                                    Cet algorithme va chercher tout seul les règles qui permettent de reconnaitre ces
+                                    objets pour bien
+                                    les classer.
                                 </li>
                                 <li>
-                                    Après cet étape, l’algorithme aura découvert les différentes caractéristiques des objets et on pourra
-lui donner d’autres objets qu’il n’a pas encore vu pour nous donner leur classe d’appartenance.
+                                    Après cet étape, l’algorithme aura découvert les différentes caractéristiques des
+                                    objets et on pourra
+                                    lui donner d’autres objets qu’il n’a pas encore vu pour nous donner leur classe
+                                    d’appartenance.
                                 </li>
                             </ul>
-                            </div>
-                        </section>
-                        <section>
-                            <h4>Jeu de données <strong lang="en">Dataset</strong></h4>
-                            <p>
-                                Alors, il est nécessaire d'étudier la fiabilité de ces règles. Pour évaluer une règle de classement nous
-pourrons nous pourrons séparer la phase d’apprentissage en plusieurs phase (diviser pour mieux régner).
-Pour ce faire nous allons rassembler nos données à classifier en une sorte de base de données qu’on appelle
-« jeu de donnée » connue sous le nom de « dataset en anglais ».
-                            </p>
-                            <p>
-                                Un jeu de donnée (dataset) va contenir d’énorme quantité de donnée. En effet, plus notre dataset sera grand
-                                et diversifié, plus notre modèle sera apte par la suite à prédire des résultats les plus justes possible. 
-                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Jeu de données <strong lang="en">Dataset</strong></h4>
+                        <p>
+                            Alors, il est nécessaire d'étudier la fiabilité de ces règles. Pour évaluer une règle de
+                            classement nous
+                            pourrons nous pourrons séparer la phase d’apprentissage en plusieurs phase (diviser pour
+                            mieux régner).
+                            Pour ce faire nous allons rassembler nos données à classifier en une sorte de base de
+                            données qu’on appelle
+                            « jeu de donnée » connue sous le nom de « dataset en anglais ».
+                        </p>
+                        <p>
+                            Un jeu de donnée (dataset) va contenir d’énorme quantité de donnée. En effet, plus notre
+                            dataset sera grand
+                            et diversifié, plus notre modèle sera apte par la suite à prédire des résultats les plus
+                            justes possible.
+                        </p>
 
-                            <div class="list-p flex-bloc">
-                                <div id="list">
-                                    <p>Le dataset doit être formaté de la façon suivante :</p>
-                                    <ul>
-                                        <li>
-                                            <span class="bold">Train set</span> : 
-                                            Celui-ci va être le plus volumineux en termes de
-        donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
-        la phase d’entrainement pour pouvoir s’approprier des
-        paramètres, et les ajuster au mieux. Certaines règles préconisent
-        qu’il soit composé de 80% des données disponibles. C’est la
-        phase d’apprentissage.
-                                        </li>
-                                        <li>
-                                            <span class="bold">Validation set</span> :
-                                            Quant à lui, on préconise d’avoir environ 10%
-        des données disponible. Ce jeu sera appelé une seule fois, à la
-        fin de chaque itération d’entrainement. Il va permettre
-        d’équilibrer le système. C’est la phase d’ajustage.
-                                        </li>
-                                        <li>
-                                            <span class="bold">Test set</span> :
-                                            Test set : Ce dernier va avoir un rôle bien différent des autres,
-        puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
-        avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
-        voir comment il arrive à prédire. C’est pour cela qu’il doit être
-        composé exclusivement de nouveaux échantillons, encore
-        jamais utilisé pour éviter de biaiser les résultats en lui envoyant
-        des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
-        de la phase d’entrainement ou de validation. Celui-ci encore
-        peut être estimé de l’ordre de 10% des données disponible.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div id='fig'>
-                                    <figure id="pie-chart">
-                                        <svg 
-                                        version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" 
-                                        x="0px" y="0px" 
-                                        viewBox="0 0 800 800" 
-                                        enable-background="new 0 0 1000 1000" 
-                                        width="300"
-                                        height='300'>
+                        <div class="list-p flex-bloc">
+                            <div id="list">
+                                <p>Le dataset doit être formaté de la façon suivante :</p>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Train set</span> :
+                                        Celui-ci va être le plus volumineux en termes de
+                                        donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
+                                        la phase d’entrainement pour pouvoir s’approprier des
+                                        paramètres, et les ajuster au mieux. Certaines règles préconisent
+                                        qu’il soit composé de 80% des données disponibles. C’est la
+                                        phase d’apprentissage.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Validation set</span> :
+                                        Quant à lui, on préconise d’avoir environ 10%
+                                        des données disponible. Ce jeu sera appelé une seule fois, à la
+                                        fin de chaque itération d’entrainement. Il va permettre
+                                        d’équilibrer le système. C’est la phase d’ajustage.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Test set</span> :
+                                        Test set : Ce dernier va avoir un rôle bien différent des autres,
+                                        puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
+                                        avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
+                                        voir comment il arrive à prédire. C’est pour cela qu’il doit être
+                                        composé exclusivement de nouveaux échantillons, encore
+                                        jamais utilisé pour éviter de biaiser les résultats en lui envoyant
+                                        des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
+                                        de la phase d’entrainement ou de validation. Celui-ci encore
+                                        peut être estimé de l’ordre de 10% des données disponible.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id='fig'>
+                                <figure id="pie-chart">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800"
+                                        enable-background="new 0 0 1000 1000" width="300" height='300'>
                                         <g clip-path="url(#clip0)" transform="translate(-718 -123)">
                                             <g clip-path="url(#clip10)" class='train-set'>
                                                 <path d="M1133.71 274.228C1295.21 274.228 1426.21 
                                                 405.23 1426.21 566.828 1426.21 728.427 1295.21 859.428 
                                                 1133.61 859.428 972.008 859.428 841.007 728.427 
                                                 841.007 566.828 841.007 536.124 845.839 505.611 855.327 
-                                                476.41L1133.61 566.828Z"  fill-rule="evenodd"/>
+                                                476.41L1133.61 566.828Z" fill-rule="evenodd" />
                                             </g>
                                             <g clip-path="url(#clip11)" class="validation-set">
                                                 <path d="M852.96 474.69C872.055 415.923 909.264 
-                                                364.71 959.254 328.39L1131.24 565.109Z" 
-                                                fill-rule="evenodd"/>
+                                                364.71 959.254 328.39L1131.24 565.109Z" fill-rule="evenodd" />
                                             </g>
                                             <g clip-path="url(#clip12)" class="test-set">
                                                 <path d="M960.717 327.327C1010.71 291.007 1070.91 
-                                                271.445 1132.7 271.445L1132.7 564.046Z" 
-                                                fill-rule="evenodd"/>
+                                                271.445 1132.7 271.445L1132.7 564.046Z" fill-rule="evenodd" />
                                             </g>
                                             <g clip-path="url(#clip13)" class='train-set'>
-                                                <text  font-family="Calibri,Calibri_MSFontService,sans-serif" 
+                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
                                                     font-weight="700" font-size="29" transform="translate(1321.56 844)">
                                                     Train set
                                                     <tspan y='1cm' x='1.1cm'>80%</tspan>
                                                 </text>
                                             </g>
-                                        
+
                                             <g clip-path="url(#clip15)" class="validation-set">
-                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif" 
-                                                    font-weight="700" 
-                                                    font-size="29" transform="translate(775.776 320)">
+                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
+                                                    font-weight="700" font-size="29" transform="translate(775.776 320)">
                                                     Validation
                                                     <tspan y='1cm' x='0.5cm'>set 10%</tspan>
                                                 </text>
                                             </g>
                                             <g clip-path="url(#clip18)" class="test-set">
-                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif" 
+                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
                                                     font-weight="700" font-size="29" transform="translate(939.77 228)">
                                                     Test set
                                                     <tspan y='1cm' x='1.1cm'>10%</tspan>
                                                 </text>
                                             </g>
                                             <g clip-path="url(#clip20)" class="pie-chart-title">
-                                                <text  
-                                                    font-family="Times new roman,Calibri_MSFontService,sans-serif" 
-                                                    font-weight="700" font-size="44" 
-                                                    transform="translate(775.08 180)" 
+                                                <text font-family="Times new roman,Calibri_MSFontService,sans-serif"
+                                                    font-weight="700" font-size="44" transform="translate(775.08 180)"
                                                     align='center'>DIVISION DU JEU DE DONNÉES</text>
                                             </g>
                                         </g>
-                                        </svg>
-                                        <figcaption>Division du jeu de données en 3 groupes</figcaption>
-                                    </figure>
-                                </div>    
+                                    </svg>
+                                    <figcaption>Division du jeu de données en 3 groupes</figcaption>
+                                </figure>
                             </div>
-                        </section>
+                        </div>
                     </section>
                 </section>
+            </section>
 
-                <section class="main-section">
-                    <h2>Indicateur de performance</h2>
+            <section class="main-section">
+                <h2>Indicateur de performance</h2>
+                <section>
+                    <h3>Matrice de confusion</h3>
+                    <p>
+                        Une matrice de confusion est une matrice qui mesure la qualité d'un système de classification,
+                        il
+                        représente les performances d’un modèle de classification dans une matrice dite de confusion.
+                        Chaque ligne
+                        correspond à une classe réelle, chaque colonne correspond à une classe estimée. La cellule ligne
+                        L, colonne
+                        C contient le nombre d'éléments de la classe réelle L qui ont été estimés comme appartenant à la
+                        classe C.
+                    </p>
+                    <p>
+                        Un des intérêts de la matrice de confusion est qu'elle montre rapidement si un système de
+                        classification
+                        parvient à classifier correctement.
+                    </p>
+                    <div class="list-p">
+                        <p>
+                            Prenons l’exemple d’un classifieur binaire, c’est-à-dire, qui prédit 2 classes notées classe
+                            0 et classe
+                            1. Pour mesurer les performances de ce classifieur, il est d’usage de distinguer 4 types
+                            d’éléments classés
+                            pour la classe voulue :
+                        </p>
+                        <ul class="align-left">
+                            <li>
+                                <strong>Vrai positif (VP)</strong> &nbsp;&nbsp;&nbsp;:
+                                Elément de la classe 1 correctement prédit
+                            </li>
+                            <li>
+                                <strong>Vrai Négatif (VN)</strong> &nbsp;:
+                                Elément de la classe 0 correctement prédit
+                            </li>
+                            <li>
+                                <strong>Faux positif (FP)</strong>&nbsp; &nbsp;:
+                                Elément de la classe 0 correctement prédit
+                            </li>
+                            <li>
+                                <strong>Faux Négatif (FN)</strong> :
+                                Elément de la classe 0 correctement prédit
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="table-p">
+                        <p>
+                            Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
+                            matrice de confusion.
+                            Dans le cas d’un classifieur binaire, on obtient :
+                        </p>
+                        <figure class="table-center center">
+                            <figcaption>Matrice de confusion</figcaption>
+                            <table>
+                                <thead rowspan="2">
+                                    <tr>
+                                        <td colspan="2" rowspan="2" class="empty"></td>
+                                        <th scope="col" colspan="2">
+                                            Classe prédite
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Classe 0</th>
+                                        <th scope="col">Classe 1</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
+                                        <th scope="row">Classe 0</th>
+                                        <td>VN</td>
+                                        <td>FN</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Classe 1</th>
+                                        <td>FP</th>
+                                        <td>VP</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                    </div>
+
                     <section>
-                        <h3>Matrice de confusion</h3>
+                        <h4>Exemple</h4>
                         <p>
-                            Une matrice de confusion est une matrice qui mesure la qualité d'un système de classification, il
-représente les performances d’un modèle de classification dans une matrice dite de confusion. Chaque ligne
-correspond à une classe réelle, chaque colonne correspond à une classe estimée. La cellule ligne L, colonne
-C contient le nombre d'éléments de la classe réelle L qui ont été estimés comme appartenant à la classe C.
+                            Pour bien comprendre la notion de matrice de confusion, prenons cet exemple tiré sur
+                            <a href="https://fr.wikipedia.org/wiki/Matrice_de_confusion#Exemple"
+                                title="Exemple sur wikipedia">
+                                Wikipédia</a>
                         </p>
-                        <p>
-                            Un des intérêts de la matrice de confusion est qu'elle montre rapidement si un système de classification
-parvient à classifier correctement.
+                        <p class="alinea">
+                            On souhaite mesurer la qualité d'un système de classification de courriers électroniques.
+                            Les courriers sont
+                            classifiés selon deux classes : courriel pertinent ou pourriel intempestif. Supposons que
+                            notre classificateur
+                            est testé avec un jeu de 200 mails, dont 100 sont des courriels pertinents et les 100 autres
+                            sont des pourriels.
                         </p>
-                        <div class="list-p">
+                        <div class="liste-p">
+                            <p>Pour cela, on veut savoir :</p>
+                            <ul>
+                                <li>Combien de courriels seront faussement estimés comme des pourriels (fausses alarmes)
+                                    et</li>
+                                <li>Combien de pourriels ne seront pas estimés comme tels et classifiés à tort comme
+                                    courriels.</li>
+                            </ul>
                             <p>
-                                Prenons l’exemple d’un classifieur binaire, c’est-à-dire, qui prédit 2 classes notées classe 0 et classe
-    1. Pour mesurer les performances de ce classifieur, il est d’usage de distinguer 4 types d’éléments classés
-    pour la classe voulue :
+                                La matrice de confusion suivante se lit alors comme suit :
                             </p>
-                            <ul class="align-left">
+                            <ul>
                                 <li>
-                                    <strong>Vrai positif (VP)</strong> &nbsp;&nbsp;&nbsp;:
-                                    Elément de la classe 1 correctement prédit
+                                    Horizontalement, sur les 100 courriels initiaux (i.e. : 95+5), 95 ont été estimés
+                                    par le système de
+                                    classification comme tels et 5 ont été estimés comme pourriels (i.e. : 5
+                                    faux-négatifs),
                                 </li>
                                 <li>
-                                    <strong>Vrai Négatif (VN)</strong> &nbsp;:
-                                    Elément de la classe 0 correctement prédit
+                                    Horizontalement, sur les 100 pourriels initiaux (i.e. : 3+97), 3 ont été estimés
+                                    comme courriels
+                                    (i.e. : 3 faux-positifs) et 97 ont été estimés comme pourriels,
                                 </li>
                                 <li>
-                                    <strong>Faux positif (FP)</strong>&nbsp; &nbsp;:
-                                    Elément de la classe 0 correctement prédit
+                                    Verticalement, sur les 98 mails (i.e. : 95+3) estimés par le système comme
+                                    courriels, 3 sont en fait
+                                    des pourriels,
                                 </li>
                                 <li>
-                                    <strong>Faux Négatif (FN)</strong> :
-                                    Elément de la classe 0 correctement prédit
+                                    Verticalement, sur les 102 mails (i.e. : 5+97) estimés par le système comme
+                                    pourriels, 5 sont en fait
+                                    des courriels.
+                                </li>
+                                <li>
+                                    Diagonalement (du haut gauche, au bas droit), sur les 200 courriels initiaux, 192
+                                    (95 + 97) ont été
+                                    estimés correctement par le système.
                                 </li>
                             </ul>
                         </div>
-                        
                         <div class="table-p">
                             <p>
-                                Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une matrice de confusion.
-Dans le cas d’un classifieur binaire, on obtient :
+                                Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
+                                matrice de confusion.
+                                Dans le cas d’un classifieur binaire, on obtient :
                             </p>
-                            <figure class="table-center center">
-                                <figcaption>Matrice de confusion</figcaption>
-                                <table>
+                            <figure class="table-center-2 center" id="fig-table-2">
+                                <figcaption>Exemple de matrice de confusion</figcaption>
+                                <table id="table-2">
                                     <thead rowspan="2">
                                         <tr>
                                             <td colspan="2" rowspan="2" class="empty"></td>
                                             <th scope="col" colspan="2">
-                                                Classe prédite
+                                                Classe estimée par le classificateur
                                             </th>
                                         </tr>
                                         <tr>
-                                            <th scope="col">Classe 0</th>
-                                            <th scope="col">Classe 1</th>
+                                            <th scope="col">Courriel</th>
+                                            <th scope="col">Pourriel</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
-                                            <th scope="row">Classe 0</th>
-                                            <td>VN</td>
-                                            <td>FN</td>
+                                            <th scope="row">Courriel</th>
+                                            <td>95 (vrais positifs)</td>
+                                            <td>5 (faux négatifs)</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Classe 1</th>
-                                            <td>FP</th>
-                                            <td>VP</td>
+                                            <th scope="row">Pourriel</th>
+                                            <td>3 (faux positifs)</th>
+                                            <td>97 (vrais négatifs)</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </figure>
                         </div>
-                        
-                        <section>
-                            <h4>Exemple</h4>
+                        <p class="alinea">
+                            Cette notion s'étend à un nombre quelconque de classes. On peut normaliser cette matrice
+                            pour en simplifier
+                            la lecture : dans ce cas, un système de classification sera d'autant meilleur que sa matrice
+                            de confusion
+                            s'approchera d'une matrice diagonale.
+                        </p>
+                        <p>
+                            Notons que la matrice de confusion est aussi généralisable lorsqu’il y a k > 2 classes à
+                            prédire (Nombre de classe). À partir de la matrice de confusion on peut dériver tout un tas
+                            de critères de performance. De
+                            manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs.
+                            Voici quelques exemples de mesures de performance souvent utilisées :
+                        </p>
+                        <div class="math-p">
                             <p>
-                                Pour bien comprendre la notion de matrice de confusion, prenons cet exemple tiré sur
-                                <a href="https://fr.wikipedia.org/wiki/Matrice_de_confusion#Exemple" title="Exemple sur wikipedia">
-                                Wikipédia</a>
-                            </p>
-                            <p class="alinea">
-                                On souhaite mesurer la qualité d'un système de classification de courriers électroniques. Les courriers sont
-    classifiés selon deux classes : courriel pertinent ou pourriel intempestif. Supposons que notre classificateur
-    est testé avec un jeu de 200 mails, dont 100 sont des courriels pertinents et les 100 autres sont des pourriels.
-                            </p>
-                            <div class="liste-p">
-                                <p>Pour cela, on veut savoir :</p>
-                                <ul>
-                                    <li>Combien de courriels seront faussement estimés comme des pourriels (fausses alarmes) et</li>
-                                    <li>Combien de pourriels ne seront pas estimés comme tels et classifiés à tort comme courriels.</li>
-                                </ul>
-                                <p>
-                                    La matrice de confusion suivante se lit alors comme suit :
-                                </p>
-                                <ul>
-                                    <li>
-                                        Horizontalement, sur les 100 courriels initiaux (i.e. : 95+5), 95 ont été estimés par le système de
-classification comme tels et 5 ont été estimés comme pourriels (i.e. : 5 faux-négatifs),
-                                    </li>
-                                    <li>
-                                        Horizontalement, sur les 100 pourriels initiaux (i.e. : 3+97), 3 ont été estimés comme courriels
-(i.e. : 3 faux-positifs) et 97 ont été estimés comme pourriels,
-                                    </li>
-                                    <li>
-                                        Verticalement, sur les 98 mails (i.e. : 95+3) estimés par le système comme courriels, 3 sont en fait
-des pourriels,
-                                    </li>
-                                    <li>
-                                        Verticalement, sur les 102 mails (i.e. : 5+97) estimés par le système comme pourriels, 5 sont en fait
-des courriels.
-                                    </li>
-                                    <li>
-                                        Diagonalement (du haut gauche, au bas droit), sur les 200 courriels initiaux, 192 (95 + 97) ont été
-                                        estimés correctement par le système.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="table-p">
-                                <p>
-                                    Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une matrice de confusion.
-    Dans le cas d’un classifieur binaire, on obtient :
-                                </p>
-                                <figure class="table-center-2 center" id="fig-table-2">
-                                    <figcaption>Exemple de matrice de confusion</figcaption>
-                                    <table id="table-2">
-                                        <thead rowspan="2">
-                                            <tr>
-                                                <td colspan="2" rowspan="2" class="empty"></td>
-                                                <th scope="col" colspan="2">
-                                                    Classe estimée par le classificateur
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="col">Courriel</th>
-                                                <th scope="col">Pourriel</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
-                                                <th scope="row">Courriel</th>
-                                                <td>95 (vrais positifs)</td>
-                                                <td>5 (faux négatifs)</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Pourriel</th>
-                                                <td>3 (faux positifs)</th>
-                                                <td>97 (vrais négatifs)</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </figure>
-                            </div>
-                            <p class="alinea">
-                                Cette notion s'étend à un nombre quelconque de classes. On peut normaliser cette matrice pour en simplifier
-la lecture : dans ce cas, un système de classification sera d'autant meilleur que sa matrice de confusion
-s'approchera d'une matrice diagonale.
+                                La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi
+                                les points que l’on a prédits positifs :
+                                $$précision = {VP \over VP + FP}.$$
                             </p>
                             <p>
-                                Notons que la matrice de confusion est aussi généralisable lorsqu’il y a k > 2 classes à prédire (Nombre de classe). À partir de la matrice de confusion on peut dériver tout un tas de critères de performance. De
-manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs. Voici quelques exemples de mesures de performance souvent utilisées :
+                                Rappel. Proportion d’éléments bien classés par rapport au nombre d’éléments de la classe
+                                à prédire :
+                                $$Rappel = {VP \over VP + FN}$$
                             </p>
-                            <div class="math-p">
-                                <p>
-                                    La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi les points que l’on a prédits positifs :
-                                    $$précision = {VP \over VP + FP}.$$
-                                </p>
-                                <p>
-                                    Rappel. Proportion d’éléments bien classés par rapport au nombre d’éléments de la classe à prédire : 
-                                    $$Rappel = {VP \over VP + FN}$$
-                                </p>
-                                <p>
-                                    F-mesure. Mesure de compromis entre précision et rappel :
-                                    $$F - mesure = 2×{Précision × Rapel \over Précision + Rapel}$$
-                                </p>
-                                
-                            </div>
-                        </section>
+                            <p>
+                                F-mesure. Mesure de compromis entre précision et rappel :
+                                $$F - mesure = 2×{Précision × Rapel \over Précision + Rapel}$$
+                            </p>
+
+                        </div>
                     </section>
                 </section>
+            </section>
 
-                <section class="main-section">
-                    <h2>Classification automatique d'images et apprentissage machine</h2>
-                    <p>
-                        A première vue, la classification des données ne semble pas difficile. Les humains sont bien
-meilleurs que les machines pour comprendre le contexte des éléments à classifier. Cependant, à mesure que
-le nombre d’actifs, les niveaux et les règles de classification se développent, la classification des données
-se complique rapidement et les processus manuels se corrompent. Les méthodes manuelles se sont avérées
-très difficiles à appliquer pour des tâches en apparence très simples comme la classification des images, la
-reconnaissance d’objets dans les images ou la reconnaissance vocale. Les données venant du monde réel
-les échantillons d’un son ou les pixels d’une image sont complexes, variables et entachées de bruit.
-                    </p>
-                    <p>
-                        Pour un ordinateur, les images ne sont que des tableaux de nombres ayant certaines caractéristiques
-tels que la couleur, la luminosité de pixel chaque pixel. Nous, humains, pouvons lui montrer qu’il peut s’en
-servir de ces pixels pour identifier des objets sur l’image et donc de pouvoir reconnaitre ce qui se trouve
-sur l’image.
-                    </p>
-                    <p>
-                        Comment une machine peut-elle identifier un chien ou une chaise dans le tableau de nombres d’une image
-quand l’apparence d’un chien ou d’une chaise et des objets qui les entourent peut varier infiniment ? On
-pourrait penser à écrire un programme qui fonctionnera de manière robuste pour classifier des images. Ceci
-sera tout simplement impossible. Ça prendra des milliers de ligne de code juste pour un petit problème de
-classification. La solution ultime pour faire ce travail c’est l’apprentissage machine qui va entrainer la
-machine à faire la classification.
-                    </p>
-                    <p>
-                        L’apprentissage machine consiste à créer un ensemble d’algorithmes qui vont apprendre à faire la
-classification. Ce qui nous donne un système entrainable. Un système entraînable peut être vu comme une
-boite noire avec une entrée, par exemple une image, un son, ou un texte, et une sortie qui peut représenter
-la catégorie de l’objet dans l’image, le mot prononcé, ou le sujet dont parle le texte. On parle alors de
-systèmes de classification ou de reconnaissance des formes.
-                    </p>
-                    <p>
-                        L’apprentissage machine c’est elle qui anime les systèmes de toutes les grandes entreprises
-d’Internet. Elles l’utilisent depuis longtemps pour filtrer les contenus indésirables, ordonner des réponses à
-une recherche, faire des recommandations, ou sélectionner les informations intéressantes pour chaque
-utilisateur. Dans sa forme la plus utilisée, l’apprentissage machine est supervisé : on montre en entrée de la
-machine une photo d’un objet, par exemple une voiture, et on lui donne la sortie désirée pour une voiture.
-Puis on lui montre la photo d’un chien avec la sortie désirée pour un chien. Après chaque exemple, la
-machine ajuste ses paramètres internes de manière à rapprocher sa sortie de la sortie désirée. Après avoir
-montré à la machine des milliers ou des millions d’exemples étiquetés avec leur catégorie, la machine
-devient capable de classifier correctement la plupart d’entre eux. Mais ce qui est plus intéressant, c’est
-qu’elle peut aussi classifier correctement des images de voiture ou de chien qu’elle n’a jamais vues durant
-la phase l’apprentissage. C’est ce qu’on appelle la capacité de généralisation.
-                    </p>
-                    <p>
-                        Jusqu’à récemment, les systèmes de reconnaissance des images classiques étaient composés de
-deux blocs : un extracteur de caractéristiques (feature extractor en anglais), suivi d’un classifieur entraînable
-simple. L’extracteur de caractéristiques est programmé « à la main », et transforme le tableau de nombres
-représentant l’image en une série de nombres, un vecteur de caractéristiques, dont chacun indique la
-présence ou l’absence d’un motif simple dans l’image. Ce vecteur est envoyé au classifieur, dont un type
-commun est le classifieur linéaire. Ce dernier calcule une somme pondérée des caractéristiques : chaque
-nombre est multiplié par un poids (positif ou négatif) avant d’être sommé. Si la somme est supérieure à un
-seuil, la classe est reconnue. Les poids forment une sorte de « prototype » pour la classe à laquelle le vecteur
-de caractéristiques est comparé. Les poids sont différents pour les classifieurs de chaque catégorie, et ce
-sont eux qui sont modifiés lors de l’apprentissage. Les premières méthodes de classification linéaire
-entraînable datent de la fin des années cinquante et sont toujours largement utilisées aujourd’hui. Elles
-prennent les deux noms de perceptron ou régression logistique.
-                    </p>
-                </section>
+            <section class="main-section">
+                <h2>Classification automatique d'images et apprentissage machine</h2>
+                <p>
+                    A première vue, la classification des données ne semble pas difficile. Les humains sont bien
+                    meilleurs que les machines pour comprendre le contexte des éléments à classifier. Cependant, à
+                    mesure que
+                    le nombre d’actifs, les niveaux et les règles de classification se développent, la classification
+                    des données
+                    se complique rapidement et les processus manuels se corrompent. Les méthodes manuelles se sont
+                    avérées
+                    très difficiles à appliquer pour des tâches en apparence très simples comme la classification des
+                    images, la
+                    reconnaissance d’objets dans les images ou la reconnaissance vocale. Les données venant du monde
+                    réel
+                    les échantillons d’un son ou les pixels d’une image sont complexes, variables et entachées de bruit.
+                </p>
+                <p>
+                    Pour un ordinateur, les images ne sont que des tableaux de nombres ayant certaines caractéristiques
+                    tels que la couleur, la luminosité de pixel chaque pixel. Nous, humains, pouvons lui montrer qu’il
+                    peut s’en
+                    servir de ces pixels pour identifier des objets sur l’image et donc de pouvoir reconnaitre ce qui se
+                    trouve
+                    sur l’image.
+                </p>
+                <p>
+                    Comment une machine peut-elle identifier un chien ou une chaise dans le tableau de nombres d’une
+                    image
+                    quand l’apparence d’un chien ou d’une chaise et des objets qui les entourent peut varier infiniment
+                    ? On
+                    pourrait penser à écrire un programme qui fonctionnera de manière robuste pour classifier des
+                    images. Ceci
+                    sera tout simplement impossible. Ça prendra des milliers de ligne de code juste pour un petit
+                    problème de
+                    classification. La solution ultime pour faire ce travail c’est l’apprentissage machine qui va
+                    entrainer la
+                    machine à faire la classification.
+                </p>
+                <p>
+                    L’apprentissage machine consiste à créer un ensemble d’algorithmes qui vont apprendre à faire la
+                    classification. Ce qui nous donne un système entrainable. Un système entraînable peut être vu comme
+                    une
+                    boite noire avec une entrée, par exemple une image, un son, ou un texte, et une sortie qui peut
+                    représenter
+                    la catégorie de l’objet dans l’image, le mot prononcé, ou le sujet dont parle le texte. On parle
+                    alors de
+                    systèmes de classification ou de reconnaissance des formes.
+                </p>
+                <p>
+                    L’apprentissage machine c’est elle qui anime les systèmes de toutes les grandes entreprises
+                    d’Internet. Elles l’utilisent depuis longtemps pour filtrer les contenus indésirables, ordonner des
+                    réponses à
+                    une recherche, faire des recommandations, ou sélectionner les informations intéressantes pour chaque
+                    utilisateur. Dans sa forme la plus utilisée, l’apprentissage machine est supervisé : on montre en
+                    entrée de la
+                    machine une photo d’un objet, par exemple une voiture, et on lui donne la sortie désirée pour une
+                    voiture.
+                    Puis on lui montre la photo d’un chien avec la sortie désirée pour un chien. Après chaque exemple,
+                    la
+                    machine ajuste ses paramètres internes de manière à rapprocher sa sortie de la sortie désirée. Après
+                    avoir
+                    montré à la machine des milliers ou des millions d’exemples étiquetés avec leur catégorie, la
+                    machine
+                    devient capable de classifier correctement la plupart d’entre eux. Mais ce qui est plus intéressant,
+                    c’est
+                    qu’elle peut aussi classifier correctement des images de voiture ou de chien qu’elle n’a jamais vues
+                    durant
+                    la phase l’apprentissage. C’est ce qu’on appelle la capacité de généralisation.
+                </p>
+                <p>
+                    Jusqu’à récemment, les systèmes de reconnaissance des images classiques étaient composés de
+                    deux blocs : un extracteur de caractéristiques (feature extractor en anglais), suivi d’un
+                    classifieur entraînable
+                    simple. L’extracteur de caractéristiques est programmé « à la main », et transforme le tableau de
+                    nombres
+                    représentant l’image en une série de nombres, un vecteur de caractéristiques, dont chacun indique la
+                    présence ou l’absence d’un motif simple dans l’image. Ce vecteur est envoyé au classifieur, dont un
+                    type
+                    commun est le classifieur linéaire. Ce dernier calcule une somme pondérée des caractéristiques :
+                    chaque
+                    nombre est multiplié par un poids (positif ou négatif) avant d’être sommé. Si la somme est
+                    supérieure à un
+                    seuil, la classe est reconnue. Les poids forment une sorte de « prototype » pour la classe à
+                    laquelle le vecteur
+                    de caractéristiques est comparé. Les poids sont différents pour les classifieurs de chaque
+                    catégorie, et ce
+                    sont eux qui sont modifiés lors de l’apprentissage. Les premières méthodes de classification
+                    linéaire
+                    entraînable datent de la fin des années cinquante et sont toujours largement utilisées aujourd’hui.
+                    Elles
+                    prennent les deux noms de perceptron ou régression logistique.
+                </p>
+            </section>
 
-                <section class="main-section conclusion">
-                    <h2 class="center">Conclusion</h2>
-                    <p>
-                        Dans cet article nous avons présenté la notion de classification ainsi que son application dans
-nombreux domaines notamment dans l’industrie d’internet. Nous avons vu aussi vu que pour faire de la
-classification des images, il nous faudra utiliser des réseaux de neurones pour simplifier la tâche et trouver
-des meilleurs résultats.
-                    </p>
-                </section>
-                <!--<section class="main-section">
+            <section class="main-section conclusion">
+                <h2 class="center">Conclusion</h2>
+                <p>
+                    Dans cet article nous avons présenté la notion de classification ainsi que son application dans
+                    nombreux domaines notamment dans l’industrie d’internet. Nous avons vu aussi vu que pour faire de la
+                    classification des images, il nous faudra utiliser des réseaux de neurones pour simplifier la tâche
+                    et trouver
+                    des meilleurs résultats.
+                </p>
+            </section>
+            <!--<section class="main-section">
                     <h2>Template</h2>
                     <p>
                     </p>
                 </section>-->
-                <footer>
-                    <p>Coded by 
-                        <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
-                            FAOUZI MOHAMED
-                        </a>
-                    </p>
-                </footer>
-            </article>
-        </main>
-        <script type="text/javascript" src="../js/switch.js"></script>
-        <script type="text/javascript" src="../js/nav.js"></script>
-        <script type="text/javascript" src="../js/body.js"></script>
-    
-    </body>
+            <footer>
+                <p>Coded by
+                    <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
+                        FAOUZI MOHAMED
+                    </a>
+                </p>
+            </footer>
+        </article>
+    </main>
+    <script type="text/javascript" src="../js/switch.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/body.js"></script>
+
+</body>
 
 
 </html>
