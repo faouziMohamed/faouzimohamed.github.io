@@ -46,14 +46,13 @@ body{
 }
 
 main{
-    position: relative;
-    top: 45px;;
+    margin: 0px;
+    padding: 0px;
     border-radius: 4px;;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 15px 15px 20px 20px;
     display: flex;
-    margin: 0px;
-    padding: 0px;
+    margin-top: 45px;
  }
 
 
@@ -127,7 +126,7 @@ section.main-section h4{
 
 aside#left-aside{
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     left: 0px;
     right: 0px;
     width: 24%;

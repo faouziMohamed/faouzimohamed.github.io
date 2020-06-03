@@ -35,12 +35,12 @@ function open_close_Menu(){
 }
 
 
-var ul = document.querySelectorAll(".submenu")
+/*var ul = document.querySelectorAll(".submenu")
 
 for (var i=0, c=ul.length;i < c;++i){
     var parent = ul[i].parentElement
     parent.style.position = 'relative'
-}
+}*/
 
 var funct = (function (x){
     if(x.matches){

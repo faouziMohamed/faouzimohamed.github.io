@@ -61,7 +61,7 @@ nav#header-nav{
     left: 0px;
     right: 0px;
     padding: 0px;
-    z-index: 10;
+    z-index: 100;
 }
 nav#header-nav::after{
     content: '';
@@ -110,7 +110,6 @@ ul#main-list>li>a:hover{
     position: absolute;
     top:98%;
     padding-left: 0px;
-    z-index: 11;
 }
 nav#header-nav li:hover .submenu{
     display: block;
