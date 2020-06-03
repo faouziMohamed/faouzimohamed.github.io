@@ -1,0 +1,225 @@
+Date : 2020-06-03 23:56:17
+Directory : /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io
+Total : 187 files,  6483 codes, 259 comments, 172 blanks, all 6914 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| XML                |        170 |      2,707 |        165 |          3 |      2,875 |
+| HTML               |          5 |      2,343 |         10 |         26 |      2,379 |
+| CSS                |          7 |      1,254 |         52 |        110 |      1,416 |
+| JavaScript         |          3 |        147 |         32 |         30 |        209 |
+| JSON with Comments |          1 |         29 |          0 |          0 |         29 |
+| Markdown           |          1 |          3 |          0 |          3 |          6 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |        187 |      6,483 |        259 |        172 |      6,914 |
+| css                                                                                                           |          5 |        576 |         38 |        105 |        719 |
+| font                                                                                                          |          4 |      3,072 |         17 |         11 |      3,100 |
+| font/web_font                                                                                                 |          4 |      3,072 |         17 |         11 |      3,100 |
+| font/web_font/webfont                                                                                         |          2 |      2,055 |         10 |          3 |      2,068 |
+| html                                                                                                          |          3 |      1,229 |          9 |         18 |      1,256 |
+| img                                                                                                           |        169 |      1,154 |        162 |          2 |      1,318 |
+| img/web_font_svg                                                                                              |        160 |        960 |        160 |          0 |      1,120 |
+| img/web_font_svg/svg                                                                                          |        160 |        960 |        160 |          0 |      1,120 |
+| js                                                                                                            |          3 |        147 |         32 |         30 |        209 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                      | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/README.md                                       | Markdown           |          3 |          0 |          3 |          6 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/css/body.css                                    | CSS                |        248 |         32 |         48 |        328 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/css/figures_svg.css                             | CSS                |         79 |          0 |         15 |         94 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/css/nav-mobile.css                              | CSS                |         71 |          0 |         14 |         85 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/css/nav.css                                     | CSS                |        117 |          2 |         19 |        138 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/css/switch.css                                  | CSS                |         61 |          4 |          9 |         74 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/font/web_font/Demo.html                         | HTML               |        841 |          0 |          5 |        846 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/font/web_font/demo.css                          | CSS                |        176 |          7 |          3 |        186 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/font/web_font/webfont/onlinewebfonts.css        | CSS                |        502 |          7 |          2 |        511 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/font/web_font/webfont/onlinewebfonts.svg        | XML                |      1,553 |          3 |          1 |      1,557 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/html/cnn.html                                   | HTML               |        244 |          1 |          2 |        247 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/html/contexte.html                              | HTML               |        740 |          7 |         14 |        761 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/html/nn.html                                    | HTML               |        245 |          1 |          2 |        248 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/Data_shart_datasets.svg                     | XML                |         48 |          0 |          1 |         49 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/download..svg                               | XML                |         16 |          0 |          0 |         16 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/github.svg                                  | XML                |         16 |          1 |          0 |         17 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/home_25.svg                                 | XML                |         25 |          0 |          0 |         25 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/label_name.svg                              | XML                |         24 |          0 |          0 |         24 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/menu_23.svg                                 | XML                |         24 |          0 |          0 |         24 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/menu_kucun.svg                              | XML                |         28 |          0 |          0 |         28 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/moon_12.svg                                 | XML                |          7 |          0 |          1 |          8 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/sunny_7.svg                                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ arrowtop.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ camera.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ ok circle.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ schedule.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/about.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/add_to.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/adding_music.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/agency_agency.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ai_design.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/alarm_clock.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/alphabet_blocks.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/approve_invoice.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/arrow_circular.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/arrow_right.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/block_chart.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/blocked_music.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/blood.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/bussiness_analysis.svg     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/butterfly_black.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/calendar.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/calendar_65.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/camera_lens.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/cancel.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/car.svg                    | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/check.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/check_mark.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/children.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/christmas_personal.svg     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/close_entity.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/cloud_rain.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/cn_question.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/code.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/collect.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/collection.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/compass.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/computer_write.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/conference.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/cottage.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/criminal_front.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/custom_page.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/delete.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/department.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/device_chat.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/diandao.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/dianhua.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/door_open.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/drill.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/drop-down.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/edit.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/entry_notice.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/env.svg                    | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/evil.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/expression.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/fixed.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/flag_checkered.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/flat_violence.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/fonico.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/font_left.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/font_search.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/font_shouye.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/font_xiangji.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/font_zhichi.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/frontal_thumbs.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/gallery.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/group.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/guanzhuguanli.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/halloween_cat.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/hand_palm.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/headhunt.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/heart_information.svg      | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/heart_real.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/home_new.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/home_page.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ico_arrow.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/im_voice.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/import.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/imported_layers.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/in_love.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/information.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/injured_person.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/internet.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ipod.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/key.svg                    | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/l.svg                      | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/laptop_and.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/lcd_tv.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/list.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/mailru.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/marker.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/md_cassette.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/menu.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/mesh_tool.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/mobile.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/mobile_laptop.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/move.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/new_special.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/note.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/notes_settings.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/od_next.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/online_consulting.svg      | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/pages.user.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/paint.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/pause.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/people.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/personal_center.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/peugeot_logo.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/phone_hospital.svg         | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/point.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/problem.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/production_performance.svg | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/promotion.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/purchase_of.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/push_set.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/px_shopping.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/qr_code.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/qt.svg                     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/quote_l.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/records.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/refund.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/repair.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/return.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/rocket.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/rotating_mining.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/s_casual.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/save_image.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/selection_of.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/settled.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/share.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/shequ.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/shop.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/si_glyph.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/sign_in.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/skull_crossbones.svg       | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/snow.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/sportive_ball.svg          | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/sptc.svg                   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/statistical_analysis.svg   | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/structed.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/svg.svg                    | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/switch_shop.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/task_alert.svg             | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/tea_cup.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/telephone.svg              | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/timeout.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/toilet_seat.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/traffic_violation.svg      | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/tv.svg                     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/two-dimensional.svg        | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/untitled.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/untitled_110.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/up_dir.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/user_linear.svg            | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/video_player.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/warning.svg                | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/wechat.svg                 | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/wiping_trash.svg           | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/works.svg                  | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/ww.svg                     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/xl.svg                     | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/img/web_font_svg/svg/zixunred.svg               | XML                |          6 |          1 |          0 |          7 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/index.html                                      | HTML               |        273 |          1 |          3 |        277 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/js/body.js                                      | JavaScript         |         62 |          0 |          9 |         71 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/js/nav.js                                       | JavaScript         |         71 |         29 |         21 |        121 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/js/switch.js                                    | JavaScript         |         14 |          3 |          0 |         17 |
+| /media/faouzi/PROJECTS/WEB/pWeb_pages/faouzimohamed.github.io/my_page.code-workspace                          | JSON with Comments |         29 |          0 |          0 |         29 |
+| Total                                                                                                         |                    |      6,483 |        259 |        172 |      6,914 |
++---------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
