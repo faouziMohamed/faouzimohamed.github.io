@@ -40,7 +40,7 @@
 body{
     background-color: var(--body-bg);
     margin: 0px;
-    font-size: 92%;
+    font-size: 100%;
     min-width: 360px;
 }
 
@@ -54,8 +54,8 @@ main{
 
 
 article.main-article{
-    width: 90%;
-    margin-left: 25%;
+    width: 65%;
+    margin-left: 30%;
     background-color: var(--main-article-bg);
     margin-right: 2%;
 }
@@ -106,7 +106,7 @@ section.main-section h3,
 section.main-section h4{
     margin-bottom: -5px;
 }
-.main-section p,li{text-align: justify;}
+.main-section p{text-align: justify;}
 
 .main-section h1+p::first-letter,
 .main-section h2+p::first-letter,
@@ -126,12 +126,12 @@ aside#left-aside{
     z-index: 1;
     left: 0px;
     right: 0px;
-    width: 24%;
+    width: 25%;
     height: 100%;
     min-width: 215px;
-    font-size: 90%;
+    font-size: 100%;
     background-color: var(--main-aside-bg);
-    font-weight: bold;
+    text-align: left;
 }
 
 aside#left-aside>nav{
@@ -150,21 +150,27 @@ aside#left-aside>nav{
 
 nav#aside-nav>h1{
     padding:10px 0px 0px 0px;
+    margin-left: -2px;
+    font-size: 130%;
 }
 
 nav#aside-nav>ul>li{
     position: relative;
     list-style-type: disc;
-    margin-left: 12px;
+    margin-left: -2px;
     margin-top: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 
 nav#aside-nav>ul>li li{
-    margin-left: -15px;
+    margin-left: -27px;
+    margin-bottom: 2px;
     list-style-type: circle;
 }
 
+nav#aside-nav li{
+    list-style-type: none !important;
+}
 
 
 
