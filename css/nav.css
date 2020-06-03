@@ -23,7 +23,6 @@
     --home-img:url("../img/house_white.png");
     --home-fill:rgb(0, 49, 114);
 }
-
 /*Images */
 a#github>svg{
     width: 29px;
@@ -78,6 +77,8 @@ ul#main-list{
     font-weight: bold;
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 ul#main-list>li{

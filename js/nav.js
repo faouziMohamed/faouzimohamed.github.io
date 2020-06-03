@@ -41,13 +41,20 @@ for (var i=0, c=ul.length;i < c;++i){
     var parent = ul[i].parentElement
     parent.style.position = 'relative'
 }*/
-
-var funct = (function (x){
+(function(){
+    function f(x){
     if(x.matches){
-        alert(used)
+        var ul = document.querySelector("ul#main-list");
+        ul.style.display = 'block'
+       
+        var section = document.querySelectorAll(".main-section")
+        for (var i=0, c=section.length; i < c;++i){
+            section[i].setAttribute("onmouseover","")
+            section[i].setAttribute("onclick","")
+        }
     }
-})();
+}
 
 var x = window.matchMedia("(min-width: 538px)")
-
-    x.addListener(funct)
+    f(x)
+    x.addListener(f)})();
