@@ -60,7 +60,7 @@ nav#header-nav{
     left: 0px;
     right: 0px;
     padding: 0px;
-    z-index: 100;
+    z-index: 1;
 }
 nav#header-nav::after{
     content: '';
@@ -99,7 +99,7 @@ ul#main-list a{
 
 ul#main-list>li>a{
     display: block;
-    padding:12px 15px;
+    padding:13px 15px;
 }
 
 ul#main-list>li>a:hover{
@@ -112,6 +112,7 @@ ul#main-list>li>a:hover{
     top:98%;
     padding-left: 0px;
 }
+
 nav#header-nav li:hover .submenu{
     display: block;
 }
@@ -134,7 +135,6 @@ nav#header-nav li:hover .submenu{
     width: 20px;
     height: 20px;
 }
-
 
 
 @media only screen and (min-width:538px)

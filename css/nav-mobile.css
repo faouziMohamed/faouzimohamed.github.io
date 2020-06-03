@@ -72,5 +72,12 @@
 
     .submenu{
         top:100%;
+        position: relative;
+    }
+    .subm enu li a{
+        position: relative;
+        top: 40px;
+        z-index: 2;
+
     }
 }
