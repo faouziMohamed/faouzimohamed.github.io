@@ -12,7 +12,7 @@
 }
 
 .theme-light{
-    --nav-header-bg: rgb(93, 189, 106);
+    --nav-header-bg: rgb(99, 204, 113);
     --main-list-a-color:rgb(0, 25, 32);
     --main-list-a-bg-hover:#7ab3ff;
     --submenu-li-a-bg:rgba(102, 235, 49, 0.89);
@@ -39,7 +39,7 @@ a#github>svg:hover{
 
 a>svg#home{
     position: relative;
-    top: -5px;
+    top: -7px;
     padding-top: 0px;
     width: 30px;
     height: 25px;
@@ -47,7 +47,7 @@ a>svg#home{
 }
 
 .li-label,
-ul#main-list>li:nth-child(2)~li svg,
+ul#main-list>li:nth-child(1)~li svg,
 #menu>svg{
     display: none;
 }
@@ -61,7 +61,7 @@ nav#header-nav{
     left: 0px;
     right: 0px;
     padding: 0px;
-    z-index: 10000;
+    z-index: 10;
 }
 nav#header-nav::after{
     content: '';
@@ -69,9 +69,9 @@ nav#header-nav::after{
     clear: both;
 }
 
-#main-list>li:first-child+li a{
+#main-list>li:first-child>a{
     padding-top: 13px;;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 ul#main-list{
@@ -106,9 +106,14 @@ ul#main-list>li>a:hover{
 }
 
 .submenu{
+    display: none;
     position: absolute;
     top:98%;
     padding-left: 0px;
+    z-index: 11;
+}
+nav#header-nav li:hover .submenu{
+    display: block;
 }
 
 .submenu>li>a{
@@ -117,7 +122,7 @@ ul#main-list>li>a:hover{
     padding: 10px 15px;
 }
 
-.submenu>li:not(:first-child) a{
+.submenu>li:not(:nth-child(2)) a{
     padding-top: 5px;
 }
 
@@ -130,17 +135,11 @@ ul#main-list>li>a:hover{
     height: 20px;
 }
 
-.submenu{
-    display: none;
-}
 
-nav#header-nav li:hover .submenu{
-    display: block;
-}
 
-@media only screen and (max-width:538px)
+@media only screen and (min-width:538px)
 {
-    ul#main-list>li,
+    ul#main-list,
     nav#header-nav{
         display: block;
     }

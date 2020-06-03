@@ -69,4 +69,8 @@
     ul#main-list>li:nth-child(2) .li-txt,
     ul#main-list>li:nth-child(2) .li-txt
     {top:-10px;}
+
+    .submenu{
+        top:100%;
+    }
 }
