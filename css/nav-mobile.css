@@ -87,13 +87,14 @@
     .submenu {
         z-index: 101;
     }
+
+    .subMenuParent {
+        position: relative;
+    }
+    
+    .subMenuParent li a {
+        top: 100%;
+        background -color: rgb(160, 250, 142);
+    }
 }
 
-.subMenuParent {
-    position: relative;
-}
-
-.subMenuParent li a {
-    top: 100%;
-    background-color: red;
-}

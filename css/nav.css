@@ -1,9 +1,9 @@
 .theme-dark {
     --nav-header-bg: rgba(24, 1, 124, 0.959);
     --main-list-a-color: rgb(214, 216, 190);
-    --main-list-a-bg-hover: #03343f;
-    --submenu-li-a-bg: rgba(77, 46, 0, 0.89);
-    --submenu-a-bg-hover: #044913;
+    --main-list-a-bg-hover: #000000;
+    --submenu-li-a-bg: rgb(46, 39, 28);
+    --submenu-a-bg-hover: #010e04;
     --github-img: url("../img/github_logo.png");
     --github-fill: rgb(255, 255, 255);
     --github-hover-fill: rgb(184, 193, 197);
@@ -14,9 +14,9 @@
 .theme-light {
     --nav-header-bg: rgb(99, 204, 113);
     --main-list-a-color: rgb(0, 25, 32);
-    --main-list-a-bg-hover: #7ab3ff;
-    --submenu-li-a-bg: rgba(102, 235, 49, 0.89);
-    --submenu-a-bg-hover: #356d92dc;
+    --main-list-a-bg-hover: #008f2b;
+    --submenu-li-a-bg: rgb(31, 139, 76);
+    --submenu-a-bg-hover: #17b176;
     --github-img: url("../img/github_logo.png");
     --github-fill: rgb(0, 27, 53);
     --github-hover-fill: rgb(25, 97, 100);
@@ -72,8 +72,7 @@ nav#header-nav::after {
 
 #main-list>li:first-child>a {
     padding-top: 13px;
-    ;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
 }
 
 ul#main-list {
@@ -138,6 +137,4 @@ nav#header-nav li:hover .submenu {
     width: 20px;
     height: 20px;
     z-index: 45
-
 }
-
