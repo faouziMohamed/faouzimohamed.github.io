@@ -66,22 +66,28 @@ two responsive modes*/
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
-    var c = ul.length
+    var c = ul.length;
 
     /*Displaying or hidden submenus */
-    function open_hide_subMenu(e) {
-        if (this.lastElementChild.style.display !== 'block')
-            this.lastElementChild.style.display = 'block'
-        else
-            this.lastElementChild.style.display = 'none'
-    }
-    function hide_subMenu(e){
-        this.lastElementChild.style.display = 'none'
-    }
+
+
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
-        parent.addEventListener('click', open_hide_subMenu);
-        parent.addEventListener('mouseout', hide_subMenu);
+        parent.addEventListener('click', function (e) {
+            if (this.lastElementChild.style.display !== 'block')
+                this.lastElementChild.style.display = 'block';
+            else
+                this.lastElementChild.style.display = 'none';
+        });
+        /*Hide submenu is it not hovered*/
+        parent.addEventListener('mouseout', function hide_subMenu(e) {
+            var related_target = e.relatedTarget;
+            while (related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
+                related_target = related_target.parentNode;
+            }
+            if (related_target != this)
+                this.lastElementChild.style.display = 'none';
+        });
     }
 
     /** Tweaking submenus (adding class on its parents)**/
