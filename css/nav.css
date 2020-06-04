@@ -114,10 +114,6 @@ ul#main-list>li>a:hover {
     padding-left: 0px;
 }
 
-nav#header-nav li:hover .submenu {
-    display: block;
-}
-
 .submenu>li>a {
     background-color: var(--submenu-li-a-bg);
     display: inline-block;
