@@ -24,20 +24,26 @@ function closeMenu() {
     close = true;
 }
 
-function open_close_Menu() {
-    used = true;
-    var x = window.matchMedia("(max-width: 536px)");
-    if (x.matches) {
-        if (open) closeMenu();
-        else openMenu();
+(function () {
+    function open_close_Menu() {
+        used = true;
+        var x = window.matchMedia("(max-width: 536px)");
+        if (x.matches) {
+            if (open) closeMenu();
+            else openMenu();
+        }
+        x.addListener(open_close_Menu);
     }
-    x.addListener(open_close_Menu);
+    menu = document.querySelector("#menu>svg");
+    menu.addEventListener('click',open_close_Menu);
+})();
 
-}
 
-
+/*This part of code ensures that the menu is displayed in the 
+two responsive modes*/
 (function () {
     var ul = document.querySelector("ul#main-list");
+    var x = window.matchMedia("(min-width: 538px)");
 
     function display_menu(x) {
         if (x.matches) {
@@ -50,28 +56,30 @@ function open_close_Menu() {
         } else {
             ul.style.display = 'none';
         }
+        x.addListener(display_menu);
     }
-    var x = window.matchMedia("(min-width: 538px)");
     display_menu(x);
-    x.addListener(display_menu);
 })();
 
 
 (function () {
     var ul = document.querySelectorAll(".submenu");
+    var y = window.matchMedia("(max-width: 536px)");
     var parent;
     var c = ul.length
-    var display;
+
+    /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
-        parent.addEventListener('click',function (e){
-            if(this.lastElementChild.style.display !== 'block')
+        parent.addEventListener('click', function (e) {
+            if (this.lastElementChild.style.display !== 'block')
                 this.lastElementChild.style.display = 'block'
             else
                 this.lastElementChild.style.display = 'none'
         });
     }
 
+    /** Tweaking submenus (adding class on its parents)**/
     function tune_submenu(y) {
         if (y.matches) {
             for (var i = 0; i < c; ++i) {
@@ -86,14 +94,6 @@ function open_close_Menu() {
         }
     }
 
-    var y = window.matchMedia("(max-width: 536px)");
     tune_submenu(y);
     y.addListener(tune_submenu);
-
-    
 })();
-
-/*
-(function (){
-    
-})();*/
