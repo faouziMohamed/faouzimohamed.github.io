@@ -47,10 +47,12 @@ function open_close_Menu() {
                 section[i].setAttribute("onmouseover", "");
                 section[i].setAttribute("onclick", "");
             }
+
         } else {
             ul.style.display = 'none';
+
         }
-        alerte("oui")
+
     }
     var x = window.matchMedia("(min-width: 538px)");
     display_menu(x);
@@ -68,10 +70,11 @@ function open_close_Menu() {
                 parent = ul[i].parentElement;
                 parent.className += ' subMenuParent'
             }
+
         } else {
             for (var i = 0, c = ul.length; i < c; ++i) {
                 parent = ul[i].parentElement;
-                parent.className.replace(' subMenuParent', '')
+                parent.classList.remove('subMenuParent')
             }
         }
     }
