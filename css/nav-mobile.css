@@ -1,4 +1,4 @@
-:root{
+:root {
     --main-list-li-bg: rgb(80, 172, 137);
 }
 
@@ -18,6 +18,7 @@
 
 @media only screen and (max-width:536px) {
     nav#header-nav {
+        position: fixed;
         height: 43px;
         padding-bottom: 0px;
     }
@@ -93,9 +94,8 @@
     .subMenuParent {
         position: relative;
     }
-    
+
     .subMenuParent li a {
         top: 100%;
     }
 }
-

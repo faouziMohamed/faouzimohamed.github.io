@@ -1,42 +1,43 @@
 :root {
-    --body-bg: rgb(3, 143, 120);
-    --main-text-color:#444;
+    --body-bg: rgb(10, 100, 85);
+    --main-text-color: rgb(0, 20, 19);
     /*--main-article-bg: rgb(3, 143, 120);*/
     --main-header-color: rgb(236, 163, 3);
     --main-header-bg: rgb(73, 104, 97);
-    --main-section-bg: rgb(188, 205, 207);
+    --main-section-bg: rgb(162, 199, 199);
     --main-section-h2-color: #050761;
     --main-section-h3-color: #033636;
     --main-section-h4-color: #0a4202;
-    --main-section-border-color:#58f4f4;
+    --main-section-border-color: #58f4f4;
     --main-aside-bg: rgb(3, 92, 99);
-    --main-aside-nav-bg: rgb(3, 92, 99);
+    --main-aside-nav-bg: rgb(9, 26, 27);
     --main-aside-nav-color: rgb(224, 255, 243);
     --main-section-h2-conclusion-color: rgb(10, 95, 29);
     --nav-aside-hv-color: rgb(240, 145, 145);
     --nav-aside--li-hv-color: rgb(255, 166, 0);
-    --table-border:#657473;
+    --table-border: #657473;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --body-bg: rgb(21, 29, 37);
-        --main-text-color:rgb(193, 209, 206);
+        --body-bg: rgb(18, 34, 44);
+        --main-text-color: rgb(193, 209, 206);
         /*--main- article-bg: rgb(1, 17, 36);*/
         --main-header-color: rgb(236, 163, 3);
         --main-header-bg: rgb(46, 54, 61);
         --main-section-bg: rgb(11, 29, 39);
-        --main-section-h2-color: #18d6bd;;
+        --main-section-h2-color: #18d6bd;
+        ;
         --main-section-h3-color: #79df93;
         --main-section-h4-color: #d1e49e;
-        --main-section-border-color:#363838;
+        --main-section-border-color: #081a27;
         --main-aside-bg: rgb(26, 29, 31);
         --main-aside-nav-bg: rgb(7, 11, 19);
         --main-aside-nav-color: #d4dada;
         --main-section-h2-conclusion-color: rgb(0, 189, 142);
         --nav-aside-hv-color: rgb(221, 255, 100);
         --nav-aside--li-hv-color: rgb(152, 228, 137);
-        --table-border:#657473;
+        --table-border: #657473;
     }
 }
 
@@ -98,6 +99,7 @@ section.main-section {
     letter-spacing: .05em;
     line-height: 1.39em;
 }
+
 section.main-section h2 {
     color: var(--main-section-h2-color);
     font-size: 170%;
@@ -123,6 +125,8 @@ section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
     margin-bottom: -5px;
+    padding-top: 10px;
+    ;
 }
 
 .main-section p,
@@ -150,6 +154,7 @@ section.main-section li {
 aside#left-aside {
     position: fixed;
     z-index: 1;
+    top: 0px;
     left: 0px;
     right: 0px;
     width: 25%;
@@ -161,13 +166,14 @@ aside#left-aside {
 }
 
 aside#left-aside>nav {
+    padding-top: 20px;
     position: absolute;
     background-color: var(--main-aside-nav-bg);
     top: 0px;
     left: 0%;
     right: 0%;
     margin: 0px;
-    height: 93%;
+    height: 100%;
     margin: auto;
     width: 100%;
     padding-left: 4%;
@@ -293,6 +299,47 @@ td.empty {
 }
 
 
+.to-top {
+    color: white;
+    padding-top: 1.8em;
+    display: inline-block;
+    /* or block */
+    position: fixed;
+    border-color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;
+    bot tom: 0%;
+    right: 8px;
+    top: 90%;
+}
+
+.to-top:before {
+    content: '▲';
+    font-size: 0.9em;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-left: -.7em;
+    border: solid .13em white;
+    border-radius: 10em;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.3em;
+    border-color: inherit;
+    transition: transform .5s ease-in;
+    text-align: center;
+}
+
+.to-top:hover {
+    color: pink;
+    border-color: pink;
+}
+
+.to-top:hover:before {
+    transform: rotate(360deg);
+    border-color: red;
+}
+
 
 /*Media queries*/
 
@@ -309,6 +356,7 @@ td.empty {
 }
 
 @media only screen and (max-width:768px) {
+
     .main-article>header {
         font-size: 140%;
     }
@@ -337,34 +385,3 @@ td.empty {
     }
 }
 
-/*
-@media only screen and (max -width:716px)
-{
-    article.main-article{
-        margin-left: 34%;
-        margin-right: 2%;
-    }
-    .main-article>header{
-        width: 90%;
-    }
-    section.main-section{
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max- width:648px)
-{
-    article.main-article{
-        margin-left: 35%;
-        margin-right: 1%;
-    }
-    .main-article>header{
-        width: 90%;
-        font-size: 140%;
-    }
-    section.main-section{
-        width: 100%;
-    }
-}
-*/
