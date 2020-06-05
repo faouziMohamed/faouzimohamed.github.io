@@ -1,0 +1,40 @@
+#no-script-before-main{
+    text-align: center;
+    margin: 0px;
+    z-index: inherit;
+}
+
+#noscript-layout{
+    z-index: 100000;
+    text-align: center;
+    position: fixed;
+    padding: 5px 0px;
+    top: 0px;
+    left:0%;
+    right: 0%;
+    color: rgb(168, 231, 210);
+    background: rgb(182, 80, 39);
+}
+
+nav#header-nav {
+    display: block;
+    position: fixed;
+    background-color: rgb(73, 104, 97);;
+    top: 32px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    z-index: 100;
+    color: rgb(14, 9, 0);
+}
+
+#switch{display:none;}
+ul#main-list>li>a:hover {
+    background-color: rgb(1, 25, 31);
+    color: bisque;
+}
+
+body{
+    background-color: rgb(180, 175, 175);
+    color: rgb(10, 10, 10);
+}
