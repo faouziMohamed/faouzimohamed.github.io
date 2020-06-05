@@ -8,7 +8,7 @@
     --github-fill: rgb(45, 173, 146);
     --github-hover-fill: rgb(25, 97, 100);
     --home-img: url("../img/house_white.png");
-    --home-fill: rgb(45, 173, 146);
+    --home-fill: rgb(103, 214, 214);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,6 +55,7 @@ ul#main-list>li:nth-child(1)~li svg,
 #menu>svg {
     display: none;
 }
+
 
 /*The menu*/
 nav#header-nav {
@@ -111,6 +112,7 @@ ul#main-list>li>a:hover {
     background-color: var(--main-list-a-bg-hover);
 }
 
+
 .submenu {
     display: none;
     position: absolute;
@@ -144,3 +146,4 @@ ul#main-list>li>a:hover {
         position: fixed;
     }
 }
+
