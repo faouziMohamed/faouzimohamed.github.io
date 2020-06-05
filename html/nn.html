@@ -218,22 +218,57 @@
                     <h1>Les réseaux de neurones</h1>
                 </header>
                 <section class="main-section">
-                    <h2>Qu'est-ce que c'est la classification automatique ?</h2>
-                    <p>
-                        La classification (automatique) des images fait référence à la tâche d'extraction des classes
-        d'informations d'une image. Elle est un problème fondamental en vision par ordinateur, qui a de nombreuses
-        applications concrètes. On retrouve ainsi la classification d’objets, de scènes, de textures, la reconnaissance
-        de visages, d’empreintes digitale et de caractères. Elle est une application de la reconnaissance de formes
-        consistant attribuer automatiquement une classe a une image à l’aide d’un système de classification.</p>
-                    <p>
-                        Vous avez généralement le choix entre deux approches : la classification non-supervisée et supervisé.</p>
-                    <p>
-                        La classification non-supervisée consiste à laisser l'ordinateur calculer automatiquement les classes sur la
-        base de plusieurs (en tout cas plus d'une). Cela vous laisse la tâche d'identifier le bon nombre et la nature
-        réelle des classes obtenues. Dans l’approche supervisée, chaque image est associée à une étiquette qui décrit
-        sa classe d’appartenance. Dans notre travail on s’intéresse uniquement sur l’approche supervisée.
-                    </p>
+                    <h2>Introduction</h2>
+                    <section>
+                        <h3>Machine learning : limites et conséquences</h3>
+                        <p>
+                            Le machine learning, apprentissage automatique ou apprentissage statistique en français, est une
+    technologie d’intelligence artificielle basée sur le fait que la machine peut apprendre toute seule en se basant
+    sur des modèles statistiques permettant d’effectuer des analyses prédictives. Cependant, cette méthode
+    d’apprentissage requiert que ces données qui lui sert d’exemples soient, au préalable, triées par un expert
+    humain pour ne laisser que les caractéristiques nécessaires à l’apprentissage (extraction de caractéristiques).
+    Mais, dès que ces caractéristiques deviennent trop nombreuses, cette extraction devient quasi-impossible.
+    Et c’est là qu’intervient les réseaux de neurones (réseaux de neurones artificiel).
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Réseau de neurones artificiel</h3>
+                        <p>
+                            Un réseau de neurones artificiels ou Neural Network est un système informatique s’inspirant du fonctionnement
+                             du cerveau humain pour apprendre. C'est une association, en un graphe plus ou moins complexe, d’objets élémentaires : 
+                             <q>des neurones formels</q>. Les principaux réseaux se distinguent par l’organisation du graphe (en couches, complets. . . ).
+                        </p>
+                        <p>
+                            Les réseaux de neurones sont largement utilisés surtout dans le domaine de la reconnaissance
+d’image, de voix, de détection de cancer, etc. Il existe plusieurs types de réseaux de neurones, plutôt dire
+plusieurs architectures de réseaux de neurones. Parmi eux, on trouve les réseaux de neurones récurrent
+(RNN) appelé aussi les réseaux “Feed-back”, les réseaux de neurones autoorganisés, les réseaux de
+neurones Feed forward (propagation avant), etc. Dans le cadre de notre rapport nous allons nous concentrer
+sur les réseaux de neurones du type Feed Forward et plus précisément sur les perceptrons multicouches.
+                        </p>
+                        <p>
+                            Dans le contexte de la classification d’images, balancer des images brutes sur un réseau de neurones
+permettra à ces réseaux de trouver les caractéristiques de ces images et enfin pouvoir faire des prédictions
+sur d’autres images qu’il n’a jamais encore vu. Cependant, les réseaux de neurones communément appelé
+perceptron multicouches (MLP) auront des difficultés à reconnaitre de grandes images. Ceci est dû à
+cause de la croissance exponentielle du nombre de connexions avec la taille de l'image et du fait que chaque
+neurone est « totalement connecté » à chacun des neurones de la couche précédente et suivante. Les MLPs
+auront aussi de difficulté à reconnaitre un objet qui est placé dans une autre position, angle différente par
+rapport aux images utilisés pendant l’entrainement. Et c’est ce qui fait intervenir les <q>réseaux de neurones
+convolutifs</q> (CNN pour Convolutional Neural Network) pour résoudre ces genres de problèmes.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Les CNN</h3>
+                        <p>
+                            Les réseaux de neurones convolutifs désignent une sous-catégorie de réseaux de neurones: ils
+présentent en effet toutes les caractéristiques des MLPs. Cependant, les CNN sont spécialement conçus
+pour traiter des images en entrée. Et apportent de nouvelles fonctionnalités dans le traitement d’images.
+                        </p>
+                    </section>
+                    
                 </section>
+                
                 <footer>
                     <p>Coded by 
                         <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
