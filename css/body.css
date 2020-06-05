@@ -185,6 +185,7 @@ aside#left-aside>nav {
     width: 100%;
     padding-left: 4%;
     color: var(--main-aside-nav-color);
+    overflow-y: scroll;
 }
 
 nav#aside-nav>h1 {
