@@ -1,4 +1,27 @@
-:root {
+.theme-dark {
+    --body-bg: rgb(18, 34, 44);
+    --main-text-color: rgb(193, 209, 206);
+    /*--main- article-bg: rgb(1, 17, 36);*/
+    --main-header-color: rgb(236, 163, 3);
+    --main-header-bg: rgb(46, 54, 61);
+    --main-section-bg: rgb(11, 29, 39);
+    --main-section-h2-color: #18d6bd;
+    ;
+    --main-section-h3-color: #79df93;
+    --main-section-h4-color: #d1e49e;
+    --main-section-border-color: #081a27;
+    --main-aside-bg: rgb(26, 29, 31);
+    --main-aside-nav-bg: rgb(7, 11, 19);
+    --main-aside-nav-color: #d4dada;
+    --main-section-h2-conclusion-color: rgb(0, 189, 142);
+    --nav-aside-hv-color: rgb(221, 255, 100);
+    --nav-aside--li-hv-color: rgb(152, 228, 137);
+    --table-border: #657473;
+}
+
+
+
+.theme-light {
     --body-bg: rgb(10, 100, 85);
     --main-text-color: rgb(0, 20, 19);
     /*--main-article-bg: rgb(3, 143, 120);*/
@@ -18,11 +41,31 @@
     --table-border: #657473;
 }
 
+/*:root {
+    --body-bg: rgb(10, 100, 85);
+    --main-text-color: rgb(0, 20, 19);
+    --main-article -bg: rgb(3, 143, 120);
+    --main-header-color: rgb(236, 163, 3);
+    --main-header-bg: rgb(73, 104, 97);
+    --main-section-bg: rgb(162, 199, 199);
+    --main-section-h2-color: #050761;
+    --main-section-h3-color: #033636;
+    --main-section-h4-color: #0a4202;
+    --main-section-border-color: #58f4f4;
+    --main-aside-bg: rgb(3, 92, 99);
+    --main-aside-nav-bg: rgb(9, 26, 27);
+    --main-aside-nav-color: rgb(224, 255, 243);
+    --main-section-h2-conclusion-color: rgb(10, 95, 29);
+    --nav-aside-hv-color: rgb(240, 145, 145);
+    --nav-aside--li-hv-color: rgb(255, 166, 0);
+    --table-border: #657473;
+}*/
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --body-bg: rgb(18, 34, 44);
         --main-text-color: rgb(193, 209, 206);
-        /*--main- article-bg: rgb(1, 17, 36);*/
+        --main- article-bg: rgb(1, 17, 36);
         --main-header-color: rgb(236, 163, 3);
         --main-header-bg: rgb(46, 54, 61);
         --main-section-bg: rgb(11, 29, 39);
@@ -40,7 +83,7 @@
         --table-border: #657473;
     }
 }
-
+*/
 
 
 * {

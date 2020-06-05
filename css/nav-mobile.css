@@ -1,3 +1,13 @@
+.theme-dark{
+    --main-list-li-bg: rgba(2, 33, 53, 0.979);
+    --menu-fill:var(--home-fill);
+}
+
+.theme-light{
+    --main-list-li-bg: rgb(3, 61, 71);
+    --menu-fill:rgb(45, 173, 146);
+}
+/*
 :root {
     --main-list-li-bg: rgb(3, 61, 71);
     --menu-fill:rgb(45, 173, 146);
@@ -9,7 +19,7 @@
         --menu-fill:var(--home-fill);
     }
 }
-
+*/
 #menu>svg {
     position: relative;
     top: 5px;
