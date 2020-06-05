@@ -37,6 +37,7 @@ function create_list_left_nav()
             add_li_to_ul(ul_,title[i],id);
         }
         li.appendChild(ul_);
+        --i;
     }
 }
 
