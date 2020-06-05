@@ -1,3 +1,5 @@
+@import url("to-top-btn.css");
+
 .theme-dark {
     --body-bg: rgb(18, 34, 44);
     --main-text-color: rgb(193, 209, 206);
@@ -350,46 +352,6 @@ td.empty {
 }
 
 
-.to-top {
-    color: white;
-    padding-top: 1.8em;
-    display: inline-block;
-    /* or block */
-    position: fixed;
-    border-color: white;
-    text-decoration: none;
-    transition: all .3s ease-out;
-    bottom: 4%;
-    right: 2%;
-}
-
-.to-top:before {
-    content: '▲';
-    font-size: 0.9em;
-    position: absolute;
-    top: 0;
-    right: 50%;
-    margin-left: -.7em;
-    border: solid .13em white;
-    border-radius: 10em;
-    width: 2em;
-    height: 2em;
-    line-height: 1.8em;
-    border-color: inherit;
-    transition: transform .5s ease-in;
-    text-align: center;
-    font-size: 90%;
-}
-
-.to-top:hover {
-    color: pink;
-    border-color: pink;
-}
-
-.to-top:hover:before {
-    transform: rotate(360deg);
-    border-color: red;
-}
 
 
 /*Media queries*/
