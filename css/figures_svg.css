@@ -1,18 +1,20 @@
-
-.theme-dark{
-    --chart-title-color:#032e05;
-    --train-set-color:rgb(0, 52, 141);
-    --test-set-color:#18202e;
-    --val-set-color:rgb(114, 0, 6);
-    --figcaption-color:rgb(31, 29, 29);
-}
-
-.theme-light{
+:root{
     --chart-title-color:#194d1c;
     --train-set-color:rgb(0, 2, 116);
     --test-set-color:#4f5f65;
     --val-set-color:rgb(177, 2, 11);
     --figcaption-color:rgb(66, 66, 66);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --chart-title-color:#b7c46b;
+        --train-set-color:rgb(3, 63, 167);
+        --test-set-color:#039185;
+        --val-set-color:rgb(212, 37, 46);
+        --figcaption-color:rgb(124, 137, 138);
+    }
 }
 
 .pie-chart-title{

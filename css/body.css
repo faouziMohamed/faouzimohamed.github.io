@@ -1,40 +1,42 @@
-@media (prefers-color-scheme: light) {
-    :root {
-        --body-bg: rgb(3, 143, 120);
-        --main-text-color:#444;
-        --main-article-bg: rgb(3, 143, 120);
-        --main-header-color: rgb(236, 163, 3);
-        --main-header-bg: rgb(73, 104, 97);
-        --main-section-h2-color: #050761;
-        --main-section-h3-color: #033636;
-        --main-section-h4-color: #0a4202;
-        --main-section-bg: rgb(188, 205, 207);
-        --main-aside-bg: rgb(3, 92, 99);
-        --main-aside-nav-bg: rgb(3, 92, 99);
-        --main-aside-nav-color: rgb(224, 255, 243);
-        --main-section-h2-conclusion-color: rgb(10, 95, 29);
-        --nav-aside-hv-color: rgb(240, 145, 145);
-        --nav-aside--li-hv-color: rgb(255, 166, 0);
-    }
+:root {
+    --body-bg: rgb(3, 143, 120);
+    --main-text-color:#444;
+    /*--main-article-bg: rgb(3, 143, 120);*/
+    --main-header-color: rgb(236, 163, 3);
+    --main-header-bg: rgb(73, 104, 97);
+    --main-section-bg: rgb(188, 205, 207);
+    --main-section-h2-color: #050761;
+    --main-section-h3-color: #033636;
+    --main-section-h4-color: #0a4202;
+    --main-section-border-color:#58f4f4;
+    --main-aside-bg: rgb(3, 92, 99);
+    --main-aside-nav-bg: rgb(3, 92, 99);
+    --main-aside-nav-color: rgb(224, 255, 243);
+    --main-section-h2-conclusion-color: rgb(10, 95, 29);
+    --nav-aside-hv-color: rgb(240, 145, 145);
+    --nav-aside--li-hv-color: rgb(255, 166, 0);
+    --table-border:#657473;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --body-bg: rgb(21, 29, 37);
-        --main-text-color:rgb(253, 253, 253);
+        --main-text-color:rgb(193, 209, 206);
         /*--main- article-bg: rgb(1, 17, 36);*/
         --main-header-color: rgb(236, 163, 3);
         --main-header-bg: rgb(46, 54, 61);
-        --main-section-h2-color: #25e2c9;;
-        --main-section-h3-color: #d0d390;
+        --main-section-bg: rgb(11, 29, 39);
+        --main-section-h2-color: #18d6bd;;
+        --main-section-h3-color: #79df93;
         --main-section-h4-color: #d1e49e;
-        --main-section-bg: rgb(40, 46, 51);
+        --main-section-border-color:#363838;
         --main-aside-bg: rgb(26, 29, 31);
-        --main-aside-nav-bg: rgb(6, 9, 15);
-        --main-aside-nav-color: rgb(221, 252, 228);
-        --main-section-h2-conclusion-color: rgb(29, 73, 67);
+        --main-aside-nav-bg: rgb(7, 11, 19);
+        --main-aside-nav-color: #d4dada;
+        --main-section-h2-conclusion-color: rgb(0, 189, 142);
         --nav-aside-hv-color: rgb(221, 255, 100);
         --nav-aside--li-hv-color: rgb(152, 228, 137);
+        --table-border:#657473;
     }
 }
 
@@ -92,7 +94,7 @@ section.main-section {
     width: 92%;
     border-radius: 8px;
     margin-bottom: 30px;
-    border: 1px solid rgb(56, 56, 70);
+    border: 1px solid var(--main-section-border-color);
     letter-spacing: .05em;
     line-height: 1.39em;
 }
@@ -246,7 +248,7 @@ em {
 
 table td,
 table th {
-    border: 1px solid #222;
+    border: 1px solid var(--table-border);
     text-align: center;
 }
 

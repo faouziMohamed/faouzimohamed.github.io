@@ -1,9 +1,11 @@
-.theme-dark {
-    --main-list-li-bg: rgb(8, 78, 87);
+:root{
+    --main-list-li-bg: rgb(80, 172, 137);
 }
 
-.theme-light {
-    --main-list-li-bg: rgb(80, 172, 137);
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-list-li-bg: rgba(2, 33, 53, 0.979);
+    }
 }
 
 #menu>svg {

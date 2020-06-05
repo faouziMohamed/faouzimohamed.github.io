@@ -14,14 +14,14 @@
 
 @media (prefers-color-scheme: dark){
     :root{
-        --nav-header-bg: rgba(24, 1, 124, 0.959);
-        --main-list-a-color: rgb(214, 216, 190);
-        --main-list-a-bg-hover: #000000;
-        --submenu-li-a-bg: rgb(46, 39, 28);
-        --submenu-a-bg-hover: #010e04;
+        --nav-header-bg: rgb(6, 18, 32);
+        --main-list-a-color: rgb(201, 201, 201);
+        --main-list-a-bg-hover: rgb(4, 12, 20);
+        --submenu-li-a-bg: rgb(28, 41, 46);
+        --submenu-a-bg-hover: #010e0f;
         --github-img: url("../img/github_logo.png");
-        --github-fill: rgb(255, 255, 255);
-        --github-hover-fill: rgb(184, 193, 197);
+        --github-fill: rgb(196, 195, 195);
+        --github-hover-fill: rgb(78, 86, 88);
         --home-img: url("../img/house_white.png");
         --home-fill: rgb(227, 246, 252);
     }
