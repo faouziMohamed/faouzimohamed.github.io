@@ -38,3 +38,17 @@ body{
     background-color: rgb(180, 175, 175);
     color: rgb(10, 10, 10);
 }
+
+ul#main-list>li:hover .submenu{
+    display: block;
+    background-color: rgb(88, 95, 97);
+}
+
+.submenu a:hover{
+    background-color: rgb(75, 127, 141);
+}
+
+ul#main-list>li:first-child:hover{
+    display: block;
+    fill: antiquewhite;
+}
