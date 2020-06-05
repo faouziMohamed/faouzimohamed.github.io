@@ -308,9 +308,8 @@ td.empty {
     border-color: white;
     text-decoration: none;
     transition: all .3s ease-out;
-    bot tom: 0%;
-    right: 8px;
-    top: 90%;
+    bottom: 4%;
+    right: 2%;
 }
 
 .to-top:before {
@@ -322,12 +321,13 @@ td.empty {
     margin-left: -.7em;
     border: solid .13em white;
     border-radius: 10em;
-    width: 1.4em;
-    height: 1.4em;
-    line-height: 1.3em;
+    width: 2em;
+    height: 2em;
+    line-height: 1.8em;
     border-color: inherit;
     transition: transform .5s ease-in;
     text-align: center;
+    font-size: 90%;
 }
 
 .to-top:hover {
@@ -383,5 +383,8 @@ td.empty {
     .table-center figcaption {
         width: inherit;
     }
-}
 
+    .to-top:before {
+        border: solid .12em white;
+    }
+}
