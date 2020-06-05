@@ -439,3 +439,10 @@ td.empty {
         border: solid .12em white;
     }
 }
+
+
+@media only screen and (max-width:414px){
+    .main-article>header {
+        width: 85%;
+    }
+}
