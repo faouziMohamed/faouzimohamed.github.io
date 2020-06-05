@@ -82,7 +82,7 @@ two responsive modes*/
         /*Hide submenu is it not hovered*/
         parent.addEventListener('mouseout', function hide_subMenu(e) {
             var related_target = e.relatedTarget;
-            while (related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
+            while (related_target && related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
                 related_target = related_target.parentNode;
             }
             if (related_target != this)

@@ -2,25 +2,52 @@ function new_element(name,attributes={}, text=''){
     node = document.createElement(name);
 
     for(var o in attributes)
-        node.setAttribute(o, attributes[o])
+        node.setAttribute(o, attributes[o]);
 
     if(text){
         node.innerHTML = text;
     }
-    return node
+    return node;
 }
 
-function add_rli_to_ul(ul,node,id)
+function add_li_to_ul(ul,node,id)
 {
-    node.id += id
-    a  = new_element('a', {href:'#'+id},node.firstChild.data)
-    var li = new_element('li')
-    li.appendChild(a)
-    ul.appendChild(li)
-    return li
+    node.id += id;
+    a  = new_element('a', {href:'#'+id},node.firstChild.data);
+    var li = new_element('li');
+    li.appendChild(a);
+    ul.appendChild(li);
+    return li;
 }
 
 
+function create_list_left_nav()
+{
+    var ul = document.querySelector("#ul-aside-nav");
+    var title = document.querySelectorAll("section h2, section h3");
+    var node = null,  n=1, id=null, li=null;
+    
+    for(var i=0, c=title.length; i<c;++i)
+    {
+        id  = ' titre'+ (n++);
+        li  = add_li_to_ul(ul,title[i],id);
+        ul_ = new_element('ul');
+        while(++i<c && title[i].nodeName === 'H3'){
+            id  = ' titre'+ (n++);
+            add_li_to_ul(ul_,title[i],id);
+        }
+        li.appendChild(ul_);
+    }
+}
+
+create_list_left_nav()
+
+
+
+
+
+
+/*
 function create_list_left_nav()
 {
     var ul = document.querySelector("#ul-aside-nav")
@@ -34,20 +61,25 @@ function create_list_left_nav()
         for(var j=0, l=childs.childNodes.length;j < l;j++)
         {
             node = childs.childNodes[j]                
-            if(node.nodeName === 'H2')
+            if(node.nodeName === 'H2' || ul_)
             {
                 if(ul_)
                 {
+                    if(node.nodeName!=='H2')
+                    {
+                        while
+                    }
                     li.appendChild(ul_)
                     ul.appendChild(li)
-
                     id = 'titre'+ (n++)
-                    li = add_rli_to_ul(ul,node,id)
+                    li = add_li_to_ul(ul,node,id)
                     ul_ = null
+
+                    
                 }
                 else{
                     id = 'titre'+ (n++)
-                    li = add_rli_to_ul(ul,node,id)
+                    li = add_li_to_ul(ul,node,id)
                 }
                 
                 h2_found = true
@@ -61,11 +93,9 @@ function create_list_left_nav()
                         ul_ = new_element('ul')
                 }
                 id = 'titre'+(n++)
-                add_rli_to_ul(ul_,node,id)
+                add_li_to_ul(ul_,node,id)
                 h2_found = false
             }
         }       
     }
-}
-
-create_list_left_nav()
+}*/
