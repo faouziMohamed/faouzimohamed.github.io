@@ -286,12 +286,40 @@ réseau de neurones à propagation avant). Dans sa version simplifiée, le perce
 qu'une seule sortie (booléenne) à laquelle toutes les entrées (booléennes) sont connectées. Plus
 généralement, les entrées peuvent être des nombres réels.
                         </p>
-
                         <div class="figure-layout">
-                            <figure>
+                            <figure id="mark1-perceptron">
                                 <img src="../img/perceptron.jpeg" 
                                      alt="Mark1, le premier perceptron du monde" 
                                      title="Mark1, le premier perceptron du monde">
+                                <figcaption>Mark1, le premier perceptron du monde</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Structure d'un perceptron</h3>
+                        <p>
+                            Voici comment un neurone est schématiquement représenté dans le fonctionnement 
+                            du cerveau humain.
+                        </p>
+                        <div class="figure-layout">
+                            <figure id="human-neuron">
+                                <img src="../img/neuron-human.png"
+                                alt="Neurone humain" title="Neurone humain">
+                                <figcaption>Neurone humain</figcaption>
+                            </figure>
+                        </div>
+                        <p>
+                            Un perceptron est une modélisation mathématique du fonctionnement d’un vrai neurone biologique
+et qui imite grossièrement le fonctionnement de ce dernier. Il reçoit en paramètre des entrées X dont chaque
+entrée est multipliée par un poids w. Toutes ces entrées sont alors sommées et passé dans une fonction dite
+d’activation ou fonction de transfert. Cette fonction va comparer la somme pondérée à un à un certain seuil
+b pour décider quel sera la sortie y du neurone.
+                        </p>
+
+                        <div class="figure-layout">
+                            <figure id="perceptron">
+                                <img src="../img/perceptron.svg">
+                                <figcaption>Structure d’un neurone artificiel avec n entrées x i et une sortie y</figcaption>
                             </figure>
                         </div>
                     </section>
