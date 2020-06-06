@@ -24,6 +24,12 @@
 			"titleBar.inactiveBackground": "#190b0099",
 			"titleBar.inactiveForeground": "#e7e7e799"
 		},
-		"peacock.color": "#190b00"
+		"peacock.color": "#190b00",
+		"files.exclude": {
+			"**/.classpath": true,
+			"**/.project": true,
+			"**/.settings": true,
+			"**/.factorypath": true
+		}
 	}
 }
