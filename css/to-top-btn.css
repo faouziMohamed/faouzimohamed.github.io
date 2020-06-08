@@ -1,10 +1,19 @@
+.theme-dark{
+    --border-color : #91c500;
+    --symbol-color:rgb(0, 255, 34);
+}
+
+.theme-light{
+    --border-color : rgb(0, 255, 34); 
+    --symbol-color:#91c500;
+}
 .to-top {
-    color: white;
+    color: var(--symbol-color);
     padding-top: 1.8em;
     display: inline-block;
     /* or block */
     position: fixed;
-    border-color: white;
+    border-color: var(--border-color);
     text-decoration: none;
     transition: all .3s ease-out;
     bottom: 4%;
