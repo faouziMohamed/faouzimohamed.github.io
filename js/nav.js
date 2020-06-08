@@ -1,4 +1,5 @@
 /*GLOBAL VARIABLES */
+import "./body"
 var open = false;
 var close = true;
 var used = false;
@@ -57,6 +58,8 @@ two responsive modes*/
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
     var c = ul.length;
+    var angle_down = 
+    <i class="fa fa-angle-down"></i>
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
