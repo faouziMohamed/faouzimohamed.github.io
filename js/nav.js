@@ -69,8 +69,6 @@ two responsive modes*/
     var c = ul.length;
 
     /*Displaying or hidden submenus */
-
-
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
         parent.addEventListener('click', function (e) {
@@ -80,9 +78,9 @@ two responsive modes*/
                 this.lastElementChild.style.display = 'none';
         });
         /*Hide submenu is it not hovered*/
-        parent.addEventListener('mouseout', function hide_subMenu(e) {
+        parent.addEventListener('mouseout', function (e) {
             var related_target = e.relatedTarget;
-            while (related_target && related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
+            while (related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
                 related_target = related_target.parentNode;
             }
             if (related_target != this)
