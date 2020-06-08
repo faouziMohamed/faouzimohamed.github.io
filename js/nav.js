@@ -73,16 +73,16 @@ function new_element(name,attributes={}, text=''){
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
         parent.querySelector("a")
-              .appendChild(new_element("i",{class:'fa fa-angle-down'}));
+              .appendChild(new_element("i",{class:'fas fa-angle-down'}));
         parent.addEventListener('click', function (e) {
             var angle = this.querySelector('a i');
             if (this.lastElementChild.style.display !== 'block'){
                 this.querySelector("a")
-                .replaceChild(new_element("i",{class:'fa fa-angle-up'}), angle);
+                .replaceChild(new_element("i",{class:'fas fa-angle-up'}), angle);
                 this.lastElementChild.style.display = 'block';
             }else{
                 this.querySelector("a")
-                    .replaceChild(new_element("i",{class:'fa fa-angle-down'}), angle);
+                    .replaceChild(new_element("i",{class:'fas fa-angle-down'}), angle);
                     this.lastElementChild.style.display = 'none';
                 }
         });
