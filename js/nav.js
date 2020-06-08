@@ -1,5 +1,4 @@
 /*GLOBAL VARIABLES */
-import "./body"
 var open = false;
 var close = true;
 var used = false;
@@ -53,21 +52,39 @@ two responsive modes*/
     }
     display_menu(x);
 })();
+
+function new_element(name,attributes={}, text=''){
+    node = document.createElement(name);
+
+    for(var o in attributes)
+        node.setAttribute(o, attributes[o]);
+
+    if(text){
+        node.innerHTML = text;
+    }
+    return node;
+}
 (function () {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
     var c = ul.length;
-    var angle_down = 
-    <i class="fa fa-angle-down"></i>
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
+        parent.querySelector("a")
+              .appendChild(new_element("i",{class:'fa fa-angle-down'}));
         parent.addEventListener('click', function (e) {
-            if (this.lastElementChild.style.display !== 'block')
+            var angle = this.querySelector('a i');
+            if (this.lastElementChild.style.display !== 'block'){
+                this.querySelector("a")
+                .replaceChild(new_element("i",{class:'fa fa-angle-up'}), angle);
                 this.lastElementChild.style.display = 'block';
-            else
-                this.lastElementChild.style.display = 'none';
+            }else{
+                this.querySelector("a")
+                    .replaceChild(new_element("i",{class:'fa fa-angle-down'}), angle);
+                    this.lastElementChild.style.display = 'none';
+                }
         });
         /*Hide submenu is it not hovered*/
         parent.addEventListener('mouseout', function (e) {
