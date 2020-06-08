@@ -78,12 +78,12 @@ function new_element(name,attributes={}, text=''){
             var angle = this.querySelector('a i');
             if (this.lastElementChild.style.display !== 'block'){
                 this.querySelector("a")
-                .replaceChild(new_element("i",{class:'fas fa-angle-up'}), angle);
+                    .replaceChild(new_element("i",{class:'fas fa-angle-up'}), angle);
                 this.lastElementChild.style.display = 'block';
             }else{
                 this.querySelector("a")
                     .replaceChild(new_element("i",{class:'fas fa-angle-down'}), angle);
-                    this.lastElementChild.style.display = 'none';
+                this.lastElementChild.style.display = 'none';
                 }
         });
         /*Hide submenu is it not hovered*/
