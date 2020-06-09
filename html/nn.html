@@ -7,6 +7,21 @@
         <meta name='author' content="Faouzi Mohamed">   
         <meta name="color-scheme" content="dark light">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ['$', '$'],
+                        ['\\(', '\\)']
+                    ]
+                },
+                svg: {
+                    fontCache: 'global'
+                }
+            };
+        </script>
+        <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
         <noscript>
             <link rel="stylesheet" href="../css/noscript.css"/>
         </noscript>
@@ -325,19 +340,55 @@ b pour décider quel sera la sortie y du neurone.
                                 Comme nous pouvons le constater, sa structure est composée de 6 parties :
                             </p>
                             <ul>
-                                <li>Les entrées (x
-                                    <sub>1</sub>, x
-                                    <sub>2</sub>, x
-                                    <sub>3</sub>,..., x
-                                    <sub>n</sub>)
+                                <li>Les entrées ($x_1, x_2, x_3, ..., x_n$)</li>
+                                <li>Les poids ($w_1, w_2, w_3, ..., w_n$)</li>
+                                <li>Une fonction somme ($\sum$)</li>
+                                <li>Un biais ($w_0)</li>
+                                <li>Une fonction d'activation ($h$ qu'on note souvent par la notation grec $\phi$)</li>
+                                <li>Une sortie ($y$)</li>
+                            </ul>
+                        </div>
+
+                        <p>
+                            Sur la précédente, les entrées sont les données que l’on fournit au perceptron afin qu’il calcule un résultat.
+Ces données doivent être des mesures en lien avec le cas étudié. Dans le cadre de ce travail, les mesures
+sont des pixels. Étant donné que les données utilisées peuvent varier, on peut avoir certains problèmes de
+confiance avec les résultats obtenus
+                        </p>
+                        <p class="alinea">
+                            En effet, si nous imaginons qu’une entrée peut avoir des valeurs qui varient entre 0et 1 et qu’une deuxième
+entrée peut avoir des valeurs qui varient entre 0 et 3000, alors la deuxième entrée va avoir un impact
+beaucoup plus important dans le résultat calculé. Afin de remédier à cela, il est impératif de normaliser les
+données en entrée. Nous verrons plus tard que la normalisation peut avoir un impact sur l’apprentissage.
+                        </p>
+                        <div class="list-p">
+                            <p>
+                                La fonction de somme pondérée va faire la somme de la multiplication de chaque entrée par son poids
+correspondant et va ajouter le biais, qui est une valeur constante. Avant de pouvoir utiliser le résultat, la
+somme est passée dans une fonction d’activation.
+                            </p>
+                            <ul>
+                                <li>La fonction <strong class="bold">Sigmoïde</strong> : Pour une valeur $x$ quelconque, $y$ reste entre 0 et 1. Ce cas est très utile
+                                    lorsque nous avons besoin d’avoir un résultat continu. Elle est généralement notée par le symbole
+                                    grec $\sigma$ représentée par la fonction $\mathbf\sigma(x) = \frac{1}{e^{-x}}<!--{1 \over exp^{-x}}-->$.
                                 </li>
-                                <li>Les poids (w
-                                    <sub>1</sub>, w
-                                    <sub>2</sub>, w
-                                    <sub>3</sub>,..., w
-                                    <sub>n</sub>)
+                                <li>
+                                    La fonction <strong class="bold">$tanh$</strong> est également appelée tangente hyperbolique : Cette fonction ressemble à la
+fonction Sigmoïde. La différence avec la fonction Sigmoïde est que la fonction $tanh$ produit un
+résultat compris entre $-1$ et $1$.
+                                </li>
+                                <li>
+                                    La fonction $ReLU$ (Unité linéaire rectifiée) : Cette fonction converge plus rapidement, optimise et
+                                    produit la valeur souhaitée plus rapidement. C’est de loin la fonction d’activation la plus populaire
+                                    utilisée dans les couches cachées sur un réseau de neurones.  La fonction $ReLU$ est interprétée par
+                                    la formule : $f(x) = max(0,x)$.
+                                </li>
+                                <li>
+                                    La fonction $Softmax$ : utilisé dans la couche de sortie, sur un réseau de neurones, car il réduit les
+                                    dimensions et peut représenter une distribution catégorique.
                                 </li>
                             </ul>
+                            <p>(Vous trouverez encore plus d’autres fonctions sur <a href="https://fr.wikipedia.org/wiki/Fonction_d'activation#Liste_de_fonctions_d'activation_usuelles">Wikipédia</a>)</p>
                         </div>
                     </section>
                 </section>
