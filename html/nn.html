@@ -426,13 +426,16 @@ Ici sera seulement explicité le mode d’apprentissage supervisé. Ce qui veut 
 d’entraînement que vous fournissez à l’algorithme comportent les solutions désirées, appelées étiquettes
 (en anglais, labels).
                         </p>
-                        <div>
+                        <div id="supervised">
                             <figure>
                                 <img 
                                     src='../img/supervivee.png'
                                     alt='Mode d’apprentissage'
                                     title="Mode d’apprentissage"/>
-                                <figcaption>Mode d’apprentissage</figcaption>
+                                <figcaption>
+                                    Un jeu d’entraînement étiqueté pour un apprentissage 
+                                    supervisé (ex. classification de spam)[A. Géron, Hands-On]
+                                </figcaption>
                             </figure>
                         </div>
                     </section>
@@ -442,7 +445,14 @@ d’entraînement que vous fournissez à l’algorithme comportent les solutions
                             L’apprentissage consiste à envoyer des données au perceptron et à analyser le résultat. 
 Ensuite, on indique au perceptron quel était le résultat attendu.<br>
 Par exemple, si on obtient la valeur $0.3$ mais que la valeur attendue était de $1$, alors l’algorithme d’apprentissage 
-du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$
+du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$. Cette valeur peut être vue comme une fonction de coût et le perceptron doit s’adapter
+(s’ajuster) afin de réduire le coût au minimum possible.
+                        </p>
+                        <p>
+                            Pour cela, nous utilisons un algorithme appelé rétropropagation du gradient qui a pour but de
+changer les poids de chaque connexion. Un poids ou poids synaptique est un coefficient numérique qui est
+attribué à chacune des entrées d’un neurone, de manière aléatoire au début puis les poids sont adaptés au
+fur et à mesure, et qui permet de pondérer celles-ci. (Wikipédia, 2017).
                         </p>
                         <div>
                             <figure id="perceptron-monocouche">
