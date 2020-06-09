@@ -71,3 +71,44 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 60%;
 }
+
+
+@media only screen and (min-width:888px) {
+    .switch {
+        position: fixed;
+        animation: ba ckwards ease -in;
+        top:80px;
+        right: -2%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .switch {
+        position: fixed;
+        top:80px;
+        right: 1%;
+        transform: rotate(0deg);
+        width: 35px;
+        height: 20px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        animation: alternate ease-in-out;
+
+    }
+
+    .slider:before{
+        height: 26px;
+        width: 25px;
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .switch {
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        animation: ease-out;
+
+    }
+}
+

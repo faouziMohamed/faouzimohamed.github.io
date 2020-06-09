@@ -30,15 +30,21 @@ function change_img(theme=''){
     var perceptron = document.querySelector("#perceptron>img");
     var monocouche = document.querySelector("#monocouche>img");
     var mono_dark  = document.querySelector("#perceptron-monocouche>img");
+    var ok = perceptron!=null;
+    
     if(theme=='theme-dark'){
-        perceptron.src='../img/perceptron-dark.svg';
-        monocouche.src="../img/monocouche-dark.svg"
-        mono_dark.src ="../img/perceptron-apprentissage-dark.svg"
+        if(ok){
+            perceptron.src='../img/perceptron-dark.svg';
+            monocouche.src="../img/monocouche-dark.svg";
+            mono_dark.src ="../img/perceptron-apprentissage-dark.svg";
+        }
     }
     else{
-        perceptron.src='../img/perceptron-light.svg';
-        monocouche.src="../img/monocouche-light.svg";
-        mono_dark.src ="../img/perceptron-apprentissage-light.svg"
+        if(ok){
+            perceptron.src='../img/perceptron-light.svg';
+            monocouche.src="../img/monocouche-light.svg";
+            mono_dark.src ="../img/perceptron-apprentissage-light.svg";
+        }
     }
 }
 //localStorage.clear()
