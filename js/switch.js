@@ -28,11 +28,14 @@ function toggleTheme() {
 
 function change_img(theme=''){
     var perceptron = document.querySelector("#perceptron>img");
+    var monocouche = document.querySelector("#monocouche>img");
     if(theme=='theme-dark'){
         perceptron.src='../img/perceptron-dark.svg';
+        monocouche.src="../img/monocouche-dark.svg"
     }
     else{
         perceptron.src='../img/perceptron-light.svg';
+        monocouche.src="../img/monocouche-light.svg"
     }
 }
 //localStorage.clear()
