@@ -411,9 +411,31 @@ par des liaisons directionnelles. Chaque nœud représente une unité de traitem
 les relations causales entre les nœuds.
                         </p>
                     </section>
+                </section>
+                
+                <section class="main-section">
+                    <h2>Apprentissage</h2>
+                    <section>
+                        <h3>Le perceptron</h3>
+                        <p>
+                            L’apprentissage consiste à envoyer des données au perceptron et à analyser le résultat. 
+Ensuite, on indique au perceptron quel était le résultat attendu.<br>
+Par exemple, si on obtient la valeur $0.3$ mais que la valeur attendue était de $1$, alors l’algorithme d’apprentissage 
+du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$
+                        </p>
+                        <div>
+                            <figure id="perceptron-monocouche">
+                                <img 
+                                    src='../img/perceptron-apprentissage-dark.svg'
+                                    alt="Renvoie de l'erreur vers l'arrière"
+                                    title="Renvoie de l'erreur vers l'arrière" />
+                                <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
+                            </figure>
+                        </div>
+                    </section>
                     <section>
                         <h3>Réseau de neurones monocouche</h3>
-                        <div class="list-p flex-bloc">
+                        <div class="flex-bloc">
                             <div>
                                 <p>Le réseau le plus simple est <strong class="bold"> Le perceptron monocouche.</strong></p>
                                 <ul>
@@ -444,6 +466,18 @@ prenant la plus grande des $p$ sorties
                                     <figcaption>Réseau de neurones monocouche</figcaption>
                                 </figure>
                             </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Réseau de neurones multicouche (MLP pour Multi Layer Perceptron)</h3>
+                        <p>
+                            Dans ce réseau, les neurones de la première couche reçoivent toutes les informations entrées, ceux de la
+deuxième reçoivent toutes les sorties des neurones de la première couche, et ainsi de suite jusqu’aux neurones
+de sortie.
+                        </p>
+
+                        <div class="">
+
                         </div>
                     </section>
                 </section>
