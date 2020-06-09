@@ -416,6 +416,27 @@ les relations causales entre les nœuds.
                 <section class="main-section">
                     <h2>Apprentissage</h2>
                     <section>
+                        <h3>Mode d'apprentissage</h3>
+                        <p>
+                            L’apprentissage d’une MLP peut être faite de plusieurs façons. On trouve l’apprentissage supervisé,
+non supervisé, par renforcement, semi-supervisé.
+                        </p>
+                        <p>
+Ici sera seulement explicité le mode d’apprentissage supervisé. Ce qui veut dire que les données
+d’entraînement que vous fournissez à l’algorithme comportent les solutions désirées, appelées étiquettes
+(en anglais, labels).
+                        </p>
+                        <div>
+                            <figure>
+                                <img 
+                                    src='../img/supervivee.png'
+                                    alt='Mode d’apprentissage'
+                                    title="Mode d’apprentissage"/>
+                                <figcaption>Mode d’apprentissage</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <section>
                         <h3>Le perceptron</h3>
                         <p>
                             L’apprentissage consiste à envoyer des données au perceptron et à analyser le résultat. 
@@ -432,6 +453,10 @@ du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$
                                 <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
                             </figure>
                         </div>
+                        <p class="alinea">
+                            Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque connexion, la valeur en sortie sera toujours 0. 
+Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie afin que l’apprentissage se fasse correctement.
+                        </p>
                     </section>
                     <section>
                         <h3>Réseau de neurones monocouche</h3>
