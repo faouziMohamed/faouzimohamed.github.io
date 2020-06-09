@@ -2,6 +2,7 @@
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
+    change_img(themeName);
 }
 // function to toggle between light and dark theme
 function toggleTheme() {
@@ -14,6 +15,7 @@ function toggleTheme() {
 }
 // Immediately invoked function to set the theme on initial load
 (function () {
+
     var slider = document.querySelector("#slider")
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-dark');
@@ -24,4 +26,13 @@ function toggleTheme() {
     }
 })();
 
+function change_img(theme=''){
+    var perceptron = document.querySelector("#perceptron>img");
+    if(theme=='theme-dark'){
+        perceptron.src='../img/perceptron-dark.svg';
+    }
+    else{
+        perceptron.src='../img/perceptron-light.svg';
+    }
+}
 //localStorage.clear()
