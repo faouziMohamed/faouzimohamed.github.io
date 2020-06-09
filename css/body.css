@@ -239,6 +239,7 @@ strong {
     text-align: center;
 }
 
+.underline{font-style: '\f0cd';}
 .align-left,
 ul.align-left>li {
     text-align: left;

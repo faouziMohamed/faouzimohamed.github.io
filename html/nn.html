@@ -343,7 +343,7 @@ b pour décider quel sera la sortie y du neurone.
                                 <li>Les entrées ($x_1, x_2, x_3, ..., x_n$)</li>
                                 <li>Les poids ($w_1, w_2, w_3, ..., w_n$)</li>
                                 <li>Une fonction somme ($\sum$)</li>
-                                <li>Un biais ($w_0)</li>
+                                <li>Un biais ($w_0$)</li>
                                 <li>Une fonction d'activation ($h$ qu'on note souvent par la notation grec $\phi$)</li>
                                 <li>Une sortie ($y$)</li>
                             </ul>
@@ -415,42 +415,30 @@ les relations causales entre les nœuds.
                         <h3>Réseau de neurones monocouche</h3>
                         <div class="list-p flex-bloc">
                             <div>
-                                <p>Le réseau le plus simple est <strong> Le perceptron monocouche.</strong></p>
+                                <p>Le réseau le plus simple est <strong class="bold"> Le perceptron monocouche.</strong></p>
                                 <ul>
                                     <li>
-                                        <span class="bold">Train set</span> :
-                                        Celui-ci va être le plus volumineux en termes de
-                                        donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
-                                        la phase d’entrainement pour pouvoir s’approprier des
-                                        paramètres, et les ajuster au mieux. Certaines règles préconisent
-                                        qu’il soit composé de 80% des données disponibles. C’est la
-                                        phase d’apprentissage.
+                                        Il possède $N$ informations en entrées.
                                     </li>
                                     <li>
-                                        <span class="bold">Validation set</span> :
-                                        Quant à lui, on préconise d’avoir environ 10%
-                                        des données disponible. Ce jeu sera appelé une seule fois, à la
-                                        fin de chaque itération d’entrainement. Il va permettre
-                                        d’équilibrer le système. C’est la phase d’ajustage.
+                                        Il est composé de $p$ neurones, que l’on représente généralement
+alignés verticalement ou horizontalement.
                                     </li>
                                     <li>
-                                        <span class="bold">Test set</span> :
-                                        Test set : Ce dernier va avoir un rôle bien différent des autres,
-                                        puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
-                                        avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
-                                        voir comment il arrive à prédire. C’est pour cela qu’il doit être
-                                        composé exclusivement de nouveaux échantillons, encore
-                                        jamais utilisé pour éviter de biaiser les résultats en lui envoyant
-                                        des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
-                                        de la phase d’entrainement ou de validation. Celui-ci encore
-                                        peut être estimé de l’ordre de 10% des données disponible.
+                                        Chacun des $p$ neurones est connecté aux $N$ informations d’entrées.
                                     </li>
+                                    <li>La sortie de chacun des $p$ neurones est une est une sortie du réseau.</li>
                                 </ul>
                             </div>
+                            <p>
+                                Une utilisation courante est que chaque neurone de la couche représente une
+<span class="underline">classe</span>. Pour un exemple $X$ donné, on obtient la classe de cet exemple en
+prenant la plus grande des $p$ sorties
+                            </p>
                             <div>
                                 <figure  id='monocouche'>
                                     <img 
-                                        src="" 
+                                        src="../img/monocouche-dark.svg" 
                                         alt="Réseau de neurones monocouche"
                                         title="Réseau de neurone monocouche">
                                     <figcaption>Réseau de neurones monocouche</figcaption>
