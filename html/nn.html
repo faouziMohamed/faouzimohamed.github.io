@@ -390,6 +390,73 @@ résultat compris entre $-1$ et $1$.
                             </ul>
                             <p>(Vous trouverez encore plus d’autres fonctions sur <a href="https://fr.wikipedia.org/wiki/Fonction_d'activation#Liste_de_fonctions_d'activation_usuelles">Wikipédia</a>)</p>
                         </div>
+                        <p>
+                            La propagation d’un vecteur d’entrée ($x_i$) à travers un perceptron s’écrit :
+                            $$p = \sum^{n}_{i=0} x_i w_i - b$$ (Avec $n$ le nombre d'entrées sur le perceptron)
+                            $$y = \sigma(p)$$
+
+                        </p>
+                        <p>
+                            Cela dit, un seul neurone ne suffit pas de faire des relations plus complexes. Les neurones on peut en
+associer plein ensemble, les empiler pour créer des couches de neurones pour réussir à faire des fonctions
+beaucoup plus compliquées. Et c’est cet ensemble de couche de neurones liées qu’on appelle un "Réseau
+de neurones" (ou plutôt dire réseau de neurones artificiel).
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Réseau de neurones artificiel</h3>
+                        <p>
+                            Un réseau de neurones est une structure de réseau constituée d’un nombre de nœuds interconnectés
+par des liaisons directionnelles. Chaque nœud représente une unité de traitement et les liaisons représentent
+les relations causales entre les nœuds.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Réseau de neurones monocouche</h3>
+                        <div class="list-p flex-bloc">
+                            <div>
+                                <p>Le réseau le plus simple est <strong> Le perceptron monocouche.</strong></p>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Train set</span> :
+                                        Celui-ci va être le plus volumineux en termes de
+                                        donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
+                                        la phase d’entrainement pour pouvoir s’approprier des
+                                        paramètres, et les ajuster au mieux. Certaines règles préconisent
+                                        qu’il soit composé de 80% des données disponibles. C’est la
+                                        phase d’apprentissage.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Validation set</span> :
+                                        Quant à lui, on préconise d’avoir environ 10%
+                                        des données disponible. Ce jeu sera appelé une seule fois, à la
+                                        fin de chaque itération d’entrainement. Il va permettre
+                                        d’équilibrer le système. C’est la phase d’ajustage.
+                                    </li>
+                                    <li>
+                                        <span class="bold">Test set</span> :
+                                        Test set : Ce dernier va avoir un rôle bien différent des autres,
+                                        puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
+                                        avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
+                                        voir comment il arrive à prédire. C’est pour cela qu’il doit être
+                                        composé exclusivement de nouveaux échantillons, encore
+                                        jamais utilisé pour éviter de biaiser les résultats en lui envoyant
+                                        des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
+                                        de la phase d’entrainement ou de validation. Celui-ci encore
+                                        peut être estimé de l’ordre de 10% des données disponible.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <figure  id='monocouche'>
+                                    <img 
+                                        src="" 
+                                        alt="Réseau de neurones monocouche"
+                                        title="Réseau de neurone monocouche">
+                                    <figcaption>Réseau de neurones monocouche</figcaption>
+                                </figure>
+                            </div>
+                        </div>
                     </section>
                 </section>
                 
