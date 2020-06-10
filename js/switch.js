@@ -33,6 +33,7 @@ function change_img(theme=''){
     var bias_1     = document.querySelector("#bias-1>img");
     var bias_2     = document.querySelector("#bias-2>img");
     var bias_3     = document.querySelector("#bias-3>img");
+    var bias_4     = document.querySelector("#bias-4>img");
     var ok = perceptron!=null;
     
     if(theme=='theme-dark'){
@@ -43,6 +44,7 @@ function change_img(theme=''){
             bias_1.src    ="../img/bias_1-dark.svg";
             bias_2.src    ="../img/bias_2-dark.svg";
             bias_3.src    ="../img/bias_3-dark.svg";
+            bias_4.src    ="../img/bias_4-dark.svg";
         }
     }
     else{
@@ -53,6 +55,7 @@ function change_img(theme=''){
             bias_1.src    ="../img/bias_1-light.svg";
             bias_2.src    ="../img/bias_2-light.svg";
             bias_3.src    ="../img/bias_3-light.svg";
+            bias_4.src    ="../img/bias_4-light.svg";
         }
     }
 }

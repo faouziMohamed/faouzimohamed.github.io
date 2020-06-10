@@ -238,6 +238,7 @@ strong {
 .center {
     text-align: center;
 }
+.italic{font-style: italic;}
 
 .underline{font-style: '\f0cd';}
 .align-left,
