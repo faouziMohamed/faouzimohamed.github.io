@@ -88,12 +88,22 @@ function new_element(name,attributes={}, text=''){
         });
         /*Hide submenu is it not hovered*/
         parent.addEventListener('mouseout', function (e) {
-            var related_target = e.relatedTarget;
-            while (related_target != this && related_target.nodeName != 'BODY' && related_target != document) {
+            var related_target=e.relatedTarget;               
+            if((!this.lastElementChild.style.display) || 
+                 this.lastElementChild.style.display ==='none')
+                                {return;}
+            
+            while (related_target != this && 
+                   related_target.nodeName != 'BODY' && 
+                   related_target != document) {
                 related_target = related_target.parentNode;
             }
-            if (related_target != this)
+            if (related_target != this){
                 this.lastElementChild.style.display = 'none';
+                this.querySelector("a")
+                    .replaceChild(new_element("i",{class:'fas fa-angle-down'}),
+                this.querySelector('a i'));
+            }
         });
     }
     /** Tweaking submenus (adding class on its parents)**/
