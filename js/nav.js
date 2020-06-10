@@ -134,7 +134,36 @@ function new_element(name,attributes={}, text=''){
     .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 })();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
     console.log('🎉 Dark mode is supported');
 }
-
+*/
