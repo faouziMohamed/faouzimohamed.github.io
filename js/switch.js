@@ -29,21 +29,29 @@ function toggleTheme() {
 function change_img(theme=''){
     var perceptron = document.querySelector("#perceptron>img");
     var monocouche = document.querySelector("#monocouche>img");
-    var mono_dark  = document.querySelector("#perceptron-monocouche>img");
+    var mono_error = document.querySelector("#perceptron-monocouche>img");
+    var bias_1     = document.querySelector("#bias-1>img");
+    var bias_2     = document.querySelector("#bias-2>img");
     var ok = perceptron!=null;
     
     if(theme=='theme-dark'){
         if(ok){
             perceptron.src='../img/perceptron-dark.svg';
             monocouche.src="../img/monocouche-dark.svg";
-            mono_dark.src ="../img/perceptron-apprentissage-dark.svg";
+            mono_error.src="../img/perceptron-apprentissage-dark.svg";
+            bias_1.src    ="../img/bias_1-dark.svg";
+            bias_2.src    ="../img/bias_2-dark.svg";
         }
     }
     else{
         if(ok){
             perceptron.src='../img/perceptron-light.svg';
             monocouche.src="../img/monocouche-light.svg";
-            mono_dark.src ="../img/perceptron-apprentissage-light.svg";
+            mono_error.src="../img/perceptron-apprentissage-light.svg";
+            bias_1.src    ="../img/bias_1-light.svg";
+            bias_2.src    ="../img/bias_2-light.svg";
+
+
         }
     }
 }
