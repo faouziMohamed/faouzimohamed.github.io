@@ -72,7 +72,7 @@ input:checked + .slider:before {
     border-radius: 60%;
 }
 
-
+/*
 @media only screen and (min-width:888px) {
     .switch {
         position: fixed;
@@ -111,4 +111,4 @@ input:checked + .slider:before {
 
     }
 }
-
+*/
