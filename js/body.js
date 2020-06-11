@@ -31,36 +31,34 @@ function create_list_left_nav()
     var ul = document.querySelector("#ul-aside-nav");
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,  n=1, id=null, li=null;
+    var ul_=null,li_=null,_ul=null, c=title.length;
     
+    /*For H1*/
     var H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
 
-    var link_in_h2 = new_element('a',{style:"text-decoration:none;\
-                                              color:lightgreen;",
-                                      href:"#top-h1 "},
-                        document.querySelector(".main-article H1")
-                                .firstChild.data) ;
-    var h2 = new_element('h2',{style:'text-align:left;\
-                                       font-size:110%;\
-                                       margin-left:0px'});
-    h2.appendChild(link_in_h2);
+    var h2 = new_element('h2',{style:'text-align:left; font-size:110%; margin-left:0px'});
+    h2.appendChild(new_element('a',{style:"text-decoration:none; color:lightgreen;", href:"#top-h1"},
+                                document.querySelector(".main-article H1").firstChild.data));
     ul.parentNode.insertBefore(h2,ul);
     
-    for(var i=0, c=title.length; i<c;++i)
-    {
-        id  = 'titre'+ (n++);
-        li  = add_li_to_ul(ul,title[i],id);
+    for(var i=0; i<c;++i)
+    {   /*For H2*/
+        li  = add_li_to_ul(ul,title[i],'titre'+ (n++));
         ul_ = new_element('ul');
-        while(++i<c && (title[i].nodeName === 'H3' || title[i].nodeName === 'H4')){
-            id  = 'titre'+ (n++);
-            add_li_to_ul(ul_,title[i],id);
-            if(title[i].nodeName === 'H4'){
-                console.log(title[i].firstChild.data);
-            }
+        /*For H3*/
+        while(++i<c && (title[i].nodeName === 'H3')){
+            li_ = add_li_to_ul(ul_,title[i],'titre'+ (n++));
         }
-       
+        /*For H4*/
+        if(i<c && title[i--].nodeName === 'H4'){
+            _ul = new_element('ul');
+            while(i++<c && title[i].nodeName === 'H4'){
+                add_li_to_ul(_ul,title[i],'titre'+ (n++));
+            }
+            li_.appendChild(_ul);
+        }
         li.appendChild(ul_);
-        --i;
     }
 }
 
