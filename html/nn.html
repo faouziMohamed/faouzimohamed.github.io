@@ -781,7 +781,7 @@
                     </p>
                     <section>
                         <h4>Phase avant</h4>
-                        <p>
+                        <p class="alinea">
                             C’est la phase de prédiction. On envoi à notre réseau une donnée et il va essayer d’en prédire un
 résultat (par exemple la classe de sortie). Il va avoir un échange d’informations, de valeurs et de sommes,
 entre chaque neurone et chaque couche. Les données transitent de la couche d’entrée vers la couche de
@@ -789,12 +789,42 @@ sortie.
                         </p>
                         <figure id="forward-step">
                             <img 
-                                title="" 
                                 src="" 
-                                alt="" />
+                                title="Propagation de l’information vers l’avant" 
+                                alt="Propagation de l’information vers l’avant" />
                             <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
                         </figure>
                     </section>
+                    <section>
+                        <h4>Phase arrière</h4>
+                        <p class="alinea">
+                            C’est la phase d’apprentissage. En effet, L'erreur est propagée vers l'arrière jusqu'à la couche
+précédente. À la suite du passage d’une donnée au sein du réseau, nous allons avoir un résultat concernant
+la prédiction. Les poids et biais du réseau sont initialisé de façon aléatoire, et vont être mis à jour au fil des
+entraînements via ce procédé.
+                        </p>
+                        <figure id="feedback-step">
+                            <img 
+                                src="" 
+                                title="Propagation de l’information vers l’avant" 
+                                alt="Propagation de l’information vers l’avant" />
+                            <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
+                        </figure>
+                    </section>
+                </section>
+                <section>
+                    <h3>Fonction de coût</h3>
+                    <p>
+                        Une fonction de coût communément appelée fonction de perte ou fonction objective (loss function) 
+                        est une méthode qui sert à évaluer dans quelle mesure un modèle spécifique modélise les données.
+                    </p>
+                    <div>
+                        <p>On peut citer par exemple : </p>
+                        <ul>
+                            <li><strong>Mean Squared Error (MSE)</strong> (Erreur quadratique moyenne) : Régression</li>
+                            <li><strong>Cross-Entropy</strong> (entropie croisée) : Classification</li>
+                        </ul>
+                    </div>
                 </section>
             </section>
 
