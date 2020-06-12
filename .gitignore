@@ -1,4 +1,6 @@
 mathjax/
 my_page.code-workspace
+.vs/
+.vscode/
 .vs/**
 .vscode/**
