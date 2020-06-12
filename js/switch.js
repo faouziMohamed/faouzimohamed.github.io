@@ -38,7 +38,7 @@ function change_img(theme=''){
     var xor_1      = document.querySelector("#xor1>img");
     var xor_2      = document.querySelector("#xor2>img");
     var nt1        = document.querySelector("#NT1>img");
-    
+    var nt2        = document.querySelector("#NT2>img");
     var ok = perceptron!=null;
     
     if(theme=='theme-dark'){
@@ -54,6 +54,7 @@ function change_img(theme=''){
             xor_1.src     ="../img/XOR-1-dark.svg";
             xor_2.src     ="../img/XOR-2-dark.svg";
             nt1.src       ="../img/NT1-dark.svg";
+            nt2.src       ="../img/NT2-dark.svg";
         }
     }
     else{
@@ -69,6 +70,7 @@ function change_img(theme=''){
             xor_1.src     ="../img/XOR-1-light.svg";
             xor_2.src     ="../img/XOR-2-light.svg";
             nt1.src       ="../img/NT1-light.svg";
+            nt2.src       ="../img/NT2-light.svg";
         }
     }
 }
