@@ -62,4 +62,4 @@ function create_list_left_nav()
     }
 }
 
-create_list_left_nav()
+create_list_left_nav();
