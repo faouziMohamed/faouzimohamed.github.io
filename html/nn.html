@@ -777,20 +777,22 @@
                         locaux qui nous empêcherait de converger vers la solution la plus optimisé pour notre
                         réseau de neurones. Cette rétropropagation du gradient va se faire via l’alternation successives
                         entre deux
-                        phases : <strong class="bold">phase avant</strong> et <strong class="bold"> phase arrière</strong>.
+                        phases : <strong class="bold">phase avant</strong> et <strong class="bold"> phase
+                            arrière</strong>.
                     </p>
                     <section>
                         <h4>Phase avant</h4>
                         <p class="alinea">
-                            C’est la phase de prédiction. On envoi à notre réseau une donnée et il va essayer d’en prédire un
-résultat (par exemple la classe de sortie). Il va avoir un échange d’informations, de valeurs et de sommes,
-entre chaque neurone et chaque couche. Les données transitent de la couche d’entrée vers la couche de
-sortie.
+                            C’est la phase de prédiction. On envoi à notre réseau une donnée et il va essayer d’en
+                            prédire un
+                            résultat (par exemple la classe de sortie). Il va avoir un échange d’informations, de
+                            valeurs et de sommes,
+                            entre chaque neurone et chaque couche. Les données transitent de la couche d’entrée vers la
+                            couche de
+                            sortie.
                         </p>
                         <figure id="forward-step">
-                            <img 
-                                src="" 
-                                title="Propagation de l’information vers l’avant" 
+                            <img src="" title="Propagation de l’information vers l’avant"
                                 alt="Propagation de l’information vers l’avant" />
                             <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
                         </figure>
@@ -798,15 +800,16 @@ sortie.
                     <section>
                         <h4>Phase arrière</h4>
                         <p class="alinea">
-                            C’est la phase d’apprentissage. En effet, L'erreur est propagée vers l'arrière jusqu'à la couche
-précédente. À la suite du passage d’une donnée au sein du réseau, nous allons avoir un résultat concernant
-la prédiction. Les poids et biais du réseau sont initialisé de façon aléatoire, et vont être mis à jour au fil des
-entraînements via ce procédé.
+                            C’est la phase d’apprentissage. En effet, L'erreur est propagée vers l'arrière jusqu'à la
+                            couche
+                            précédente. À la suite du passage d’une donnée au sein du réseau, nous allons avoir un
+                            résultat concernant
+                            la prédiction. Les poids et biais du réseau sont initialisé de façon aléatoire, et vont être
+                            mis à jour au fil des
+                            entraînements via ce procédé.
                         </p>
                         <figure id="feedback-step">
-                            <img 
-                                src="" 
-                                title="Propagation de l’information vers l’avant" 
+                            <img src="" title="Propagation de l’information vers l’avant"
                                 alt="Propagation de l’information vers l’avant" />
                             <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
                         </figure>
@@ -815,21 +818,104 @@ entraînements via ce procédé.
                 <section>
                     <h3>Fonction de coût</h3>
                     <p>
-                        Une fonction de coût communément appelée fonction de perte ou fonction objective (loss function) 
+                        Une fonction de coût communément appelée fonction de perte ou fonction objective (loss function)
                         est une méthode qui sert à évaluer dans quelle mesure un modèle spécifique modélise les données.
                     </p>
                     <div>
                         <p>On peut citer par exemple : </p>
                         <ul>
-                            <li><strong>Mean Squared Error (MSE)</strong> (Erreur quadratique moyenne) : Régression</li>
-                            <li><strong>Cross-Entropy</strong> (entropie croisée) : Classification</li>
+                            <li><strong class="bold">Mean Squared Error (MSE)</strong> : Erreur quadratique moyenne
+                                généralement utilisé dans les
+                                problème de régression (le dernier couche contiendra un nœud avec une fonction
+                                d’activation
+                                linéaire),
+                            </li>
+                            <li><strong class="bold">Cross-Entropy</strong> : (entropie croisée) également appelée perte
+                                logarithmique utilisé dans les
+                                problèmes de classification binaire (Le dernier couche contiendra un neurone avec
+                                sigmoïde
+                                comme fonction d’activation),
+                            </li>
+                            <li><strong class="bold">Cross-Entropy</strong> : pour une classification multi-classe. Le
+                                dernier couche contiendra un nombre de
+                                neurones correspondant au nombre de classe et chacun aura comme fonction d’activation
+                                <strong class="bold">Softmax</strong>.
+                            </li>
                         </ul>
                     </div>
                 </section>
+                <section>
+                    <h3>La descente du gradient</h3>
+                    <p>
+                        La Descente de Gradient est un algorithme d’optimisation qui permet de trouver le <span class="bold">minimum</span> de
+                        n’importe quelle fonction <span class="bold">convexe</span> en convergeant progressivement vers ce minimum. Cette descente
+                        peut
+                        s’effectuer soit de manière globale (<span class="bold">batch gradient</span>), soit par des lots (<span class="bold">mini batch gradient</span>),
+                        soit de façon
+                        unitaire (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au réseau la totalité des données
+                        d’un seul
+                        trait, et de faire ensuite le calcul du gradient ainsi que la correction des coefficients. Alors
+                        que la seconde
+                        consiste à envoyer au réseau, les données par petit groupe d’une taille définit par
+                        l’utilisateur. La dernière
+                        quant à elle, envoi une donnée à la fois dans le réseau.
+                    </p>
+                    <p>
+                        Dans notre cas, notre réseau qu’on créera va utiliser la méthode par mini batch. En effet,
+                        celle-ci permet une
+                        meilleure convergence par rapport à la stochastic, et nous permet de meilleures performances que
+                        la batch, car
+                        on ne charge pas entièrement nos données.
+                    </p>
+
+                    <div>
+                        <figure id="grad">
+                            <img 
+                                src="../img/grad.svg"
+                                alt="Descente de gradient"
+                                title="Descente de gradient"/>
+                            <figcaption>Descente de gradient</figcaption>
+                        </figure>
+                    </div>
+
+                    <section>
+                        <h4>Minimisation de la fonction de coût</h4>
+                        <p>
+                            Dans les réseaux de neurones, on utilise l’algorithme de la Descente de Gradient dans les problèmes
+                            d’apprentissage supervisé pour minimiser la fonction coût, qui justement est une fonction convexe comme
+                            le montre la figure suivante. Les algorithmes d’optimisation (à savoir<strong class="bold"> Adam</strong>, 
+                            <strong class="bold">RAdam</strong>, 
+                            <strong class="bold">SGD</strong>, 
+                            <strong class="bold">RMSprop</strong>,
+                            etc.) utilisent un <strong class="bold">hyperparamètre</strong> nommé <strong class="bold italic" lang="en"><q>learning rate</q></strong> 
+                            (en français Taux d’apprentissage) pour converger vers le minimum de cette fonction.
+                        </p>
+                        <p>
+                            Si le Learning Rate est trop grand, alors vous ferez de trop grands pas dans la descente de gradient. Cela
+                            a l’avantage de descendre rapidement vers le minimum de la fonction coût, mais vous risquez de louper ce
+                            minimum en oscillant autour à l’infini… (Guillaume 2019)
+                        </p>
+                        <p>
+                            Pour éviter le cas précédent, vous pourriez être tenté de choisir un Learning Rate très faible. Mais s’il est
+                            trop faible, alors vous risquez de mettre un temps infini avant de converger vers le minimum de la fonction
+                            cout. (Guillaume 2019)
+                        </p>
+                        <div>
+                            <figure id="min-grad">
+                                <img 
+                                    src=""
+                                    alt="Minimisation de l'erreur par descente de gradient"
+                                    title="Minimisation de l'erreur par descente de gradient"/>
+                                <figcaption>Minimisation de l'erreur par descente de gradient</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                </section>
+                
             </section>
 
             <footer class="hidden">
-                <p class="">Coded by
+                <p>Coded by
                     <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
                         FAOUZI MOHAMED
                     </a>
