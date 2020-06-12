@@ -1,3 +1,4 @@
 mathjax/
 my_page.code-workspace
-.vs*/
+.vs/*
+.vscode/*
