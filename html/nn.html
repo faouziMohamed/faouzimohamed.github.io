@@ -431,34 +431,46 @@ d’entraînement que vous fournissez à l’algorithme comportent les solutions
                             </figure>
                         </div>
                     </section>
-                    <section>
+                    <section id="percep-train">
                         <h3>Apprentissage d'un perceptron</h3>
-                        <p>
-                            L’apprentissage consiste à envoyer des données au perceptron et à analyser le résultat. 
-Ensuite, on indique au perceptron quel était le résultat attendu.<br>
-Par exemple, si on obtient la valeur $0.3$ mais que la valeur attendue était de $1$, alors l’algorithme d’apprentissage 
-du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$. Cette valeur peut être vue comme une fonction de coût et le perceptron doit s’adapter
-(s’ajuster) afin de réduire le coût au minimum possible.
-                        </p>
-                        <p>
-                            Pour cela, nous utilisons un algorithme appelé rétropropagation du gradient qui a pour but de
-changer les poids de chaque connexion. Un poids ou poids synaptique est un coefficient numérique qui est
-attribué à chacune des entrées d’un neurone, de manière aléatoire au début puis les poids sont adaptés au
-fur et à mesure, et qui permet de pondérer celles-ci. (Wikipédia, 2017).
-                        </p>
-                        <div>
-                            <figure id="perceptron-monocouche">
-                                <img 
-                                    src='../img/perceptron-apprentissage-dark.svg'
-                                    alt="Renvoie de l'erreur vers l'arrière"
-                                    title="Renvoie de l'erreur vers l'arrière" />
-                                <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
-                            </figure>
-                        </div>
-                        <p class="alinea">
-                            Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque connexion, la valeur en sortie sera toujours 0. 
-Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie afin que l’apprentissage se fasse correctement.
-                        </p>
+                        <section>
+                            <h4>Contexte</h4>
+                            <p>
+                                L’apprentissage consiste à envoyer des données au perceptron et à analyser le résultat. 
+    Ensuite, on indique au perceptron quel était le résultat attendu.<br>
+    Par exemple, si on obtient la valeur $0.3$ mais que la valeur attendue était de $1$, alors l’algorithme d’apprentissage 
+    du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$. Cette valeur peut être vue comme une fonction de coût et le perceptron doit s’adapter
+    (s’ajuster) afin de réduire le coût au minimum possible.
+                            </p>
+                            <p>
+                                Pour cela, nous utilisons un algorithme appelé rétropropagation du gradient qui a pour but de
+    changer les poids de chaque connexion. Un poids ou poids synaptique est un coefficient numérique qui est
+    attribué à chacune des entrées d’un neurone, de manière aléatoire au début puis les poids sont adaptés au
+    fur et à mesure, et qui permet de pondérer celles-ci. (Wikipédia, 2017).
+                            </p>
+                            <div>
+                                <figure id="perceptron-monocouche">
+                                    <img 
+                                        src='../img/perceptron-apprentissage-dark.svg'
+                                        alt="Renvoie de l'erreur vers l'arrière"
+                                        title="Renvoie de l'erreur vers l'arrière" />
+                                    <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
+                                </figure>
+                            </div>
+                            <p class="alinea">
+                                Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque connexion, la valeur en sortie sera toujours 0. 
+    Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie afin que l’apprentissage se fasse correctement.
+                            </p>
+                            <p>
+                                Ainsi, l'apprentissage d'un perceptron consiste à envoyer des données et leurs étiquettes sur le perceptron. A la fin, 
+                                le perceptron doit réussir à trouver les bonnes configurations qui permettent de données une sortie
+                                qui se rapproche au sortie voulue. On aura alors une fonction d'erreur qui va calculer l'erreur faite par le perceptron,
+                                et cet erreur sera envoyée vers l'arrière pour corriger le poids ET/OU le biais pour que la sortie du perceptron
+                                se rapproche le plus proche possible du sortie désirée la <strong class="italic bold "><q>rétropropagation (du gradient)</q></strong> 
+                                ou en anglais <strong class="italic bold"><q lang="en">Backpropagation</q></strong>. <br>
+                                Ce qu'on peut résumer par : "Le perceptron apprend en apprenant de ces erreurs" (essaie - erreurs).
+                            </p>
+                        </section>
                         <section>
                             <h4>Le biais</h4>
                             <p>
@@ -674,6 +686,28 @@ prenant la plus grande des $p$ sorties
                             </figure>
                         </div>
                     </section>
+                    <section>
+                        <h3>Fonctionnement d'un réseau de neurones</h3>
+                        <p>
+                            Le principe du fonctionnement d’un perceptron et d’un réseau de neurones multicouches est essentiellement le même :
+                            nous avons toujours des entrées et des sorties mais nous avons des couches intermédiaires appelées couches cachées.
+                            Pour finir, chaque neurone contient aussi une fonction de somme, une fonction d’activation et un biais.
+                        </p>
+                    </section>
+                </section>
+
+                <section class="main-section">
+                    <h2>Apprentissage d'un réseau de neurones</h2>
+                    <p>
+                       Le principe d'apprentissage d'un résau de neurones est la même que celle que nous avons vu dans la section 
+                       <a href="#percep-train"><q>Apprentissage d'un perceptron</q></a>. La différence est que sur un réseau de 
+                       neurones l'erreur est envoyé vers tous les neurones de chaque couche et de cette façon, le réseau se réajuste
+                       et trouve les bons configurations a adopté.
+                
+                    </p>
+                    <p>
+                        Pour entrainer un réseau de neurones
+                    </p>
                 </section>
                                 
                 <footer>

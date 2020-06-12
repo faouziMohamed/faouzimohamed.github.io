@@ -234,6 +234,9 @@ nav#aside-nav>ul {
 strong {
     font-weight: bold;
 }
+q{
+    quotes:  '\201C' '\201d' '\00AB' '\00BB' ;
+}
 
 .center {
     text-align: center;
