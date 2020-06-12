@@ -282,7 +282,7 @@ pour traiter des images en entrée. Et apportent de nouvelles fonctionnalités d
                 </section>
                 
                 <section class="main-section">
-                    <h2>Les réseaux de neurones</h2>
+                    <h2>Neurone artificiel (Perceptron)</h2>
                     <section>
                         <h3>Le perceptron</h3>
                         <p>
@@ -565,7 +565,7 @@ Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie
                                     <figcaption>Séparation impossible avec une seule droite</figcaption>
                                 </figure>
                                 <p>
-                                   On peut voir que une seule droite ne peut pas les séparer correctement. Il en faudra deux pour le faire.
+                                   On peut voir qu'une seule droite ne permet de les séparer correctement. Il en faudra deux pour le faire.
                                 </p>
                             </div>
                             <div>
@@ -577,8 +577,26 @@ Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie
                                     <figcaption>Séparation d'ensembles avec deux droites</figcaption>
                                 </figure>
                             </div>
+                            <p>
+                                Il faut savoir ici qu'une droite représente un perceptron et le fait d'avoir utilisé deux droites
+                                montre qu'un seul perceptron ne peut pas résoudre des problèmes complexes. Il en faudra regrouper plusieurs
+                                pour résoudre des problèmes qui se répartissent d'une manière qu'on ne peut pas les découper avec un seul perceptron.
+                            </p>
+                            <p>
+                              Le fait de regrouper les perceptrons pour résoudre une tâche est ce qui constitue un réseaux de neurones.  
+                            </p>
+                            <p>
+                                On peut alors comprendre ici qu'un seul neurone ne suffit pas de faire des relations plus complexes.
+                                Les neurones on peut en associer plein ensemble, les empiler pour créer des couches de neurones pour 
+                                réussir à faire des fonctions beaucoup plus compliquées. Et c’est cet ensemble de couche de neurones 
+                                liées qu’on appelle un <q>réseau de neurones</q> (ou plutôt dire réseau de neurones artificiel).
+                            </p>
                         </section>
                     </section>
+                </section>
+
+                <section class="main-section">
+                    <h2>Réseaux de neurones</h2>
                     <section>
                         <h3>Réseau de neurones monocouche</h3>
                         <div class="flex-bloc">
@@ -617,19 +635,39 @@ prenant la plus grande des $p$ sorties
                     <section>
                         <h3>Réseau de neurones multicouche</h3>
                         <p>
-                            Dans un réseau réseau de neurones multicouche ou bien MLP pour Multi Layer Perceptron, 
+                            Dans un réseau réseau de neurones multicouche ou bien MLP pour <span lang="en">Multi Layer Perceptron</span>, 
                             les neurones de la première couche reçoivent toutes les informations entrées, ceux de la 
                             deuxième reçoivent toutes les sorties des neurones de la première couche, et ainsi de suite 
-                            jusqu’aux neurones.
-de sortie.
+                            jusqu’aux neurones de la dernier couche.
                         </p>
+                        <div>
+                            <figure id="NT1">
+                                <img
+                                src="../img/NT1-dark.svg"
+                                alt=""
+                                title="">
+                            </figure id="NT1">
+                        </div>
 
-                        <div class="">
-
+                        <p>
+                            Pour créer un tel réseau, il faut connecter un ensemble de neurone (une couche de neurone) avec
+                            un autre ensemble de neurone. Habituellement, chaque neurone d'une couche est connecté à tous les
+                            neurones de la couche suivante et celle-ci seulement. Ceci nous permet d'introduire la notion de sens de
+                            parcours de l'information (de l'activation) au sein d'un réseau et donc de définir les concepts de neurones
+                            d'entrée et neurones de sortie. Par extension, on appelle couche d'entrée l'ensemble des neurones d'entrée(input layer), 
+                            couche de sortie l'ensemble des neurones de sortie (output layer). Les couches intermédiaires
+                            n'ayant aucun contact avec l'extérieur sont appelés couches cachées (hidden layer).
+                        </p>
+                        <div>
+                            <p>
+                                Dans la figure suivante, on voit que chaque neurone d’une couche est lié avec tous les
+                                neurones de la couche suivante. Un tel réseau de neurone est appelé réseau complètement
+                                connecté (fully connected network en Anglais).
+                            </p>
                         </div>
                     </section>
                 </section>
-                
+                                
                 <footer>
                     <p>Coded by 
                         <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">

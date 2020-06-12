@@ -57,6 +57,7 @@ function create_list_left_nav()
                 add_li_to_ul(_ul,title[i],'titre'+ (n++));
             }
             li_.appendChild(_ul);
+            --i;
         }
         li.appendChild(ul_);
     }
