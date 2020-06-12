@@ -191,6 +191,7 @@ aside#left-aside>nav {
     color: var(--main-aside-nav-color);
     overflow-y: auto;
 }
+.hidden{visibility: hidden;}
 
 nav#aside-nav>h1 {
     padding: 10px 0px 0px 0px;

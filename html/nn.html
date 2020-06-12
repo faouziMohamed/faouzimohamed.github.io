@@ -460,6 +460,18 @@
                             comme une fonction de coût et le perceptron doit s’adapter
                             (s’ajuster) afin de réduire le coût au minimum possible.
                         </p>
+                        <div class="list-p">
+                            <p>Dans un perceptron nous avons deux types de sortie :</p>
+                            <ul>
+                                <li>Une sortie réelle</li>
+                                <li>Une sortie attendue</li>
+                            </ul>
+                            <p>
+                                Si la sortie réelle est différente de la sortie attendue on va soit incrémenter, soit
+                                décrémenter le biais afin
+                                d'adapter un vecteur de pondération (la somme pondérée)
+                            </p>
+                        </div>
                         <p>
                             Pour cela, nous utilisons un algorithme appelé rétropropagation du gradient qui a pour but
                             de
@@ -477,13 +489,13 @@
                                 <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
                             </figure>
                         </div>
-                        <p class="alinea">
+                        <p>
                             Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque
                             connexion, la valeur en sortie sera toujours 0.
                             Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie afin que
                             l’apprentissage se fasse correctement.
                         </p>
-                        <p>
+                        <p class="alinea">
                             Ainsi, l'apprentissage d'un perceptron consiste à envoyer des données et leurs étiquettes
                             sur le perceptron. A la fin,
                             le perceptron doit réussir à trouver les bonnes configurations qui permettent de données une
@@ -495,7 +507,8 @@
                             se rapproche le plus proche possible du sortie désirée la <strong
                                 class="italic bold "><q>rétropropagation (du gradient)</q></strong>
                             ou en anglais <strong class="italic bold"><q lang="en">Backpropagation</q></strong>. <br>
-                            Ce qu'on peut résumer par : "Le perceptron apprend en apprenant de ces erreurs" (essaie -
+                            Ce qu'on peut résumer par : <q>Le perceptron évolue en apprenant de ces erreurs</q> (essaie
+                            -
                             erreurs).
                         </p>
                     </section>
@@ -741,21 +754,52 @@
                 <p>
                     Le principe d'apprentissage d'un résau de neurones est la même que celle que nous avons vu dans la
                     section
-                    <a href="#percep-train"><q
-                            title="Aller dans la section &quot;Apprentissage d'un perceptron&quot;">Apprentissage d'un
-                            perceptron</q></a>. La différence est que sur un réseau de
+                    <a href="#percep-train">
+                        <q title="Aller dans la section &quot;Apprentissage d'un perceptron&quot;">
+                            Apprentissage d'un perceptron
+                        </q>
+                    </a>. La différence est que sur un réseau de
                     neurones l'erreur est envoyé vers tous les neurones de chaque couche et de cette façon, le réseau se
                     réajuste
                     et trouve les bons configurations a adopté.
 
                 </p>
-                <p>
-                    Pour entrainer un réseau de neurones
-                </p>
+                <section>
+                    <h3>La Rétropropagation (du gradient)</h3>
+                    <p>
+                        La Rétropropagation (<span class="bold" lang="en">Backpropagation</span> en anglais) est un
+                        raccourci pour
+                        <q class="quotation">la propagation d'erreurs vers l’arrière </q>, car une erreur est calculée à
+                        la sortie
+                        et est distribuée vers l’arrière à travers les couches du
+                        réseau. On souhaite trouver un minimum global pour une fonction de coût, tout en évitant les
+                        éventuelles vallées et minimum
+                        locaux qui nous empêcherait de converger vers la solution la plus optimisé pour notre
+                        réseau de neurones. Cette rétropropagation du gradient va se faire via l’alternation successives
+                        entre deux
+                        phases : <strong class="bold">phase avant</strong> et <strong class="bold"> phase arrière</strong>.
+                    </p>
+                    <section>
+                        <h4>Phase avant</h4>
+                        <p>
+                            C’est la phase de prédiction. On envoi à notre réseau une donnée et il va essayer d’en prédire un
+résultat (par exemple la classe de sortie). Il va avoir un échange d’informations, de valeurs et de sommes,
+entre chaque neurone et chaque couche. Les données transitent de la couche d’entrée vers la couche de
+sortie.
+                        </p>
+                        <figure id="forward-step">
+                            <img 
+                                title="" 
+                                src="" 
+                                alt="" />
+                            <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
+                        </figure>
+                    </section>
+                </section>
             </section>
 
-            <footer>
-                <p>Coded by
+            <footer class="hidden">
+                <p class="">Coded by
                     <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
                         FAOUZI MOHAMED
                     </a>
