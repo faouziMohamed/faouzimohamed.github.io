@@ -274,11 +274,13 @@ nav#aside-nav>ul {
     padding: 0px 15px 3px 5px;
 }
 
+.inline{display: inline;}
+.normal{font-weight: normal;}
 .bold,
 strong {
     font-weight: bold;
 }
-.poverul{margin-bottom: -15px;}
+.p-over-ul{margin-bottom: -15px;}
 
 q {
     quotes: '\201C''\201d';

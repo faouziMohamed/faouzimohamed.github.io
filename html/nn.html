@@ -451,7 +451,7 @@
                             (s’ajuster)</span> afin de réduire le coût au <span class="bold" >minimum</span> possible.
                         </p>
                         <div class="list-p">
-                            <p class="poverul">Dans un perceptron nous avons deux types de sortie :</p>
+                            <p class="p-over-ul">Dans un perceptron nous avons deux types de sortie :</p>
                             <ul>
                                 <li>Une sortie réelle</li>
                                 <li>Une sortie attendue</li>
@@ -463,13 +463,15 @@
                             </p>
                         </div>
                         <p>
-                            Pour cela, nous utilisons un algorithme appelé <a href="#titre19">rétropropagation du gradient</a> qui a pour but
+                            Pour cela, nous utilisons un algorithme appelé <a href="#titre19"><strong class="normal">rétropropagation</strong> du gradient</a> qui a pour but
                             de
-                            changer les poids de chaque connexion. Un poids ou poids synaptique est un coefficient
-                            numérique qui est
-                            attribué à chacune des entrées d’un neurone, de manière aléatoire au début puis les poids
-                            sont adaptés au
-                            fur et à mesure, et qui permet de pondérer celles-ci. (Wikipédia, 2017).
+                            changer les <em class="italic">poids de chaque connexion</em>. 
+                            Par ailleur, un 
+                                <span class="bold inline">poids ou poids synaptique</span> 
+                                <span role="definition" class="normal inline">est un coefficient numérique qui est attribué à chacune des entrées d’un neurone, 
+                                de manière aléatoire au début puis les poids sont adaptés au fur et à mesure, et qui permet de 
+                                pondérer celles-ci.
+                                </span> (<cite class="italic">Wikipédia, 2017</cite>).
                         </p>
                         <div class="figure-layout">
                             <figure id="perceptron-monocouche">
@@ -482,7 +484,7 @@
                         <p>
                             Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque
                             connexion, la valeur en sortie sera toujours 0.
-                            Dans ce cas, nous pouvons ajouter le biais qui nous permet de modifier la sortie afin que
+                            Dans ce cas, nous pouvons ajouter le <a href="#titre12">biais</a> qui nous permet de modifier la sortie afin que
                             l’apprentissage se fasse correctement.
                         </p>
                         <p class="alinea">
@@ -507,7 +509,10 @@
                         <p>
                             Pour une bonne compréhension de ce qu’est le biais, nous allons considérer la fonction
                             linéaire
-                            $y=ax$. Et nous allons essayer de séparer deux ensembles de données (ici bleu et rouge).
+                            $\boldsymbol{y=ax}$. Et nous allons essayer de séparer deux ensembles de données 
+                            (ici 
+                            <span class="bold" >bleu</span> et 
+                            <span class="bold" >rouge</span>).
                         </p>
 
                         <div class="figure-layout">
@@ -556,11 +561,10 @@
                         </p>
                         <div class="figure-layout">
                             <p>
-                                Sur la figure suivante, la fonction utilisée est $y = ax + b$ (<span class="italic">une
-                                    fonction affine</span>)
-                                où $+b$ correspond au biais. Grâce à ce biais, nous avons pu trouver la bonne droite
-                                $𝑦=−0.3+9$ : une fonction affine
-                                qui sépare bien les ensembles.
+                                Sur la figure suivante, la fonction utilisée est $\boldsymbol{y = ax + b}$ 
+                                (<span class="italic">une fonction affine</span>)
+                                où $\boldsymbol{+b}$ correspond au biais. Grâce à ce biais, nous avons pu trouver la bonne droite
+                                $\boldsymbol{y=−0.3+9}$ : une fonction affine qui sépare bien les ensembles.
                             </p>
                             <figure id="bias-4">
                                 <img src="" alt="Séparation de deux ensemble à l'aide d'une fonction affine"
@@ -574,7 +578,7 @@
                         <p>
                             Le perceptron comme nous l'avons vu peut prendre plusieurs éléments en entrées et produire
                             un résultat en sortie. Les éléments d'entrées peuvent être de tout type. Jusque-là, un
-                            un perceptron peut faire plusieurs types de calculs et produire des bons résultats.
+                            un perceptron accepte plusieurs types d'entrées et produit de bons résultats.
                         </p>
                         <p class="alinea">
                             Et pourtant, on peut tomber sur des ensembles dont leur distributions n'est pas facile à
