@@ -437,7 +437,7 @@
                         étiquettes
                         (en anglais, labels).
                     </p>
-                    <div id="supervised">
+                    <div id="supervised" class="figure-layout">
                         <figure>
                             <img src='../img/supervivee.png' alt='Mode d’apprentissage' title="Mode d’apprentissage" />
                             <figcaption>
@@ -481,7 +481,7 @@
                             sont adaptés au
                             fur et à mesure, et qui permet de pondérer celles-ci. (Wikipédia, 2017).
                         </p>
-                        <div>
+                        <div class="figure-layout">
                             <figure id="perceptron-monocouche">
                                 <img src='../img/perceptron-apprentissage-dark.svg'
                                     alt="Renvoie de l'erreur vers l'arrière"
@@ -520,14 +520,14 @@
                             $y=ax$. Et nous allons essayer de séparer deux ensembles de données (ici bleu et rouge).
                         </p>
 
-                        <div>
+                        <div class="figure-layout">
                             <figure id="bias-1">
                                 <img src='' alt="Séparation de deux ensembles" title="Séparation de deux ensembles" />
                                 <figcaption>Séparation de deux ensembles</figcaption>
                             </figure>
                         </div>
 
-                        <div>
+                        <div class="figure-layout">
                             <p>
                                 Et comme nous pouvons le constater, la fonction $y=ax$ sépare parfaitement les deux
                                 ensembles.
@@ -539,7 +539,7 @@
                                 <figcaption>Séparation de deux ensembles à l'aide d'une fonction linéaire</figcaption>
                             </figure>
                         </div>
-                        <div>
+                        <div class="figure-layout">
                             <p>
                                 Cependant, la limitation de ces fonctions se présente lorsque les ensembles de données
                                 sont moins faciles
@@ -564,7 +564,7 @@
                             l'origine. Et c'est effet qui va permettre de trouver
                             les limites entres les ensembles.
                         </p>
-                        <div>
+                        <div class="figure-layout">
                             <p>
                                 Sur la figure suivante, la fonction utilisée est $y = ax + b$ (<span class="italic">une
                                     fonction affine</span>)
@@ -591,7 +591,7 @@
                             séparer
                             en utilisant un seul forme géometrique en l'occurence une droite.
                         </p>
-                        <div>
+                        <div class="figure-layout">
                             <p>
                                 Prenons cet exemple:
                             </p>
@@ -610,7 +610,7 @@
 
                             </figure>
                         </div>
-                        <div>
+                        <div class="figure-layout">
                             <p>
                                 Supposons maintenant que nous avons des ensembles qui se distribuent de la façon
                                 suivante :
@@ -625,7 +625,7 @@
                                 deux pour le faire.
                             </p>
                         </div>
-                        <div>
+                        <div class="figure-layout">
                             <figure id="xor2">
                                 <img src="../img/XOR-2-dark.svg" alt="Séparation avec deux droites"
                                     title="Séparation avec deux droites">
@@ -685,7 +685,7 @@
                             cet exemple en
                             prenant la plus grande des $p$ sorties
                         </p>
-                        <div>
+                        <div class="figure-layout">
                             <figure id='monocouche'>
                                 <img src="../img/monocouche-dark.svg" alt="Réseau de neurones monocouche"
                                     title="Réseau de neurone monocouche">
@@ -703,7 +703,7 @@
                         deuxième reçoivent toutes les sorties des neurones de la première couche, et ainsi de suite
                         jusqu’aux neurones de la dernier couche.
                     </p>
-                    <div>
+                    <div class="figure-layout">
                         <figure id="NT1">
                             <img src="../img/NT1-dark.svg" alt="Réseau de neurones multicouche"
                                 title="Réseau de neurones multicouche">
@@ -724,7 +724,7 @@
                         couche de sortie l'ensemble des neurones de sortie (output layer). Les couches intermédiaires
                         n'ayant aucun contact avec l'extérieur sont appelés couches cachées (hidden layer).
                     </p>
-                    <div>
+                    <div class="figure-layout">
                         <p>
                             Dans la figure suivante, on voit que chaque neurone d’une couche est lié avec tous les
                             neurones de la couche suivante. Un tel réseau de neurone est appelé réseau complètement
@@ -791,11 +791,13 @@
                             couche de
                             sortie.
                         </p>
-                        <figure id="forward-step">
-                            <img src="" title="Propagation de l’information vers l’avant"
-                                alt="Propagation de l’information vers l’avant" />
-                            <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
-                        </figure>
+                        <div class="figure-layout">
+                            <figure id="forward-step">
+                                <img src="" title="Propagation de l’information vers l’avant"
+                                    alt="Propagation de l’information vers l’avant" />
+                                <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
+                            </figure>
+                        </div>
                     </section>
                     <section>
                         <h4>Phase arrière</h4>
@@ -808,11 +810,13 @@
                             mis à jour au fil des
                             entraînements via ce procédé.
                         </p>
-                        <figure id="feedback-step">
-                            <img src="" title="Propagation de l’information vers l’avant"
-                                alt="Propagation de l’information vers l’avant" />
-                            <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
-                        </figure>
+                        <div  class="figure-layout">
+                            <figure id="feedback-step">
+                                <img src="" title="Propagation de l’information vers l’avant"
+                                    alt="Propagation de l’information vers l’avant" />
+                                <figcaption>Phase avant : Propagation de l’information vers l’avant</figcaption>
+                            </figure>
+                        </div>
                     </section>
                 </section>
                 <section>
@@ -872,7 +876,7 @@
                         on ne charge pas entièrement nos données.
                     </p>
 
-                    <div>
+                    <div class="figure-layout">
                         <figure id="grad">
                             <img src="../img/grad.svg" alt="Descente de gradient" title="Descente de gradient" />
                             <figcaption>Descente de gradient</figcaption>
@@ -909,7 +913,7 @@
                             de la fonction
                             cout. (Guillaume 2019)
                         </p>
-                        <div>
+                        <div class="figure-layout">
                             <figure id="min-grad">
                                 <img src="" alt="Minimisation de l'erreur par descente de gradient"
                                     title="Minimisation de l'erreur par descente de gradient" />
