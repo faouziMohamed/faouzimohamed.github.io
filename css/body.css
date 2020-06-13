@@ -278,6 +278,7 @@ nav#aside-nav>ul {
 strong {
     font-weight: bold;
 }
+.poverul{margin-bottom: -15px;}
 
 q {
     quotes: '\201C''\201d';
