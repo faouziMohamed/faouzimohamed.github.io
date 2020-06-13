@@ -847,12 +847,16 @@
                 <section>
                     <h3>La descente du gradient</h3>
                     <p>
-                        La Descente de Gradient est un algorithme d’optimisation qui permet de trouver le <span class="bold">minimum</span> de
-                        n’importe quelle fonction <span class="bold">convexe</span> en convergeant progressivement vers ce minimum. Cette descente
+                        La Descente de Gradient est un algorithme d’optimisation qui permet de trouver le <span
+                            class="bold">minimum</span> de
+                        n’importe quelle fonction <span class="bold">convexe</span> en convergeant progressivement vers
+                        ce minimum. Cette descente
                         peut
-                        s’effectuer soit de manière globale (<span class="bold">batch gradient</span>), soit par des lots (<span class="bold">mini batch gradient</span>),
+                        s’effectuer soit de manière globale (<span class="bold">batch gradient</span>), soit par des
+                        lots (<span class="bold">mini batch gradient</span>),
                         soit de façon
-                        unitaire (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au réseau la totalité des données
+                        unitaire (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au
+                        réseau la totalité des données
                         d’un seul
                         trait, et de faire ensuite le calcul du gradient ainsi que la correction des coefficients. Alors
                         que la seconde
@@ -870,10 +874,7 @@
 
                     <div>
                         <figure id="grad">
-                            <img 
-                                src="../img/grad.svg"
-                                alt="Descente de gradient"
-                                title="Descente de gradient"/>
+                            <img src="../img/grad.svg" alt="Descente de gradient" title="Descente de gradient" />
                             <figcaption>Descente de gradient</figcaption>
                         </figure>
                     </div>
@@ -881,37 +882,47 @@
                     <section>
                         <h4>Minimisation de la fonction de coût</h4>
                         <p>
-                            Dans les réseaux de neurones, on utilise l’algorithme de la Descente de Gradient dans les problèmes
-                            d’apprentissage supervisé pour minimiser la fonction coût, qui justement est une fonction convexe comme
-                            le montre la figure suivante. Les algorithmes d’optimisation (à savoir<strong class="bold"> Adam</strong>, 
-                            <strong class="bold">RAdam</strong>, 
-                            <strong class="bold">SGD</strong>, 
+                            Dans les réseaux de neurones, on utilise l’algorithme de la Descente de Gradient dans les
+                            problèmes
+                            d’apprentissage supervisé pour minimiser la fonction coût, qui justement est une fonction
+                            convexe comme
+                            le montre la figure suivante. Les algorithmes d’optimisation (à savoir<strong class="bold">
+                                Adam</strong>,
+                            <strong class="bold">RAdam</strong>,
+                            <strong class="bold">SGD</strong>,
                             <strong class="bold">RMSprop</strong>,
-                            etc.) utilisent un <strong class="bold">hyperparamètre</strong> nommé <strong class="bold italic" lang="en"><q>learning rate</q></strong> 
+                            etc.) utilisent un <strong class="bold">hyperparamètre</strong> nommé <strong
+                                class="bold italic" lang="en"><q>learning rate</q></strong>
                             (en français Taux d’apprentissage) pour converger vers le minimum de cette fonction.
                         </p>
                         <p>
-                            Si le Learning Rate est trop grand, alors vous ferez de trop grands pas dans la descente de gradient. Cela
-                            a l’avantage de descendre rapidement vers le minimum de la fonction coût, mais vous risquez de louper ce
+                            Si le Learning Rate est trop grand, alors vous ferez de trop grands pas dans la descente de
+                            gradient. Cela
+                            a l’avantage de descendre rapidement vers le minimum de la fonction coût, mais vous risquez
+                            de louper ce
                             minimum en oscillant autour à l’infini… (Guillaume 2019)
                         </p>
                         <p>
-                            Pour éviter le cas précédent, vous pourriez être tenté de choisir un Learning Rate très faible. Mais s’il est
-                            trop faible, alors vous risquez de mettre un temps infini avant de converger vers le minimum de la fonction
+                            Pour éviter le cas précédent, vous pourriez être tenté de choisir un Learning Rate très
+                            faible. Mais s’il est
+                            trop faible, alors vous risquez de mettre un temps infini avant de converger vers le minimum
+                            de la fonction
                             cout. (Guillaume 2019)
                         </p>
                         <div>
                             <figure id="min-grad">
-                                <img 
-                                    src=""
-                                    alt="Minimisation de l'erreur par descente de gradient"
-                                    title="Minimisation de l'erreur par descente de gradient"/>
+                                <img src="" alt="Minimisation de l'erreur par descente de gradient"
+                                    title="Minimisation de l'erreur par descente de gradient" />
                                 <figcaption>Minimisation de l'erreur par descente de gradient</figcaption>
                             </figure>
                         </div>
+                        <p>
+                            L'algorithme de descente de gradient utilisé pour entraîner le réseau (i.e. mettre à jour
+                            les poids) est donné par : ${w'}_i=w_i - {\eta{.}\frac{dE}{dw_i}}$
+                        </p>
                     </section>
                 </section>
-                
+
             </section>
 
             <footer class="hidden">
