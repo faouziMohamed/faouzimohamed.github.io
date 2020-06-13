@@ -920,9 +920,74 @@
                             L'algorithme de descente de gradient utilisé pour entraîner le réseau (i.e. mettre à jour
                             les poids) est donné par : ${w'}_i=w_i - {\eta{.}\frac{dE}{dw_i}}$
                         </p>
+                        <div>
+                            <p>Où :</p>
+                            <ul>
+                                <li><span class="bold">$w_i$ : </span>Est la valeur des poids avant mise à jour</li>
+                                <li><span class="bold">${w'}_i$ : </span>Est la valeur des poids après mise à jour</li>
+                                <li><span class="bold">$\eta$ : </span>Est le taux d'apprentissage (learning rate)</li>
+                            </ul>
+                        </div>
                     </section>
                 </section>
-
+            </section>
+            <section class="main-section conclusion">
+                <h2 class="center">Conclusion</h2>
+                <div>
+                    <p>
+                        Les principaux éléments à retenir sont les suivants :
+                    </p>
+                    <ul>
+                        <li>Un réseau de neurones est un système composé de neurones, généralement répartis en plusieurs
+                            couches connectées entre elles.
+                        </li>
+                        <li>
+                            Un tel système s'utilise pour résoudre divers problèmes statistiques, mais nous nous
+                            intéressons ici
+                            qu'au problème de classification (très courant). Dans ce cas, le réseau calcule à partir de
+                            l'entrée un
+                            score (ou probabilité) pour chaque classe. La classe attribuée à l'objet en entrée
+                            correspond à celle de
+                            score le plus élevé
+                        </li>
+                        <li>
+                            Chaque couche reçoit en entrée des données et les renvoie transformées. Pour cela, elle
+                            calcule une
+                            combinaison linéaire puis applique éventuellement une fonction non-linéaire, appelée
+                            fonction
+                            d'activation. Les coefficients de la combinaison linéaire définissent les paramètres (ou
+                            poids) de la
+                            couche
+                        </li>
+                        <li>
+                            Un réseau de neurones est construit en empilant les couches : la sortie d'une couche
+                            correspond à
+                            l'entrée de la suivante.
+                        </li>
+                        <li>
+                            Cet empilement de couches définit la sortie finale du réseau comme le résultat d'une
+                            fonction
+                            différentiable de l'entrée
+                        </li>
+                        <li>
+                            La dernière couche calcule les probabilités finales en utilisant pour fonction d'activation
+                            la fonction
+                            logistique (classification binaire) ou la fonction Softmax (classification multi-classes)
+                        </li>
+                        <li>
+                            Une fonction de perte (loss function) est associée à la couche finale pour calculer l'erreur
+                            de
+                            classification. Il s'agit en général de l'entropie croisée (cross entropy).
+                        </li>
+                        <li>
+                            Les valeurs des poids des couches sont apprises par rétropropagation du gradient : on
+                            calcule
+                            progressivement (pour chaque couche, en partant de la fin du réseau) les paramètres qui
+                            minimisent
+                            la fonction de perte régularisée. L'optimisation se fait avec une descente du gradient.
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <footer class="hidden">
