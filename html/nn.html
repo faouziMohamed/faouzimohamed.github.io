@@ -11,18 +11,13 @@
     <script>
         MathJax = {
             tex: {
-                inlineMath: [
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ]
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
             },
-            svg: {
-                fontCache: 'global'
-            }
+            svg: {fontCache: 'global'}
         };
     </script>
     <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <noscript>
         <link rel="stylesheet" href="../css/noscript.css" />
     </noscript>
@@ -334,7 +329,7 @@
                             <li>Une fonction somme ($\sum$)</li>
                             <li>Un biais ($w_0$)</li>
                             <li>Une fonction d'activation ($h$ qu'on note souvent par la notation grec $\phi$)</li>
-                            <li>Une sortie ($y$)</li>
+                            <li>Une sortie ($y$) </li>
                         </ul>
                     </div>
 
@@ -348,7 +343,7 @@
                         confiance avec les résultats obtenus
                     </p>
                     <p class="alinea">
-                        En effet, si nous imaginons qu’une entrée peut avoir des valeurs qui varient entre 0et 1 et
+                        En effet, si nous imaginons qu’une entrée peut avoir des valeurs qui varient entre 0 et 1 et
                         qu’une deuxième
                         entrée peut avoir des valeurs qui varient entre 0 et 3000, alors la deuxième entrée va avoir un
                         impact
@@ -366,31 +361,30 @@
                             somme est passée dans une fonction d’activation.
                         </p>
                         <ul>
-                            <li>La fonction <strong class="bold">Sigmoïde</strong> : Pour une valeur $x$ quelconque, $y$
+                            <li>La fonction <strong class="bold">Sigmoïde</strong> : Pour une valeur $\boldsymbol{x}$ quelconque, $\boldsymbol{y}$
                                 reste entre 0 et 1. Ce cas est très utile
                                 lorsque nous avons besoin d’avoir un résultat continu. Elle est généralement notée par
                                 le symbole
-                                grec $\sigma$ représentée par la fonction $\mathbf\sigma(x) = \frac{1}{e^{-x}}
+                                grec $\boldsymbol{\sigma}$ représentée par la fonction $\boldsymbol{\sigma(x) = \frac{1}{e^{-x}}}
                                 <!--{1 \over exp^{-x}}-->$.
                             </li>
                             <li>
-                                La fonction <strong class="bold">$tanh$</strong> est également appelée <span class="bold">tangente
+                                La fonction $\boldsymbol{tanh}$ est également appelée <span class="bold">tangente
                                 hyperbolique</span> : Cette fonction ressemble à la
                                 fonction Sigmoïde. La différence avec la fonction Sigmoïde est que la fonction $tanh$
-                                produit un
-                                résultat compris entre $-1$ et $1$.
+                                produit un résultat compris entre $\boldsymbol{-1}$ et $\boldsymbol{1}$.
                             </li>
                             <li>
-                                La fonction $ReLU$ (Unité linéaire rectifiée) : Cette fonction converge plus rapidement,
+                                La fonction <span class="bold" style="font-family:Cambria" >ReLU</span> (Unité linéaire rectifiée) : Cette fonction converge plus rapidement,
                                 optimise et
                                 produit la valeur souhaitée plus rapidement. C’est de loin la fonction d’activation la
                                 plus populaire
                                 utilisée dans les <a href="#NT2">couches cachées</a> sur un réseau de neurones. La fonction $ReLU$ est
                                 interprétée par
-                                la formule : $f(x) = max(0,x)$.
+                                la formule : $\boldsymbol{f(x) = max(0,x)}$.
                             </li>
                             <li>
-                                La fonction $Softmax$ : utilisé dans la <a href="#NT2">couche de sortie</a>, sur un réseau de neurones, car
+                                La fonction <span class="bold" style="font-family:Cambria" >Softmax</span> : utilisé dans la <a href="#NT2">couche de sortie</a>, sur un réseau de neurones, car
                                 il réduit les
                                 dimensions et peut représenter une distribution catégorique.
                             </li>
@@ -401,12 +395,12 @@
                     </div>
                     <p>
                         La propagation d’un vecteur d’entrée ($x_i$) à travers un perceptron s’écrit :
-                        $$p = \sum^{n}_{i=0} x_i w_i - b$$ (Avec $n$ le nombre d'entrées sur le perceptron)
-                        $$y = \sigma(p)$$
+                        $$\boldsymbol{p = \sum^{n}_{i=0} x_i w_i - b}$$ (Avec $n$ le nombre d'entrées sur le perceptron)
+                        $$\boldsymbol{y = \sigma(p)}$$
 
                     </p>
                     <p>
-                        Cela dit, un seul neurone ne suffit pas de faire des relations plus complexes. Les neurones on
+                        Cela dit, un seul neurone ne suffit pas à faire des relations plus complexes. Les neurones on
                         peut en
                         associer plein ensemble, les empiler pour créer des couches de neurones pour réussir à faire des
                         fonctions
@@ -422,15 +416,16 @@
                 <section>
                     <h3>Mode d'apprentissage</h3>
                     <p>
-                        L’apprentissage d’une MLP peut être faite de plusieurs façons. On trouve l’apprentissage
-                        supervisé,
-                        non supervisé, par renforcement, semi-supervisé.
+                        L’apprentissage d’une MLP peut être faite de plusieurs façons. On trouve 
+                        <strong class="bold" >l’apprentissage supervisé</strong>, 
+                        <strong class="bold" >non supervisé</strong>, 
+                        <strong class="bold" >par renforcement</strong>, 
+                        <strong class="bold" >semi-supervisé</strong>.
                     </p>
                     <p>
-                        Ici sera seulement explicité le mode d’apprentissage supervisé. Ce qui veut dire que les données
-                        d’entraînement que vous fournissez à l’algorithme comportent les solutions désirées, appelées
-                        étiquettes
-                        (en anglais, labels).
+                        Ici sera seulement explicité le mode d’apprentissage <span class="bold" >supervisé</span>. 
+                        Ce qui veut dire que les données d’entraînement que vous fournissez à l’algorithme comportent 
+                        les solutions désirées, appelées étiquettes (en anglais, labels).
                     </p>
                     <div id="supervised" class="figure-layout">
                         <figure>
