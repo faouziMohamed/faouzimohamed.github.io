@@ -8,13 +8,13 @@
     <meta name='author' content="Faouzi Mohamed">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script> 
-        MathJax = { 
+    <script>
+        MathJax = {
             tex: {
                 inlineMath: [
                     ['$', '$'],
                     ['\\(', '\\)']
-                ] 
+                ]
             },
             svg: {
                 fontCache: 'global'
@@ -226,13 +226,10 @@
                         d’image, de voix, de détection de cancer, etc. Il existe plusieurs types de réseaux de neurones,
                         plutôt dire
                         plusieurs architectures de réseaux de neurones. Parmi eux, on trouve les réseaux de neurones
-                        récurrent
-                        (RNN) appelé aussi les réseaux “Feed-back”, les réseaux de neurones autoorganisés, les réseaux
-                        de
-                        neurones Feed forward (propagation avant), etc. Dans le cadre de notre rapport nous allons nous
-                        concentrer
-                        sur les réseaux de neurones du type Feed Forward et plus précisément sur les perceptrons
-                        multicouches.
+                        récurrents(RNN) appelé aussi les réseaux <span class="bold"><q lang="en">Feed-back</q></span>, les réseaux de neurones autoorganisés, 
+                        les réseaux de neurones <span class="bold"><q lang="en">Feed forward</q> (propagation avant)</span>, etc. Dans le cadre de ce rapport 
+                        nous allons nous concentrer sur les réseaux de neurones du type Feed Forward et plus précisément 
+                        sur <a href="#titre16"><span class="bold">les perceptrons multicouches</span></a>.
                     </p>
                     <p>
                         Dans le contexte de la classification d’images, balancer des images brutes sur un réseau de
@@ -241,7 +238,7 @@
                         prédictions
                         sur d’autres images qu’il n’a jamais encore vu. Cependant, les réseaux de neurones communément
                         appelé
-                        perceptron multicouches (MLP) auront des difficultés à reconnaitre de grandes images. Ceci est
+                        <span class="bold">perceptron multicouches (MLP)</span> auront des difficultés à reconnaitre de grandes images. Ceci est
                         dû à
                         cause de la croissance exponentielle du nombre de connexions avec la taille de l'image et du
                         fait que chaque
@@ -250,18 +247,16 @@
                         auront aussi de difficulté à reconnaitre un objet qui est placé dans une autre position, angle
                         différente par
                         rapport aux images utilisés pendant l’entrainement. Et c’est ce qui fait intervenir les
-                        <q>réseaux de neurones
-                            convolutifs</q> (CNN pour Convolutional Neural Network) pour résoudre ces genres de
-                        problèmes.
+                        <span class="bold"><q>réseaux de neurones convolutifs</q> (CNN pour Convolutional Neural Network)</span>
+                        pour résoudre ces genres de problèmes.
                     </p>
                 </section>
                 <section>
                     <h3>Les CNN</h3>
                     <p>
                         Les réseaux de neurones convolutifs désignent une sous-catégorie de réseaux de neurones: ils
-                        présentent en effet toutes les caractéristiques des MLPs. Cependant, les CNN sont spécialement
-                        conçus
-                        pour traiter des images en entrée. Et apportent de nouvelles fonctionnalités dans le traitement
+                        présentent en effet toutes les caractéristiques des MLPs. Cependant, les CNN sont <span class="bold">spécialement
+                        conçus pour traiter des images en entrée</span>. Et apportent de nouvelles fonctionnalités dans le traitement
                         d’images.
                     </p>
                 </section>
@@ -274,14 +269,11 @@
                     <p>
                         Le perceptron aussi communément appelé neurone artificiel ou neurone formel, est un algorithme
                         d’apprentissage automatique supervisé de classification binaire. Il s’agit du type de réseau de
-                        neurones
-                        artificiels le plus simple. Les perceptrons, ont été créés par Frank Rosenblatt en 1958. Son
-                        créateur l’a
-                        comparé à des neurones capables de répondre à des stimuli externes d’une manière qui imite les
-                        vrais
-                        neurones biologiques dans sa publication « The perceptron : a probabilistic model for
-                        information storage
-                        and organization in the brain»
+                        neurones artificiels le plus simple. Les perceptrons, ont été créés par 
+                        <a href="https://fr.wikipedia.org/wiki/Frank_Rosenblatt">Frank Rosenblatt</a> en 1958. Son
+                        créateur l’a comparé à des neurones capables de répondre à des stimuli externes d’une manière qui imite les
+                        vrais neurones biologiques dans sa publication <q class="quotation"><cite>The perceptron : a probabilistic model for
+                        information storage and organization in the brain</cite></q>.
                     </p>
                     <p>
                         Le perceptron est un classifieur linéaire. Ce type de réseau neuronal ne contient aucun cycle
@@ -382,8 +374,8 @@
                                 <!--{1 \over exp^{-x}}-->$.
                             </li>
                             <li>
-                                La fonction <strong class="bold">$tanh$</strong> est également appelée tangente
-                                hyperbolique : Cette fonction ressemble à la
+                                La fonction <strong class="bold">$tanh$</strong> est également appelée <span class="bold">tangente
+                                hyperbolique</span> : Cette fonction ressemble à la
                                 fonction Sigmoïde. La différence avec la fonction Sigmoïde est que la fonction $tanh$
                                 produit un
                                 résultat compris entre $-1$ et $1$.
@@ -393,12 +385,12 @@
                                 optimise et
                                 produit la valeur souhaitée plus rapidement. C’est de loin la fonction d’activation la
                                 plus populaire
-                                utilisée dans les couches cachées sur un réseau de neurones. La fonction $ReLU$ est
+                                utilisée dans les <a href="#NT2">couches cachées</a> sur un réseau de neurones. La fonction $ReLU$ est
                                 interprétée par
                                 la formule : $f(x) = max(0,x)$.
                             </li>
                             <li>
-                                La fonction $Softmax$ : utilisé dans la couche de sortie, sur un réseau de neurones, car
+                                La fonction $Softmax$ : utilisé dans la <a href="#NT2">couche de sortie</a>, sur un réseau de neurones, car
                                 il réduit les
                                 dimensions et peut représenter une distribution catégorique.
                             </li>
