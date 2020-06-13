@@ -32,7 +32,7 @@ function create_list_left_nav()
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,  n=1, id=null, li=null;
     var ul_=null,li_=null,_ul=null, c=title.length;
-    
+    console.log(title)
     /*For H1*/
     var H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
@@ -42,23 +42,28 @@ function create_list_left_nav()
                                 document.querySelector(".main-article H1").firstChild.data));
     ul.parentNode.insertBefore(h2,ul);
     
+    /*Main loop to create the list of title in the left side of the webpage*/
     for(var i=0; i<c;++i)
     {   /*For H2*/
-        li  = add_li_to_ul(ul,title[i],'titre'+ (n++));
-        ul_ = new_element('ul');
+        if(title[i].nodeName === 'H2'){
+            li  = add_li_to_ul(ul,title[i],'titre'+ (n++));
+            ul_ = new_element('ul');
+        }
         /*For H3*/
         while(++i<c && (title[i].nodeName === 'H3')){
             li_ = add_li_to_ul(ul_,title[i],'titre'+ (n++));
         }
         /*For H4*/
-        if(i<c && title[i--].nodeName === 'H4'){
+        console.log(title[i] + " " + title[i].firstChild.data);
+        if(i<c && title[i].nodeName === 'H4'){
             _ul = new_element('ul');
-            while(i++<c && title[i].nodeName === 'H4'){
-                add_li_to_ul(_ul,title[i],'titre'+ (n++));
+            while(i<c && title[i].nodeName === 'H4'){
+                add_li_to_ul(_ul,title[i++],'titre'+ (n++));
             }
             li_.appendChild(_ul);
             --i;
         }
+        else i--;
         li.appendChild(ul_);
     }
 }

@@ -44,26 +44,7 @@ function change_img(theme=''){
     var lr         = document.querySelector("#min-grad>img");
     var ok = perceptron!=null;
     
-    if(theme=='theme-dark'){
-        if(ok){
-            perceptron.src ='../img/perceptron-dark.svg';
-            monocouche.src ="../img/monocouche-dark.svg";
-            mono_error.src ="../img/perceptron-apprentissage-dark.svg";
-            bias_1.src     ="../img/bias_1-dark.svg";
-            bias_2.src     ="../img/bias_2-dark.svg";
-            bias_3.src     ="../img/bias_3-dark.svg";
-            bias_4.src     ="../img/bias_4-dark.svg";
-            xor_0.src      ="../img/XOR-0-dark.svg";
-            xor_1.src      ="../img/XOR-1-dark.svg";
-            xor_2.src      ="../img/XOR-2-dark.svg";
-            nt1.src        ="../img/NT1-dark.svg";
-            nt2.src        ="../img/NT2-dark.svg";
-            phase_avant.src="../img/phse_avant-dark.svg";
-            phase_arr.src  ="../img/phse_arr-dark.svg";
-            lr.src         ="../img/lr-dark.svg";
-        }
-    }
-    else{
+    if(theme=='theme-light'){
         if(ok){
             perceptron.src='../img/perceptron-light.svg';
             monocouche.src="../img/monocouche-light.svg";
@@ -81,6 +62,26 @@ function change_img(theme=''){
             phase_arr.src  ="../img/phse_arr-light.svg";
             lr.src         ="../img/lr-light.svg";
         }
+    }
+    else{
+        if(ok){
+            perceptron.src ='../img/perceptron-dark.svg';
+            monocouche.src ="../img/monocouche-dark.svg";
+            mono_error.src ="../img/perceptron-apprentissage-dark.svg";
+            bias_1.src     ="../img/bias_1-dark.svg";
+            bias_2.src     ="../img/bias_2-dark.svg";
+            bias_3.src     ="../img/bias_3-dark.svg";
+            bias_4.src     ="../img/bias_4-dark.svg";
+            xor_0.src      ="../img/XOR-0-dark.svg";
+            xor_1.src      ="../img/XOR-1-dark.svg";
+            xor_2.src      ="../img/XOR-2-dark.svg";
+            nt1.src        ="../img/NT1-dark.svg";
+            nt2.src        ="../img/NT2-dark.svg";
+            phase_avant.src="../img/phse_avant-dark.svg";
+            phase_arr.src  ="../img/phse_arr-dark.svg";
+            lr.src         ="../img/lr-dark.svg";
+        }
+        
     }
 }
 //localStorage.clear()
