@@ -46,12 +46,12 @@ function create_list_left_nav()
     for(var i=0; i<c;++i)
     {   /*For H2*/
         if(title[i].nodeName === 'H2'){
-            li  = add_li_to_ul(ul,title[i],'titre'+ (n++));
+            li  = add_li_to_ul(ul,title[i++],'titre'+ (n++));
             ul_ = new_element('ul');
         }
         /*For H3*/
-        while(++i<c && (title[i].nodeName === 'H3')){
-            li_ = add_li_to_ul(ul_,title[i],'titre'+ (n++));
+        while(i<c && (title[i].nodeName === 'H3')){
+            li_ = add_li_to_ul(ul_,title[i++],'titre'+ (n++));
         }
         /*For H4*/
         console.log(title[i] + " " + title[i].firstChild.data);
