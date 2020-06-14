@@ -628,15 +628,15 @@
                         </div>
                         <p>
                             Il faut savoir ici qu'une droite représente un perceptron et le fait d'avoir utilisé deux
-                            droites
                             montre qu'un seul perceptron ne peut pas résoudre des problèmes complexes. Il en faudra
-                            regrouper plusieurs
-                            pour résoudre des problèmes qui se répartissent d'une manière qu'on ne peut pas les découper
-                            avec un seul perceptron.
+                            regrouper plusieurs pour résoudre des problèmes qui se répartissent d'une manière qu'on 
+                            ne peut pas les découper avec un seul.
                         </p>
                         <p>
-                            Le fait de regrouper les perceptrons pour résoudre une tâche est ce qui constitue un réseaux
-                            de neurones.
+                            Le fait de regrouper les perceptrons pour résoudre une tâche constitue un réseaux
+                            de neurones (
+                            <a href="#titre15">Perceptron monocouche</a> ou 
+                            <a href="#titre16">perceptron multicouche</a>)
                         </p>
                         <p>
                             On peut alors comprendre ici qu'un seul neurone ne suffit pas de faire des relations plus
@@ -691,11 +691,11 @@
                 <section>
                     <h3>Réseau de neurones multicouche</h3>
                     <p>
-                        Dans un réseau réseau de neurones multicouche ou bien MLP pour <span lang="en">Multi Layer
-                            Perceptron</span>,
+                        Dans un réseau réseau de neurones multicouche (MLP pour <em lang="en" class="italic">Multi Layer
+                            Perceptron</em>),
                         les neurones de la première couche reçoivent toutes les informations entrées, ceux de la
                         deuxième reçoivent toutes les sorties des neurones de la première couche, et ainsi de suite
-                        jusqu’aux neurones de la dernier couche.
+                        jusqu’aux neurones de la dernière couche.
                     </p>
                     <div class="figure-layout">
                         <figure id="NT1">
@@ -706,23 +706,24 @@
                     </div>
 
                     <p>
-                        Pour créer un tel réseau, il faut connecter un ensemble de neurone (une couche de neurone) avec
-                        un autre ensemble de neurone. Habituellement, chaque neurone d'une couche est connecté à tous
+                        Pour créer un tel réseau, il faut connecter un ensemble de neurones (une couche de neurones) avec
+                        un autre ensemble de neurones. Habituellement, chaque neurone d'une couche est connecté à tous
                         les
                         neurones de la couche suivante et celle-ci seulement. Ceci nous permet d'introduire la notion de
                         sens de
                         parcours de l'information (de l'activation) au sein d'un réseau et donc de définir les concepts
                         de neurones
                         d'entrée et neurones de sortie. Par extension, on appelle couche d'entrée l'ensemble des
-                        neurones d'entrée(input layer),
-                        couche de sortie l'ensemble des neurones de sortie (output layer). Les couches intermédiaires
-                        n'ayant aucun contact avec l'extérieur sont appelés couches cachées (hidden layer).
+                        neurones d'entrée(<strong class="bold" lang="en">input layer</strong>),
+                        couche de sortie l'ensemble des neurones de sortie (<strong class="bold" lang="en">output layer</strong>). 
+                        Les couches intermédiaires
+                        n'ayant aucun contact avec l'extérieur sont appelés couches cachées (<strong class="bold" lang="en">hidden layer</strong>).
                     </p>
                     <div class="figure-layout">
                         <p>
                             Dans la figure suivante, on voit que chaque neurone d’une couche est lié avec tous les
                             neurones de la couche suivante. Un tel réseau de neurone est appelé réseau complètement
-                            connecté (fully connected network en Anglais).
+                            connecté (<strong class="bold" lang="en">fully connected network</strong> en Anglais).
                         </p>
                         <figure id="NT2">
                             <img src="" alt="Réseau de neurones multicouche" title="Réseau de neurones multicouche">
@@ -733,7 +734,7 @@
                 <section>
                     <h3>Fonctionnement d'un réseau de neurones</h3>
                     <p>
-                        Le principe du fonctionnement d’un perceptron et d’un réseau de neurones multicouches est
+                        Le principe de fonctionnement d’un perceptron et d’un réseau de neurones multicouche est
                         essentiellement le même :
                         nous avons toujours des entrées et des sorties mais nous avons des couches intermédiaires
                         appelées couches cachées.
@@ -746,7 +747,7 @@
             <section class="main-section">
                 <h2>Apprentissage d'un réseau de neurones</h2>
                 <p>
-                    Le principe d'apprentissage d'un résau de neurones est la même que celle que nous avons vu dans la
+                    Le principe d'apprentissage d'un résau de neurones est le même que celle que nous avons vu dans la
                     section
                     <a href="#percep-train">
                         <q title="Aller dans la section &quot;Apprentissage d'un perceptron&quot;">
@@ -754,18 +755,15 @@
                         </q>
                     </a>. La différence est que sur un réseau de
                     neurones l'erreur est envoyé vers tous les neurones de chaque couche et de cette façon, le réseau se
-                    réajuste
-                    et trouve les bons configurations a adopté.
-
+                    réajuste et trouve les bonnes configurations à adopter.
                 </p>
                 <section>
                     <h3>La Rétropropagation (du gradient)</h3>
                     <p>
                         La Rétropropagation (<span class="bold" lang="en">Backpropagation</span> en anglais) est un
                         raccourci pour
-                        <q class="quotation">la propagation d'erreurs vers l’arrière </q>, car une erreur est calculée à
-                        la sortie
-                        et est distribuée vers l’arrière à travers les couches du
+                        <q class="quotation">la propagation d'erreur vers l’arrière </q>, car une erreur est calculée à
+                        la sortie et est distribuée vers l’arrière à travers les couches du
                         réseau. On souhaite trouver un minimum global pour une fonction de coût, tout en évitant les
                         éventuelles vallées et minimum
                         locaux qui nous empêcherait de converger vers la solution la plus optimisé pour notre
@@ -782,8 +780,7 @@
                             résultat (par exemple la classe de sortie). Il va avoir un échange d’informations, de
                             valeurs et de sommes,
                             entre chaque neurone et chaque couche. Les données transitent de la couche d’entrée vers la
-                            couche de
-                            sortie.
+                            couche de sortie.
                         </p>
                         <div class="figure-layout">
                             <figure id="forward-step">
@@ -815,8 +812,11 @@
                 </section>
                 <section>
                     <h3>Fonction de coût</h3>
-                    <p>
-                        Une fonction de coût communément appelée fonction de perte ou fonction objective (loss function)
+                    <p role="definition">
+                        Une fonction de coût communément appelée 
+                        <strong class="bold">fonction de perte ou fonction objective 
+                            (<span lan="en">loss function</span>)
+                        </strong>
                         est une méthode qui sert à évaluer dans quelle mesure un modèle spécifique modélise les données.
                     </p>
                     <div>
@@ -845,29 +845,28 @@
                 <section>
                     <h3>La descente du gradient</h3>
                     <p>
-                        La Descente de Gradient est un algorithme d’optimisation qui permet de trouver le <span
-                            class="bold">minimum</span> de
-                        n’importe quelle fonction <span class="bold">convexe</span> en convergeant progressivement vers
-                        ce minimum. Cette descente
-                        peut
-                        s’effectuer soit de manière globale (<span class="bold">batch gradient</span>), soit par des
-                        lots (<span class="bold">mini batch gradient</span>),
-                        soit de façon
-                        unitaire (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au
-                        réseau la totalité des données
-                        d’un seul
+                        La Descente du Gradient est un algorithme d’optimisation qui permet de trouver le 
+                        <span class="bold">minimum</span> de
+                        n’importe quelle fonction 
+                        <span class="bold">convexe</span> 
+                        en convergeant progressivement vers ce minimum. Cette descente peut s’effectuer soit de manière globale 
+                        (<span class="bold">batch gradient</span>), soit par des lots 
+                        (<span class="bold">mini batch gradient</span>),
+                        soit de façonunitaire 
+                        (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au
+                        réseau la totalité des données d’un seul
                         trait, et de faire ensuite le calcul du gradient ainsi que la correction des coefficients. Alors
-                        que la seconde
-                        consiste à envoyer au réseau, les données par petit groupe d’une taille définit par
-                        l’utilisateur. La dernière
-                        quant à elle, envoi une donnée à la fois dans le réseau.
+                        que la seconde consiste à envoyer au réseau, les données par petit groupe d’une taille définit par
+                        l’utilisateur. La dernière quant à elle, envoi une donnée à la fois dans le réseau.
                     </p>
                     <p>
-                        Dans notre cas, notre réseau qu’on créera va utiliser la méthode par mini batch. En effet,
+                        Dans notre cas, le réseau qu’on va créer utilisera la méthode par <q lang="en">mini batch</q>. En effet,
                         celle-ci permet une
-                        meilleure convergence par rapport à la stochastic, et nous permet de meilleures performances que
-                        la batch, car
-                        on ne charge pas entièrement nos données.
+                        meilleure convergence par rapport à la 
+                        <q lang="en">stochastic</q>,
+                        et nous permet de meilleures performances que la 
+                        <q lang="en">batch gradient</q>, 
+                        car on ne charge pas entièrement nos données.
                     </p>
 
                     <div class="figure-layout">
@@ -882,15 +881,16 @@
                         <p>
                             Dans les réseaux de neurones, on utilise l’algorithme de la Descente de Gradient dans les
                             problèmes
-                            d’apprentissage supervisé pour minimiser la fonction coût, qui justement est une fonction
+                            d’apprentissage supervisé pour minimiser la fonction coût, qui, justement, est une fonction
                             convexe comme
-                            le montre la figure suivante. Les algorithmes d’optimisation (à savoir<strong class="bold">
-                                Adam</strong>,
+                            le montre la figure suivante. Les algorithmes d’optimisation (à savoir
+                            <strong class="bold">Adam</strong>,
                             <strong class="bold">RAdam</strong>,
                             <strong class="bold">SGD</strong>,
                             <strong class="bold">RMSprop</strong>,
-                            etc.) utilisent un <strong class="bold">hyperparamètre</strong> nommé <strong
-                                class="bold italic" lang="en"><q>learning rate</q></strong>
+                            etc.) utilisent un 
+                            <strong class="bold">hyperparamètre</strong> nommé 
+                            <strong class="bold italic" lang="en"><q>learning rate</q></strong>
                             (en français Taux d’apprentissage) pour converger vers le minimum de cette fonction.
                         </p>
                         <p>
@@ -898,14 +898,14 @@
                             gradient. Cela
                             a l’avantage de descendre rapidement vers le minimum de la fonction coût, mais vous risquez
                             de louper ce
-                            minimum en oscillant autour à l’infini… (Guillaume 2019)
+                            minimum en oscillant autour à l’infini… (<cite> Guillaume 2019</cite>)
                         </p>
                         <p>
                             Pour éviter le cas précédent, vous pourriez être tenté de choisir un Learning Rate très
                             faible. Mais s’il est
                             trop faible, alors vous risquez de mettre un temps infini avant de converger vers le minimum
                             de la fonction
-                            cout. (Guillaume 2019)
+                            cout. (<cite> Guillaume 2019</cite>)
                         </p>
                         <div class="figure-layout">
                             <figure id="min-grad">
@@ -916,14 +916,15 @@
                         </div>
                         <p>
                             L'algorithme de descente de gradient utilisé pour entraîner le réseau (i.e. mettre à jour
-                            les poids) est donné par : ${w'}_i=w_i - {\eta{.}\frac{dE}{dw_i}}$
+                            les poids) est donné par : 
+                            <span style="font-size: 140%;">$\boldsymbol{{w'}_i=w_i - {\eta{.}\frac{dE}{dw_i}}}$</span>
                         </p>
                         <div>
                             <p>Où :</p>
                             <ul>
-                                <li><span class="bold">$w_i$ : </span>Est la valeur des poids avant mise à jour</li>
-                                <li><span class="bold">${w'}_i$ : </span>Est la valeur des poids après mise à jour</li>
-                                <li><span class="bold">$\eta$ : </span>Est le taux d'apprentissage (learning rate)</li>
+                                <li><span class="bold">$\boldsymbol{w_i}$ : </span>Est la valeur des poids avant mise à jour</li>
+                                <li><span class="bold">$\boldsymbol{{w'}_i}$ : </span>Est la valeur des poids après mise à jour</li>
+                                <li><span class="bold">$\boldsymbol{\eta}$ : </span>Est le taux d'apprentissage (learning rate)</li>
                             </ul>
                         </div>
                     </section>
