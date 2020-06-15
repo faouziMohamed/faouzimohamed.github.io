@@ -1,9 +1,86 @@
-<svg 
-    width="530" 
-    height="310" 
-    xmlns="http://www.w3.org/2000/svg" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" 
-    overflow="hidden"
-    viewBox="0 0 930 510"
-    style="backgroun d:orange;width:0%">
-<defs><clipPath id="clip0"><path d="M1076 589 2007 589 2007 1093 1076 1093Z" fill-rule="evenodd" clip-rule="evenodd"/></clipPath></defs><g clip-path="url(#clip0)" transform="translate(-1076 -589)"><path d="M1323 617 1323 1062.53 1318 1062.53 1318 617ZM1313 619.5 1320.5 604.5 1328 619.5Z" fill="#0D0D0D"/><path d="M1931.9 950 1080.5 950 1080.5 945 1931.9 945ZM1929.4 940 1944.4 947.5 1929.4 955Z" fill="#0D0D0D"/><path d="M0 0 318.927 482.607" stroke="#FF0000" stroke-width="3" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 1223.5 1091.11)"/><text fill="#FF0000" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="25" transform="translate(1547.52 634)">𝒚<tspan x="22" y="0">=</tspan><tspan x="48" y="0">𝟐𝒙</tspan></text><path d="M0 0 704.399 418.417" stroke="#00B050" stroke-width="3.125" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(0.921937 0.38734 0.38734 -0.921937 1088.34 860.709)"/><text fill="#00B050" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="25" transform="translate(1798.06 742)">𝒚<tspan x="21" y="0">=</tspan><tspan x="47" y="0">𝟎</tspan>.<tspan x="71" y="0">𝟑</tspan>𝒙<tspan x="106" y="0">+</tspan><tspan x="130" y="0">𝟓</tspan></text><path d="M1552 745C1552 742.239 1555.58 740 1560 740 1564.42 740 1568 742.239 1568 745 1568 747.761 1564.42 750 1560 750 1555.58 750 1552 747.761 1552 745Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1596 735.5C1596 732.462 1599.81 730 1604.5 730 1609.19 730 1613 732.462 1613 735.5 1613 738.538 1609.19 741 1604.5 741 1599.81 741 1596 738.538 1596 735.5Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1640 758.5C1640 755.462 1643.58 753 1648 753 1652.42 753 1656 755.462 1656 758.5 1656 761.538 1652.42 764 1648 764 1643.58 764 1640 761.538 1640 758.5Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1588 754C1588 751.239 1591.81 749 1596.5 749 1601.19 749 1605 751.239 1605 754 1605 756.761 1601.19 759 1596.5 759 1591.81 759 1588 756.761 1588 754Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1572 725.5C1572 722.462 1575.81 720 1580.5 720 1585.19 720 1589 722.462 1589 725.5 1589 728.538 1585.19 731 1580.5 731 1575.81 731 1572 728.538 1572 725.5Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1611 746C1611 743.239 1614.81 741 1619.5 741 1624.19 741 1628 743.239 1628 746 1628 748.761 1624.19 751 1619.5 751 1614.81 751 1611 748.761 1611 746Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1612 772.5C1612 769.462 1615.81 767 1620.5 767 1625.19 767 1629 769.462 1629 772.5 1629 775.538 1625.19 778 1620.5 778 1615.81 778 1612 775.538 1612 772.5Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1591 720.5C1591 717.462 1594.81 715 1599.5 715 1604.19 715 1608 717.462 1608 720.5 1608 723.538 1604.19 726 1599.5 726 1594.81 726 1591 723.538 1591 720.5Z" fill="#4472C4" fill-rule="evenodd"/><path d="M1522 785.5C1522 782.462 1525.81 780 1530.5 780 1535.19 780 1539 782.462 1539 785.5 1539 788.538 1535.19 791 1530.5 791 1525.81 791 1522 788.538 1522 785.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M1603 819C1603 816.239 1606.58 814 1611 814 1615.42 814 1619 816.239 1619 819 1619 821.761 1615.42 824 1611 824 1606.58 824 1603 821.761 1603 819Z" fill="#C00000" fill-rule="evenodd"/><path d="M1538 794.5C1538 791.462 1541.81 789 1546.5 789 1551.19 789 1555 791.462 1555 794.5 1555 797.538 1551.19 800 1546.5 800 1541.81 800 1538 797.538 1538 794.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M1629 807.5C1629 804.462 1632.81 802 1637.5 802 1642.19 802 1646 804.462 1646 807.5 1646 810.538 1642.19 813 1637.5 813 1632.81 813 1629 810.538 1629 807.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M1544 771.5C1544 768.462 1547.81 766 1552.5 766 1557.19 766 1561 768.462 1561 771.5 1561 774.538 1557.19 777 1552.5 777 1547.81 777 1544 774.538 1544 771.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M1577 805.5C1577 802.462 1580.58 800 1585 800 1589.42 800 1593 802.462 1593 805.5 1593 808.538 1589.42 811 1585 811 1580.58 811 1577 808.538 1577 805.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M1608 800C1608 797.239 1611.58 795 1616 795 1620.42 795 1624 797.239 1624 800 1624 802.761 1620.42 805 1616 805 1611.58 805 1608 802.761 1608 800Z" fill="#C00000" fill-rule="evenodd"/><path d="M1564 784.5C1564 781.462 1567.81 779 1572.5 779 1577.19 779 1581 781.462 1581 784.5 1581 787.538 1577.19 790 1572.5 790 1567.81 790 1564 787.538 1564 784.5Z" fill="#C00000" fill-rule="evenodd"/><path d="M0 0 761.551 133.443" stroke="#B38F0D" stroke-width="3.125" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(0.847932 0.530104 0.530104 -0.847932 1182.42 606.072)"/><text fill="#B38F0D" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="25" transform="translate(1825.54 862)">𝒚<tspan x="22" y="0">=</tspan><tspan x="48" y="0">−</tspan>𝟎.<tspan x="91" y="0">𝟑𝒙</tspan><tspan x="126" y="0">+</tspan><tspan x="150" y="0">𝟗</tspan></text><text fill="#0070C0" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="25" transform="matrix(0.993847 0.110764 -0.110764 0.993847 1705.4 902)">𝒚<tspan x="21.9516" y="-0.434123">=</tspan><tspan x="47.965" y="-0.314738">𝟎</tspan><tspan x="63.0025" y="0.0217152">.</tspan><tspan x="72.0028" y="0.0248237">𝟓𝒙</tspan></text></g></svg>
+<svg width="530" height="310" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    overflow="hidden" viewBox="0 0 930 510" style="backgroun d:orange;width:0%">
+    <defs>
+        <clipPath id="clip0">
+            <path d="M1076 589 2007 589 2007 1093 1076 1093Z" fill-rule="evenodd" clip-rule="evenodd" />
+        </clipPath>
+    </defs>
+    <g clip-path="url(#clip0)" transform="translate(-1076 -589)">
+        <path d="M1323 617 1323 1062.53 1318 1062.53 1318 617ZM1313 619.5 1320.5 604.5 1328 619.5Z" fill="#0D0D0D" />
+        <path d="M1931.9 950 1080.5 950 1080.5 945 1931.9 945ZM1929.4 940 1944.4 947.5 1929.4 955Z" fill="#0D0D0D" />
+        <path d="M0 0 318.927 482.607" stroke="#FF0000" stroke-width="3" stroke-miterlimit="8" fill="none"
+            fill-rule="evenodd" transform="matrix(1 0 0 -1 1223.5 1091.11)" /><text fill="#FF0000"
+            font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400" font-size="25"
+            transform="translate(1547.52 634)">𝒚<tspan x="22" y="0">=</tspan>
+            <tspan x="48" y="0">𝟐𝒙</tspan>
+        </text>
+        <path d="M0 0 704.399 418.417" stroke="#00B050" stroke-width="3.125" stroke-miterlimit="8" fill="none"
+            fill-rule="evenodd" transform="matrix(0.921937 0.38734 0.38734 -0.921937 1088.34 860.709)" /><text
+            fill="#00B050" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400"
+            font-size="25" transform="translate(1798.06 742)">𝒚<tspan x="21" y="0">=</tspan>
+            <tspan x="47" y="0">𝟎</tspan>.<tspan x="71" y="0">𝟑</tspan>𝒙<tspan x="106" y="0">+</tspan>
+            <tspan x="130" y="0">𝟓</tspan>
+        </text>
+        <path
+            d="M1552 745C1552 742.239 1555.58 740 1560 740 1564.42 740 1568 742.239 1568 745 1568 747.761 1564.42 750 1560 750 1555.58 750 1552 747.761 1552 745Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1596 735.5C1596 732.462 1599.81 730 1604.5 730 1609.19 730 1613 732.462 1613 735.5 1613 738.538 1609.19 741 1604.5 741 1599.81 741 1596 738.538 1596 735.5Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1640 758.5C1640 755.462 1643.58 753 1648 753 1652.42 753 1656 755.462 1656 758.5 1656 761.538 1652.42 764 1648 764 1643.58 764 1640 761.538 1640 758.5Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1588 754C1588 751.239 1591.81 749 1596.5 749 1601.19 749 1605 751.239 1605 754 1605 756.761 1601.19 759 1596.5 759 1591.81 759 1588 756.761 1588 754Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1572 725.5C1572 722.462 1575.81 720 1580.5 720 1585.19 720 1589 722.462 1589 725.5 1589 728.538 1585.19 731 1580.5 731 1575.81 731 1572 728.538 1572 725.5Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1611 746C1611 743.239 1614.81 741 1619.5 741 1624.19 741 1628 743.239 1628 746 1628 748.761 1624.19 751 1619.5 751 1614.81 751 1611 748.761 1611 746Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1612 772.5C1612 769.462 1615.81 767 1620.5 767 1625.19 767 1629 769.462 1629 772.5 1629 775.538 1625.19 778 1620.5 778 1615.81 778 1612 775.538 1612 772.5Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1591 720.5C1591 717.462 1594.81 715 1599.5 715 1604.19 715 1608 717.462 1608 720.5 1608 723.538 1604.19 726 1599.5 726 1594.81 726 1591 723.538 1591 720.5Z"
+            fill="#4472C4" fill-rule="evenodd" />
+        <path
+            d="M1522 785.5C1522 782.462 1525.81 780 1530.5 780 1535.19 780 1539 782.462 1539 785.5 1539 788.538 1535.19 791 1530.5 791 1525.81 791 1522 788.538 1522 785.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1603 819C1603 816.239 1606.58 814 1611 814 1615.42 814 1619 816.239 1619 819 1619 821.761 1615.42 824 1611 824 1606.58 824 1603 821.761 1603 819Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1538 794.5C1538 791.462 1541.81 789 1546.5 789 1551.19 789 1555 791.462 1555 794.5 1555 797.538 1551.19 800 1546.5 800 1541.81 800 1538 797.538 1538 794.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1629 807.5C1629 804.462 1632.81 802 1637.5 802 1642.19 802 1646 804.462 1646 807.5 1646 810.538 1642.19 813 1637.5 813 1632.81 813 1629 810.538 1629 807.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1544 771.5C1544 768.462 1547.81 766 1552.5 766 1557.19 766 1561 768.462 1561 771.5 1561 774.538 1557.19 777 1552.5 777 1547.81 777 1544 774.538 1544 771.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1577 805.5C1577 802.462 1580.58 800 1585 800 1589.42 800 1593 802.462 1593 805.5 1593 808.538 1589.42 811 1585 811 1580.58 811 1577 808.538 1577 805.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1608 800C1608 797.239 1611.58 795 1616 795 1620.42 795 1624 797.239 1624 800 1624 802.761 1620.42 805 1616 805 1611.58 805 1608 802.761 1608 800Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path
+            d="M1564 784.5C1564 781.462 1567.81 779 1572.5 779 1577.19 779 1581 781.462 1581 784.5 1581 787.538 1577.19 790 1572.5 790 1567.81 790 1564 787.538 1564 784.5Z"
+            fill="#C00000" fill-rule="evenodd" />
+        <path d="M0 0 761.551 133.443" stroke="#B38F0D" stroke-width="3.125" stroke-miterlimit="8" fill="none"
+            fill-rule="evenodd" transform="matrix(0.847932 0.530104 0.530104 -0.847932 1182.42 606.072)" /><text
+            fill="#B38F0D" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400"
+            font-size="25" transform="translate(1825.54 862)">𝒚<tspan x="22" y="0">=</tspan>
+            <tspan x="48" y="0">−</tspan>𝟎.<tspan x="91" y="0">𝟑𝒙</tspan>
+            <tspan x="126" y="0">+</tspan>
+            <tspan x="150" y="0">𝟗</tspan>
+        </text><text fill="#0070C0" font-family="Cambria Math,Cambria Math_MSFontService,sans-serif" font-weight="400"
+            font-size="25" transform="matrix(0.993847 0.110764 -0.110764 0.993847 1705.4 902)">𝒚<tspan x="21.9516"
+                y="-0.434123">=</tspan>
+            <tspan x="47.965" y="-0.314738">𝟎</tspan>
+            <tspan x="63.0025" y="0.0217152">.</tspan>
+            <tspan x="72.0028" y="0.0248237">𝟓𝒙</tspan>
+        </text></g>
+</svg>

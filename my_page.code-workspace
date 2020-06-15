@@ -33,6 +33,7 @@
 		"cSpell.words": [
 			"acceuil"
 		],
-		"peacock.color": "#000000"
+		"peacock.color": "#000000",
+		"svg.preview.background": "custom"
 	}
 }

@@ -1,16 +1,9 @@
-<svg 
-    version="1.1" 
-    x="0px" 
-    y="0px" 
-    viewBox="0 0 1000 1000" 
-    enable-background="new 0 0 1000 1000" 
-    xml:space="preserve"
-    width="32"
-    height="32">
+<svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"
+    width="32" height="32">
     <g>
-    <path d="M761.3,663.3H238.7v65.3h522.7V663.3z M696,
+        <path d="M761.3,663.3H238.7v65.3h522.7V663.3z M696,
         271.3H565.3V10H434.7v261.3H304l196,196L696,271.3z M761.3,336.9v65.4l65.3,
         65h-65.3v65.3h65.3v392H173.3v-588h65.3v-65.3H108V990h784V468L761.3,
-        336.9z M238.7,859.3h522.7V794H238.7V859.3z"/>
+        336.9z M238.7,859.3h522.7V794H238.7V859.3z" />
     </g>
 </svg>
