@@ -66,6 +66,7 @@ body {
     margin: 0px;
     font-size: 100%;
     min-width: 360px;
+    margin-top: 20px;
 }
 
 main {
@@ -145,7 +146,7 @@ section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
     padding-top: 10px;
-    padding-top: 45px;
+    /*padding-top: 45px;*/
     margin-bottom: 5px;
 }
 

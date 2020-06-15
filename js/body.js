@@ -26,13 +26,12 @@ function add_li_to_ul(ul,node,id)
 }
 
 
-function create_list_left_nav()
+void function create_list_left_nav()
 {
     var ul = document.querySelector("#ul-aside-nav");
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,  n=1, id=null, li=null;
     var ul_=null,li_=null,_ul=null, c=title.length;
-    console.log(title)
     /*For H1*/
     var H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
@@ -54,7 +53,6 @@ function create_list_left_nav()
             li_ = add_li_to_ul(ul_,title[i++],'titre'+ (n++));
         }
         /*For H4*/
-        console.log(title[i] + " " + title[i].firstChild.data);
         if(i<c && title[i].nodeName === 'H4'){
             _ul = new_element('ul');
             while(i<c && title[i].nodeName === 'H4'){
@@ -66,6 +64,33 @@ function create_list_left_nav()
         else i--;
         li.appendChild(ul_);
     }
-}
+}();
 
-create_list_left_nav();
+
+void function click_on_aside_nav_Link(){
+    var link = document.querySelectorAll("#aside-nav a");
+    var nav = document.querySelector("#header-nav");
+    var c = link.length;
+
+    for(var i=0; i<c; ++i){
+        link[i].addEventListener('click',function (){
+            console.log(nav.style.visibility);
+            nav.style.visibility = 'hidden';
+            nav.style.opacity = 0;
+
+        })
+    }
+
+    document.body.addEventListener('wheel',function (){
+        var visibility = nav.style.visibility;
+        if(visibility==='hidden'){
+            nav.style.visibility = 'visible';
+            nav.style.opacity = 1;
+
+        }
+        console.log(nav.style.visibility);
+    });
+    /*document.documentElement.addEventListener('scroll',function (){
+        console.log(nav.style.visibility);
+    })*/
+}();
