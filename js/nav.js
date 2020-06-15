@@ -115,7 +115,7 @@ function display_or_hide_submenu() {
                 this.lastElementChild.style.display = 'none';
                 this.querySelector("a")
                     .replaceChild(new_element("i", {
-                            class: 'fas fa-angle-down'
+                            class: 'fa fa-angle-down'
                         }),
                         this.querySelector('a i'));
             }
