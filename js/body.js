@@ -92,11 +92,18 @@ function click_on_internal_link_CSS_transition() {
         })
     }
 
-    document.body.addEventListener('wheel', function () {
+    function make_visible() {
         var nodeStyle = nav.style;
         if (nodeStyle.visibility === 'hidden') {
             nodeStyle.visibility = 'visible';
             nodeStyle.opacity = 1;
         }
-    });
+    }
+
+    document.body.addEventListener('touchstart', make_visible,true);
+    document.body.addEventListener('wheel', make_visible);
 }();
+
+document.body.addEventListener('touchstart', function (){
+    alert("cool");
+});
