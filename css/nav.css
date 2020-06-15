@@ -77,6 +77,19 @@ nav#header-nav::after {
     padding-bottom: 3px;
 }
 
+@keyframes bouge{
+    0%{
+        transform: translateX(0%);
+    }
+
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(2%);
+    }
+}
+
 ul#main-list {
     font-weight: normal;
     padding: 0px;

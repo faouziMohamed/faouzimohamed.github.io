@@ -144,8 +144,9 @@ section.conclusion>h2 {
 section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
-    margin-bottom: -5px;
     padding-top: 10px;
+    padding-top: 45px;
+    margin-bottom: 5px;
 }
 
 .main-section p,
@@ -188,6 +189,7 @@ aside#left-aside {
     font-size: 100%;
     background-color: var(--main-aside-bg);
     text-align: left;
+    transition:all .5s ease-in-out;
 }
 
 aside#left-aside>nav {
@@ -393,7 +395,8 @@ td.empty {
     }
 
     aside#left-aside {
-        display: none;
+        transform: translateX(-100%);
+        di splay: none;
     }
 
     article.main-article {
