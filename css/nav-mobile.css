@@ -1,11 +1,11 @@
-.theme-dark{
+.theme-dark {
     --main-list-li-bg: rgba(2, 33, 53, 0.979);
-    --menu-fill:var(--home-fill);
+    --menu-fill: var(--home-fill);
 }
 
-.theme-light{
+.theme-light {
     --main-list-li-bg: rgb(3, 61, 71);
-    --menu-fill:rgb(45, 173, 146);
+    --menu-fill: rgb(45, 173, 146);
 }
 
 #menu>svg {
@@ -14,8 +14,6 @@
     fill: var(--menu-fill);
     margin-left: 15px;
 }
-
-
 
 @media only screen and (max-width:536px) {
     nav#header-nav {
@@ -27,7 +25,7 @@
     ul#main-list {
         width: 100%;
         position: absolute;
-        display:none;
+        display: none;
     }
 
     ul#main-list>li {

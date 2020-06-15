@@ -396,7 +396,6 @@ td.empty {
 
     aside#left-aside {
         transform: translateX(-100%);
-        di splay: none;
     }
 
     article.main-article {
