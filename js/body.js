@@ -100,6 +100,6 @@ function click_on_internal_link_CSS_transition() {
         }
     }
 
-    document.body.addEventListener('touchstart', make_visible,true);
-    document.body.addEventListener('wheel', make_visible);
+    document.body.addEventListener('touchstart', make_visible,true); //For tactil 
+    document.body.addEventListener('wheel', make_visible);           //for touchpad or mouse wheel
 }();
