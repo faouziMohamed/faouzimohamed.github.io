@@ -68,29 +68,22 @@ void function create_list_left_nav()
 
 
 void function click_on_aside_nav_Link(){
-    var link = document.querySelectorAll("#aside-nav a");
+    var link = document.querySelectorAll("a[href*='#titre']");
     var nav = document.querySelector("#header-nav");
     var c = link.length;
 
     for(var i=0; i<c; ++i){
         link[i].addEventListener('click',function (){
-            console.log(nav.style.visibility);
             nav.style.visibility = 'hidden';
             nav.style.opacity = 0;
-
         })
     }
 
     document.body.addEventListener('wheel',function (){
-        var visibility = nav.style.visibility;
-        if(visibility==='hidden'){
-            nav.style.visibility = 'visible';
-            nav.style.opacity = 1;
-
+        var nodeStyle = nav.style;
+        if(nodeStyle.visibility==='hidden'){
+            nodeStyle.visibility = 'visible';
+            nodeStyle.opacity = 1;
         }
-        console.log(nav.style.visibility);
     });
-    /*document.documentElement.addEventListener('scroll',function (){
-        console.log(nav.style.visibility);
-    })*/
 }();
