@@ -52,8 +52,3 @@ ul#main-list>li:first-child:hover{
     display: block;
     fill: antiquewhite;
 }
-
-i{
-    background-color: yellow;
-    display: block;
-}
