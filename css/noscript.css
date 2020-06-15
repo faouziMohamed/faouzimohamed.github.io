@@ -20,7 +20,7 @@ nav#header-nav {
     display: block;
     position: fixed;
     background-color: rgb(73, 104, 97);;
-    top: 32px;
+    top: 29px;
     left: 0px;
     right: 0px;
     padding: 0px;
@@ -51,4 +51,9 @@ ul#main-list>li:hover .submenu{
 ul#main-list>li:first-child:hover{
     display: block;
     fill: antiquewhite;
+}
+
+i{
+    background-color: yellow;
+    display: block;
 }
