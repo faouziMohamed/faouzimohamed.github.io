@@ -71,7 +71,6 @@ nav#header-nav::after {
     clear: both;
 }
 
-
 ul#main-list {
     font-weight: normal;
     padding: 0;
@@ -103,6 +102,17 @@ ul#main-list>li>a {
 .submenu>li:not(:nth-child(2)) a {
     padding-top: 5px;
 }
+.submenu a:hover {
+    background: var(--submenu-a-bg-hover);
+}
+
+.submenu>li>a {
+    background-color: var(--submenu-li-a-bg);
+    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+}
+
 
 ul#main-list>li:first-child>a {
     padding-top: 13px;
@@ -118,17 +128,6 @@ ul#main-list>li>a:hover {
     position: absolute;
     top: 98%;
     padding-left: 0;
-}
-
-.submenu>li>a {
-    background-color: var(--submenu-li-a-bg);
-    display: inline-block;
-    padding: 10px 15px;
-    width: 100%;
-}
-
-.submenu a:hover {
-    background: var(--submenu-a-bg-hover);
 }
 
 .submenu a>img {
