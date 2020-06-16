@@ -5,7 +5,7 @@
     width: 52px;
     height: 24px;
     right: 55px;
-    top:5px;
+    top: 5px;
 }
 
 /* Hide default HTML checkbox */
@@ -28,33 +28,32 @@
     transition: 0.4s;
 }
 
-.slider:before {
+.slider::before {
     position: absolute;
     content: "";
     height: 30px;
     width: 30px;
-    left: 0px;
-    bottom: 4px;
+    left: 0;
     top: 0;
     bottom: 0;
     margin: auto 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    box-shadow: 0 0px 15px #2020203d;
+    box-shadow: 0 0 15px #2020203d;
     background: rgba(221, 220, 220, 0.897) url('../img/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: rgb(154, 157, 158);
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #2b9efd;
 }
 
-input:checked + .slider:before {
+input:checked+.slider::before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
@@ -68,47 +67,6 @@ input:checked + .slider:before {
     border-radius: 65px;
 }
 
-.slider.round:before {
+.slider.round::before {
     border-radius: 60%;
 }
-
-/*
-@media only screen and (min-width:888px) {
-    .switch {
-        position: fixed;
-        animation: ba ckwards ease -in;
-        top:80px;
-        right: -2%;
-    }
-}
-
-@media only screen and (min-width:768px) {
-    .switch {
-        position: fixed;
-        top:80px;
-        right: 1%;
-        transform: rotate(0deg);
-        width: 35px;
-        height: 20px;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-        animation: alternate ease-in-out;
-
-    }
-
-    .slider:before{
-        height: 26px;
-        width: 25px;
-    }
-}
-
-
-@media only screen and (max-width:768px){
-    .switch {
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-        animation: ease-out;
-
-    }
-}
-*/

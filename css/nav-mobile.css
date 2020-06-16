@@ -8,18 +8,18 @@
     --menu-fill: rgb(45, 173, 146);
 }
 
-#menu>svg {
+#menu-icon-wrapper>svg {
     position: relative;
     top: 5px;
     fill: var(--menu-fill);
     margin-left: 15px;
 }
 
-@media only screen and (max-width:536px) {
+@media only screen and (max-width: 536px) {
     nav#header-nav {
         position: fixed;
         height: 43px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     ul#main-list {
@@ -34,7 +34,7 @@
     }
 
     .li-label,
-    #menu>svg {
+    #menu-icon-wrapper>svg {
         display: inline-block;
     }
 
@@ -66,8 +66,16 @@
         position: relative;
     }
 
+    ul#main-list a {
+        padding-bottom: 0;
+    }
+
+    .subMenuParent li a {
+        top: 100%;
+    }
+
     ul#main-list>li:nth-child(1)>a {
-        bottom: 0px;
+        bottom: 0;
     }
 
     ul#main-list>li:nth-child(1)+li>a>svg,
@@ -75,12 +83,7 @@
         top: -4px;
     }
 
-    ul#main-list>li>a {
-        padding-bottom: 0px;
-    }
-
-    ul#main-list>li:nth-child(2) .li-txt,
-    ul#main-list>li:nth-child(2) .li-txt {
+    ul#main-list>li:nth-child(2) .li-txt{
         top: -10px;
     }
 
@@ -90,9 +93,5 @@
 
     .subMenuParent {
         position: relative;
-    }
-
-    .subMenuParent li a {
-        top: 100%;
     }
 }

@@ -16,11 +16,7 @@
     --figcaption-color: rgb(37, 94, 40);
     --svg-bg: rgba(152, 182, 157, 0.671);
     --fig-caption-bg: rgba(84, 212, 152, 0.096);
-
 }
-
-
-
 
 .pie-chart-title {
     fill: var(--chart-title-color);
@@ -39,8 +35,8 @@
 }
 
 .flex-bloc #pie-chart {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 figure#pie-chart {
@@ -60,33 +56,28 @@ figcaption {
     color: var(--figcaption-color);
 }
 
-
-
-
-
-
-@media only screen and (max-width:1264px) {
+@media only screen and (max-width: 1264px) {
     figure#pie-chart {
         top: 10%;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:1254px) {
+@media only screen and (max-width: 1254px) {
     figure #pie-chart {
         top: 35px;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:1084px) {
+@media only screen and (max-width: 1084px) {
     figure#pie-chart {
         top: 18%;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:902px) {
+@media only screen and (max-width: 902px) {
     .flex-bloc {
         flex-wrap: wrap;
     }
@@ -96,7 +87,7 @@ figcaption {
     }
 
     figure#pie-chart {
-        top: 0%;
+        top: 0;
         left: initial;
         width: 100%;
     }
@@ -107,8 +98,7 @@ figcaption {
     }
 }
 
-@media only screen and (max-width:764px) {}
-
+/* @media only screen and (max-width: 764px) {} */
 .figure-layout img[src*="dark"],
 .figure-layout img[src*="light"],
 .figure-layout img[src*="svg"] {
@@ -133,13 +123,14 @@ figcaption {
     height: 350px;
 }
 
-#perceptron-monocouche img{
+#perceptron-monocouche img {
     max-height: 250px;
 }
 
-figure[id*='bias-'] img,
-figure[id*='xor'] img,
 #monocouche img,
-#NT2 img{
+#NT2 img,
+figure[id*='bias-'] img,
+figure[id*='xor'] img
+ {
     max-height: 370px;
 }

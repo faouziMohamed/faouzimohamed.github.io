@@ -1,157 +1,117 @@
-/*GLOBAL VARIABLES */
-var open = false;
-var close = true;
-var used = false;
-
 function openMenu() {
-    var ul = document.querySelector("ul#main-list");
-    ul.style.display = 'block';
-    var section = document.querySelectorAll(".main-section");
-    for (var i = 0, c = section.length; i < c; ++i) {
-        section[i].addEventListener('mouseover', closeMenu);
-        section[i].addEventListener("click", closeMenu);
-    }
-    open = true;
-    close = false;
+    document.querySelector("ul#main-list").style.display = "block";
 }
 
 function closeMenu() {
-    var ul = document.querySelector("ul#main-list");
-    ul.style.display = 'none';
-    open = false;
-    close = true;
+    document.querySelector("ul#main-list").style.display = "none";
 }
-void
-function toogle_openAndClose_menu() {
-    function open_close_Menu() {
-        used = true;
-        var x = window.matchMedia("(max-width: 536px)");
-        if (x.matches) {
-            if (open) closeMenu();
-            else openMenu();
-        }
-        x.addListener(open_close_Menu);
-    }
-    menu = document.querySelector("#menu>svg");
-    menu.addEventListener('click', open_close_Menu);
-}();
-/*This part of code ensures that the menu is displayed in the 
-two responsive modes*/
-void
-function removeListner_when_mediaQuerieMatch() {
-    var ul = document.querySelector("ul#main-list");
-    var x = window.matchMedia("(min-width: 538px)");
 
-    function display_menu(x) {
-        if (x.matches) {
-            ul.style.display = 'block';
-            var section = document.querySelectorAll(".main-section");
-            for (var i = 0, c = section.length; i < c; ++i) {
-                section[i].removeEventListener('mouseover', closeMenu);
-                section[i].removeEventListener("click", closeMenu);
+function handleOppenedMenu() {
+    var article = document.querySelector("article.main-article");
+    article.addEventListener("touchstart", closeMenu);
+    article.addEventListener("click", closeMenu);
+}
+
+function displayMenuAnyway() {
+    var article = document.querySelector("article.main-article");
+    article.removeEventListener("touchstart", closeMenu);
+    article.removeEventListener("click", closeMenu);
+    document.querySelector("ul#main-list").style.display = "block";
+}
+
+
+void (function toogleOpenAndCloseMenu() {
+    document.querySelector("#menu-icon-wrapper>svg").addEventListener("click", function openCloseMenu() {
+            /*Use of media query to control responsive layout for the menubar"s layout*/
+            var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
+            if (x.matches) {
+                handleOppenedMenu(); //some events to handle the closing of menu
+                if (document.querySelector("ul#main-list").style.display === "block")
+                    {closeMenu();}
+                else {openMenu();}
+            } else { //width >536px
+                displayMenuAnyway(); //remove for some events to handle the closing of menu
             }
-        } else {
-            ul.style.display = 'none';
-        }
-        x.addListener(display_menu);
+            x.addListener(openCloseMenu);
+        });
+}());
+
+function newTxtNode(text){return document.createTextNode(text);}
+function newElement(name, attributes = {}, text = "") {
+    var node = document.createElement(name);
+    for (var o in attributes) {
+        node.setAttribute(o, attributes.o);
     }
-    display_menu(x);
-}();
-
-function new_element(name, attributes = {}, text = '') {
-    node = document.createElement(name);
-
-    for (var o in attributes)
-        node.setAttribute(o, attributes[o]);
-
     if (text) {
-        node.innerHTML = text;
+        node.appendChild(newTxtNode(text));
     }
     return node;
 }
-void
-function display_or_hide_submenu() {
+void (function displayOrHideSubmenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
-    var c = ul.length;
+    var c = parseInt(ul.length);
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
-        parent = ul[i].parentElement;
-        parent.querySelector("a")
-            .appendChild(new_element("i", {
-                class: 'fas fa-angle-down'
-            }));
-        parent.addEventListener('click', function (e) {
-            var angle = this.querySelector('a i');
-            if (this.lastElementChild.style.display !== 'block') {
-                this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                        class: 'fas fa-angle-up'
-                    }), angle);
-                this.lastElementChild.style.display = 'block';
+        parent = ul[parseInt(i)].parentElement;
+        parent.querySelector("a").appendChild(newElement("i", {class: "fas fa-angle-down"}));
+        parent.addEventListener("click", function (e) {
+            var angle = this.querySelector("a i");
+            if (this.lastElementChild.style.display !== "block") {
+                this.querySelector("a").replaceChild(newElement("i", {class: "fas fa-angle-up"}), angle);
+                this.lastElementChild.style.display = "block";
             } else {
-                this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                        class: 'fas fa-angle-down'
-                    }), angle);
-                this.lastElementChild.style.display = 'none';
+                this.querySelector("a").replaceChild(newElement("i", {class: "fas fa-angle-down"}), angle);
+                this.lastElementChild.style.display = "none";
             }
         });
-        /*Hide submenu is it not hovered*/
-        parent.addEventListener('mouseout', function (e) {
-            var related_target = e.relatedTarget;
-            if ((!this.lastElementChild.style.display) ||
-                this.lastElementChild.style.display === 'none') {
-                return;
-            }
+        /*Hide submenu if is it not hovered*/
+        parent.addEventListener("mouseout", function (e) {
+            var relatedTarget = e.relatedTarget;
+            if (this.lastElementChild.style.display !== "block") {return;}
 
-            while (related_target != this &&
-                related_target.nodeName != 'BODY' &&
-                related_target != document) {
-                related_target = related_target.parentNode;
+            while ((relatedTarget !== this) &&
+                (relatedTarget.nodeName !== "BODY") &&
+                (relatedTarget !== document)) {
+                relatedTarget = relatedTarget.parentNode;
             }
-            if (related_target != this) {
-                this.lastElementChild.style.display = 'none';
+            if (relatedTarget !== this) {
+                this.lastElementChild.style.display = "none";
                 this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                            class: 'fa fa-angle-down'
-                        }),
-                        this.querySelector('a i'));
+                    .replaceChild(newElement("i", {class: "fa fa-angle-down"}),
+                        this.querySelector("a i"));
             }
         });
     }
     /** Tweaking submenus (adding class on its parents)**/
-    function tune_submenu(y) {
+    function tuneSubmenu(y) {
+        var i;
         if (y.matches) {
-            for (var i = 0; i < c; ++i) {
-                parent = ul[i].parentElement;
-                parent.classList.add('subMenuParent');
+            for (i = 0; i < c; ++i) {
+                ul[parseInt(i)].parentElement.classList.add("subMenuParent");
             }
         } else {
-            for (var i = 0; i < c; ++i) {
-                parent = ul[i].parentElement;
-                parent.classList.remove('subMenuParent');
+            for (i = 0; i < c; ++i) {
+                ul[parseInt(i)].parentElement.classList.remove("subMenuParent");
             }
         }
     }
-    tune_submenu(y);
-    y.addListener(tune_submenu);
-}();
+    tuneSubmenu(y);
+    y.addListener(tuneSubmenu);
+}());
 
 
-void function makeVoid_null_link () {
+void (function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
-        a[i].addEventListener('click', function (e) {
-            //if(this.id !== 'github')
-            this.href = 'javascript:void(0)';
+        a[parseInt(i)].addEventListener("click", function (e) {
+            e.preventDefault();
         });
     }
     document.querySelector("#github")
-            .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
-}();
-
+        .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
+}());
 
 
 
@@ -181,7 +141,7 @@ void function makeVoid_null_link () {
 
 
 /*
-if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
-    console.log('🎉 Dark mode is supported');
+if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {
+    console.log("🎉 Dark mode is supported");
 }
 */

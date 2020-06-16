@@ -4,7 +4,7 @@
     --body-bg: rgb(18, 34, 44);
     --main-text-color: rgb(193, 209, 206);
     --color-link: #faa;
-    /*--main- article-bg: rgb(1, 17, 36);*/
+    /* --main- article-bg              : rgb(1, 17, 36); */
     --main-header-color: rgb(236, 163, 3);
     --main-header-bg: rgb(46, 54, 61);
     --main-section-bg: rgb(11, 29, 39);
@@ -14,7 +14,7 @@
     --main-section-border-color: #081a27;
     --main-section-h2-conclusion-color: rgb(0, 189, 142);
     --table-border: #657473;
-    
+
     --main-aside-bg: rgb(26, 29, 31);
     --main-aside-nav-bg: rgb(7, 11, 19);
     --main-aside-nav-color: #d4dada;
@@ -28,12 +28,11 @@
     --aside-a-3-bt: 1px solid rgb(153, 73, 36);
 }
 
-
 .theme-light {
     --body-bg: rgb(10, 100, 85);
     --main-text-color: rgb(0, 20, 19);
     --color-link: rgb(230, 0, 0);
-    /*--main-article-bg: rgb(3, 143, 120);*/
+    /* --main-article-bg               : rgb(3, 143, 120); */
     --main-header-color: rgb(236, 163, 3);
     --main-header-bg: rgb(73, 104, 97);
     --main-section-bg: rgb(162, 199, 199);
@@ -43,7 +42,7 @@
     --main-section-border-color: #58f4f4;
     --main-section-h2-conclusion-color: rgb(10, 95, 29);
     --table-border: #657473;
-    
+
     --main-aside-bg: rgb(3, 92, 99);
     --main-aside-nav-bg: rgb(9, 26, 27);
     --main-aside-nav-color: rgb(224, 255, 243);
@@ -63,20 +62,18 @@
 
 body {
     background-color: var(--body-bg);
-    margin: 0px;
+    margin: 0;
     font-size: 100%;
     min-width: 360px;
     margin-top: 20px;
 }
 
 main {
-    border-radius: 4px;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 15px 15px 20px 20px;
+    border-radius: 15px 20px;
     display: flex;
     margin-top: 45px;
 }
-
 
 article.main-article {
     width: 65%;
@@ -99,7 +96,7 @@ article.main-article {
 }
 
 .main-article>header>h1 {
-    margin: 0px;
+    margin: 0;
 }
 
 section.main-section {
@@ -114,7 +111,7 @@ section.main-section {
     line-height: 1.39em;
 }
 
-@media screen and (min-width:472px) {
+@media screen and (min-width: 472px) {
     section.main-section {
         letter-spacing: .05em;
         line-height: 1.39em;
@@ -146,7 +143,7 @@ section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
     padding-top: 10px;
-    /*padding-top: 45px;*/
+    /* padding-top: 45px; */
     margin-bottom: 5px;
 }
 
@@ -181,28 +178,27 @@ section a:link {
 aside#left-aside {
     position: fixed;
     z-index: 1;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 25%;
     height: 100%;
     min-width: 215px;
     font-size: 100%;
     background-color: var(--main-aside-bg);
     text-align: left;
-    transition:all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 aside#left-aside>nav {
     padding-top: 20px;
     position: absolute;
     background-color: var(--main-aside-nav-bg);
-    top: 0px;
-    left: 0%;
-    right: 0%;
-    margin: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     padding-left: 4%;
     color: var(--main-aside-nav-color);
@@ -214,14 +210,17 @@ aside#left-aside>nav {
 }
 
 nav#aside-nav>h1 {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
     margin-left: -2px;
     font-size: 130%;
 }
 
+nav#aside-nav li {
+    list-style-type: none;
+}
+
 nav#aside-nav>ul>li {
     position: relative;
-    list-style-type: disc;
     margin-left: -2px;
     margin-top: 7px;
     margin-bottom: 12px;
@@ -230,11 +229,6 @@ nav#aside-nav>ul>li {
 nav#aside-nav>ul>li li {
     margin-left: -27px;
     margin-bottom: 2px;
-    list-style-type: circle;
-}
-
-nav#aside-nav li {
-    list-style-type: none !important;
 }
 
 nav#aside-nav a {
@@ -253,37 +247,44 @@ nav#aside-nav li a:hover {
     padding-bottom: 1px;
 }
 
-
 nav#aside-nav>ul>li>a:hover {
-    /*co lor: var(--nav-aside-hv-color);*/
+    /* co lor: var(--nav-aside-hv-color); */
     background-color: var(--aside-a-1-bg);
     border-bottom: var(--aside-a-1-bt);
 }
 
 nav#aside-nav>ul>li li>a:hover {
-    /*col or: var(--nav-aside--li-hv-color);*/
+    /* color: var(--nav-aside--li-hv-color); */
     background-color: var(--aside-a-2-bg);
     border-bottom: var(--aside-a-2-bt);
-
 }
 
 nav#aside-nav>ul>li ul>li li>a:hover {
-    /*color: var(--nav-aside--li-li-hv-color);*/
+    /* color: var(--nav-aside--li-li-hv-color); */
     background-color: var(--aside-a-3-bg);
     border-bottom: var(--aside-a-3-bt);
 }
 
 nav#aside-nav>ul {
-    padding: 0px 15px 3px 5px;
+    padding: 0 15px 3px 5px;
 }
 
-.inline{display: inline;}
-.normal{font-weight: normal;}
+.inline {
+    display: inline;
+}
+
+.normal {
+    font-weight: normal;
+}
+
 .bold,
 strong {
     font-weight: bold;
 }
-.p-over-ul{margin-bottom: -15px;}
+
+.p-over-ul {
+    margin-bottom: -15px;
+}
 
 q {
     quotes: '\201C''\201d';
@@ -339,7 +340,6 @@ table {
     border-collapse: collapse;
 }
 
-
 #table-2 {
     max-width: 450px;
 }
@@ -352,7 +352,7 @@ td.empty {
 #rotate {
     transform: rotate(-15deg);
     height: 40px;
-    padding: 0px;
+    padding: 0;
 }
 
 .table-center,
@@ -372,12 +372,8 @@ td.empty {
     margin-bottom: 9px;
 }
 
-
-
-
-/*Media queries*/
-
-@media only screen and (max-width:888px) {
+/* Media queries */
+@media only screen and (max-width: 888px) {
     article.main-article {
         margin-left: 32%;
         margin-right: 5%;
@@ -386,11 +382,9 @@ td.empty {
     section.main-section {
         width: 100%;
     }
-
 }
 
-@media only screen and (max-width:768px) {
-
+@media only screen and (max-width: 768px) {
     .main-article>header {
         font-size: 140%;
     }
@@ -406,8 +400,7 @@ td.empty {
     }
 }
 
-@media only screen and (max-width:478px) {
-
+@media only screen and (max-width: 478px) {
     #fig-table-2,
     .table-center {
         width: 100%;
@@ -418,13 +411,12 @@ td.empty {
         width: inherit;
     }
 
-    .to-top:before {
+    .to-top::before {
         border: solid .12em white;
     }
 }
 
-
-@media only screen and (max-width:414px) {
+@media only screen and (max-width: 414px) {
     .main-article>header {
         width: 85%;
     }
