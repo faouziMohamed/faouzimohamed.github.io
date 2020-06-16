@@ -1,36 +1,36 @@
 .theme-dark {
     --main-list-li-bg: rgba(2, 33, 53, 0.979);
-    --menu-fill: var(--home-fill);
+    --menu-fill      : var(--home-fill);
 }
 
 .theme-light {
     --main-list-li-bg: rgb(3, 61, 71);
-    --menu-fill: rgb(45, 173, 146);
+    --menu-fill      : rgb(45, 173, 146);
 }
 
 #menu-icon-wrapper>svg {
-    position: relative;
-    top: 5px;
-    fill: var(--menu-fill);
+    position   : relative;
+    top        : 5px;
+    fill       : var(--menu-fill);
     margin-left: 15px;
 }
 
 @media only screen and (max-width:536px) {
     nav#header-nav {
-        position: fixed;
-        height: 43px;
+        position      : fixed;
+        height        : 43px;
         padding-bottom: 0px;
     }
 
     ul#main-list {
-        width: 100%;
+        width   : 100%;
         position: absolute;
-        display: none;
+        display : none;
     }
 
     ul#main-list>li {
         background-color: var(--main-list-li-bg);
-        float: none;
+        float           : none;
     }
 
     .li-label,
@@ -40,26 +40,26 @@
 
     .li-label,
     span.li-txt {
-        position: relative;
+        position   : relative;
         font-weight: bold;
     }
 
     span.li-txt {
         left: 2px;
-        top: -4px;
+        top : -4px;
     }
 
     .li-label {
-        top: -8px;
+        top : -8px;
         left: -2px;
     }
 
     ul#main-list>li:nth-child(1)~li svg {
-        display: inline-block;
+        display : inline-block;
         position: relative;
-        width: 30px;
-        height: 25px;
-        fill: var(--home-fill);
+        width   : 30px;
+        height  : 25px;
+        fill    : var(--home-fill);
     }
 
     a.li-txt {
