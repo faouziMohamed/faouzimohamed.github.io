@@ -11,7 +11,6 @@
     --home-fill: rgb(227, 246, 252);
 }
 
-
 .theme-light {
     --nav-header-bg: rgb(1, 37, 46);
     --main-list-a-color: rgb(202, 241, 238);
@@ -52,7 +51,6 @@ ul#main-list>li:nth-child(1)~li svg,
 #menu-icon-wrapper>svg {
     display: none;
 }
-
 
 /*The menu*/
 nav#header-nav {
@@ -109,7 +107,6 @@ ul#main-list>li>a {
 ul#main-list>li>a:hover {
     background-color: var(--main-list-a-bg-hover);
 }
-
 
 .submenu {
     display: none;

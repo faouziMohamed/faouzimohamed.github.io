@@ -28,7 +28,6 @@
     --aside-a-3-bt: 1px solid rgb(153, 73, 36);
 }
 
-
 .theme-light {
     --body-bg: rgb(10, 100, 85);
     --main-text-color: rgb(0, 20, 19);
@@ -76,7 +75,6 @@ main {
     display: flex;
     margin-top: 45px;
 }
-
 
 article.main-article {
     width: 65%;
@@ -251,7 +249,6 @@ nav#aside-nav li a:hover {
     padding-bottom: 1px;
 }
 
-
 nav#aside-nav>ul>li>a:hover {
     /*co lor: var(--nav-aside-hv-color);*/
     background-color: var(--aside-a-1-bg);
@@ -345,7 +342,6 @@ table {
     border-collapse: collapse;
 }
 
-
 #table-2 {
     max-width: 450px;
 }
@@ -378,11 +374,7 @@ td.empty {
     margin-bottom: 9px;
 }
 
-
-
-
 /*Media queries*/
-
 @media only screen and (max-width: 888px) {
     article.main-article {
         margin-left: 32%;
@@ -425,7 +417,6 @@ td.empty {
         border: solid .12em white;
     }
 }
-
 
 @media only screen and (max-width: 414px) {
     .main-article>header {
