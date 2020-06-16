@@ -106,8 +106,7 @@ void (function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[parseInt(i)].addEventListener("click", function (e) {
-            //if(this.id !== "github")
-            this.href = "javascript:void(0)";
+            e.preventDefault();
         });
     }
     document.querySelector("#github")
