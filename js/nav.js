@@ -20,9 +20,7 @@ function display_menu_anyway() {
 }
 
 
-void
-
-function toogle_openAndClose_menu() {
+void function toogle_openAndClose_menu() {
 
     document.querySelector("#menu-icon-wrapper>svg")
         .addEventListener('click', function open_close_Menu() {
@@ -48,8 +46,7 @@ function new_element(name, attributes = {}, text = '') {
     if (text) node.innerHTML = text;
     return node;
 }
-void
-function display_or_hide_submenu() {
+void function display_or_hide_submenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
@@ -103,9 +100,7 @@ function display_or_hide_submenu() {
 }();
 
 
-void
-
-function makeVoid_null_link() {
+void function makeVoid_null_link() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener('click', function (e) {
