@@ -10,14 +10,12 @@ function handle_oppenedMenu() {
     var article = document.querySelector("article.main-article");
     article.addEventListener('touchstart', closeMenu);
     article.addEventListener('click', closeMenu);
-    article.addEventListener('mouseover', closeMenu);
 }
 
-function display_menu() {
+function display_menu_anyway() {
     var article = document.querySelector("article.main-article");
     article.removeEventListener('touchstart', closeMenu);
     article.removeEventListener('click', closeMenu);
-    article.removeEventListener('mouseover', closeMenu);
     document.querySelector("ul#main-list").style.display = 'block';
 }
 
@@ -30,12 +28,13 @@ function toogle_openAndClose_menu() {
         .addEventListener('click', function open_close_Menu() {
             /*Use of media query to control responsive layout for the menubar's layout*/
             var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
-            if (x.matches) { 
-                handle_oppenedMenu();
-                if (document.querySelector("ul#main-list").style.display === 'block') closeMenu();
+            if (x.matches) {
+                handle_oppenedMenu(); //some events to handle the closing of menu
+                if (document.querySelector("ul#main-list").style.display === 'block')
+                    closeMenu();
                 else openMenu();
             } else { //width >536px
-                display_menu();
+                display_menu_anyway(); //remove for some events to handle the closing of menu
             }
             x.addListener(open_close_Menu);
         });
@@ -45,17 +44,11 @@ two responsive modes*/
 
 function new_element(name, attributes = {}, text = '') {
     node = document.createElement(name);
-
-    for (var o in attributes)
-        node.setAttribute(o, attributes[o]);
-
-    if (text) {
-        node.innerHTML = text;
-    }
+    for (var o in attributes) node.setAttribute(o, attributes[o]);
+    if (text) node.innerHTML = text;
     return node;
 }
 void
-
 function display_or_hide_submenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
@@ -64,45 +57,31 @@ function display_or_hide_submenu() {
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
-        parent.querySelector("a")
-            .appendChild(new_element("i", {
-                class: 'fas fa-angle-down'
-            }));
+        parent.querySelector("a").appendChild(new_element("i", {class: 'fas fa-angle-down'}));
         parent.addEventListener('click', function (e) {
             var angle = this.querySelector('a i');
             if (this.lastElementChild.style.display !== 'block') {
-                this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                        class: 'fas fa-angle-up'
-                    }), angle);
+                this.querySelector("a").replaceChild(new_element("i", {class: 'fas fa-angle-up'}), angle);
                 this.lastElementChild.style.display = 'block';
             } else {
-                this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                        class: 'fas fa-angle-down'
-                    }), angle);
+                this.querySelector("a").replaceChild(new_element("i", {class: 'fas fa-angle-down'}), angle);
                 this.lastElementChild.style.display = 'none';
             }
         });
-        /*Hide submenu is it not hovered*/
+        /*Hide submenu if is it not hovered*/
         parent.addEventListener('mouseout', function (e) {
             var related_target = e.relatedTarget;
-            if ((!this.lastElementChild.style.display) ||
-                this.lastElementChild.style.display === 'none') {
-                return;
-            }
+            if (this.lastElementChild.style.display !== 'block') return;
 
-            while (related_target != this &&
-                related_target.nodeName != 'BODY' &&
-                related_target != document) {
+            while ((related_target != this) &&
+                (related_target.nodeName != 'BODY') &&
+                (related_target != document)) {
                 related_target = related_target.parentNode;
             }
             if (related_target != this) {
                 this.lastElementChild.style.display = 'none';
                 this.querySelector("a")
-                    .replaceChild(new_element("i", {
-                            class: 'fa fa-angle-down'
-                        }),
+                    .replaceChild(new_element("i", {class: 'fa fa-angle-down'}),
                         this.querySelector('a i'));
             }
         });
@@ -111,13 +90,11 @@ function display_or_hide_submenu() {
     function tune_submenu(y) {
         if (y.matches) {
             for (var i = 0; i < c; ++i) {
-                parent = ul[i].parentElement;
-                parent.classList.add('subMenuParent');
+                ul[i].parentElement.classList.add('subMenuParent');
             }
         } else {
             for (var i = 0; i < c; ++i) {
-                parent = ul[i].parentElement;
-                parent.classList.remove('subMenuParent');
+                ul[i].parentElement.classList.remove('subMenuParent');
             }
         }
     }
