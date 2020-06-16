@@ -20,7 +20,7 @@ function displayMenuAnyway() {
 }
 
 
-void function toogleOpenAndCloseMenu() {
+(void function toogleOpenAndCloseMenu() {
     document.querySelector("#menu-icon-wrapper>svg")
         .addEventListener("click", function open_close_Menu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
@@ -35,7 +35,7 @@ void function toogleOpenAndCloseMenu() {
             }
             x.addListener(open_close_Menu);
         });
-}();
+}());
 /*This part of code ensures that the menu is displayed in the 
 two responsive modes*/
 
