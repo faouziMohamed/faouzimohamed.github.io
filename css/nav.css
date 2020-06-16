@@ -11,7 +11,6 @@
     --home-fill: rgb(227, 246, 252);
 }
 
-
 .theme-light {
     --nav-header-bg: rgb(1, 37, 46);
     --main-list-a-color: rgb(202, 241, 238);
@@ -25,7 +24,7 @@
     --home-fill: rgb(103, 214, 214);
 }
 
-/*Images */
+/* Images */
 a#github>svg {
     width: 29px;
     position: absolute;
@@ -41,7 +40,7 @@ a#github>svg:hover {
 a>svg#home {
     position: relative;
     top: -7px;
-    padding-top: 0px;
+    padding-top: 0;
     width: 30px;
     height: 25px;
     fill: var(--home-fill);
@@ -49,22 +48,21 @@ a>svg#home {
 
 .li-label,
 ul#main-list>li:nth-child(1)~li svg,
-#menu>svg {
+#menu-icon-wrapper>svg {
     display: none;
 }
 
-
-/*The menu*/
+/* The menu */
 nav#header-nav {
     display: block;
     position: fixed;
     background-color: var(--nav-header-bg);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
     z-index: 100;
-    transition: visibility ease-in-out 1s, opacity ease 1s ;
+    transition: visibility ease-in-out 1s, opacity ease 1s;
 }
 
 nav#header-nav::after {
@@ -73,23 +71,18 @@ nav#header-nav::after {
     clear: both;
 }
 
-#main-list>li:first-child>a {
-    padding-top: 13px;
-    padding-bottom: 3px;
-}
-
 ul#main-list {
     font-weight: normal;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
 ul#main-list>li {
     display: block;
     float: left;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 ul#main-list li {
@@ -106,16 +99,12 @@ ul#main-list>li>a {
     padding: 13px 15px;
 }
 
-ul#main-list>li>a:hover {
-    background-color: var(--main-list-a-bg-hover);
+.submenu>li:not(:nth-child(2)) a {
+    padding-top: 5px;
 }
 
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 98%;
-    padding-left: 0px;
+.submenu a:hover {
+    background: var(--submenu-a-bg-hover);
 }
 
 .submenu>li>a {
@@ -125,23 +114,30 @@ ul#main-list>li>a:hover {
     width: 100%;
 }
 
-.submenu>li:not(:nth-child(2)) a {
-    padding-top: 5px;
+ul#main-list>li:first-child>a {
+    padding-top: 13px;
+    padding-bottom: 3px;
 }
 
-.submenu a:hover {
-    background: var(--submenu-a-bg-hover);
+ul#main-list>li>a:hover {
+    background-color: var(--main-list-a-bg-hover);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 98%;
+    padding-left: 0;
 }
 
 .submenu a>img {
     width: 20px;
     height: 20px;
-    z-index: 45
+    z-index: 45;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     nav#header-nav {
         position: fixed;
     }
 }
-

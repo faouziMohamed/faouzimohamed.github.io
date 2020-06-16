@@ -1,12 +1,13 @@
-.theme-dark{
-    --border-color : #91c500;
-    --symbol-color:rgb(0, 255, 34);
+.theme-dark {
+    --border-color: #91c500;
+    --symbol-color: rgb(0, 255, 34);
 }
 
-.theme-light{
-    --border-color : rgb(0, 255, 34); 
-    --symbol-color:#91c500;
+.theme-light {
+    --border-color: rgb(0, 255, 34);
+    --symbol-color: #91c500;
 }
+
 .to-top {
     color: var(--symbol-color);
     padding-top: 1.8em;
@@ -20,9 +21,8 @@
     right: 2%;
 }
 
-.to-top:before {
+.to-top::before {
     content: '▲';
-    font-size: 0.9em;
     position: absolute;
     top: 0;
     right: 50%;
@@ -43,7 +43,7 @@
     border-color: pink;
 }
 
-.to-top:hover:before {
+.to-top:hover::before {
     transform: rotate(360deg);
     border-color: red;
 }
