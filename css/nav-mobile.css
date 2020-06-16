@@ -8,7 +8,7 @@
     --menu-fill: rgb(45, 173, 146);
 }
 
-#menu>svg {
+#menu-icon-wrapper>svg {
     position: relative;
     top: 5px;
     fill: var(--menu-fill);
@@ -34,7 +34,7 @@
     }
 
     .li-label,
-    #menu>svg {
+    #menu-icon-wrapper>svg {
         display: inline-block;
     }
 

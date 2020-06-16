@@ -49,7 +49,7 @@ a>svg#home {
 
 .li-label,
 ul#main-list>li:nth-child(1)~li svg,
-#menu>svg {
+#menu-icon-wrapper>svg {
     display: none;
 }
 
