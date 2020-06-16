@@ -12,7 +12,7 @@ function handle_oppenedMenu() {
     article.addEventListener("click", closeMenu);
 }
 
-function display_menu_anyway() {
+function displayMenuAnyway() {
     var article = document.querySelector("article.main-article");
     article.removeEventListener("touchstart", closeMenu);
     article.removeEventListener("click", closeMenu);
@@ -20,7 +20,7 @@ function display_menu_anyway() {
 }
 
 
-void function toogle_openAndClose_menu() {
+void function toogleOpenAndCloseMenu() {
     document.querySelector("#menu-icon-wrapper>svg")
         .addEventListener("click", function open_close_Menu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
@@ -31,7 +31,7 @@ void function toogle_openAndClose_menu() {
                     closeMenu();
                 else openMenu();
             } else { //width >536px
-                display_menu_anyway(); //remove for some events to handle the closing of menu
+                displayMenuAnyway(); //remove for some events to handle the closing of menu
             }
             x.addListener(open_close_Menu);
         });
@@ -45,7 +45,7 @@ function newElement(name, attributes = {}, text = "") {
     if (text) node.innerHTML = text;
     return node;
 }
-void function displayOrHideSubmenu() {
+(void function displayOrHideSubmenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
@@ -109,7 +109,7 @@ void function makeVoidNullLink() {
     }
     document.querySelector("#github")
         .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
-}();
+}());
 
 
 
