@@ -1,20 +1,9 @@
-/*GLOBAL VARIABLES */
-var open = false;
-var close = true;
-var used = false;
-
 function openMenu() {
-    var ul = document.querySelector("ul#main-list");
-    ul.style.display = 'block';
-    open = true;
-    close = false;
+    document.querySelector("ul#main-list").style.display = 'block';
 }
 
 function closeMenu() {
-    var ul = document.querySelector("ul#main-list");
-    ul.style.display = 'none';
-    open = false;
-    close = true;
+    document.querySelector("ul#main-list").style.display = 'none';
 }
 
 function handle_oppenedMenu() {
@@ -30,26 +19,26 @@ function display_menu() {
     article.removeEventListener('click', closeMenu);
     article.removeEventListener('mouseover', closeMenu);
     document.querySelector("ul#main-list").style.display = 'block';
-
 }
 
 
 void
 
 function toogle_openAndClose_menu() {
-    function open_close_Menu() {
-        used = true;
-        var x = window.matchMedia("(max-width: 536px)");
-        if (x.matches) {
-            handle_oppenedMenu();
-            if (open) closeMenu();
-            else openMenu();
-        }
-        else{display_menu()}
-        x.addListener(open_close_Menu);
-    }
-    menu = document.querySelector("#menu-icon-wrapper>svg");
-    menu.addEventListener('click', open_close_Menu);
+
+    document.querySelector("#menu-icon-wrapper>svg")
+        .addEventListener('click', function open_close_Menu() {
+            /*Use of media query to control responsive layout for the menubar's layout*/
+            var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
+            if (x.matches) { 
+                handle_oppenedMenu();
+                if (document.querySelector("ul#main-list").style.display === 'block') closeMenu();
+                else openMenu();
+            } else { //width >536px
+                display_menu();
+            }
+            x.addListener(open_close_Menu);
+        });
 }();
 /*This part of code ensures that the menu is displayed in the 
 two responsive modes*/
@@ -138,6 +127,7 @@ function display_or_hide_submenu() {
 
 
 void
+
 function makeVoid_null_link() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
