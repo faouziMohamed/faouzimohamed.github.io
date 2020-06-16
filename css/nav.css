@@ -102,6 +102,7 @@ ul#main-list>li>a {
 .submenu>li:not(:nth-child(2)) a {
     padding-top: 5px;
 }
+
 .submenu a:hover {
     background: var(--submenu-a-bg-hover);
 }
@@ -112,7 +113,6 @@ ul#main-list>li>a {
     padding: 10px 15px;
     width: 100%;
 }
-
 
 ul#main-list>li:first-child>a {
     padding-top: 13px;

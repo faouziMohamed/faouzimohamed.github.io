@@ -73,7 +73,7 @@
     .subMenuParent li a {
         top: 100%;
     }
-    
+
     ul#main-list>li:nth-child(1)>a {
         bottom: 0;
     }
