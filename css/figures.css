@@ -18,9 +18,6 @@
     --fig-caption-bg: rgba(84, 212, 152, 0.096);
 }
 
-
-
-
 .pie-chart-title {
     fill: var(--chart-title-color);
 }
@@ -101,8 +98,7 @@ figcaption {
     }
 }
 
-@media only screen and (max-width: 764px) {}
-
+/* @media only screen and (max-width: 764px) {} */
 .figure-layout img[src*="dark"],
 .figure-layout img[src*="light"],
 .figure-layout img[src*="svg"] {

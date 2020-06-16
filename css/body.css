@@ -4,7 +4,7 @@
     --body-bg: rgb(18, 34, 44);
     --main-text-color: rgb(193, 209, 206);
     --color-link: #faa;
-    /*--main- article-bg              : rgb(1, 17, 36);*/
+    /* --main- article-bg              : rgb(1, 17, 36); */
     --main-header-color: rgb(236, 163, 3);
     --main-header-bg: rgb(46, 54, 61);
     --main-section-bg: rgb(11, 29, 39);
@@ -32,7 +32,7 @@
     --body-bg: rgb(10, 100, 85);
     --main-text-color: rgb(0, 20, 19);
     --color-link: rgb(230, 0, 0);
-    /*--main-article-bg               : rgb(3, 143, 120);*/
+    /* --main-article-bg               : rgb(3, 143, 120); */
     --main-header-color: rgb(236, 163, 3);
     --main-header-bg: rgb(73, 104, 97);
     --main-section-bg: rgb(162, 199, 199);
@@ -71,7 +71,7 @@ body {
 main {
     border-radius: 4px;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 15px 15px 20px 20px;
+    border-radius: 15px 20px;
     display: flex;
     margin-top: 45px;
 }
@@ -144,7 +144,7 @@ section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
     padding-top: 10px;
-    /*padding-top: 45px;*/
+    /* padding-top: 45px; */
     margin-bottom: 5px;
 }
 
@@ -250,19 +250,19 @@ nav#aside-nav li a:hover {
 }
 
 nav#aside-nav>ul>li>a:hover {
-    /*co lor: var(--nav-aside-hv-color);*/
+    /* co lor: var(--nav-aside-hv-color); */
     background-color: var(--aside-a-1-bg);
     border-bottom: var(--aside-a-1-bt);
 }
 
 nav#aside-nav>ul>li li>a:hover {
-    /*color: var(--nav-aside--li-hv-color);*/
+    /* color: var(--nav-aside--li-hv-color); */
     background-color: var(--aside-a-2-bg);
     border-bottom: var(--aside-a-2-bt);
 }
 
 nav#aside-nav>ul>li ul>li li>a:hover {
-    /*color: var(--nav-aside--li-li-hv-color);*/
+    /* color: var(--nav-aside--li-li-hv-color); */
     background-color: var(--aside-a-3-bg);
     border-bottom: var(--aside-a-3-bt);
 }
@@ -374,7 +374,7 @@ td.empty {
     margin-bottom: 9px;
 }
 
-/*Media queries*/
+/* Media queries */
 @media only screen and (max-width: 888px) {
     article.main-article {
         margin-left: 32%;

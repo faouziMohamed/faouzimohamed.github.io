@@ -24,7 +24,7 @@
     --home-fill: rgb(103, 214, 214);
 }
 
-/*Images */
+/* Images */
 a#github>svg {
     width: 29px;
     position: absolute;
@@ -52,7 +52,7 @@ ul#main-list>li:nth-child(1)~li svg,
     display: none;
 }
 
-/*The menu*/
+/* The menu */
 nav#header-nav {
     display: block;
     position: fixed;
