@@ -1,4 +1,4 @@
-function new_element(name, attributes = {}, text = "") {
+function newElement(name, attributes = {}, text = "") {
     node = document.createElement(name);
 
     for (var o in attributes)
@@ -15,12 +15,12 @@ function insertAfter(el, ref) {
         .insertBefore(el, ref.nextSibling);
 }
 
-function add_li_to_ul(ul, node, id) {
+function addLiToUl(ul, node, id) {
     node.id = id;
-    a = new_element("a", {
+    a = newElement("a", {
         href: "#" + id
     }, node.firstChild.data);
-    var li = new_element("li");
+    var li = newElement("li");
     li.appendChild(a);
     ul.appendChild(li);
     return li;
@@ -28,7 +28,7 @@ function add_li_to_ul(ul, node, id) {
 
 
 void
-function create_list_left_nav() {
+function createListLeftNav() {
     var ul = document.querySelector("#ul-aside-nav");
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,
@@ -43,10 +43,10 @@ function create_list_left_nav() {
     var H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
 
-    var h2 = new_element("h2", {
+    var h2 = newElement("h2", {
         style: "text-align:left; font-size:110%; margin-left:0px"
     });
-    h2.appendChild(new_element("a", {
+    h2.appendChild(newElement("a", {
             style: "text-decoration:none; color:lightgreen;",
             href: "#top-h1"
         },
@@ -57,18 +57,18 @@ function create_list_left_nav() {
     for (var i = 0; i < c; ++i) {
         /*For H2*/
         if (title[i].nodeName === "H2") {
-            li = add_li_to_ul(ul, title[i++], "titre" + (n++));
-            ul_ = new_element("ul");
+            li = addLiToUl(ul, title[i++], "titre" + (n++));
+            ul_ = newElement("ul");
         }
         /*For H3*/
         while (i < c && (title[i].nodeName === "H3")) {
-            li_ = add_li_to_ul(ul_, title[i++], "titre" + (n++));
+            li_ = addLiToUl(ul_, title[i++], "titre" + (n++));
         }
         /*For H4*/
         if (i < c && title[i].nodeName === "H4") {
-            _ul = new_element("ul");
+            _ul = newElement("ul");
             while (i < c && title[i].nodeName === "H4") {
-                add_li_to_ul(_ul, title[i++], "titre" + (n++));
+                addLiToUl(_ul, title[i++], "titre" + (n++));
             }
             li_.appendChild(_ul);
             --i;
@@ -80,7 +80,7 @@ function create_list_left_nav() {
 
 void
 
-function click_on_internal_link_CSS_transition() {
+function clickOnInternalLink_CSS_transition() {
     var link = document.querySelectorAll("main a[href*='#']:not(#top)");
     var nav = document.querySelector("#header-nav");
     var c = link.length;
@@ -92,7 +92,7 @@ function click_on_internal_link_CSS_transition() {
         })
     }
 
-    function make_visible() {
+    function makeVisible() {
         var nodeStyle = nav.style;
         if (nodeStyle.visibility === "hidden") {
             nodeStyle.visibility = "visible";
@@ -100,6 +100,6 @@ function click_on_internal_link_CSS_transition() {
         }
     }
 
-    document.body.addEventListener("touchstart", make_visible, true); //For tactil 
-    document.body.addEventListener("wheel", make_visible); //for touchpad or mouse wheel
+    document.body.addEventListener("touchstart", makeVisible, true); //For tactil 
+    document.body.addEventListener("wheel", makeVisible); //for touchpad or mouse wheel
 }();
