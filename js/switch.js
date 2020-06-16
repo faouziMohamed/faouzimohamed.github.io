@@ -14,9 +14,9 @@ function changeImg(theme=""){
     var phaseAvant = document.querySelector("#forward-step>img");
     var phaseArr   = document.querySelector("#feedback-step>img");
     var lr         = document.querySelector("#min-grad>img");
-    var ok = perceptron!=null;
+    var ok = perceptron!==null;
     
-    if(theme=="theme-light"){
+    if(theme==="theme-light"){
         if(ok){
             perceptron.src="../img/perceptron-light.svg";
             monocouche.src="../img/monocouche-light.svg";
@@ -71,7 +71,7 @@ function toggleTheme() {
     }
     //alert(local Storage.getItem("theme"))
 }
-// Immediately invoked function to set the theme on initial load
+// Immediate invocation function to set the theme on initial load
 void (function setThemeForWhenPageIsLoaded() {
     var slider = document.querySelector("#slider");
     if (localStorage.getItem("theme") === "theme-dark") {
@@ -81,7 +81,7 @@ void (function setThemeForWhenPageIsLoaded() {
         setTheme("theme-light");
         if (slider){slider.checked = false;} 
     }
-})();
+}());
 
 
 //localStorage.clear()
