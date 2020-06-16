@@ -6,7 +6,7 @@ function closeMenu() {
     document.querySelector("ul#main-list").style.display = "none";
 }
 
-function handle_oppenedMenu() {
+function handleOppenedMenu() {
     var article = document.querySelector("article.main-article");
     article.addEventListener("touchstart", closeMenu);
     article.addEventListener("click", closeMenu);
@@ -25,7 +25,7 @@ void (function toogleOpenAndCloseMenu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
             var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
             if (x.matches) {
-                handle_oppenedMenu(); //some events to handle the closing of menu
+                handleOppenedMenu(); //some events to handle the closing of menu
                 if (document.querySelector("ul#main-list").style.display === "block")
                     closeMenu();
                 else openMenu();
@@ -42,10 +42,9 @@ function newElement(name, attributes = {}, text = "") {
     for (var o in attributes) {
         node.setAttribute(o, attributes[o]);
     }
-    if (text) 
-        {
-            node.appendChild(newTxtNode(text));
-        }
+    if (text) {
+        node.appendChild(newTxtNode(text));
+    }
     return node;
 }
 void (function displayOrHideSubmenu() {
@@ -69,15 +68,15 @@ void (function displayOrHideSubmenu() {
         });
         /*Hide submenu if is it not hovered*/
         parent.addEventListener("mouseout", function (e) {
-            var related_target = e.relatedTarget;
+            var relatedTarget = e.relatedTarget;
             if (this.lastElementChild.style.display !== "block") return;
 
-            while ((related_target != this) &&
-                (related_target.nodeName != "BODY") &&
-                (related_target != document)) {
-                related_target = related_target.parentNode;
+            while ((relatedTarget !== this) &&
+                (relatedTarget.nodeName !== "BODY") &&
+                (relatedTarget !== document)) {
+                relatedTarget = relatedTarget.parentNode;
             }
-            if (related_target != this) {
+            if (relatedTarget !== this) {
                 this.lastElementChild.style.display = "none";
                 this.querySelector("a")
                     .replaceChild(newElement("i", {class: "fa fa-angle-down"}),
