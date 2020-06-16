@@ -20,7 +20,7 @@ function displayMenuAnyway() {
 }
 
 
-(void function toogleOpenAndCloseMenu() {
+void (function toogleOpenAndCloseMenu() {
     document.querySelector("#menu-icon-wrapper>svg").addEventListener("click", function openCloseMenu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
             var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
@@ -36,13 +36,19 @@ function displayMenuAnyway() {
         });
 }());
 
+function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
-    node = document.createElement(name);
-    for (var o in attributes) node.setAttribute(o, attributes[o]);
-    if (text) node.innerHTML = text;
+    var node = document.createElement(name);
+    for (var o in attributes) {
+        node.setAttribute(o, attributes[o]);
+    }
+    if (text) 
+        {
+            node.appendChild(newTxtNode(text));
+        }
     return node;
 }
-(void function displayOrHideSubmenu() {
+void (function displayOrHideSubmenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
@@ -96,7 +102,7 @@ function newElement(name, attributes = {}, text = "") {
 }());
 
 
-(void function makeVoidNullLink() {
+void (function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener("click", function (e) {

@@ -1,12 +1,13 @@
+function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
-    node = document.createElement(name);
-
-    for (var o in attributes)
+    var node = document.createElement(name);
+    for (var o in attributes) {
         node.setAttribute(o, attributes[o]);
-
-    if (text) {
-        node.innerHTML = text;
     }
+    if (text) 
+        {
+            node.appendChild(newTxtNode(text));
+        }
     return node;
 }
 
@@ -27,7 +28,7 @@ function addLiToUl(ul, node, id) {
 }
 
 
-(void function createListLeftNav() {
+void (function createListLeftNav() {
     var ul = document.querySelector("#ul-aside-nav");
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,
@@ -42,9 +43,7 @@ function addLiToUl(ul, node, id) {
     var H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
 
-    var h2 = newElement("h2", {
-        style: "text-align:left; font-size:110%; margin-left:0px"
-    });
+    var h2 = newElement("h2", {style: "text-align:left; font-size:110%; margin-left:0px"});
     h2.appendChild(newElement("a", {
             style: "text-decoration:none; color:lightgreen;",
             href: "#top-h1"
@@ -77,7 +76,7 @@ function addLiToUl(ul, node, id) {
 }());
 
 
-(void function clickOnInternalLink_CSS_transition() {
+void (function clickOnInternalLink_CSS_transition() {
     var link = document.querySelectorAll("main a[href*='#']:not(#top)");
     var nav = document.querySelector("#header-nav");
     var c = link.length;
