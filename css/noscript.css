@@ -1,6 +1,6 @@
 #no-script-before-main {
     text-align: center;
-    margin: 0px;
+    margin: 0;
     z-index: inherit;
 }
 
@@ -8,10 +8,10 @@
     z-index: 100000;
     text-align: center;
     position: fixed;
-    padding: 5px 0px;
-    top: 0px;
-    left: 0%;
-    right: 0%;
+    padding: 5px 0;
+    top: 0;
+    left: 0;
+    right: 0;
     color: rgb(168, 231, 210);
     background: rgb(182, 80, 39);
 }
@@ -22,9 +22,9 @@ nav#header-nav {
     background-color: rgb(73, 104, 97);
     ;
     top: 29px;
-    left: 0px;
-    right: 0px;
-    padding: 0px;
+    left: 0;
+    right: 0;
+    padding: 0;
     z-index: 100;
     color: rgb(14, 9, 0);
 }

@@ -1,37 +1,37 @@
 .theme-dark {
-    --nav-header-bg: rgb(6, 18, 32);
-    --main-list-a-color: rgb(201, 201, 201);
+    --nav-header-bg       : rgb(6, 18, 32);
+    --main-list-a-color   : rgb(201, 201, 201);
     --main-list-a-bg-hover: rgb(4, 12, 20);
-    --submenu-li-a-bg: rgb(28, 41, 46);
-    --submenu-a-bg-hover: #010e0f;
-    --github-img: url("../img/github_logo.png");
-    --github-fill: rgb(196, 195, 195);
-    --github-hover-fill: rgb(78, 86, 88);
-    --home-img: url("../img/house_white.png");
-    --home-fill: rgb(227, 246, 252);
+    --submenu-li-a-bg     : rgb(28, 41, 46);
+    --submenu-a-bg-hover  : #010e0f;
+    --github-img          : url("../img/github_logo.png");
+    --github-fill         : rgb(196, 195, 195);
+    --github-hover-fill   : rgb(78, 86, 88);
+    --home-img            : url("../img/house_white.png");
+    --home-fill           : rgb(227, 246, 252);
 }
 
 
 .theme-light {
-    --nav-header-bg: rgb(1, 37, 46);
-    --main-list-a-color: rgb(202, 241, 238);
+    --nav-header-bg       : rgb(1, 37, 46);
+    --main-list-a-color   : rgb(202, 241, 238);
     --main-list-a-bg-hover: rgb(1, 25, 31);
-    --submenu-li-a-bg: rgb(0, 32, 29);
-    --submenu-a-bg-hover: rgb(0, 20, 18);
-    --github-img: url("../img/github_logo.png");
-    --github-fill: rgb(45, 173, 146);
-    --github-hover-fill: rgb(25, 97, 100);
-    --home-img: url("../img/house_white.png");
-    --home-fill: rgb(103, 214, 214);
+    --submenu-li-a-bg     : rgb(0, 32, 29);
+    --submenu-a-bg-hover  : rgb(0, 20, 18);
+    --github-img          : url("../img/github_logo.png");
+    --github-fill         : rgb(45, 173, 146);
+    --github-hover-fill   : rgb(25, 97, 100);
+    --home-img            : url("../img/house_white.png");
+    --home-fill           : rgb(103, 214, 214);
 }
 
 /*Images */
 a#github>svg {
-    width: 29px;
+    width   : 29px;
     position: absolute;
-    right: 7px;
-    top: 6px;
-    fill: var(--github-fill);
+    right   : 7px;
+    top     : 6px;
+    fill    : var(--github-fill);
 }
 
 a#github>svg:hover {
@@ -39,12 +39,12 @@ a#github>svg:hover {
 }
 
 a>svg#home {
-    position: relative;
-    top: -7px;
-    padding-top: 0px;
-    width: 30px;
-    height: 25px;
-    fill: var(--home-fill);
+    position   : relative;
+    top        : -7px;
+    padding-top: 0;
+    width      : 30px;
+    height     : 25px;
+    fill       : var(--home-fill);
 }
 
 .li-label,
@@ -56,40 +56,40 @@ ul#main-list>li:nth-child(1)~li svg,
 
 /*The menu*/
 nav#header-nav {
-    display: block;
-    position: fixed;
+    display         : block;
+    position        : fixed;
     background-color: var(--nav-header-bg);
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0px;
-    z-index: 100;
-    transition: visibility ease-in-out 1s, opacity ease 1s;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    padding         : 0;
+    z-index         : 100;
+    transition      : visibility ease-in-out 1s, opacity ease 1s;
 }
 
 nav#header-nav::after {
     content: '';
     display: block;
-    clear: both;
+    clear  : both;
 }
 
 #main-list>li:first-child>a {
-    padding-top: 13px;
+    padding-top   : 13px;
     padding-bottom: 3px;
 }
 
 ul#main-list {
     font-weight: normal;
-    padding: 0px;
-    margin: 0px;
+    padding    : 0;
+    margin     : 0;
     font-family: 'Times New Roman', Times, serif;
 }
 
 ul#main-list>li {
     display: block;
-    float: left;
-    padding: 0px;
-    margin: 0px;
+    float  : left;
+    padding: 0;
+    margin : 0;
 }
 
 ul#main-list li {
@@ -98,7 +98,7 @@ ul#main-list li {
 
 ul#main-list a {
     text-decoration: none;
-    color: var(--main-list-a-color);
+    color          : var(--main-list-a-color);
 }
 
 ul#main-list>li>a {
@@ -112,17 +112,17 @@ ul#main-list>li>a:hover {
 
 
 .submenu {
-    display: none;
-    position: absolute;
-    top: 98%;
-    padding-left: 0px;
+    display     : none;
+    position    : absolute;
+    top         : 98%;
+    padding-left: 0;
 }
 
 .submenu>li>a {
     background-color: var(--submenu-li-a-bg);
-    display: inline-block;
-    padding: 10px 15px;
-    width: 100%;
+    display         : inline-block;
+    padding         : 10px 15px;
+    width           : 100%;
 }
 
 .submenu>li:not(:nth-child(2)) a {
@@ -134,9 +134,9 @@ ul#main-list>li>a:hover {
 }
 
 .submenu a>img {
-    width: 20px;
-    height: 20px;
-    z-index: 45
+    width  : 20px;
+    height : 20px;
+    z-index: 45;
 }
 
 @media only screen and (max-width:768px) {

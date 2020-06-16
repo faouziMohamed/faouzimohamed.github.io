@@ -38,8 +38,8 @@
 }
 
 .flex-bloc #pie-chart {
-    padding: 0px;
-    margin : 0px;
+    padding: 0;
+    margin : 0;
 }
 
 figure#pie-chart {
@@ -90,7 +90,7 @@ figcaption {
     }
 
     figure#pie-chart {
-        top  : 0%;
+        top  : 0;
         left : initial;
         width: 100%;
     }

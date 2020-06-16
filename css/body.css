@@ -63,7 +63,7 @@
 
 body {
     background-color: var(--body-bg);
-    margin: 0px;
+    margin: 0;
     font-size: 100%;
     min-width: 360px;
     margin-top: 20px;
@@ -99,7 +99,7 @@ article.main-article {
 }
 
 .main-article>header>h1 {
-    margin: 0px;
+    margin: 0;
 }
 
 section.main-section {
@@ -181,9 +181,9 @@ section a:link {
 aside#left-aside {
     position: fixed;
     z-index: 1;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 25%;
     height: 100%;
     min-width: 215px;
@@ -197,10 +197,10 @@ aside#left-aside>nav {
     padding-top: 20px;
     position: absolute;
     background-color: var(--main-aside-nav-bg);
-    top: 0px;
-    left: 0%;
-    right: 0%;
-    margin: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
     height: 100%;
     margin: auto;
     width: 100%;
@@ -214,7 +214,7 @@ aside#left-aside>nav {
 }
 
 nav#aside-nav>h1 {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 0;
     margin-left: -2px;
     font-size: 130%;
 }
@@ -274,7 +274,7 @@ nav#aside-nav>ul>li ul>li li>a:hover {
 }
 
 nav#aside-nav>ul {
-    padding: 0px 15px 3px 5px;
+    padding: 0 15px 3px 5px;
 }
 
 .inline {
@@ -361,7 +361,7 @@ td.empty {
 #rotate {
     transform: rotate(-15deg);
     height: 40px;
-    padding: 0px;
+    padding: 0;
 }
 
 .table-center,

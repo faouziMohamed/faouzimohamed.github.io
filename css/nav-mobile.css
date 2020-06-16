@@ -19,7 +19,7 @@
     nav#header-nav {
         position      : fixed;
         height        : 43px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     ul#main-list {
@@ -67,7 +67,7 @@
     }
 
     ul#main-list>li:nth-child(1)>a {
-        bottom: 0px;
+        bottom: 0;
     }
 
     ul#main-list>li:nth-child(1)+li>a>svg,
@@ -76,7 +76,7 @@
     }
 
     ul#main-list>li>a {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     ul#main-list>li:nth-child(2) .li-txt,
