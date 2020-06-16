@@ -1,21 +1,21 @@
 .theme-dark {
     --chart-title-color: #b7c46b;
-    --train-set-color  : rgb(3, 63, 167);
-    --test-set-color   : #039185;
-    --val-set-color    : rgb(212, 37, 46);
-    --figcaption-color : rgb(190, 211, 212);
-    --svg-bg           : rgba(0, 59, 66, 0.671);
-    --fig-caption-bg   : rgba(84, 171, 212, 0.027);
+    --train-set-color: rgb(3, 63, 167);
+    --test-set-color: #039185;
+    --val-set-color: rgb(212, 37, 46);
+    --figcaption-color: rgb(190, 211, 212);
+    --svg-bg: rgba(0, 59, 66, 0.671);
+    --fig-caption-bg: rgba(84, 171, 212, 0.027);
 }
 
 .theme-light {
     --chart-title-color: #194d1c;
-    --train-set-color  : rgb(0, 2, 116);
-    --test-set-color   : #4f5f65;
-    --val-set-color    : rgb(177, 2, 11);
-    --figcaption-color : rgb(37, 94, 40);
-    --svg-bg           : rgba(152, 182, 157, 0.671);
-    --fig-caption-bg   : rgba(84, 212, 152, 0.096);
+    --train-set-color: rgb(0, 2, 116);
+    --test-set-color: #4f5f65;
+    --val-set-color: rgb(177, 2, 11);
+    --figcaption-color: rgb(37, 94, 40);
+    --svg-bg: rgba(152, 182, 157, 0.671);
+    --fig-caption-bg: rgba(84, 212, 152, 0.096);
 }
 
 
@@ -39,43 +39,43 @@
 
 .flex-bloc #pie-chart {
     padding: 0;
-    margin : 0;
+    margin: 0;
 }
 
 figure#pie-chart {
-    position  : relative;
+    position: relative;
     text-align: center;
 }
 
 figure#pie-chart>svg {
-    width : 300px;
+    width: 300px;
     height: 300px;
 }
 
 figcaption {
     border-bottom: rgb(182, 150, 9) 1px solid;
-    display      : inline-block;
-    font-style   : italic;
-    color        : var(--figcaption-color);
+    display: inline-block;
+    font-style: italic;
+    color: var(--figcaption-color);
 }
 
 @media only screen and (max-width:1264px) {
     figure#pie-chart {
-        top : 10%;
+        top: 10%;
         left: 15px;
     }
 }
 
 @media only screen and (max-width:1254px) {
     figure #pie-chart {
-        top : 35px;
+        top: 35px;
         left: 15px;
     }
 }
 
 @media only screen and (max-width:1084px) {
     figure#pie-chart {
-        top : 18%;
+        top: 18%;
         left: 15px;
     }
 }
@@ -90,13 +90,13 @@ figcaption {
     }
 
     figure#pie-chart {
-        top  : 0;
-        left : initial;
+        top: 0;
+        left: initial;
         width: 100%;
     }
 
     figure#pie-chart>svg {
-        width : 100%;
+        width: 100%;
         height: 400px;
     }
 }
@@ -110,8 +110,8 @@ figcaption {
 }
 
 .figure-layout figure {
-    width     : 90%;
-    margin    : auto;
+    width: 90%;
+    margin: auto;
     text-align: center;
 }
 
