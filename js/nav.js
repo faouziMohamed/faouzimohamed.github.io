@@ -32,7 +32,7 @@ function toogle_openAndClose_menu() {
         }
         x.addListener(open_close_Menu);
     }
-    menu = document.querySelector("#menu>svg");
+    menu = document.querySelector("#menu-icon-wrapper>svg");
     menu.addEventListener('click', open_close_Menu);
 }();
 /*This part of code ensures that the menu is displayed in the 
