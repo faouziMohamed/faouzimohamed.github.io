@@ -21,7 +21,7 @@ function displayMenuAnyway() {
 
 
 (void function toogleOpenAndCloseMenu() {
-    document.querySelector("#menu-icon-wrapper>svg").addEventListener("click", function open_close_Menu() {
+    document.querySelector("#menu-icon-wrapper>svg").addEventListener("click", function openCloseMenu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
             var x = window.matchMedia("(max-width: 536px)"); //width<=536px 
             if (x.matches) {
@@ -32,7 +32,7 @@ function displayMenuAnyway() {
             } else { //width >536px
                 displayMenuAnyway(); //remove for some events to handle the closing of menu
             }
-            x.addListener(open_close_Menu);
+            x.addListener(openCloseMenu);
         });
 }());
 
