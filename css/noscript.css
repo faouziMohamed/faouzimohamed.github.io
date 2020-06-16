@@ -20,7 +20,6 @@ nav#header-nav {
     display: block;
     position: fixed;
     background-color: rgb(73, 104, 97);
-    ;
     top: 29px;
     left: 0;
     right: 0;
@@ -31,6 +30,10 @@ nav#header-nav {
 
 #switch {
     display: none;
+}
+
+.submenu a:hover {
+    background-color: rgb(75, 127, 141);
 }
 
 ul#main-list>li>a:hover {
@@ -46,10 +49,6 @@ body {
 ul#main-list>li:hover .submenu {
     display: block;
     background-color: rgb(88, 95, 97);
-}
-
-.submenu a:hover {
-    background-color: rgb(75, 127, 141);
 }
 
 ul#main-list>li:first-child:hover {

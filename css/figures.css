@@ -127,9 +127,10 @@ figcaption {
     max-height: 250px;
 }
 
-figure[id*='bias-'] img,
-figure[id*='xor'] img,
 #monocouche img,
-#NT2 img {
+#NT2 img,
+figure[id*='bias-'] img,
+figure[id*='xor'] img
+ {
     max-height: 370px;
 }

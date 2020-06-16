@@ -23,7 +23,6 @@
 
 .to-top::before {
     content: '▲';
-    font-size: 0.9em;
     position: absolute;
     top: 0;
     right: 50%;

@@ -34,7 +34,6 @@
     height: 30px;
     width: 30px;
     left: 0;
-    bottom: 4px;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -54,7 +53,7 @@ input:focus+.slider {
     box-shadow: 0 0 1px #2b9efd;
 }
 
-input:checked+.slider:before {
+input:checked+.slider::before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);

@@ -71,10 +71,6 @@ nav#header-nav::after {
     clear: both;
 }
 
-#main-list>li:first-child>a {
-    padding-top: 13px;
-    padding-bottom: 3px;
-}
 
 ul#main-list {
     font-weight: normal;
@@ -104,6 +100,15 @@ ul#main-list>li>a {
     padding: 13px 15px;
 }
 
+.submenu>li:not(:nth-child(2)) a {
+    padding-top: 5px;
+}
+
+ul#main-list>li:first-child>a {
+    padding-top: 13px;
+    padding-bottom: 3px;
+}
+
 ul#main-list>li>a:hover {
     background-color: var(--main-list-a-bg-hover);
 }
@@ -120,10 +125,6 @@ ul#main-list>li>a:hover {
     display: inline-block;
     padding: 10px 15px;
     width: 100%;
-}
-
-.submenu>li:not(:nth-child(2)) a {
-    padding-top: 5px;
 }
 
 .submenu a:hover {
