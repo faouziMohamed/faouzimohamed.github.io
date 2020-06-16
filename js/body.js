@@ -59,13 +59,13 @@ void (function createListLeftNav() {
         }
         /*For H3*/
         while (i < c && (title[parseInt(i)].nodeName === "H3")) {
-            li_ = addLiToUl(ul_, title[parseInt(i++)], "titre" + (n++));
+            li_ = addLiToUl(ul_, title[parseInt(i)++], "titre" + (n++));
         }
         /*For H4*/
         if (i < c && title[parseInt(i)].nodeName === "H4") {
             _ul = newElement("ul");
             while (i < c && title[parseInt(i)].nodeName === "H4") {
-                addLiToUl(_ul, title[parseInt(i--)], "titre" + (n++));
+                addLiToUl(_ul, title[parseInt(i)--], "titre" + (n++));
             }
             li_.appendChild(_ul);
             --i;
