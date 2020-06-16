@@ -259,10 +259,9 @@ nav#aside-nav>ul>li>a:hover {
 }
 
 nav#aside-nav>ul>li li>a:hover {
-    /*col or: var(--nav-aside--li-hv-color);*/
+    /*color: var(--nav-aside--li-hv-color);*/
     background-color: var(--aside-a-2-bg);
     border-bottom: var(--aside-a-2-bt);
-
 }
 
 nav#aside-nav>ul>li ul>li li>a:hover {
@@ -393,11 +392,9 @@ td.empty {
     section.main-section {
         width: 100%;
     }
-
 }
 
 @media only screen and (max-width:768px) {
-
     .main-article>header {
         font-size: 140%;
     }
@@ -414,7 +411,6 @@ td.empty {
 }
 
 @media only screen and (max-width:478px) {
-
     #fig-table-2,
     .table-center {
         width: 100%;
