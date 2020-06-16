@@ -1,10 +1,19 @@
 function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
     var node = document.createElement(name);
+
+    const arrayOfKey = Object.getOwnPropertyNames(attributes);
+    arrayOfKey.forEach( key => {
+        node.setAttribute(`${key}`, attributes[`${key}`]);
+    });
+   
     for (var o in attributes) {
-        if(attributes.hasOwnProperty(o))
-            node.setAttribute(o, attributes[o]);
+        if(attributes[o]!==undefined){
+            //node.setAttribute(o, attributes[o]);
+            //console.log(Object.prototype.hasOwnProperty.call(attributes, o))
+        }
     }
+    
     if (text) 
     {
         node.appendChild(newTxtNode(text));
