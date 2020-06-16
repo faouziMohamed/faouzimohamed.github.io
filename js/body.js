@@ -54,8 +54,7 @@ function create_list_left_nav() {
     ul.parentNode.insertBefore(h2, ul);
 
     /*Main loop to create the list of title in the left side of the webpage*/
-    for (var i = 0; i < c; ++i) 
-    {
+    for (var i = 0; i < c; ++i) {
         /*For H2*/
         if (title[i].nodeName === 'H2') {
             li = add_li_to_ul(ul, title[i++], 'titre' + (n++));
@@ -80,6 +79,7 @@ function create_list_left_nav() {
 
 
 void
+
 function click_on_internal_link_CSS_transition() {
     var link = document.querySelectorAll("main a[href*='#']:not(#top)");
     var nav = document.querySelector("#header-nav");
@@ -100,6 +100,6 @@ function click_on_internal_link_CSS_transition() {
         }
     }
 
-    document.body.addEventListener('touchstart', make_visible,true); //For tactil 
-    document.body.addEventListener('wheel', make_visible);           //for touchpad or mouse wheel
+    document.body.addEventListener('touchstart', make_visible, true); //For tactil 
+    document.body.addEventListener('wheel', make_visible); //for touchpad or mouse wheel
 }();

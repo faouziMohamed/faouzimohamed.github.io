@@ -6,11 +6,6 @@ var used = false;
 function openMenu() {
     var ul = document.querySelector("ul#main-list");
     ul.style.display = 'block';
-    var section = document.querySelectorAll(".main-section");
-    for (var i = 0, c = section.length; i < c; ++i) {
-        section[i].addEventListener('mouseover', closeMenu);
-        section[i].addEventListener("click", closeMenu);
-    }
     open = true;
     close = false;
 }
@@ -21,15 +16,36 @@ function closeMenu() {
     open = false;
     close = true;
 }
+
+function handle_oppenedMenu() {
+    var article = document.querySelector("article.main-article");
+    article.addEventListener('touchstart', closeMenu);
+    article.addEventListener('click', closeMenu);
+    article.addEventListener('mouseover', closeMenu);
+}
+
+function display_menu() {
+    var article = document.querySelector("article.main-article");
+    article.removeEventListener('touchstart', closeMenu);
+    article.removeEventListener('click', closeMenu);
+    article.removeEventListener('mouseover', closeMenu);
+    document.querySelector("ul#main-list").style.display = 'block';
+
+}
+
+
 void
+
 function toogle_openAndClose_menu() {
     function open_close_Menu() {
         used = true;
         var x = window.matchMedia("(max-width: 536px)");
         if (x.matches) {
+            handle_oppenedMenu();
             if (open) closeMenu();
             else openMenu();
         }
+        else{display_menu()}
         x.addListener(open_close_Menu);
     }
     menu = document.querySelector("#menu-icon-wrapper>svg");
@@ -37,26 +53,6 @@ function toogle_openAndClose_menu() {
 }();
 /*This part of code ensures that the menu is displayed in the 
 two responsive modes*/
-void
-function removeListner_when_mediaQuerieMatch() {
-    var ul = document.querySelector("ul#main-list");
-    var x = window.matchMedia("(min-width: 538px)");
-
-    function display_menu(x) {
-        if (x.matches) {
-            ul.style.display = 'block';
-            var section = document.querySelectorAll(".main-section");
-            for (var i = 0, c = section.length; i < c; ++i) {
-                section[i].removeEventListener('mouseover', closeMenu);
-                section[i].removeEventListener("click", closeMenu);
-            }
-        } else {
-            ul.style.display = 'none';
-        }
-        x.addListener(display_menu);
-    }
-    display_menu(x);
-}();
 
 function new_element(name, attributes = {}, text = '') {
     node = document.createElement(name);
@@ -70,6 +66,7 @@ function new_element(name, attributes = {}, text = '') {
     return node;
 }
 void
+
 function display_or_hide_submenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
@@ -140,7 +137,8 @@ function display_or_hide_submenu() {
 }();
 
 
-void function makeVoid_null_link () {
+void
+function makeVoid_null_link() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener('click', function (e) {
@@ -149,7 +147,7 @@ void function makeVoid_null_link () {
         });
     }
     document.querySelector("#github")
-            .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
+        .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }();
 
 
