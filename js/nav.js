@@ -51,10 +51,10 @@ void (function displayOrHideSubmenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
-    var c = ul.length;
+    var c = parseInt(ul.length);
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
-        parent = ul[i].parentElement;
+        parent = ul[parseInt(i)].parentElement;
         parent.querySelector("a").appendChild(newElement("i", {class: "fas fa-angle-down"}));
         parent.addEventListener("click", function (e) {
             var angle = this.querySelector("a i");
@@ -86,13 +86,14 @@ void (function displayOrHideSubmenu() {
     }
     /** Tweaking submenus (adding class on its parents)**/
     function tuneSubmenu(y) {
+        var i;
         if (y.matches) {
-            for (var i = 0; i < c; ++i) {
-                ul[i].parentElement.classList.add("subMenuParent");
+            for (i = 0; i < c; ++i) {
+                ul[parseInt(i)].parentElement.classList.add("subMenuParent");
             }
         } else {
-            for (var i = 0; i < c; ++i) {
-                ul[i].parentElement.classList.remove("subMenuParent");
+            for (i = 0; i < c; ++i) {
+                ul[parseInt(i)].parentElement.classList.remove("subMenuParent");
             }
         }
     }
@@ -104,7 +105,7 @@ void (function displayOrHideSubmenu() {
 void (function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
-        a[i].addEventListener("click", function (e) {
+        a[parseInt(i)].addEventListener("click", function (e) {
             //if(this.id !== "github")
             this.href = "javascript:void(0)";
         });
