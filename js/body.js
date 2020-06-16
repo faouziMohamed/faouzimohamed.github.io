@@ -5,15 +5,14 @@ function newElement(name, attributes = {}, text = "") {
         node.setAttribute(o, attributes[o]);
     }
     if (text) 
-        {
-            node.appendChild(newTxtNode(text));
-        }
+    {
+        node.appendChild(newTxtNode(text));
+    }
     return node;
 }
 
 function insertAfter(el, ref) {
-    ref.parentNode
-        .insertBefore(el, ref.nextSibling);
+    ref.parentNode.insertBefore(el, ref.nextSibling);
 }
 
 function addLiToUl(ul, node, id) {
@@ -70,7 +69,7 @@ void (function createListLeftNav() {
             }
             li_.appendChild(_ul);
             --i;
-        } else i--;
+        } else {i--;}
         li.appendChild(ul_);
     }
 }());
