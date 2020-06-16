@@ -20,7 +20,7 @@ function display_menu_anyway() {
 }
 
 
-(void function toogle_openAndClose_menu() {
+void function toogle_openAndClose_menu() {
 
     document.querySelector("#menu-icon-wrapper>svg")
         .addEventListener("click", function open_close_Menu() {
@@ -36,7 +36,7 @@ function display_menu_anyway() {
             }
             x.addListener(open_close_Menu);
         });
-}());
+}();
 /*This part of code ensures that the menu is displayed in the 
 two responsive modes*/
 
@@ -46,7 +46,7 @@ function new_element(name, attributes = {}, text = "") {
     if (text) node.innerHTML = text;
     return node;
 }
-(void function display_or_hide_submenu() {
+void function display_or_hide_submenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
@@ -97,10 +97,10 @@ function new_element(name, attributes = {}, text = "") {
     }
     tune_submenu(y);
     y.addListener(tune_submenu);
-}());
+}();
 
 
-(void function makeVoid_null_link() {
+void function makeVoid_null_link() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener("click", function (e) {
@@ -110,7 +110,7 @@ function new_element(name, attributes = {}, text = "") {
     }
     document.querySelector("#github")
         .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
-}());
+}();
 
 
 
