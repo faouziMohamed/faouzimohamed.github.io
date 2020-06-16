@@ -53,19 +53,19 @@ void (function createListLeftNav() {
     /*Main loop to create the list of title in the left side of the webpage*/
     for (var i = 0; i < c; ++i) {
         /*For H2*/
-        if (title[i].nodeName === "H2") {
-            li = addLiToUl(ul, title[i++], "titre" + (n++));
+        if (title[parseInt(i)].nodeName === "H2") {
+            li = addLiToUl(ul, title[parseInt(i++)], "titre" + (n++));
             ul_ = newElement("ul");
         }
         /*For H3*/
-        while (i < c && (title[i].nodeName === "H3")) {
-            li_ = addLiToUl(ul_, title[i++], "titre" + (n++));
+        while (i < c && (title[parseInt(i)].nodeName === "H3")) {
+            li_ = addLiToUl(ul_, title[parseInt(i++)], "titre" + (n++));
         }
         /*For H4*/
-        if (i < c && title[i].nodeName === "H4") {
+        if (i < c && title[parseInt(i)].nodeName === "H4") {
             _ul = newElement("ul");
-            while (i < c && title[i].nodeName === "H4") {
-                addLiToUl(_ul, title[i++], "titre" + (n++));
+            while (i < c && title[parseInt(i)].nodeName === "H4") {
+                addLiToUl(_ul, title[parseInt(i--)], "titre" + (n++));
             }
             li_.appendChild(_ul);
             --i;
@@ -81,7 +81,7 @@ void (function clickOnInternalLinkCSSTransition() {
     var c = link.length;
 
     for (var i = 0; i < c; ++i) {
-        link[i].addEventListener("click", function () {
+        link[parseInt(i)].addEventListener("click", function () {
             nav.style.visibility = "hidden";
             nav.style.opacity = 0;
         });
