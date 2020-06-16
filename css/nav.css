@@ -64,7 +64,7 @@ nav#header-nav {
     right: 0px;
     padding: 0px;
     z-index: 100;
-    transition: visibility ease-in-out 1s, opacity ease 1s ;
+    transition: visibility ease-in-out 1s, opacity ease 1s;
 }
 
 nav#header-nav::after {
@@ -144,4 +144,3 @@ ul#main-list>li>a:hover {
         position: fixed;
     }
 }
-

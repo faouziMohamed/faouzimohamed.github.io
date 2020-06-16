@@ -14,7 +14,7 @@
     --main-section-border-color: #081a27;
     --main-section-h2-conclusion-color: rgb(0, 189, 142);
     --table-border: #657473;
-    
+
     --main-aside-bg: rgb(26, 29, 31);
     --main-aside-nav-bg: rgb(7, 11, 19);
     --main-aside-nav-color: #d4dada;
@@ -43,7 +43,7 @@
     --main-section-border-color: #58f4f4;
     --main-section-h2-conclusion-color: rgb(10, 95, 29);
     --table-border: #657473;
-    
+
     --main-aside-bg: rgb(3, 92, 99);
     --main-aside-nav-bg: rgb(9, 26, 27);
     --main-aside-nav-color: rgb(224, 255, 243);
@@ -190,7 +190,7 @@ aside#left-aside {
     font-size: 100%;
     background-color: var(--main-aside-bg);
     text-align: left;
-    transition:all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 aside#left-aside>nav {
@@ -277,13 +277,22 @@ nav#aside-nav>ul {
     padding: 0px 15px 3px 5px;
 }
 
-.inline{display: inline;}
-.normal{font-weight: normal;}
+.inline {
+    display: inline;
+}
+
+.normal {
+    font-weight: normal;
+}
+
 .bold,
 strong {
     font-weight: bold;
 }
-.p-over-ul{margin-bottom: -15px;}
+
+.p-over-ul {
+    margin-bottom: -15px;
+}
 
 q {
     quotes: '\201C''\201d';

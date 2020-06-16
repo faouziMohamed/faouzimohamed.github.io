@@ -133,13 +133,13 @@ figcaption {
     height: 350px;
 }
 
-#perceptron-monocouche img{
+#perceptron-monocouche img {
     max-height: 250px;
 }
 
 figure[id*='bias-'] img,
 figure[id*='xor'] img,
 #monocouche img,
-#NT2 img{
+#NT2 img {
     max-height: 370px;
 }

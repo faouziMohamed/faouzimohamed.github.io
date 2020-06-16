@@ -5,7 +5,7 @@
     width: 52px;
     height: 24px;
     right: 55px;
-    top:5px;
+    top: 5px;
 }
 
 /* Hide default HTML checkbox */
@@ -46,15 +46,15 @@
     background-position: center;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: rgb(154, 157, 158);
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #2b9efd;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
