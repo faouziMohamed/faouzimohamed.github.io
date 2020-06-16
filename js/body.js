@@ -17,7 +17,7 @@ function insertAfter(el, ref) {
 
 function addLiToUl(ul, node, id) {
     node.id = id;
-    a = newElement("a", {
+    var a = newElement("a", {
         href: "#" + id
     }, node.firstChild.data);
     var li = newElement("li");
@@ -27,8 +27,7 @@ function addLiToUl(ul, node, id) {
 }
 
 
-void
-function createListLeftNav() {
+(void function createListLeftNav() {
     var ul = document.querySelector("#ul-aside-nav");
     var title = document.querySelectorAll("section h2, section h3, section h4");
     var node = null,
@@ -75,12 +74,10 @@ function createListLeftNav() {
         } else i--;
         li.appendChild(ul_);
     }
-}();
+}());
 
 
-void
-
-function clickOnInternalLink_CSS_transition() {
+(void function clickOnInternalLink_CSS_transition() {
     var link = document.querySelectorAll("main a[href*='#']:not(#top)");
     var nav = document.querySelector("#header-nav");
     var c = link.length;
@@ -101,5 +98,5 @@ function clickOnInternalLink_CSS_transition() {
     }
 
     document.body.addEventListener("touchstart", makeVisible, true); //For tactil 
-    document.body.addEventListener("wheel", makeVisible); //for touchpad or mouse wheel
-}();
+    document.body.addEventListener("wheel", makeVisible,true); //for touchpad or mouse wheel
+}());
