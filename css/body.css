@@ -1,60 +1,60 @@
 @import url("to-top-btn.css");
 
 .theme-dark {
-    --body-bg: rgb(18, 34, 44);
-    --main-text-color: rgb(193, 209, 206);
-    --color-link: #faa;
-    /*--main- article-bg: rgb(1, 17, 36);*/
-    --main-header-color: rgb(236, 163, 3);
-    --main-header-bg: rgb(46, 54, 61);
-    --main-section-bg: rgb(11, 29, 39);
-    --main-section-h2-color: #18d6bd;
-    --main-section-h3-color: #79df93;
-    --main-section-h4-color: #d1e49e;
-    --main-section-border-color: #081a27;
+    --body-bg                         : rgb(18, 34, 44);
+    --main-text-color                 : rgb(193, 209, 206);
+    --color-link                      : #faa;
+    /*--main- article-bg              : rgb(1, 17, 36);*/
+    --main-header-color               : rgb(236, 163, 3);
+    --main-header-bg                  : rgb(46, 54, 61);
+    --main-section-bg                 : rgb(11, 29, 39);
+    --main-section-h2-color           : #18d6bd;
+    --main-section-h3-color           : #79df93;
+    --main-section-h4-color           : #d1e49e;
+    --main-section-border-color       : #081a27;
     --main-section-h2-conclusion-color: rgb(0, 189, 142);
-    --table-border: #657473;
+    --table-border                    : #657473;
 
-    --main-aside-bg: rgb(26, 29, 31);
-    --main-aside-nav-bg: rgb(7, 11, 19);
-    --main-aside-nav-color: #d4dada;
-    --nav-aside-hv-color: rgb(221, 255, 100);
+    --main-aside-bg         : rgb(26, 29, 31);
+    --main-aside-nav-bg     : rgb(7, 11, 19);
+    --main-aside-nav-color  : #d4dada;
+    --nav-aside-hv-color    : rgb(221, 255, 100);
     --nav-aside--li-hv-color: rgb(152, 228, 137);
-    --aside-a-1-bg: rgba(1, 16, 26, 0.658);
-    --aside-a-1-bt: 1px solid rgb(36, 153, 108);
-    --aside-a-2-bg: rgba(11, 27, 24, 0.658);
-    --aside-a-2-bt: 1px solid rgb(119, 131, 13);
-    --aside-a-3-bg: rgba(4, 23, 24, 0.658);
-    --aside-a-3-bt: 1px solid rgb(153, 73, 36);
+    --aside-a-1-bg          : rgba(1, 16, 26, 0.658);
+    --aside-a-1-bt          : 1px solid rgb(36, 153, 108);
+    --aside-a-2-bg          : rgba(11, 27, 24, 0.658);
+    --aside-a-2-bt          : 1px solid rgb(119, 131, 13);
+    --aside-a-3-bg          : rgba(4, 23, 24, 0.658);
+    --aside-a-3-bt          : 1px solid rgb(153, 73, 36);
 }
 
 
 .theme-light {
-    --body-bg: rgb(10, 100, 85);
-    --main-text-color: rgb(0, 20, 19);
-    --color-link: rgb(230, 0, 0);
-    /*--main-article-bg: rgb(3, 143, 120);*/
-    --main-header-color: rgb(236, 163, 3);
-    --main-header-bg: rgb(73, 104, 97);
-    --main-section-bg: rgb(162, 199, 199);
-    --main-section-h2-color: #050761;
-    --main-section-h3-color: #033636;
-    --main-section-h4-color: #005b6b;
-    --main-section-border-color: #58f4f4;
+    --body-bg                         : rgb(10, 100, 85);
+    --main-text-color                 : rgb(0, 20, 19);
+    --color-link                      : rgb(230, 0, 0);
+    /*--main-article-bg               : rgb(3, 143, 120);*/
+    --main-header-color               : rgb(236, 163, 3);
+    --main-header-bg                  : rgb(73, 104, 97);
+    --main-section-bg                 : rgb(162, 199, 199);
+    --main-section-h2-color           : #050761;
+    --main-section-h3-color           : #033636;
+    --main-section-h4-color           : #005b6b;
+    --main-section-border-color       : #58f4f4;
     --main-section-h2-conclusion-color: rgb(10, 95, 29);
-    --table-border: #657473;
+    --table-border                    : #657473;
 
-    --main-aside-bg: rgb(3, 92, 99);
-    --main-aside-nav-bg: rgb(9, 26, 27);
-    --main-aside-nav-color: rgb(224, 255, 243);
-    --nav-aside-hv-color: rgb(240, 145, 145);
+    --main-aside-bg         : rgb(3, 92, 99);
+    --main-aside-nav-bg     : rgb(9, 26, 27);
+    --main-aside-nav-color  : rgb(224, 255, 243);
+    --nav-aside-hv-color    : rgb(240, 145, 145);
     --nav-aside--li-hv-color: rgb(255, 166, 0);
-    --aside-a-1-bg: rgba(1, 16, 26, 0.658);
-    --aside-a-1-bt: 1px solid rgb(36, 153, 108);
-    --aside-a-2-bg: rgba(8, 17, 15, 0.658);
-    --aside-a-2-bt: 1px solid rgb(119, 131, 13);
-    --aside-a-3-bg: rgba(11, 8, 19, 0.623);
-    --aside-a-3-bt: 1px solid rgb(155, 97, 22);
+    --aside-a-1-bg          : rgba(1, 16, 26, 0.658);
+    --aside-a-1-bt          : 1px solid rgb(36, 153, 108);
+    --aside-a-2-bg          : rgba(8, 17, 15, 0.658);
+    --aside-a-2-bt          : 1px solid rgb(119, 131, 13);
+    --aside-a-3-bg          : rgba(11, 8, 19, 0.623);
+    --aside-a-3-bt          : 1px solid rgb(155, 97, 22);
 }
 
 * {
@@ -63,39 +63,39 @@
 
 body {
     background-color: var(--body-bg);
-    margin: 0;
-    font-size: 100%;
-    min-width: 360px;
-    margin-top: 20px;
+    margin          : 0;
+    font-size       : 100%;
+    min-width       : 360px;
+    margin-top      : 20px;
 }
 
 main {
     border-radius: 4px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family  : 'Times New Roman', Times, serif;
     border-radius: 15px 15px 20px 20px;
-    display: flex;
-    margin-top: 45px;
+    display      : flex;
+    margin-top   : 45px;
 }
 
 
 article.main-article {
-    width: 65%;
-    margin-left: 30%;
+    width           : 65%;
+    margin-left     : 30%;
     background-color: var(--main-article-bg);
-    margin-right: 2%;
-    color: var(--main-text-color);
+    margin-right    : 2%;
+    color           : var(--main-text-color);
 }
 
 .main-article>header {
-    position: relative;
-    margin: 40px auto 40px auto;
-    width: 70%;
-    text-align: center;
-    padding: 11px 5px;
-    font-size: 190%;
-    color: var(--main-header-color);
+    position        : relative;
+    margin          : 40px auto 40px auto;
+    width           : 70%;
+    text-align      : center;
+    padding         : 11px 5px;
+    font-size       : 190%;
+    color           : var(--main-header-color);
     background-color: var(--main-header-bg);
-    border-radius: 10px;
+    border-radius   : 10px;
 }
 
 .main-article>header>h1 {
@@ -104,37 +104,37 @@ article.main-article {
 
 section.main-section {
     background-color: var(--main-section-bg);
-    padding: 25px;
-    margin: auto;
-    width: 92%;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    border: 1px solid var(--main-section-border-color);
-    letter-spacing: .05em;
-    line-height: 1.39em;
+    padding         : 25px;
+    margin          : auto;
+    width           : 92%;
+    border-radius   : 8px;
+    margin-bottom   : 30px;
+    border          : 1px solid var(--main-section-border-color);
+    letter-spacing  : .05em;
+    line-height     : 1.39em;
 }
 
 @media screen and (min-width:472px) {
     section.main-section {
         letter-spacing: .05em;
-        line-height: 1.39em;
+        line-height   : 1.39em;
     }
 }
 
 section.main-section h2 {
-    color: var(--main-section-h2-color);
+    color    : var(--main-section-h2-color);
     font-size: 170%;
 }
 
 section.main-section h3 {
-    color: var(--main-section-h3-color);
-    font-size: 120%;
+    color      : var(--main-section-h3-color);
+    font-size  : 120%;
     margin-left: 10px;
 }
 
 section.main-section h4 {
-    color: var(--main-section-h4-color);
-    font-size: 115%;
+    color      : var(--main-section-h4-color);
+    font-size  : 115%;
     margin-left: 18px;
 }
 
@@ -145,7 +145,7 @@ section.conclusion>h2 {
 section.main-section h2,
 section.main-section h3,
 section.main-section h4 {
-    padding-top: 10px;
+    padding-top  : 10px;
     /*padding-top: 45px;*/
     margin-bottom: 5px;
 }
@@ -175,38 +175,38 @@ section.main-section li {
 section a:visited,
 section a:link {
     text-decoration: none;
-    color: var(--color-link);
+    color          : var(--color-link);
 }
 
 aside#left-aside {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 25%;
-    height: 100%;
-    min-width: 215px;
-    font-size: 100%;
+    position        : fixed;
+    z-index         : 1;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    width           : 25%;
+    height          : 100%;
+    min-width       : 215px;
+    font-size       : 100%;
     background-color: var(--main-aside-bg);
-    text-align: left;
-    transition: all .5s ease-in-out;
+    text-align      : left;
+    transition      : all .5s ease-in-out;
 }
 
 aside#left-aside>nav {
-    padding-top: 20px;
-    position: absolute;
+    padding-top     : 20px;
+    position        : absolute;
     background-color: var(--main-aside-nav-bg);
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    height: 100%;
-    margin: auto;
-    width: 100%;
-    padding-left: 4%;
-    color: var(--main-aside-nav-color);
-    overflow-y: auto;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    margin          : 0;
+    height          : 100%;
+    margin          : auto;
+    width           : 100%;
+    padding-left    : 4%;
+    color           : var(--main-aside-nav-color);
+    overflow-y      : auto;
 }
 
 .hidden {
@@ -214,39 +214,37 @@ aside#left-aside>nav {
 }
 
 nav#aside-nav>h1 {
-    padding: 10px 0 0 0;
+    padding    : 10px 0 0 0;
     margin-left: -2px;
-    font-size: 130%;
+    font-size  : 130%;
 }
 
 nav#aside-nav>ul>li {
-    position: relative;
-    list-style-type: disc;
-    margin-left: -2px;
-    margin-top: 7px;
+    position     : relative;
+    margin-left  : -2px;
+    margin-top   : 7px;
     margin-bottom: 12px;
 }
 
 nav#aside-nav>ul>li li {
-    margin-left: -27px;
+    margin-left  : -27px;
     margin-bottom: 2px;
-    list-style-type: circle;
 }
 
 nav#aside-nav li {
-    list-style-type: none !important;
+    list-style-type: none;
 }
 
 nav#aside-nav a {
-    color: var(--main-aside-nav-color);
+    color          : var(--main-aside-nav-color);
     text-decoration: none;
-    padding: 0;
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
+    padding        : 0;
+    display        : inline-block;
+    text-align     : left;
+    width          : 100%;
+    padding-left   : 5px;
+    padding-right  : 5px;
+    padding-bottom : 2px;
 }
 
 nav#aside-nav li a:hover {
@@ -257,20 +255,20 @@ nav#aside-nav li a:hover {
 nav#aside-nav>ul>li>a:hover {
     /*co lor: var(--nav-aside-hv-color);*/
     background-color: var(--aside-a-1-bg);
-    border-bottom: var(--aside-a-1-bt);
+    border-bottom   : var(--aside-a-1-bt);
 }
 
 nav#aside-nav>ul>li li>a:hover {
     /*col or: var(--nav-aside--li-hv-color);*/
     background-color: var(--aside-a-2-bg);
-    border-bottom: var(--aside-a-2-bt);
+    border-bottom   : var(--aside-a-2-bt);
 
 }
 
 nav#aside-nav>ul>li ul>li li>a:hover {
     /*color: var(--nav-aside--li-li-hv-color);*/
     background-color: var(--aside-a-3-bg);
-    border-bottom: var(--aside-a-3-bt);
+    border-bottom   : var(--aside-a-3-bt);
 }
 
 nav#aside-nav>ul {
@@ -337,14 +335,14 @@ em {
 
 table td,
 table th {
-    border: 1px solid var(--table-border);
+    border    : 1px solid var(--table-border);
     text-align: center;
 }
 
 table {
-    width: 100%;
-    min-width: 270px;
-    max-width: 300px;
+    width          : 100%;
+    min-width      : 270px;
+    max-width      : 300px;
     border-collapse: collapse;
 }
 
@@ -354,25 +352,25 @@ table {
 }
 
 td.empty {
-    border-top: none;
+    border-top : none;
     border-left: none;
 }
 
 #rotate {
     transform: rotate(-15deg);
-    height: 40px;
-    padding: 0;
+    height   : 40px;
+    padding  : 0;
 }
 
 .table-center,
 .table-center figcaption {
-    width: 300px;
+    width : 300px;
     margin: auto;
 }
 
 .table-center-2>figcaption,
 .table-center-2 {
-    width: 400px;
+    width : 400px;
     margin: auto;
 }
 
@@ -388,7 +386,7 @@ td.empty {
 
 @media only screen and (max-width:888px) {
     article.main-article {
-        margin-left: 32%;
+        margin-left : 32%;
         margin-right: 5%;
     }
 
@@ -409,8 +407,8 @@ td.empty {
     }
 
     article.main-article {
-        width: 90%;
-        margin-left: auto;
+        width       : 90%;
+        margin-left : auto;
         margin-right: auto;
     }
 }
