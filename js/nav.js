@@ -20,8 +20,7 @@ function display_menu_anyway() {
 }
 
 
-(void function toogle_openAndClose_menu() {
-
+void function toogle_openAndClose_menu() {
     document.querySelector("#menu-icon-wrapper>svg")
         .addEventListener("click", function open_close_Menu() {
             /*Use of media query to control responsive layout for the menubar"s layout*/
@@ -36,17 +35,17 @@ function display_menu_anyway() {
             }
             x.addListener(open_close_Menu);
         });
-}());
+}();
 /*This part of code ensures that the menu is displayed in the 
 two responsive modes*/
 
-function new_element(name, attributes = {}, text = "") {
+function newElement(name, attributes = {}, text = "") {
     node = document.createElement(name);
     for (var o in attributes) node.setAttribute(o, attributes[o]);
     if (text) node.innerHTML = text;
     return node;
 }
-(void function display_or_hide_submenu() {
+void function displayOrHideSubmenu() {
     var ul = document.querySelectorAll(".submenu");
     var y = window.matchMedia("(max-width: 536px)");
     var parent;
@@ -54,14 +53,14 @@ function new_element(name, attributes = {}, text = "") {
     /*Displaying or hidden submenus */
     for (var i = 0; i < c; i++) {
         parent = ul[i].parentElement;
-        parent.querySelector("a").appendChild(new_element("i", {class: "fas fa-angle-down"}));
+        parent.querySelector("a").appendChild(newElement("i", {class: "fas fa-angle-down"}));
         parent.addEventListener("click", function (e) {
             var angle = this.querySelector("a i");
             if (this.lastElementChild.style.display !== "block") {
-                this.querySelector("a").replaceChild(new_element("i", {class: "fas fa-angle-up"}), angle);
+                this.querySelector("a").replaceChild(newElement("i", {class: "fas fa-angle-up"}), angle);
                 this.lastElementChild.style.display = "block";
             } else {
-                this.querySelector("a").replaceChild(new_element("i", {class: "fas fa-angle-down"}), angle);
+                this.querySelector("a").replaceChild(newElement("i", {class: "fas fa-angle-down"}), angle);
                 this.lastElementChild.style.display = "none";
             }
         });
@@ -78,13 +77,13 @@ function new_element(name, attributes = {}, text = "") {
             if (related_target != this) {
                 this.lastElementChild.style.display = "none";
                 this.querySelector("a")
-                    .replaceChild(new_element("i", {class: "fa fa-angle-down"}),
+                    .replaceChild(newElement("i", {class: "fa fa-angle-down"}),
                         this.querySelector("a i"));
             }
         });
     }
     /** Tweaking submenus (adding class on its parents)**/
-    function tune_submenu(y) {
+    function tuneSubmenu(y) {
         if (y.matches) {
             for (var i = 0; i < c; ++i) {
                 ul[i].parentElement.classList.add("subMenuParent");
@@ -95,12 +94,12 @@ function new_element(name, attributes = {}, text = "") {
             }
         }
     }
-    tune_submenu(y);
-    y.addListener(tune_submenu);
-}());
+    tuneSubmenu(y);
+    y.addListener(tuneSubmenu);
+}();
 
 
-(void function makeVoid_null_link() {
+void function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener("click", function (e) {
@@ -110,8 +109,7 @@ function new_element(name, attributes = {}, text = "") {
     }
     document.querySelector("#github")
         .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
-}());
-
+}();
 
 
 
