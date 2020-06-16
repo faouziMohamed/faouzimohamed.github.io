@@ -27,8 +27,8 @@ void (function toogleOpenAndCloseMenu() {
             if (x.matches) {
                 handleOppenedMenu(); //some events to handle the closing of menu
                 if (document.querySelector("ul#main-list").style.display === "block")
-                    closeMenu();
-                else openMenu();
+                    {closeMenu();}
+                else {openMenu();}
             } else { //width >536px
                 displayMenuAnyway(); //remove for some events to handle the closing of menu
             }
@@ -69,7 +69,7 @@ void (function displayOrHideSubmenu() {
         /*Hide submenu if is it not hovered*/
         parent.addEventListener("mouseout", function (e) {
             var relatedTarget = e.relatedTarget;
-            if (this.lastElementChild.style.display !== "block") return;
+            if (this.lastElementChild.style.display !== "block") {return;}
 
             while ((relatedTarget !== this) &&
                 (relatedTarget.nodeName !== "BODY") &&

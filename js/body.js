@@ -75,7 +75,7 @@ void (function createListLeftNav() {
 }());
 
 
-void (function clickOnInternalLink_CSS_transition() {
+void (function clickOnInternalLinkCSSTransition() {
     var link = document.querySelectorAll("main a[href*='#']:not(#top)");
     var nav = document.querySelector("#header-nav");
     var c = link.length;
@@ -84,7 +84,7 @@ void (function clickOnInternalLink_CSS_transition() {
         link[i].addEventListener("click", function () {
             nav.style.visibility = "hidden";
             nav.style.opacity = 0;
-        })
+        });
     }
 
     function makeVisible() {
