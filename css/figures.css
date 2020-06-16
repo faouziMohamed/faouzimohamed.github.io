@@ -59,28 +59,28 @@ figcaption {
     color: var(--figcaption-color);
 }
 
-@media only screen and (max-width:1264px) {
+@media only screen and (max-width: 1264px) {
     figure#pie-chart {
         top: 10%;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:1254px) {
+@media only screen and (max-width: 1254px) {
     figure #pie-chart {
         top: 35px;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:1084px) {
+@media only screen and (max-width: 1084px) {
     figure#pie-chart {
         top: 18%;
         left: 15px;
     }
 }
 
-@media only screen and (max-width:902px) {
+@media only screen and (max-width: 902px) {
     .flex-bloc {
         flex-wrap: wrap;
     }
@@ -101,7 +101,7 @@ figcaption {
     }
 }
 
-@media only screen and (max-width:764px) {}
+@media only screen and (max-width: 764px) {}
 
 .figure-layout img[src*="dark"],
 .figure-layout img[src*="light"],

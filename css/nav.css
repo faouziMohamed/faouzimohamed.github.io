@@ -139,7 +139,7 @@ ul#main-list>li>a:hover {
     z-index: 45;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     nav#header-nav {
         position: fixed;
     }
