@@ -40,7 +40,7 @@ function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
     var node = document.createElement(name);
     for (var o in attributes) {
-        node.setAttribute(o, attributes[o]);
+        node.setAttribute(o, attributes.o);
     }
     if (text) {
         node.appendChild(newTxtNode(text));
