@@ -96,10 +96,10 @@ function newElement(name, attributes = {}, text = "") {
     }
     tuneSubmenu(y);
     y.addListener(tuneSubmenu);
-}();
+}());
 
 
-void function makeVoidNullLink() {
+(void function makeVoidNullLink() {
     var a = document.querySelectorAll("a[href='#']:not(#github)");
     for (var i = 0, c = a.length; i < c; ++i) {
         a[i].addEventListener("click", function (e) {
