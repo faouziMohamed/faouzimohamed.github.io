@@ -2,7 +2,8 @@ function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
     var node = document.createElement(name);
     for (var o in attributes) {
-        node.setAttribute(o, attributes.o);
+        if(attributes.hasOwnProperty(o))
+            node.setAttribute(o, attributes[o]);
     }
     if (text) 
     {
@@ -17,9 +18,7 @@ function insertAfter(el, ref) {
 
 function addLiToUl(ul, node, id) {
     node.id = id;
-    var a = newElement("a", {
-        href: "#" + id
-    }, node.firstChild.data);
+    var a = newElement("a", {href: "#" + id}, node.firstChild.data);
     var li = newElement("li");
     li.appendChild(a);
     ul.appendChild(li);
