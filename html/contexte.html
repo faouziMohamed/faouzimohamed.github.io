@@ -32,7 +32,8 @@
 </head>
 
 <body>
-    <nav id='header-nav' id="top">
+    <span id="top"></span>
+    <nav id='header-nav'>
         <div id="menu-icon-wrapper">
             <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
                 xml:space="preserve" width="32" height='32'>
@@ -195,12 +196,12 @@
                 <ul id="ul-aside-nav"></ul>
             </nav>
         </aside>
-        <article class="main-article">
+        <article class="main-article" role="doc-chapter">
             <header>
                 <h1>Revenons au source</h1>
             </header>
 
-            <section class="main-section">
+            <section class="main-section" role="doc-introduction">
                 <h2>L'intelligence artificiel</h2>
                 <section>
                     <h3>Contexte et apprentissage</h3>
@@ -817,7 +818,7 @@
                 </p>
             </section>
 
-            <section class="main-section conclusion">
+            <section class="main-section conclusion" role="doc-conclusion">
                 <h2 class="center">Conclusion</h2>
                 <p>
                     Dans cet article nous avons présenté la notion de classification ainsi que son application dans
@@ -849,7 +850,7 @@
         <div id="noscript-layout">
             <p id="no-script-before-main">
                 <i class="fas fa-exclamation-triangle"></i>
-                La page web fonctionne bien avec javascript activé
+                <span>La page web fonctionne bien avec javascript activé</span>
             </p>        
         </div>
     </noscript>

@@ -26,7 +26,8 @@
 </head>
 
 <body>
-    <nav id='header-nav' id="top">
+    <span id="top"></span>
+    <nav id='header-nav'>
         <div id="menu-icon-wrapper">
             <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
                 xml:space="preserve" width="32" height='32'>
@@ -185,11 +186,11 @@
                 <ul id="ul-aside-nav"></ul>
             </nav>
         </aside>
-        <article class="main-article">
+        <article class="main-article" role="doc-chapter">
             <header>
                 <h1>Les réseaux de neurones</h1>
             </header>
-            <section class="main-section">
+            <section class="main-section" role="doc-introduction">
                 <h2>Introduction</h2>
                 <section>
                     <h3>Machine learning : limites et conséquences</h3>
@@ -313,7 +314,7 @@
 
                     <div class="figure-layout">
                         <figure id="perceptron">
-                            <img src="">
+                            <img src="../img/perceptron-light.svg">
                             <figcaption>Structure d’un neurone artificiel avec
                                 <span class="bold">n</span>
                                 entrées <span class="bold">x<sub>i</sub></span>
@@ -477,7 +478,7 @@
                         </p>
                         <div class="figure-layout">
                             <figure id="perceptron-monocouche">
-                                <img src='../img/perceptron-apprentissage-dark.svg'
+                                <img src='../img/perceptron-apprentissage-light.svg'
                                     alt="Renvoie de l'erreur vers l'arrière"
                                     title="Renvoie de l'erreur vers l'arrière" />
                                 <figcaption>Renvoie de l'erreur vers l'arrière</figcaption>
@@ -932,7 +933,7 @@
                     </section>
                 </section>
             </section>
-            <section class="main-section conclusion">
+            <section class="main-section conclusion" role="doc-conclusion">
                 <h2 class="center">Conclusion</h2>
                 <div>
                     <p>
@@ -1008,7 +1009,7 @@
         <div id="noscript-layout">
             <p id="no-script-before-main">
                 <i class="fas fa-exclamation-triangle"></i>
-                La page web fonctionne bien avec javascript activé
+                <span>La page web fonctionne bien avec javascript activé</span>
             </p>
         </div>
     </noscript>
