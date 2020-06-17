@@ -1,20 +1,20 @@
 function changeImg(theme=""){
-    var perceptron = document.querySelector("#perceptron>img");
-    var monocouche = document.querySelector("#monocouche>img");
-    var monoError  = document.querySelector("#perceptron-monocouche>img");
-    var bias1      = document.querySelector("#bias-1>img");
-    var bias2      = document.querySelector("#bias-2>img");
-    var bias3      = document.querySelector("#bias-3>img");
-    var bias4      = document.querySelector("#bias-4>img");
-    var xor0       = document.querySelector("#xor0>img");
-    var xor1       = document.querySelector("#xor1>img");
-    var xor2       = document.querySelector("#xor2>img");
-    var nt1        = document.querySelector("#NT1>img");
-    var nt2        = document.querySelector("#NT2>img");
-    var phaseAvant = document.querySelector("#forward-step>img");
-    var phaseArr   = document.querySelector("#feedback-step>img");
-    var lr         = document.querySelector("#min-grad>img");
-    var ok = perceptron!==null;
+    let perceptron = document.querySelector("#perceptron>img");
+    let monocouche = document.querySelector("#monocouche>img");
+    let monoError  = document.querySelector("#perceptron-monocouche>img");
+    let bias1      = document.querySelector("#bias-1>img");
+    let bias2      = document.querySelector("#bias-2>img");
+    let bias3      = document.querySelector("#bias-3>img");
+    let bias4      = document.querySelector("#bias-4>img");
+    let xor0       = document.querySelector("#xor0>img");
+    let xor1       = document.querySelector("#xor1>img");
+    let xor2       = document.querySelector("#xor2>img");
+    let nt1        = document.querySelector("#NT1>img");
+    let nt2        = document.querySelector("#NT2>img");
+    let phaseAvant = document.querySelector("#forward-step>img");
+    let phaseArr   = document.querySelector("#feedback-step>img");
+    let lr         = document.querySelector("#min-grad>img");
+    let ok = perceptron!==null;
     
     if(theme==="theme-light"){
         if(ok){
@@ -73,7 +73,7 @@ function toggleTheme() {
 }
 // Immediate invocation function to set the theme on initial load
 void (function setThemeForWhenPageIsLoaded() {
-    var slider = document.querySelector("#slider");
+    let slider = document.querySelector("#slider");
     if (localStorage.getItem("theme") === "theme-dark") {
         setTheme("theme-dark");
         if (slider){slider.checked = true;} 
