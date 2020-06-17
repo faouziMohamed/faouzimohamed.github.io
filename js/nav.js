@@ -39,9 +39,11 @@ void (function toogleOpenAndCloseMenu() {
 function newTxtNode(text){return document.createTextNode(text);}
 function newElement(name, attributes = {}, text = "") {
     let node = document.createElement(name);
-    for (let o in attributes) {
-        node.setAttribute(o, attributes.o);
-    }
+    const arrayOfKey = Object.getOwnPropertyNames(attributes);
+    arrayOfKey.forEach((key) => {
+        node.setAttribute(`${key}`, attributes[`${key}`]);
+    });
+
     if (text) {
         node.appendChild(newTxtNode(text));
     }

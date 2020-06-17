@@ -5,8 +5,8 @@ function newTxtNode(text) {
 function newElement(name, attributes = {}, text = "") {
     let node = document.createElement(name);
     const arrayOfKey = Object.getOwnPropertyNames(attributes);
-    arrayOfKey.forEach(key => {
-        node.setAttribute(key, attributes[key]);
+    arrayOfKey.forEach((key) => {
+        node.setAttribute(`${key}`, attributes[`${key}`]);
     });
 
     if (text) {
