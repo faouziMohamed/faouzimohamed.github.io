@@ -282,9 +282,10 @@ strong {
     font-weight: bold;
 }
 
-.dotted-border-bottom{
+.dotted-border-bottom {
     border-bottom: 1px dotted var(--main-text-color);
 }
+
 .has-tooltip {
     position: relative;
 }
@@ -313,7 +314,6 @@ strong {
     content: "";
     position: absolute;
     top: 100%;
-    left: 0;
     border-width: 10px;
     border-color: #aaa transparent transparent transparent;
     border-style: solid;
