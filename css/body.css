@@ -350,7 +350,7 @@ q.quotation {
 }
 
 .align-left,
-ul.align-left>li {
+.align-left>li{
     text-align: left;
 }
 

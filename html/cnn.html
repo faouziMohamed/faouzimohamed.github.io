@@ -197,8 +197,9 @@
             <section class="main-section" role="doc-introduction">
                 <h2>Introduction</h2>
                 <p>
-                    Les réseaux de neurones convolutifs (CNN), sont, jusqu’à 
-                    <span class="dotted-border-bottom has-tooltip">maintenant<span class="tooltip">Maintenant : 2020 </span></span>,
+                    Les réseaux de neurones convolutifs (CNN), sont, jusqu’à
+                    <span class="dotted-border-bottom has-tooltip">maintenant<span class="tooltip">Maintenant : 2020
+                        </span></span>,
                     les meilleurs modèles de réseaux de neurones pour classifier des images.
                     Elles prennent en entrée une image fournie sous la forme
                     d’une matrice de pixels. Cette matrice est de deux dimensions pour une image en niveau de gris. La
@@ -231,7 +232,8 @@
                         <li>Ils utilisent moins de paramètres (poids) pour apprendre qu'un réseau entièrement connecté.
                         </li>
                         <li>Ils sont conçus pour être invariants à la position et à la distorsion de l'objet dans
-                            l’image.</li>
+                            l’image.
+                        </li>
                         <li> Ils apprennent et généralisent automatiquement les fonctionnalités du domaine d'entrée.
                         </li>
                     </ul>
@@ -285,6 +287,36 @@
                         par
                         <a href="nn.html#titre19">rétropropagation du gradient</a>.
                     </p>
+                    <section>
+                        <h4>Qu'est-ce qu'une convolution ?</h4>
+                        <p role="definition">
+                            Une convolution est un filtre qui passe sur une image, la traite et extrait des
+                            caractéristiques qui
+                            montrent une similitude dans l'image. Un filtre est tout simplement un ensemble d’une
+                            matrice qu’on
+                            appelle aussi noyau de convolution ou filtre. Ce filtre on l’applique sur un voisinage d’une
+                            image et en
+                            sortie on aura une image résultante différente de l’original qu’on appelle <q
+                                class="quotation" lang="en"> features map </q>.
+                        </p>
+
+                        <div class="figure-layout">
+                            <figure id="convolution">
+                                <img src="" title="Filtrage d'une image par convolution" alt="Convolution" />
+                                <figcaption>Application d'un filtre de convolution</figcaption>
+                            </figure>
+                        </div>
+                        <p>
+                            Appliquer donc une convolution consiste à sélectionner un pixel $\boldsymbol{𝒊}$ sur une image, le
+                            multiplier par le
+                            multiplicateur sur le filtre lui correspondant, et faire de même sur chacun de ses voisins.
+                            Enfin la nouvelle
+                            valeur du pixel $\boldsymbol{i}$ est la somme de tous ces résultats. La fonction d’activation ReLU
+                            remplace donc toutes
+                            les valeurs négatives reçues en entrées par des zéros. Cela peut sembler étrange mais voici
+                            certains résultats :
+                        </p>
+                    </section>
                 </section>
             </section>
             <footer>

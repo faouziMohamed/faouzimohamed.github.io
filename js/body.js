@@ -23,7 +23,7 @@ function addLiToUl(ul, node, id) {
     node.id = id;
     let a = newElement("a", {
         href: "#" + id
-    }, node.firstChild.data);
+    }, node.innerText);
     let li = newElement("li");
     li.appendChild(a);
     ul.appendChild(li);
