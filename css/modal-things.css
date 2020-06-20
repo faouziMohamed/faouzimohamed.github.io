@@ -2,35 +2,47 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 17855;
     left: 0;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    display: block;
+    position: relative;
+    background-color: #00140c55;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
 }
 
+.modal-content img{
+    margin: auto;
+    width: 90%;
+}
+
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    color: rgb(182, 218, 185);
+    font-size: 200%;
     font-weight: bold;
+    content: "";
+
 }
+
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
+    color: rgb(88, 7, 0);
 }
