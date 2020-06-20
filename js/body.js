@@ -30,7 +30,6 @@ function addLiToUl(ul, node, id) {
     return li;
 }
 
-
 void(function createListLeftNav() {
     let ul = document.querySelector("#ul-aside-nav");
     let title = document.querySelectorAll("section h2, section h3, section h4");
