@@ -37,16 +37,16 @@ function modalContent(img) {
 }
 
 
-let fig = document.querySelectorAll("figure img, figure svg");
-let c = fig.length;
+void  (function displayModalContent()
+{
+    let fig = document.querySelectorAll("figure img, figure svg");
+    let c = fig.length;
 
-function newModalBox(e) {
-    let modal = modalContent(this);
-    console.log(modal);
-
-    document.body.appendChild(modal);
-}
-
-for (let ii = 0; ii < c; ++ii) {
-    fig[ii].addEventListener('click', newModalBox);
-}
+    for (let ii = 0; ii < c; ++ii) 
+    {
+        fig[ii].addEventListener('click', function ()
+        {
+            document.body.appendChild(modalContent(this));
+        });
+    }
+}());
