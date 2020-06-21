@@ -2,6 +2,15 @@
 function setTheme(themeName) {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
+    //data-theme="switch"
+    if(themeName === 'theme-light'){
+    document.querySelectorAll("figure img[data-theme='switch']").forEach((element)=>{
+        element.src = element.src.replace("dark","light");});
+    }
+    else {
+        document.querySelectorAll("figure img[src*='light']").forEach((element)=>{
+            element.src = element.src.replace("light","dark");});
+    }
 }
 // function to toggle between light and dark theme
 function toggleTheme() {
@@ -10,21 +19,17 @@ function toggleTheme() {
     } else {
         setTheme("theme-dark");
     }
-    //alert(local Storage.getItem("theme"))
 }
 // Immediate invocation function to set the theme on initial load
 void(function setThemeWhenPageIsLoaded() {
     let slider = document.querySelector("#slider");
     if (localStorage.getItem("theme") === "theme-dark") {
         setTheme("theme-dark");
-        if (slider) {
-            slider.checked = true;
-        }
+        slider.checked = true;
     } else {
         setTheme("theme-light");
-        if (slider) {
-            slider.checked = false;
-        }
+        slider.checked = false;
+        
     }
 }());
 

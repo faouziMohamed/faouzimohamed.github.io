@@ -107,40 +107,13 @@ void (function displayOrHideSubmenu() {
 void (function makeVoidNullLink() {
     let a = document.querySelectorAll("a[href='#']:not(#github)");
     for (let i = 0, c = a.length; i < c; ++i) {
-        a[parseInt(i)].addEventListener("click", function (e) {
+        a[parseInt(i)].addEventListener("click", (e)=> {
             e.preventDefault();
         });
     }
     document.querySelector("#github")
         .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {
