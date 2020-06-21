@@ -3,13 +3,14 @@ function setTheme(themeName) {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
     //data-theme="switch"
-    if(themeName === 'theme-light'){
-    document.querySelectorAll("figure img[data-theme='switch']").forEach((element)=>{
-        element.src = element.src.replace("dark","light");});
-    }
-    else {
-        document.querySelectorAll("figure img[src*='light']").forEach((element)=>{
-            element.src = element.src.replace("light","dark");});
+    if (themeName === 'theme-light') {
+        document.querySelectorAll("figure img[data-theme='switch']").forEach((element) => {
+            element.src = element.src.replace("dark", "light");
+        });
+    } else {
+        document.querySelectorAll("figure img[data-theme='switch']").forEach((element) => {
+            element.src = element.src.replace("light", "dark");
+        });
     }
 }
 // function to toggle between light and dark theme
@@ -21,17 +22,12 @@ function toggleTheme() {
     }
 }
 // Immediate invocation function to set the theme on initial load
-void(function setThemeWhenPageIsLoaded() {
-    let slider = document.querySelector("#slider");
+void(function setThemeAfterPageLoaded() {
     if (localStorage.getItem("theme") === "theme-dark") {
+        document.querySelector("#slider").checked = true;
         setTheme("theme-dark");
-        slider.checked = true;
     } else {
+        document.querySelector("#slider").checked = false;
         setTheme("theme-light");
-        slider.checked = false;
-        
     }
 }());
-
-
-//localStorage.clear()
