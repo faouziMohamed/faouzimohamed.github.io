@@ -1,19 +1,11 @@
 let slideIndex = 1;
 
-function changeImg(n) {
-    displaySlide(slideIndex += parseInt(n));
-}
-
-function currentSlide(n) {
-    displaySlide(slideIndex = n);
-}
-
 function displaySlide(n) {
     let i;
     let slides = document.querySelectorAll(".slide");
     let dots = document.querySelectorAll(".dot");
 
-    if ((!slides.length) || (!n)) {
+    if (!slides.length) {
         return;
     }
 
@@ -23,24 +15,31 @@ function displaySlide(n) {
     if (n < 1) {
         slideIndex = slides.length;
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[parseInt(i)].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[parseInt(i)].classList.remove("active");
-    }
-
-    i = slideIndex - 1;
-    slides[i].style.display = "block";
-    dots[i].classList.toggle("active");
+    slides.forEach((element) => {
+        element.style.display = "none";
+    })
+    dots.forEach((dot) => {
+        dot.classList.remove("active");
+    })
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.toggle("active");
     localStorage.setItem("slideIndex", slideIndex);
 }
 
-
-if ((slideIndex = localStorage.getItem("slideIndex"))) {
-    displaySlide(slideIndex);
-} else {
-    slideIndex = 1;
-    localStorage.setItem("slideIndex", 1);
-    displaySlide(slideIndex);
+function changeImg(n) {
+    displaySlide(slideIndex += n);
 }
+
+function currentSlide(n) {
+    displaySlide(slideIndex = n);
+}
+
+void(function configureSlideShow() {
+    if ((slideIndex = localStorage.getItem("slideIndex"))) {
+        displaySlide(slideIndex);
+    } else {
+        slideIndex = 1;
+        localStorage.setItem("slideIndex", 1);
+        displaySlide(slideIndex);
+    }
+}());
