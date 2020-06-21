@@ -1,13 +1,5 @@
 let slideIndex = 1;
 
-if ((slideIndex = localStorage.getItem("slideIndex"))) {
-    displaySlide(slideIndex);
-} else {
-    slideIndex = 1;
-    localStorage.setItem("slideIndex", 1);
-    displaySlide(slideIndex);
-}
-
 function changeImg(n) {
     displaySlide(slideIndex += parseInt(n));
 }
@@ -42,4 +34,13 @@ function displaySlide(n) {
     slides[i].style.display = "block";
     dots[i].classList.toggle("active");
     localStorage.setItem("slideIndex", slideIndex);
+}
+
+
+if ((slideIndex = localStorage.getItem("slideIndex"))) {
+    displaySlide(slideIndex);
+} else {
+    slideIndex = 1;
+    localStorage.setItem("slideIndex", 1);
+    displaySlide(slideIndex);
 }
