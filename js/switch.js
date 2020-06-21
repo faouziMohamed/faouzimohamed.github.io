@@ -4,11 +4,11 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
     //data-theme="switch"
     if (themeName === 'theme-light') {
-        document.querySelectorAll("figure img[data-theme='switch']").forEach((element) => {
+        document.querySelectorAll("img[data-theme='switch']").forEach((element) => {
             element.src = element.src.replace("dark", "light");
         });
     } else {
-        document.querySelectorAll("figure img[data-theme='switch']").forEach((element) => {
+        document.querySelectorAll("img[data-theme='switch']").forEach((element) => {
             element.src = element.src.replace("light", "dark");
         });
     }

@@ -24,6 +24,8 @@ function modalContent(img) {
         class: "modal-content"
     });
     let imgClone = img.cloneNode(true);
+    //imgClone.setAttribute("data-theme","switch");
+    console.log(imgClone);
     let close = newElement("i", {
         class: "fas fa-close close"
     });

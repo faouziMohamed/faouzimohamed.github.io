@@ -34,24 +34,10 @@
     fill: var(--val-set-color);
 }
 
-.flex-bloc #pie-chart {
-    padding: 0;
-    margin: 0;
+figure img {
+    cursor: zoom-in;
 }
 
-figure#pie-chart {
-    position: relative;
-    text-align: center;
-}
-
-figure img{
-    cursor: pointer;
-}
-
-figure#pie-chart>svg {
-    width: 300px;
-    height: 300px;
-}
 
 figcaption {
     border-bottom: rgb(182, 150, 9) 1px solid;
@@ -60,53 +46,17 @@ figcaption {
     color: var(--figcaption-color);
 }
 
-@media only screen and (max-width: 1264px) {
-    figure#pie-chart {
-        top: 10%;
-        left: 15px;
-    }
-}
-
-@media only screen and (max-width: 1254px) {
-    figure #pie-chart {
-        top: 35px;
-        left: 15px;
-    }
-}
-
-@media only screen and (max-width: 1084px) {
-    figure#pie-chart {
-        top: 18%;
-        left: 15px;
-    }
-}
-
-@media only screen and (max-width: 902px) {
-    .flex-bloc {
-        flex-wrap: wrap;
-    }
-
-    #fig {
-        margin: auto;
-    }
-
-    figure#pie-chart {
-        top: 0;
-        left: initial;
-        width: 100%;
-    }
-
-    figure#pie-chart>svg {
-        width: 100%;
-        height: 400px;
-    }
-}
-
-/* @media only screen and (max-width: 764px) {} */
 .figure-layout img[src*="dark"],
 .figure-layout img[src*="light"],
-.figure-layout img[src*="svg"] {
+.figure-layout img[src*="svg"],
+figure#pie-chart>svg {
     background-color: var(--svg-bg);
+}
+
+figure#pie-chart>svg {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .figure-layout figure {
@@ -134,7 +84,6 @@ figcaption {
 #monocouche img,
 #NT2 img,
 figure[id*='bias-'] img,
-figure[id*='xor'] img
- {
+figure[id*='xor'] img {
     max-height: 370px;
 }

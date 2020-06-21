@@ -1,11 +1,13 @@
-.theme-dark{
+.theme-dark {
     --modal-content-bg: #000c11dc;
-    --modal-bg:rgba(0, 0, 0, 0.8);
+    --modal-bg: rgba(0, 0, 0, 0.8);
+    --close-btn-color: rgb(182, 218, 185);
 }
 
-.theme-light{
-    --modal-content-bg: rgba(1, 14, 10, 0.575);
-    --modal-bg:rgba(0, 0, 0, 0.8);
+.theme-light {
+    --modal-content-bg: #c4f7b0a2;
+    --modal-bg: rgba(23, 24, 23, 0.8);
+    --close-btn-color: rgb(73, 78, 74);
 }
 
 
@@ -13,7 +15,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: auto;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
@@ -23,7 +25,7 @@
     background-color: var(--modal-bg);
 }
 
-/* Modal Content/Box */
+/* Modal Content Box */
 .modal-content {
     display: block;
     position: relative;
@@ -34,7 +36,8 @@
     width: 80%;
 }
 
-.modal-content img{
+.modal-content img,
+.modal-content svg {
     display: block;
     margin: 0% auto;
     width: 90%;
@@ -45,7 +48,7 @@
     position: absolute;
     right: 8px;
     top: 2px;
-    color: rgb(182, 218, 185);
+    color: var(--close-btn-color);
     font-size: 200%;
     font-weight: bold;
     content: "";
@@ -59,6 +62,6 @@
     color: rgb(88, 7, 0);
 }
 
-.switch{
+.switch {
     z-index: 100055500;
 }
