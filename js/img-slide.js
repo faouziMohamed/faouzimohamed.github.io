@@ -1,6 +1,6 @@
 let slideIndex = 1;
 
-if ((slideIndex = parseInt(localStorage.getItem("slideIndex")))) {
+if ((slideIndex = localStorage.getItem("slideIndex"))) {
     displaySlide(slideIndex);
 } else {
     slideIndex = 1;
