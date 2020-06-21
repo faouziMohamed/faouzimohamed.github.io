@@ -1,30 +1,29 @@
-let slideIndex;
-void(function intialiseSlideShow() {
-    if ((slideIndex = parseInt(localStorage.getItem("slideIndex")))) {
-        showSlides(slideIndex);
-    } else {
-        slideIndex = 1;
-        localStorage.setItem("slideIndex", 1);
-        showSlides(1);
-    }
-}());
+let slideIndex = 1;
 
-
+if ((slideIndex = parseInt(localStorage.getItem("slideIndex")))) {
+    displaySlide(slideIndex);
+} else {
+    slideIndex = 1;
+    localStorage.setItem("slideIndex", 1);
+    displaySlide(slideIndex);
+}
 
 function changeImg(n) {
-    showSlides(slideIndex += parseInt(n));
+    displaySlide(slideIndex += parseInt(n));
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    displaySlide(slideIndex = n);
 }
 
-function showSlides(n) {
+function displaySlide(n) {
     let i;
     let slides = document.querySelectorAll(".slide");
     let dots = document.querySelectorAll(".dot");
 
-    if(!slides.length) {return;}
+    if ((!slides.length) || (!n)) {
+        return;
+    }
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -39,10 +38,8 @@ function showSlides(n) {
         dots[parseInt(i)].classList.remove("active");
     }
 
-    slideIndex = parseInt(slideIndex);
-    if(slides[slideIndex - 1]){
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.toggle("active");
-    }
+    i = slideIndex - 1;
+    slides[i].style.display = "block";
+    dots[i].classList.toggle("active");
     localStorage.setItem("slideIndex", slideIndex);
 }
