@@ -303,7 +303,8 @@
 
                         <div class="figure-layout">
                             <figure id="convolution">
-                                <img src="../img/convolution-dark.svg" title="Filtrage d'une image par convolution" alt="Convolution" />
+                                <img src="../img/convolution-light.svg" title="Filtrage d'une image par convolution"
+                                    alt="Convolution" />
                                 <figcaption>Application d'un filtre de convolution</figcaption>
                             </figure>
                         </div>
@@ -339,14 +340,16 @@
                                 <figure class="slide" id="ex-conv3">
                                     <span class="number-text">4/5</span>
                                     <img src="../img/ex-conv3.svg" alt="Détection de formes">
-                                    <figcaption class="caption-text hide">Détection de formes (<span lang="en">shape</span>)</figcaption>
+                                    <figcaption class="caption-text hide">Détection de formes (<span
+                                            lang="en">shape</span>)</figcaption>
                                 </figure>
                                 <figure class="slide" id="ex-conv4">
                                     <span class="number-text">5/5</span>
-                                    <img src="../img/ex-conv4.svg" alt="Extraction de caractéristiques pour la reconnaisance d'un chat">
+                                    <img src="../img/ex-conv4.svg"
+                                        alt="Extraction de caractéristiques pour la reconnaisance d'un chat">
                                     <figcaption class="caption-text hide">Détection de formes</figcaption>
                                 </figure>
-                                <a class="prev" onclick="changeImg(-1)"><i class="fas fa-angle-left fa-3x" ></i></a>
+                                <a class="prev" onclick="changeImg(-1)"><i class="fas fa-angle-left fa-3x"></i></a>
                                 <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
                             </div>
                             <div class="dot-wrapper">
@@ -600,32 +603,39 @@
             </section>
 
             <section id class="main-section conclusion" role="doc-conclusion">
-               <h2 class="center">Conclusion</h2>
+                <h2 class="center">Conclusion</h2>
                 <p>
-                Dans ce chapitre nous avons évoqué les réseaux de neurones du type Feed-forward aussi connu sous
-                le nom de Réseau de type perceptron. Ainsi, nous nous sommes un peu attardés sur les perceptrons
-                multicouches qui comporte des neurones complètement connectés. Nous avons aussi parler de réseaux
-                neuronal convolutifs. Ces réseaux sont capables d’extraire des caractéristiques d’images présentées en
-                entrée et de classifier ces caractéristiques. Le succès des CNN ces dernières années dépend principalement
-                des trois piliers suivants : données, modèle et puissance de calcul.
-               </p> 
+                    Dans ce chapitre nous avons évoqué les réseaux de neurones du type Feed-forward aussi connu sous
+                    le nom de Réseau de type perceptron. Ainsi, nous nous sommes un peu attardés sur les perceptrons
+                    multicouches qui comporte des neurones complètement connectés. Nous avons aussi parler de réseaux
+                    neuronal convolutifs. Ces réseaux sont capables d’extraire des caractéristiques d’images présentées
+                    en
+                    entrée et de classifier ces caractéristiques. Le succès des CNN ces dernières années dépend
+                    principalement
+                    des trois piliers suivants : données, modèle et puissance de calcul.
+                </p>
 
-               <p>
-                Les réseaux de neurones convolutionnels présentent cependant un certain nombre de limitations, en
-                premier lieu, les hyper paramètres du réseau sont difficiles à évaluer a priori. En effet, le nombre de couches,
-                les nombre de neurones par couche ou encore les différentes connexions entre couches sont des éléments
-                cruciaux et essentiellement déterminés par une bonne intuition ou par une succession de tests/calcul
-                d’erreurs (ce qui est coûteux en temps). Le nombre d’échantillons d’apprentissage est également un élément
-                déterminant, et il arrive souvent que celui–ci soit trop faible en comparaison du nombre de paramètres
-                (poids) du réseau. Des solutions existent comme augmenter artificiellement leur nombre ou encore en
-                réduisant le nombre de paramètres libres (en réalisant un préapprentissage des premières couches par
-                exemple).
-               </p>
+                <p>
+                    Les réseaux de neurones convolutionnels présentent cependant un certain nombre de limitations, en
+                    premier lieu, les hyper paramètres du réseau sont difficiles à évaluer a priori. En effet, le nombre
+                    de couches,
+                    les nombre de neurones par couche ou encore les différentes connexions entre couches sont des
+                    éléments
+                    cruciaux et essentiellement déterminés par une bonne intuition ou par une succession de tests/calcul
+                    d’erreurs (ce qui est coûteux en temps). Le nombre d’échantillons d’apprentissage est également un
+                    élément
+                    déterminant, et il arrive souvent que celui–ci soit trop faible en comparaison du nombre de
+                    paramètres
+                    (poids) du réseau. Des solutions existent comme augmenter artificiellement leur nombre ou encore en
+                    réduisant le nombre de paramètres libres (en réalisant un préapprentissage des premières couches par
+                    exemple).
+                </p>
 
-               <p>
-                Dans le prochain chapitre, nous allons mettre en pratique les CNN avec l’implémentation de notre propre
-                modèle de deep learning.
-               </p>
+                <p>
+                    Dans le prochain chapitre, nous allons mettre en pratique les CNN avec l’implémentation de notre
+                    propre
+                    modèle de deep learning.
+                </p>
 
             </section>
             <footer>
@@ -638,6 +648,16 @@
         </article>
     </main>
     <a href="#top" class="to-top"></a>
+    <script>
+        document.querySelector("#slider").addEventListener("change",()=>{
+            let conv = document.querySelector("#convolution>img");
+            if (localStorage.getItem("theme") === "theme-light") {
+                conv.src = "../img/convolution-light.svg";
+            } else {
+                conv.src = "../img/convolution-dark.svg";
+            }
+        });   
+    </script>
     <script type="text/javascript" src="../js/switch.js"></script>
     <script type="text/javascript" src="../js/nav.js"></script>
     <script type="text/javascript" src="../js/body.js"></script>

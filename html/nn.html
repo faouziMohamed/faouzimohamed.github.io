@@ -8,13 +8,18 @@
     <meta name='author' content="Faouzi Mohamed">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    
- <script>
+
+    <script>
         MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
             },
-            svg: {fontCache: 'global'}
+            svg: {
+                fontCache: 'global'
+            }
         };
     </script>
     <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
@@ -224,9 +229,11 @@
                         d’image, de voix, de détection de cancer, etc. Il existe plusieurs types de réseaux de neurones,
                         plutôt dire
                         plusieurs architectures de réseaux de neurones. Parmi eux, on trouve les réseaux de neurones
-                        récurrents(RNN) appelé aussi les réseaux <span class="bold"><q lang="en">Feed-back</q></span>, les réseaux de neurones autoorganisés, 
-                        les réseaux de neurones <span class="bold"><q lang="en">Feed forward</q> (propagation avant)</span>, etc. Dans le cadre de ce rapport 
-                        nous allons nous concentrer sur les réseaux de neurones du type Feed Forward et plus précisément 
+                        récurrents(RNN) appelé aussi les réseaux <span class="bold"><q lang="en">Feed-back</q></span>,
+                        les réseaux de neurones autoorganisés,
+                        les réseaux de neurones <span class="bold"><q lang="en">Feed forward</q> (propagation
+                            avant)</span>, etc. Dans le cadre de ce rapport
+                        nous allons nous concentrer sur les réseaux de neurones du type Feed Forward et plus précisément
                         sur <a href="#titre16"><span class="bold">les perceptrons multicouches</span></a>.
                     </p>
                     <p>
@@ -236,7 +243,8 @@
                         prédictions
                         sur d’autres images qu’il n’a jamais encore vu. Cependant, les réseaux de neurones communément
                         appelé
-                        <span class="bold">perceptron multicouches (MLP)</span> auront des difficultés à reconnaitre de grandes images. Ceci est
+                        <span class="bold">perceptron multicouches (MLP)</span> auront des difficultés à reconnaitre de
+                        grandes images. Ceci est
                         dû à
                         cause de la croissance exponentielle du nombre de connexions avec la taille de l'image et du
                         fait que chaque
@@ -245,7 +253,8 @@
                         auront aussi de difficulté à reconnaitre un objet qui est placé dans une autre position, angle
                         différente par
                         rapport aux images utilisés pendant l’entrainement. Et c’est ce qui fait intervenir les
-                        <span class="bold"><q>réseaux de neurones convolutifs</q> (CNN pour Convolutional Neural Network)</span>
+                        <span class="bold"><q>réseaux de neurones convolutifs</q> (CNN pour Convolutional Neural
+                            Network)</span>
                         pour résoudre ces genres de problèmes.
                     </p>
                 </section>
@@ -253,8 +262,10 @@
                     <h3>Les CNN</h3>
                     <p>
                         Les réseaux de neurones convolutifs désignent une sous-catégorie de réseaux de neurones: ils
-                        présentent en effet toutes les caractéristiques des MLPs. Cependant, les CNN sont <span class="bold">spécialement
-                        conçus pour traiter des images en entrée</span>. Et apportent de nouvelles fonctionnalités dans le traitement
+                        présentent en effet toutes les caractéristiques des MLPs. Cependant, les CNN sont <span
+                            class="bold">spécialement
+                            conçus pour traiter des images en entrée</span>. Et apportent de nouvelles fonctionnalités
+                        dans le traitement
                         d’images.
                     </p>
                 </section>
@@ -266,12 +277,16 @@
                     <h3>Le perceptron</h3>
                     <p>
                         Le perceptron aussi communément appelé neurone artificiel ou neurone formel, est un algorithme
-                        d’apprentissage automatique supervisé de <strong class="bold"><a href="contexte.html#titre4">classification</a> binaire</strong>. Il s’agit du type de réseau de
-                        neurones artificiels le plus simple. Les perceptrons, ont été créés par 
+                        d’apprentissage automatique supervisé de <strong class="bold"><a
+                                href="contexte.html#titre4">classification</a> binaire</strong>. Il s’agit du type de
+                        réseau de
+                        neurones artificiels le plus simple. Les perceptrons, ont été créés par
                         <a href="https://fr.wikipedia.org/wiki/Frank_Rosenblatt">Frank Rosenblatt</a> en 1958. Son
-                        créateur l’a comparé à des neurones capables de répondre à des stimuli externes d’une manière qui imite les
-                        vrais neurones biologiques dans sa publication <q class="quotation"><cite>The perceptron : a probabilistic model for
-                        information storage and organization in the brain</cite></q>.
+                        créateur l’a comparé à des neurones capables de répondre à des stimuli externes d’une manière
+                        qui imite les
+                        vrais neurones biologiques dans sa publication <q class="quotation"><cite>The perceptron : a
+                                probabilistic model for
+                                information storage and organization in the brain</cite></q>.
                     </p>
                     <p>
                         Le perceptron est un classifieur linéaire. Ce type de réseau neuronal ne contient aucun cycle
@@ -364,30 +379,35 @@
                             somme est passée dans une fonction d’activation.
                         </p>
                         <ul>
-                            <li>La fonction <strong class="bold">Sigmoïde</strong> : Pour une valeur $\boldsymbol{x}$ quelconque, $\boldsymbol{y}$
+                            <li>La fonction <strong class="bold">Sigmoïde</strong> : Pour une valeur $\boldsymbol{x}$
+                                quelconque, $\boldsymbol{y}$
                                 reste entre 0 et 1. Ce cas est très utile
                                 lorsque nous avons besoin d’avoir un résultat continu. Elle est généralement notée par
                                 le symbole
-                                grec $\boldsymbol{\sigma}$ représentée par la fonction $\boldsymbol{\sigma(x) = \frac{1}{e^{-x}}}
+                                grec $\boldsymbol{\sigma}$ représentée par la fonction $\boldsymbol{\sigma(x) =
+                                \frac{1}{e^{-x}}}
                                 <!--{1 \over exp^{-x}}-->$.
                             </li>
                             <li>
                                 La fonction $\boldsymbol{tanh}$ est également appelée <span class="bold">tangente
-                                hyperbolique</span> : Cette fonction ressemble à la
+                                    hyperbolique</span> : Cette fonction ressemble à la
                                 fonction Sigmoïde. La différence avec la fonction Sigmoïde est que la fonction $tanh$
                                 produit un résultat compris entre $\boldsymbol{-1}$ et $\boldsymbol{1}$.
                             </li>
                             <li>
-                                La fonction <span class="bold" style="font-family:Cambria" >ReLU</span> (Unité linéaire rectifiée) : Cette fonction converge plus rapidement,
+                                La fonction <span class="bold" style="font-family:Cambria">ReLU</span> (Unité linéaire
+                                rectifiée) : Cette fonction converge plus rapidement,
                                 optimise et
                                 produit la valeur souhaitée plus rapidement. C’est de loin la fonction d’activation la
                                 plus populaire
-                                utilisée dans les <a href="#NT2">couches cachées</a> sur un réseau de neurones. La fonction $ReLU$ est
+                                utilisée dans les <a href="#NT2">couches cachées</a> sur un réseau de neurones. La
+                                fonction $ReLU$ est
                                 interprétée par
                                 la formule : $\boldsymbol{f(x) = max(0,x)}$.
                             </li>
                             <li>
-                                La fonction <span class="bold" style="font-family:Cambria" >Softmax</span> : utilisé dans la <a href="#NT2">couche de sortie</a>, sur un réseau de neurones, car
+                                La fonction <span class="bold" style="font-family:Cambria">Softmax</span> : utilisé dans
+                                la <a href="#NT2">couche de sortie</a>, sur un réseau de neurones, car
                                 il réduit les
                                 dimensions et peut représenter une distribution catégorique.
                             </li>
@@ -419,15 +439,15 @@
                 <section>
                     <h3>Mode d'apprentissage</h3>
                     <p>
-                        L’apprentissage d’une MLP peut être faite de plusieurs façons. On trouve 
-                        <strong class="bold" >l’apprentissage supervisé</strong>, 
-                        <strong class="bold" >non supervisé</strong>, 
-                        <strong class="bold" >par renforcement</strong>, 
-                        <strong class="bold" >semi-supervisé</strong>.
+                        L’apprentissage d’une MLP peut être faite de plusieurs façons. On trouve
+                        <strong class="bold">l’apprentissage supervisé</strong>,
+                        <strong class="bold">non supervisé</strong>,
+                        <strong class="bold">par renforcement</strong>,
+                        <strong class="bold">semi-supervisé</strong>.
                     </p>
                     <p>
-                        Ici sera seulement explicité le mode d’apprentissage <span class="bold" >supervisé</span>. 
-                        Ce qui veut dire que les données d’entraînement que vous fournissez à l’algorithme comportent 
+                        Ici sera seulement explicité le mode d’apprentissage <span class="bold">supervisé</span>.
+                        Ce qui veut dire que les données d’entraînement que vous fournissez à l’algorithme comportent
                         les solutions désirées, appelées étiquettes (en anglais, labels).
                     </p>
                     <div id="supervised" class="figure-layout">
@@ -450,8 +470,10 @@
                             Par exemple, si on obtient la valeur $0.3$ mais que la valeur attendue était de $1$, alors
                             l’algorithme d’apprentissage
                             du perceptron détecte qu’il a fait une erreur de $1–0.3=0.7$. Cette valeur peut être vue
-                            comme une <a href="#titre22">fonction de coût</a> et le perceptron doit <span class="bold" >s’adapter
-                            (s’ajuster)</span> afin de réduire le coût au <span class="bold" >minimum</span> possible.
+                            comme une <a href="#titre22">fonction de coût</a> et le perceptron doit <span
+                                class="bold">s’adapter
+                                (s’ajuster)</span> afin de réduire le coût au <span class="bold">minimum</span>
+                            possible.
                         </p>
                         <div class="list-p">
                             <p class="p-over-ul">Dans un perceptron nous avons deux types de sortie :</p>
@@ -466,15 +488,18 @@
                             </p>
                         </div>
                         <p>
-                            Pour cela, nous utilisons un algorithme appelé <a href="#titre19"><strong class="normal">rétropropagation</strong> du gradient</a> qui a pour but
+                            Pour cela, nous utilisons un algorithme appelé <a href="#titre19"><strong
+                                    class="normal">rétropropagation</strong> du gradient</a> qui a pour but
                             de
-                            changer les <em class="italic">poids de chaque connexion</em>. 
-                            Par ailleur, un 
-                                <span class="bold inline">poids ou poids synaptique</span> 
-                                <span role="definition" class="normal inline">est un coefficient numérique qui est attribué à chacune des entrées d’un neurone, 
-                                de manière aléatoire au début puis les poids sont adaptés au fur et à mesure, et qui permet de 
+                            changer les <em class="italic">poids de chaque connexion</em>.
+                            Par ailleur, un
+                            <span class="bold inline">poids ou poids synaptique</span>
+                            <span role="definition" class="normal inline">est un coefficient numérique qui est attribué
+                                à chacune des entrées d’un neurone,
+                                de manière aléatoire au début puis les poids sont adaptés au fur et à mesure, et qui
+                                permet de
                                 pondérer celles-ci.
-                                </span> (<cite class="italic">Wikipédia, 2017</cite>).
+                            </span> (<cite class="italic">Wikipédia, 2017</cite>).
                         </p>
                         <div class="figure-layout">
                             <figure id="perceptron-monocouche">
@@ -487,7 +512,8 @@
                         <p>
                             Si toutes les entrées sont à 0, alors peu importe la valeur des poids donnés à chaque
                             connexion, la valeur en sortie sera toujours 0.
-                            Dans ce cas, nous pouvons ajouter le <a href="#titre12">biais</a> qui nous permet de modifier la sortie afin que
+                            Dans ce cas, nous pouvons ajouter le <a href="#titre12">biais</a> qui nous permet de
+                            modifier la sortie afin que
                             l’apprentissage se fasse correctement.
                         </p>
                         <p class="alinea">
@@ -512,10 +538,10 @@
                         <p>
                             Pour une bonne compréhension de ce qu’est le biais, nous allons considérer la fonction
                             linéaire
-                            $\boldsymbol{y=ax}$. Et nous allons essayer de séparer deux ensembles de données 
-                            (ici 
-                            <span class="bold" >bleu</span> et 
-                            <span class="bold" >rouge</span>).
+                            $\boldsymbol{y=ax}$. Et nous allons essayer de séparer deux ensembles de données
+                            (ici
+                            <span class="bold">bleu</span> et
+                            <span class="bold">rouge</span>).
                         </p>
 
                         <div class="figure-layout">
@@ -564,9 +590,10 @@
                         </p>
                         <div class="figure-layout">
                             <p>
-                                Sur la figure suivante, la fonction utilisée est $\boldsymbol{y = ax + b}$ 
+                                Sur la figure suivante, la fonction utilisée est $\boldsymbol{y = ax + b}$
                                 (<span class="italic">une fonction affine</span>)
-                                où $\boldsymbol{+b}$ correspond au biais. Grâce à ce biais, nous avons pu trouver la bonne droite
+                                où $\boldsymbol{+b}$ correspond au biais. Grâce à ce biais, nous avons pu trouver la
+                                bonne droite
                                 $\boldsymbol{y=−0.3+9}$ : une fonction affine qui sépare bien les ensembles.
                             </p>
                             <figure id="bias-4">
@@ -632,13 +659,13 @@
                         <p>
                             Il faut savoir ici qu'une droite représente un perceptron et le fait d'avoir utilisé deux
                             montre qu'un seul perceptron ne peut pas résoudre des problèmes complexes. Il en faudra
-                            regrouper plusieurs pour résoudre des problèmes qui se répartissent d'une manière qu'on 
+                            regrouper plusieurs pour résoudre des problèmes qui se répartissent d'une manière qu'on
                             ne peut pas les découper avec un seul.
                         </p>
                         <p>
                             Le fait de regrouper les perceptrons pour résoudre une tâche constitue un réseaux
                             de neurones (
-                            <a href="#titre15">Perceptron monocouche</a> ou 
+                            <a href="#titre15">Perceptron monocouche</a> ou
                             <a href="#titre16">perceptron multicouche</a>)
                         </p>
                         <p>
@@ -709,7 +736,8 @@
                     </div>
 
                     <p>
-                        Pour créer un tel réseau, il faut connecter un ensemble de neurones (une couche de neurones) avec
+                        Pour créer un tel réseau, il faut connecter un ensemble de neurones (une couche de neurones)
+                        avec
                         un autre ensemble de neurones. Habituellement, chaque neurone d'une couche est connecté à tous
                         les
                         neurones de la couche suivante et celle-ci seulement. Ceci nous permet d'introduire la notion de
@@ -718,9 +746,11 @@
                         de neurones
                         d'entrée et neurones de sortie. Par extension, on appelle couche d'entrée l'ensemble des
                         neurones d'entrée(<strong class="bold" lang="en">input layer</strong>),
-                        couche de sortie l'ensemble des neurones de sortie (<strong class="bold" lang="en">output layer</strong>). 
+                        couche de sortie l'ensemble des neurones de sortie (<strong class="bold" lang="en">output
+                            layer</strong>).
                         Les couches intermédiaires
-                        n'ayant aucun contact avec l'extérieur sont appelés couches cachées (<strong class="bold" lang="en">hidden layer</strong>).
+                        n'ayant aucun contact avec l'extérieur sont appelés couches cachées (<strong class="bold"
+                            lang="en">hidden layer</strong>).
                     </p>
                     <div class="figure-layout">
                         <p>
@@ -816,8 +846,8 @@
                 <section>
                     <h3>Fonction de coût</h3>
                     <p role="definition">
-                        Une fonction de coût communément appelée 
-                        <strong class="bold">fonction de perte ou fonction objective 
+                        Une fonction de coût communément appelée
+                        <strong class="bold">fonction de perte ou fonction objective
                             (<span lan="en">loss function</span>)
                         </strong>
                         est une méthode qui sert à évaluer dans quelle mesure un modèle spécifique modélise les données.
@@ -848,27 +878,30 @@
                 <section>
                     <h3>La descente du gradient</h3>
                     <p>
-                        La Descente du Gradient est un algorithme d’optimisation qui permet de trouver le 
+                        La Descente du Gradient est un algorithme d’optimisation qui permet de trouver le
                         <span class="bold">minimum</span> de
-                        n’importe quelle fonction 
-                        <span class="bold">convexe</span> 
-                        en convergeant progressivement vers ce minimum. Cette descente peut s’effectuer soit de manière globale 
-                        (<span class="bold">batch gradient</span>), soit par des lots 
+                        n’importe quelle fonction
+                        <span class="bold">convexe</span>
+                        en convergeant progressivement vers ce minimum. Cette descente peut s’effectuer soit de manière
+                        globale
+                        (<span class="bold">batch gradient</span>), soit par des lots
                         (<span class="bold">mini batch gradient</span>),
-                        soit de façonunitaire 
+                        soit de façonunitaire
                         (<span class="bold">stochastic gradient</span>). La première consiste à envoyer au
                         réseau la totalité des données d’un seul
                         trait, et de faire ensuite le calcul du gradient ainsi que la correction des coefficients. Alors
-                        que la seconde consiste à envoyer au réseau, les données par petit groupe d’une taille définit par
+                        que la seconde consiste à envoyer au réseau, les données par petit groupe d’une taille définit
+                        par
                         l’utilisateur. La dernière quant à elle, envoi une donnée à la fois dans le réseau.
                     </p>
                     <p>
-                        Dans notre cas, le réseau qu’on va créer utilisera la méthode par <q lang="en">mini batch</q>. En effet,
+                        Dans notre cas, le réseau qu’on va créer utilisera la méthode par <q lang="en">mini batch</q>.
+                        En effet,
                         celle-ci permet une
-                        meilleure convergence par rapport à la 
+                        meilleure convergence par rapport à la
                         <q lang="en">stochastic</q>,
-                        et nous permet de meilleures performances que la 
-                        <q lang="en">batch gradient</q>, 
+                        et nous permet de meilleures performances que la
+                        <q lang="en">batch gradient</q>,
                         car on ne charge pas entièrement nos données.
                     </p>
 
@@ -891,8 +924,8 @@
                             <strong class="bold">RAdam</strong>,
                             <strong class="bold">SGD</strong>,
                             <strong class="bold">RMSprop</strong>,
-                            etc.) utilisent un 
-                            <strong class="bold">hyperparamètre</strong> nommé 
+                            etc.) utilisent un
+                            <strong class="bold">hyperparamètre</strong> nommé
                             <strong class="bold italic" lang="en"><q>learning rate</q></strong>
                             (en français Taux d’apprentissage) pour converger vers le minimum de cette fonction.
                         </p>
@@ -919,13 +952,14 @@
                         </div>
                         <p>
                             L'algorithme de descente de gradient utilisé pour entraîner le réseau (i.e. mettre à jour
-                            les poids) est donné par : 
+                            les poids) est donné par :
                             <span style="font-size: 140%;">$\boldsymbol{{w'}_i=w_i - {\eta{.}\frac{dE}{dw_i}}}$</span>
                         </p>
                         <div>
                             <p>Où :</p>
                             <ul>
-                                <li><span class="bold">$\boldsymbol{w_i}$ : </span>Est la valeur des poids avant mise à jour</li>
+                                <li><span class="bold">$\boldsymbol{w_i}$ : </span>Est la valeur des poids avant mise à
+                                    jour</li>
                                 <li><span class="bold">$\boldsymbol{{w'}_i}$ : </span>Est la valeur des poids après mise à jour</li>
                                 <li><span class="bold">$\boldsymbol{\eta}$ : </span>Est le taux d'apprentissage (learning rate)</li>
                             </ul>
@@ -1002,6 +1036,58 @@
         </article>
     </main>
     <a href="#top" class="to-top"></a>
+    <script>
+        document.querySelector("#slider").addEventListener("change",()=>{
+            let perceptron = document.querySelector("#perceptron>img");
+            let monocouche = document.querySelector("#monocouche>img");
+            let monoError = document.querySelector("#perceptron-monocouche>img");
+            let bias1 = document.querySelector("#bias-1>img");
+            let bias2 = document.querySelector("#bias-2>img");
+            let bias3 = document.querySelector("#bias-3>img");
+            let bias4 = document.querySelector("#bias-4>img");
+            let xor0 = document.querySelector("#xor0>img");
+            let xor1 = document.querySelector("#xor1>img");
+            let xor2 = document.querySelector("#xor2>img");
+            let nt1 = document.querySelector("#NT1>img");
+            let nt2 = document.querySelector("#NT2>img");
+            let phaseAvant = document.querySelector("#forward-step>img");
+            let phaseArr = document.querySelector("#feedback-step>img");
+            let lr = document.querySelector("#min-grad>img");
+            if (localStorage.getItem("theme") === "theme-light") {
+                perceptron.src = "../img/perceptron-light.svg";
+                monocouche.src = "../img/monocouche-light.svg";
+                monoError.src = "../img/perceptron-apprentissage-light.svg";
+                bias1.src = "../img/bias_1-light.svg";
+                bias2.src = "../img/bias_2-light.svg";
+                bias3.src = "../img/bias_3-light.svg";
+                bias4.src = "../img/bias_4-light.svg";
+                xor0.src = "../img/XOR-0-light.svg";
+                xor1.src = "../img/XOR-1-light.svg";
+                xor2.src = "../img/XOR-2-light.svg";
+                nt1.src = "../img/NT1-light.svg";
+                nt2.src = "../img/NT2-light.svg";
+                phaseAvant.src = "../img/phse_avant-light.svg";
+                phaseArr.src = "../img/phse_arr-light.svg";
+                lr.src = "../img/lr-light.svg";
+            } else {
+                perceptron.src = "../img/perceptron-dark.svg";
+                monocouche.src = "../img/monocouche-dark.svg";
+                monoError.src = "../img/perceptron-apprentissage-dark.svg";
+                bias1.src = "../img/bias_1-dark.svg";
+                bias2.src = "../img/bias_2-dark.svg";
+                bias3.src = "../img/bias_3-dark.svg";
+                bias4.src = "../img/bias_4-dark.svg";
+                xor0.src = "../img/XOR-0-dark.svg";
+                xor1.src = "../img/XOR-1-dark.svg";
+                xor2.src = "../img/XOR-2-dark.svg";
+                nt1.src = "../img/NT1-dark.svg";
+                nt2.src = "../img/NT2-dark.svg";
+                phaseAvant.src = "../img/phse_avant-dark.svg";
+                phaseArr.src = "../img/phse_arr-dark.svg";
+                lr.src = "../img/lr-dark.svg";
+            }
+        });
+    </script>
     <script type="text/javascript" src="../js/switch.js"></script>
     <script type="text/javascript" src="../js/nav.js"></script>
     <script type="text/javascript" src="../js/body.js"></script>
