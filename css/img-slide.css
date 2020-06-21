@@ -44,7 +44,6 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -97,30 +96,29 @@ img {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
     .prev,
     .next,
     .text {
-        font-size: 11px
+        font-size: 11px;
     }
 }
