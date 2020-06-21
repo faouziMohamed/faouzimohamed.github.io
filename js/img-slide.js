@@ -15,12 +15,12 @@ function displaySlide(n) {
     if (n < 1) {
         slideIndex = slides.length;
     }
-    slides.forEach((element) => {
-        element.style.display = "none";
-    })
+    slides.forEach((node) => {
+        node.style.display = "none";
+    });
     dots.forEach((dot) => {
         dot.classList.remove("active");
-    })
+    });
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].classList.toggle("active");
     localStorage.setItem("slideIndex", slideIndex);
