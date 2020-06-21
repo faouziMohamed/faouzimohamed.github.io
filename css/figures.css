@@ -44,6 +44,10 @@ figure#pie-chart {
     text-align: center;
 }
 
+figure img{
+    cursor: pointer;
+}
+
 figure#pie-chart>svg {
     width: 300px;
     height: 300px;
