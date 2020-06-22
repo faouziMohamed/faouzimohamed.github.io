@@ -404,7 +404,8 @@
                                 <figure class="slide" id="ex-resol1">
                                     <span class="number-text">1/2</span>
                                     <img src="../img/ex-conv0.svg" alt="Extraction de caractéristiques">
-                                    <figcaption class="caption-text">La même image avec différentes résolution et une même définition
+                                    <figcaption class="caption-text">La même image avec différentes résolution et une
+                                        même définition
                                         Source : Wikipédia</figcaption>
                                 </figure>
                                 <figure class="slide" id="ex-resol2">
@@ -424,7 +425,203 @@
 
                     <section>
                         <h3>La profondeur des couleurs</h3>
-                        
+                        <p>
+                            En plus de sa définition, une image matricielle utilise plus ou moins de mémoire selon le
+                            codage
+                            des informations de couleur qu’elle possède. C’est ce que l’on nomme le codage de couleurs
+                            ou profondeur
+                            des couleurs, exprimé en bit par pixel (<span class="bold">bpp</span>) : 1, 4, 8, 16 bits.
+                            Plus elle est importante,
+                            plus l'image peut
+                            afficher de couleurs différentes. Elle est comprise entre 1 et 32 bits.
+                        </p>
+                        <section>
+                            <h4>Codage d'une image en noir et blanc</h4>
+                            <p>
+                                Pour ce type de codage, chaque pixel est soit noir, soit blanc. Il faut donc un bit pour
+                                coder un pixel
+                                0 pour noir, 1 pour blanc. Ce type de codage est économe en mémoire, il convient pour un
+                                plan ou un texte
+                                mais on voit rapidement ses limites lorsqu'il s'agit d'une photographie.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h4>Codage d'une image en niveaux de gris</h4>
+                            <p>
+                                Si on code chaque pixel sur deux bits, on aura 4 possibilités : noir, gris foncé, gris
+                                clair, blanc.
+                                L'image sera très peu nuancée mais plus que le noir et blanc. En général on code chaque
+                                pixel sur 8 bits =
+                                1 octet. On a alors 256 niveaux de gris (possibilités). L'image codée de 10000 pixels
+                                occupe alors 10000
+                                octets en mémoire.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h4>Codage d’une image en couleurs 8 bits</h4>
+                            <p>
+                                Dans ce cas on attache une palette de 28 = 256 couleurs à l'image. Chaque code (de 0 à
+                                255) désigne
+                                une couleur choisie parmi les 16 millions de couleurs de la palette <abbr
+                                    title="Rouge Bleu Vert">RVB</abbr> (voir ci-après) de manière
+                                pertinente ; c’est à dire qu’un programme recherche les couleurs les plus adaptées.
+                                Ainsi chaque pixel est
+                                codé sur 8 bits = 1 octet, donc l’image codée de 10000 pixels occupe 10000 octets en
+                                mémoire (ou 80000
+                                bits).
+                            </p>
+                        </section>
+
+                        <section>
+                            <h4>Codage d’une image en couleurs 24 bits</h4>
+                            <p>
+                                Dans ce cas, la couleur du pixel est codée sur la palette du mode <abbr
+                                    title="Rouge Bleu Vert">RVB</abbr> (16 millions de couleurs).
+                                Chaque pixel est codé 3 octets soit 24 bits ; par conséquent l’image codée de 10000
+                                pixels occupe 30000
+                                octets en mémoire. Ce type de codage très utilisé est gourmand en mémoire mais donne un
+                                très bon rendu
+                                d’image.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h4>Le rendu des couleurs</h4>
+                            <p>
+                                Le rendu des couleurs d’une image matricielle peut être assuré par le codage
+                                <em class="bold"><abbr title="Rouge Bleu Vert">RVB</abbr> 24 bits</em>. Pour chaque
+                                pixel de l’image, un triplet de nombres donne le niveau d’intensité lumineuse des trois
+                                sous-pixels rouge
+                                vert bleu formant le pixel. En 24 bits, cela permet d’obtenir plus de 16 millions de
+                                couleurs différentes.
+                                Pour une image en niveaux de gris, un seul nombre est requis par pixel, les sous-pixels
+                                recevant la même
+                                information.
+                            </p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h3>Le voisinage</h3>
+                        <p>
+                            Le plan de l’image est divisé en termes de formes rectangulaires ou hexagonales
+                            permettant ainsi
+                            l’exploitation de la notion de voisinage. Le voisinage d’un pixel est formé par
+                            l’ensemble des pixels qui se
+                            situent autour de ce même pixel. On définit aussi l’assiette comme étant l’ensemble de
+                            pixels définissant le
+                            voisinage pris en compte autour d’un pixel. On distingue deux types de voisinage :
+                        </p>
+                        <ul>
+                            <li><em class="bold">Voisinage à 4</em> : On ne prend en considération que les pixels
+                                qui ont un coté commun avec le pixel
+                                considéré.
+                            </li>
+                            <li><em class="bold">Voisinage à 8</em> : On prend en compte tous les pixels qui ont au
+                                moins un point en liaison avec le
+                                pixel considéré.
+                            </li>
+                        </ul>
+
+                        <div class="figure-layout slide-container">
+                            <div>
+                                <figure class="slide" id="ex-vois4">
+                                    <span class="number-text">1/2</span>
+                                    <img src="../img/ex-conv0.svg" alt="Extraction de caractéristiques">
+                                    <figcaption class="caption-text">Voisinage à 4</figcaption>
+                                </figure>
+                                <figure class="slide" id="ex-vois8">
+                                    <span class="number-text">2/2</span>
+                                    <img src="../img/ex-conv1.svg" alt="Détection de lignes">
+                                    <figcaption class="caption-text">Voisinage à 8</figcaption>
+                                </figure>
+                                <a class="prev" onclick="changeImg(-1)"><i class="fas fa-angle-left fa-3x"></i></a>
+                                <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
+                            </div>
+                            <div class="dot-wrapper">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>Luminescence</h3>
+                        <p>
+                            C’est le degré de luminosité des points de l’image. Elle est définie aussi comme étant
+                            le quotient
+                            de l’intensité lumineuse d’une surface par l’aire apparente de cette surface, pour un
+                            observateur lointain, le
+                            mot luminance est substitué au mot brillance, qui correspond à l’éclat d’un objet.
+                        </p>
+                        <p>Une bonne luminance se caractérise par :</p>
+                        <ul>
+                            <li>
+                                Des images lumineuses (brillantes),
+                            </li>
+                            <li>
+                                Un bon contraste : il faut éviter les images où la gamme de contraste tend vers le
+                                blanc ou le noir.
+                                Ces images entraînent des pertes de détails dans les zones sombres ou lumineuses.
+                            </li>
+                            <li>
+                                L’absence de parasites.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Bruit</h3>
+                        <p>
+                            Un bruit (parasite) dans une image est considéré comme un phénomène de brusque variation
+                            de
+                            l’intensité d’un pixel par rapport à ses voisins, il provient de l’éclairage des
+                            dispositifs optiques et
+                            électroniques du capteur. C’est un parasite qui représente certains défauts (poussière,
+                            petits nuages, baisse
+                            momentanée de l’intensité électrique sur les capteurs, ...etc.). Il se traduit par des
+                            taches de faible dimension
+                            et dont la distribution sur l’image est aléatoire. Nous verrons plus tard comment on
+                            peut les diminuer, voir
+                            les éliminer en utilisant les convolutions.
+                        </p>
+                        <p>
+                            Pour trouver donc les filtres dans une images, nous utiliserons des <q
+                                class="quotation"> convolutions </q> et
+                            ce qu’on appelle <q class="quotation"> Pooling </q>.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Contours</h3>
+                        <p>
+                            Les contours représentent la frontière entre les objets de l’image, ou la limite entre
+                            deux pixels dont
+                            les niveaux de gris représentant une différence significative. Dans une image numérique,
+                            les contours se
+                            situent entre les pixels appartenant à des régions ayant des intensités moyennes
+                            différentes ; il s’agit de
+                            contours de type <q> saut d’amplitude </q>. Un contour peut également correspondre à une
+                            variation locale
+                            d’intensité présentant un maximum ou un minimum ; il s’agit alors de contour <q
+                                class="quotation"> en toit </q>.
+                            Ces contours on peut les détecter sur une image en appliquant un filtre sur ce dernier.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Filtrage d’une image par convolutions</h3>
+                        <p>
+                            Le filtrage d'une image numérique permet de modifier son spectre spatial. On peut par
+                            exemple
+                            chercher à atténuer les hautes fréquences pour la rendre moins nette, à réduire le
+                            bruit, ou au contraire à
+                            accentuer les hautes fréquences pour accentuer la netteté. La dérivation est aussi une
+                            opération de filtrage,
+                            employée pour la détection des bords.
+                        </p>
                     </section>
                 </details>
             </section>
