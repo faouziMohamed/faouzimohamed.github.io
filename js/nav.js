@@ -108,31 +108,30 @@ function makeVoidNullLink() {
             e.preventDefault();
         });
     });
-    document.querySelector("#github")
-        .href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
+    document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }
 
 void(function main() {
     let ul = document.querySelectorAll(".submenu");
     let y = window.matchMedia("(max-width: 536px)");
-    let parent;
     
     /*Displaying or hidden submenus */
     toggleOpenAndCloseMenu();
 
     ul.forEach((submenu) => {
-        subMenuParent = submenu.parentElement;
+        let subMenuParent = submenu.parentElement;
         subMenuParent.querySelector("a").appendChild(newElement("i", {
             class: "fas fa-angle-down"
         }));
         showSubmenuEvent(subMenuParent);
         hideSubmenuEvent(subMenuParent);
     });
-    togglingSubMenuClass(y, ul);
+    togglingSubMenuClass(y);
     makeVoidNullLink();
     y.addListener(togglingSubMenuClass);
-
 }());
+
+
 
 /*
 if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {

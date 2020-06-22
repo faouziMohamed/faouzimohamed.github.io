@@ -3,7 +3,7 @@ function setTheme(themeName) {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
     //data-theme="switch"
-    if (themeName === 'theme-light') {
+    if (themeName === "theme-light") {
         document.querySelectorAll("img[data-theme='switch']").forEach((element) => {
             element.src = element.src.replace("dark", "light");
         });
