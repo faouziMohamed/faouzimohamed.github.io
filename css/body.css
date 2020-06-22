@@ -123,6 +123,20 @@ section.main-section h2 {
     font-size: 170%;
 }
 
+summary::marker{
+    color: var(--main-section-h2-color);
+}
+
+summary:focus{
+    outline: none;
+}
+
+summary h2 {
+    cursor: pointer;
+    color: var(--main-section-h2-color);
+    display: inline;
+}
+
 section.main-section h3 {
     color: var(--main-section-h3-color);
     font-size: 120%;
@@ -350,7 +364,7 @@ q.quotation {
 }
 
 .align-left,
-.align-left>li{
+.align-left>li {
     text-align: left;
 }
 
@@ -440,6 +454,7 @@ td.empty {
 }
 
 @media only screen and (max-width: 478px) {
+
     #fig-table-2,
     .table-center {
         width: 100%;
