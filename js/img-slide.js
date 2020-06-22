@@ -1,9 +1,10 @@
 let slideIndex = 1;
-
-function displaySlide(n) {
+/*
+function displaySlide(n, node="") {
     let i;
     let slides = document.querySelectorAll(".slide");
     let dots = document.querySelectorAll(".dot");
+    //let slider=document.querySelectorAll(".slider-container");
 
     if (!slides.length) {
         return;
@@ -25,22 +26,26 @@ function displaySlide(n) {
     dots[slideIndex - 1].classList.toggle("active");
     localStorage.setItem("slideIndex", slideIndex);
 }
-
+*/
 function changeImg(n) {
-    displaySlide(slideIndex += n);
+    //displaySlide(slideIndex += n);
 }
 
 function currentSlide(n) {
-    displaySlide(slideIndex = n);
+    //displaySlide(slideIndex = n);
 }
 
 void(function configureSlideShow() {
-    slideIndex = Number(localStorage.getItem("slideIndex"));
-    if (slideIndex) {
-        displaySlide(slideIndex);
-    } else {
-        slideIndex = 1;
-        localStorage.setItem("slideIndex", 1);
-        displaySlide(slideIndex);
-    }
+    let slideIndex;
+    document.querySelectorAll("[data-id*='slide_']").forEach( (slideShowParent) => {
+        //console.log(newElement);
+        slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
+        if (slideIndex) {
+            //displaySlide(slideIndex, slideShowParent);
+        } else {
+            slideIndex = 1;
+            localStorage.setItem(`slideIndex_${slideShowParent.dataset.id}`, 1);
+            //displaySlide(slideIndex, slideShowParent);
+        }
+    });
 }());

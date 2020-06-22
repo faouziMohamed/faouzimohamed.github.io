@@ -1,19 +1,6 @@
-function newTxtNode(text) {
-    return document.createTextNode(text);
-}
-
-function newElement(name, attributes = {}, text = "") {
-    let node = document.createElement(name);
-    const keys = Object.getOwnPropertyNames(attributes);
-    keys.forEach((key) => {
-        node.setAttribute(`${key}`, attributes[`${key}`]);
-    });
-
-    if (text) {
-        node.appendChild(newTxtNode(text));
-    }
-    return node;
-}
+import {
+    newElement
+} from "./nav.js";
 
 function insertAfter(el, ref) {
     ref.parentNode.insertBefore(el, ref.nextSibling);
@@ -30,7 +17,7 @@ function addLiToUl(ul, node, id) {
     return li;
 }
 
-void(function createListLeftNav() {
+function createListLeftNav() {
     let ul = document.querySelector("#ul-aside-nav");
     let title = document.querySelectorAll("section h2, section h3, section h4");
     let node = null,
@@ -79,10 +66,10 @@ void(function createListLeftNav() {
         }
         li.appendChild(ul_);
     }
-}());
+}
 
 
-void(function clickOnInternalLinkCSSTransition() {
+function clickOnInternalLinkCSSTransition() {
     let link = document.querySelectorAll("main a[href*='#']:not(#top)");
     let nav = document.querySelector("#header-nav");
     let c = link.length;
@@ -104,4 +91,16 @@ void(function clickOnInternalLinkCSSTransition() {
 
     document.body.addEventListener("touchstart", makeVisible, true); //For tactil 
     document.body.addEventListener("wheel", makeVisible, true); //for touchpad or mouse wheel
-}());
+}
+
+function executeBody(){
+    createListLeftNav();
+    clickOnInternalLinkCSSTransition();
+}
+export {
+    newElement,
+    createListLeftNav,
+    clickOnInternalLinkCSSTransition,
+    executeBody,
+};
+

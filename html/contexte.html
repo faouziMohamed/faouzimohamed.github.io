@@ -302,7 +302,7 @@
             </section>
 
             <section class="main-section">
-                <details>
+                <details open>
                     <summary>
                         <h2>Notions de base</h2>
                     </summary>
@@ -399,7 +399,7 @@
                             largeur × hauteur.(voire légende du figure précédente).
                         </p>
 
-                        <div class="figure-layout slide-container">
+                        <div class="figure-layout slide-container" data-id="slide_1">
                             <div>
                                 <figure class="slide" id="ex-resol1">
                                     <span class="number-text">1/2</span>
@@ -417,8 +417,10 @@
                                 <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
                             </div>
                             <div class="dot-wrapper">
-                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <!--<span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>-->
                             </div>
                         </div>
                     </section>
@@ -525,7 +527,7 @@
                             </li>
                         </ul>
 
-                        <div class="figure-layout slide-container">
+                        <div class="figure-layout slide-container" data-id="slide_2">
                             <div>
                                 <figure class="slide" id="ex-vois4">
                                     <span class="number-text">1/2</span>
@@ -541,8 +543,10 @@
                                 <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
                             </div>
                             <div class="dot-wrapper">
-                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <!--<span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>-->
                             </div>
                         </div>
                     </section>
@@ -1170,12 +1174,7 @@
         </article>
     </main>
     <a href="#top" class="to-top"></a>
-    <script type="text/javascript" src="../js/switch.js"></script>
-    <script type="text/javascript" src="../js/nav.js"></script>
-    <script type="text/javascript" src="../js/body.js"></script>
-    <script type="text/javascript" src="../js/modal-things.js"></script>
-    <script type="text/javascript" src="../js/img-slide.js"></script>
-
+    <script src="../js/script.js" type="module"></script>
     <noscript>
         <div id="noscript-layout">
             <p id="no-script-before-main">

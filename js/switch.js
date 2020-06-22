@@ -22,7 +22,7 @@ function toggleTheme() {
     }
 }
 // Immediate invocation function to set the theme on initial load
-void(function setThemeAfterPageLoaded() {
+function setThemeAfterPageLoaded() {
     if (localStorage.getItem("theme") === "theme-dark") {
         document.querySelector("#slider").checked = true;
         setTheme("theme-dark");
@@ -30,4 +30,9 @@ void(function setThemeAfterPageLoaded() {
         document.querySelector("#slider").checked = false;
         setTheme("theme-light");
     }
-}());
+}
+
+export {
+    setThemeAfterPageLoaded,
+    toggleTheme
+};

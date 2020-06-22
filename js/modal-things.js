@@ -37,10 +37,12 @@ function modalContent(img) {
     return modal;
 }
 
-void(function displayModalContent() {
+function displayModalContent() {
     document.querySelectorAll("figure img, figure svg").forEach((img) => {
         img.addEventListener("click", function () {
             document.body.appendChild(modalContent(this));
         });
     });
-}());
+}
+
+export{displayModalContent};

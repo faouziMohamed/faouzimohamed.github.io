@@ -37,15 +37,15 @@ function toggleOpenAndCloseMenu() {
     });
 }
 
-
 function newTxtNode(text) {
     return document.createTextNode(text);
 }
 
 function newElement(name, attributes = {}, text = "") {
     let node = document.createElement(name);
-    Object.getOwnPropertyNames(attributes).forEach((key) => {
-        node.setAttribute(key, attributes[`${key}`]);
+    const keys = Object.getOwnPropertyNames(attributes);
+    keys.forEach((key) => {
+        node.setAttribute(`${key}`, attributes[`${key}`]);
     });
 
     if (text) {
@@ -111,10 +111,10 @@ function makeVoidNullLink() {
     document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }
 
-void(function main() {
+function mainNavMenu() {
     let ul = document.querySelectorAll(".submenu");
     let y = window.matchMedia("(max-width: 536px)");
-    
+
     /*Displaying or hidden submenus */
     toggleOpenAndCloseMenu();
 
@@ -129,9 +129,13 @@ void(function main() {
     togglingSubMenuClass(y);
     makeVoidNullLink();
     y.addListener(togglingSubMenuClass);
-}());
+}
 
-
+export {
+    newTxtNode,
+    newElement,
+    mainNavMenu
+};
 
 /*
 if (window.matchMedia("(prefers-color-scheme)").media !== "not all") {
