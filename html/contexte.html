@@ -311,11 +311,120 @@
                         <p>
                             Une image numérique est une figure (dessin, icône, photographie...) créée, traitée, stockée
                             sous
-                            forme binaire (suite de 0 et de 1). On distingue 2 types d’image numérique : Les images 
-                            <em class="bold">vectorielles</em> et les images <em class="bold">matricielles</em>. 
-                            Dans notre travail nous utiliserons des images matricielles pour faire
+                            forme binaire (suite de 0 et de 1). On distingue 2 types d’image numérique : Les images
+                            <a href="#vectorielle"><em class="bold">vectorielles</em></a> et les images <a
+                                href="#matricielle"><em class="bold">matricielles</em></a>. Dans notre travail nous
+                            utiliserons des images matricielles pour faire
                             de la classification.
                         </p>
+
+                        <section id="vectorielle">
+                            <h4>Les images vectorielles</h4>
+                            <p>
+                                Une image vectorielle en informatique, est une image numérique composée d’objets
+                                géométriques
+                                individuels (segments de droite, polygones, arcs de cercle, etc.) définis chacun par
+                                divers attributs de forme,
+                                de position, de couleur, etc. (définis de manière mathématique). Ces images sont
+                                utilisées pour réaliser des
+                                schémas ou des plans mais pas exclusivement. Pour les images vectorielles on ne parle
+                                pas de Définition ni
+                                de Résolution à proprement parlé. Il n’y a que quand on transforme ces images
+                                vectorielles en images
+                                matricielles que ces notions rentrent en compte. Ils présentent 2 avantages : elles
+                                occupent peu de place en
+                                mémoire et peuvent être redimensionnées sans perte d’informations et sans effet dit :
+                                d’escalier (crénelage).
+                            </p>
+                        </section>
+                        <section id="matricielle">
+                            <h4>Les images matricielles</h4>
+                            <p>
+                                Une image matricielle est une représentation planaire d’une scène ou d’un objet situé en
+                                général dans un
+                                espace tridimensionnel. Lorsqu'on agrandit une image matricielle, on voit que celle-ci
+                                est composée d'un
+                                ensemble de "points", appelés <strong class="bold">pixels</strong>.
+                            </p>
+
+                            <div class="figure-layout">
+                                <figure id="ex-matriciel">
+                                    <img src="../img/matrix-img.svg" alt="Images matriciel"
+                                        title="Illustration de l’ensemble de point sur un image">
+                                    <figcaption>Illustration de l’ensemble de point sur un image matricielle
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </section>
+                    </section>
+                    <section>
+                        <h3>Caractéristiques d’une image matricielle</h3>
+                        <p>
+                            Une image matricielle est caractérisée essentiellement de ses pixels, sa définition et sa
+                            résolution. En effet,
+                            une image numérique est un fichier informatique pouvant être vu comme un tableau de nombres.
+                        </p>
+                        <ul>
+                            <li><strong class="bold">Le pixel</strong> représente ainsi le plus petit élément
+                                constitutif d’une image numérique.
+                                L’ensemble de
+                                ces pixels est contenu dans un tableau à deux dimensions constituant l’image.
+                            </li>
+                            <li>Sa <strong class="bold">définition</strong> est le nombre total de points (pixels)
+                                qui constituent l’image : C’est
+                                le nombre
+                                de colonnes (largeur) de l’image que multiplie son nombre de lignes (longueur) qui
+                                sont en réalité
+                                ses dimensions.
+                            </li>
+                        </ul>
+
+                        <div class="figure-layout">
+                            <figure id="ex-pixels">
+                            </figure>
+                            <figcaption>Exemple d’une image de résolution $11x12$</figcaption>
+                        </div>
+
+                        <p>
+                            Et bien sa résolution est le nombre de pixels contenus dans l'image par unité de
+                            longueur. La résolution
+                            définit la netteté et la qualité d'une image. Plus la densité des pixels constituant
+                            l’image matricielle est
+                            élevée, plus les points sont nombreux, plus votre image est précise dans les détails. La
+                            résolution permet
+                            ainsi d'établir le rapport entre la définition en pixels d'une image et la dimension
+                            réelle de sa représentation
+                            sur un support physique (affichage écran, impression papier...). On l’écrit souvent de
+                            la manière
+                            largeur × hauteur.(voire légende du figure précédente).
+                        </p>
+
+                        <div class="figure-layout slide-container">
+                            <div>
+                                <figure class="slide" id="ex-resol1">
+                                    <span class="number-text">1/2</span>
+                                    <img src="../img/ex-conv0.svg" alt="Extraction de caractéristiques">
+                                    <figcaption class="caption-text">La même image avec différentes résolution et une même définition
+                                        Source : Wikipédia</figcaption>
+                                </figure>
+                                <figure class="slide" id="ex-resol2">
+                                    <span class="number-text">2/2</span>
+                                    <img src="../img/ex-conv1.svg" alt="Détection de lignes">
+                                    <figcaption class="caption-text">Variation du nombre de pixels.</figcaption>
+                                </figure>
+                                <a class="prev" onclick="changeImg(-1)"><i class="fas fa-angle-left fa-3x"></i></a>
+                                <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
+                            </div>
+                            <div class="dot-wrapper">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3>La profondeur des couleurs</h3>
+                        
                     </section>
                 </details>
             </section>
