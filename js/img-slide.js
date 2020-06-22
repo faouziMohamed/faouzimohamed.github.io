@@ -35,7 +35,8 @@ function currentSlide(n) {
 }
 
 void(function configureSlideShow() {
-    if ((slideIndex = localStorage.getItem("slideIndex"))) {
+    slideIndex = Number(localStorage.getItem("slideIndex"));
+    if (slideIndex) {
         displaySlide(slideIndex);
     } else {
         slideIndex = 1;
