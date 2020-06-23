@@ -43,9 +43,9 @@ function displaySlide(n, slideShowParent) {
 }
 
 function changeImg(n, parent) {
-    let currentIndex = Number(localStorage.getItem(`slideIndex_${parent.parentNode.dataset.id}`)) + n;
-    localStorage.setItem(`slideIndex_${parent.parentNode.dataset.id}`, currentIndex);
-    displaySlide(currentIndex, parent.parentNode);
+    let currentIndex = Number(localStorage.getItem(`slideIndex_${parent.dataset.id}`)) + n;
+    localStorage.setItem(`slideIndex_${parent.dataset.id}`, currentIndex);
+    displaySlide(currentIndex, parent);
 }
 
 function currentSlide(n, parent) {
@@ -84,14 +84,14 @@ function arrow(direction){
 }
 
 void(function configureSlideShow() {
-    let i = 0;
-    document.querySelectorAll("[data-id*='slide']").forEach((slideShowParent) => {
+    let i = Math.random();
+    document.querySelectorAll(".slide-container").forEach((slideShowParent) => {
+        slideShowParent.dataset.id = i++;
         let figures = slideShowParent.querySelectorAll("figure");
         let slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
-        let slideContent = slideShowParent.querySelector(".slide-content");
 
-        slideContent.appendChild(arrow("left"));
-        slideContent.appendChild(arrow("right"));
+        slideShowParent.appendChild(arrow("left"));
+        slideShowParent.appendChild(arrow("right"));
         slideShowParent.appendChild(sliderDots(figures.length));
 
         if (slideIndex) {
