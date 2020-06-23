@@ -18,8 +18,7 @@ function newElement(name, attributes = {}, text = "") {
 function displaySlide(n, slideShowParent) {
     let slides = slideShowParent.querySelectorAll(".slide");
     let dots = slideShowParent.querySelectorAll(".dot");
-    let slideIndex = localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`);
-
+    let slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
     if (!slides.length) {
         return;
     }
@@ -43,10 +42,10 @@ function displaySlide(n, slideShowParent) {
     localStorage.setItem(`slideIndex_${slideShowParent.dataset.id}`, slideIndex);
 }
 
-function changeImg(n, slideShowParent) {
-    let currentIndex = localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`);
-    localStorage.setItem(`slideIndex_${slideShowParent.dataset.id}`, currentIndex + n);
-    displaySlide(n, slideShowParent);
+function changeImg(n, parent) {
+    let currentIndex = Number(localStorage.getItem(`slideIndex_${parent.parentNode.dataset.id}`)) + n;
+    localStorage.setItem(`slideIndex_${parent.parentNode.dataset.id}`, currentIndex);
+    displaySlide(currentIndex, parent.parentNode);
 }
 
 function currentSlide(n, parent) {
@@ -70,14 +69,32 @@ function sliderDots(n) {
     return dotsParent;
 }
 
+function arrow(direction){
+    let a;
+    if(direction==="left")
+    {
+        a = newElement("a",{class:"prev", onclick:"changeImg(-1,this.parentNode)"});
+        a.appendChild(newElement("i",{class:"fas fa-angle-left fa-3x"}));
+    }
+    else if(direction==="right"){
+        a = newElement("a",{class:"next", onclick:"changeImg(1,this.parentNode)"});
+        a.appendChild(newElement("i",{class:"fas fa-angle-right fa-3x"}));
+    }
+    return a;
+}
+
 void(function configureSlideShow() {
     let i = 0;
-    document.querySelectorAll("[data-id*='slide_']").forEach((slideShowParent) => {
+    document.querySelectorAll("[data-id*='slide']").forEach((slideShowParent) => {
         let figures = slideShowParent.querySelectorAll("figure");
-        let slideIndex = localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`);
+        let slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
+        let slideContent = slideShowParent.querySelector(".slide-content");
+
+        slideContent.appendChild(arrow("left"));
+        slideContent.appendChild(arrow("right"));
         slideShowParent.appendChild(sliderDots(figures.length));
+
         if (slideIndex) {
-            if(i===2) slideIndex=1;
             displaySlide(slideIndex, slideShowParent);
         } else {
             slideIndex = 1;
