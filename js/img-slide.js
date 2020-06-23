@@ -1,3 +1,11 @@
+function randomId(size) {
+    var randHash = '';
+    var characters = "ABCD45678EFGHITUhijklVWXYZabcdefgmnopqrJKLMNOPQRSstuvwxyz01239_";
+    for (var i = 0; i < size; i++) {
+        randHash += characters.charAt(Math.floor(Math.random() * 50));
+    }
+    return randHash;
+}
 function newTxtNode(text) {
     return document.createTextNode(text);
 }
@@ -69,16 +77,24 @@ function sliderDots(n) {
     return dotsParent;
 }
 
-function arrow(direction){
+function arrow(direction) {
     let a;
-    if(direction==="left")
-    {
-        a = newElement("a",{class:"prev", onclick:"changeImg(-1,this.parentNode)"});
-        a.appendChild(newElement("i",{class:"fas fa-angle-left fa-3x"}));
-    }
-    else if(direction==="right"){
-        a = newElement("a",{class:"next", onclick:"changeImg(1,this.parentNode)"});
-        a.appendChild(newElement("i",{class:"fas fa-angle-right fa-3x"}));
+    if (direction === "left") {
+        a = newElement("a", {
+            class: "prev",
+            onclick: "changeImg(-1,this.parentNode)"
+        });
+        a.appendChild(newElement("i", {
+            class: "fas fa-angle-left fa-3x"
+        }));
+    } else if (direction === "right") {
+        a = newElement("a", {
+            class: "next",
+            onclick: "changeImg(1,this.parentNode)"
+        });
+        a.appendChild(newElement("i", {
+            class: "fas fa-angle-right fa-3x"
+        }));
     }
     return a;
 }
@@ -86,7 +102,7 @@ function arrow(direction){
 void(function configureSlideShow() {
     let i = Math.random();
     document.querySelectorAll(".slide-container").forEach((slideShowParent) => {
-        slideShowParent.dataset.id = i++;
+        slideShowParent.dataset.id = randomId(30);
         let figures = slideShowParent.querySelectorAll("figure");
         let slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
 
