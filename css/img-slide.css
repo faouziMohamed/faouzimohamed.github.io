@@ -53,8 +53,8 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.black-arrow span,
-figcaption,
+.black-arrow  span,
+.slide-container figcaption,
 .black-arrow .prev,
 .black-arrow .next {
     color: #01161f;
