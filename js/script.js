@@ -22,7 +22,7 @@ function include(fileName, isModule = false) {
         prefix = "js/";
     }
 
-    (isModule == true) ? type = "module": type = "text/javascript";
+    (isModule === true) ? type = "module": type = "text/javascript";
 
     document.body.appendChild(newElement("script", {
         src: `${prefix}${fileName}`,
