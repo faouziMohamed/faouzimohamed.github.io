@@ -10,25 +10,26 @@
     <meta name="color-scheme" content="dark light">
     <meta name='description' content="Explication des relation entre l'intelligence artificielle et la classification
  automatiques des images ainsi que des règle utiles à utiliser" />
-    <script>
-        MathJax = {
-            tex: {
-                inlineMath: [
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <noscript>
-        <link rel="stylesheet" href="../css/noscript.css" />
-    </noscript>
+ <script>
+    MathJax = {
+        tex: {
+            inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+            ]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
+<!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<noscript>
+    <link rel="stylesheet" href="../css/noscript.css" />
+</noscript>
+
 </head>
 
 <body>
@@ -381,8 +382,9 @@
 
                         <div class="figure-layout">
                             <figure id="ex-pixels">
+                                <img src="../img/img_pixels.svg" alt="Image en pixel - resolution" title="Cliquez pour zoomer"/>
+                                <figcaption>Exemple d’une image de résolution $11×12$</figcaption>
                             </figure>
-                            <figcaption>Exemple d’une image de résolution $11x12$</figcaption>
                         </div>
 
                         <p>
@@ -517,16 +519,16 @@
                             </li>
                         </ul>
 
-                        <div class="figure-layout slide-container">
+                        <div class="figure-layout slide-container black-arrow">
                             <div class="slide-content">
                                 <figure class="slide" id="ex-vois4">
                                     <span class="number-text">1/2</span>
-                                    <img src="../img/ex-conv0.svg" alt="Extraction de caractéristiques">
+                                    <img src="../img/voisinage_hex.svg" alt="Voisinage à 4">
                                     <figcaption class="caption-text">Voisinage à 4</figcaption>
                                 </figure>
                                 <figure class="slide" id="ex-vois8">
                                     <span class="number-text">2/2</span>
-                                    <img src="../img/ex-conv1.svg" alt="Détection de lignes">
+                                    <img src="../img/voisinage_rect.svg" alt="Voisinage à 8">
                                     <figcaption class="caption-text">Voisinage à 8</figcaption>
                                 </figure>
                             </div>
