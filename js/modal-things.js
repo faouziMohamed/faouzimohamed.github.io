@@ -1,19 +1,6 @@
-function newTxtNode(text) {
-    return document.createTextNode(text);
-}
-
-function newElement(name, attributes = {}, text = "") {
-    let node = document.createElement(name);
-    const keys = Object.getOwnPropertyNames(attributes);
-    keys.forEach((key) => {
-        node.setAttribute(`${key}`, attributes[`${key}`]);
-    });
-
-    if (text) {
-        node.appendChild(newTxtNode(text));
-    }
-    return node;
-}
+import {
+    newElement
+} from "./nav.js";
 
 function modalContent(img) {
     let modal = newElement("section", {
@@ -45,4 +32,6 @@ function displayModalContent() {
     });
 }
 
-export{displayModalContent};
+export {
+    displayModalContent,
+};

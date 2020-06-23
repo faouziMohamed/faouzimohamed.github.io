@@ -35,9 +35,9 @@ function currentSlide(n) {
     //displaySlide(slideIndex = n);
 }
 
-void(function configureSlideShow() {
+function configureSlideShow() {
     let slideIndex;
-    document.querySelectorAll("[data-id*='slide_']").forEach( (slideShowParent) => {
+    document.querySelectorAll("[data-id*='slide_']").forEach((slideShowParent) => {
         //console.log(newElement);
         slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
         if (slideIndex) {
@@ -48,4 +48,9 @@ void(function configureSlideShow() {
             //displaySlide(slideIndex, slideShowParent);
         }
     });
-}());
+}
+
+
+export {
+    configureSlideShow
+};

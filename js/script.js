@@ -1,23 +1,28 @@
 import {
+    setThemeAfterPageLoaded,
+} from "./switch.js";
+
+import {
+    displayModalContent,
+} from "./modal-things.js";
+import {
     executeBody,
 } from "./body.js";
+
 import {
-    mainNavMenu,
+    executeMainNavMenu,
 } from "./nav.js";
 
-
+import {
+    configureSlideShow
+} from "./img-slide.js";
 void(function main() {
-    mainNavMenu();
+    setThemeAfterPageLoaded();
+    displayModalContent();
+    executeMainNavMenu();
     executeBody();
+    configureSlideShow();
 }());
-
-
-
-
-
-
-
-
 
 /*function newTxtNode(text) {
     return document.createTextNode(text);

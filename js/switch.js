@@ -30,6 +30,8 @@ function setThemeAfterPageLoaded() {
         document.querySelector("#slider").checked = false;
         setTheme("theme-light");
     }
+
+    document.querySelector("#slider").addEventListener("change",toggleTheme);
 }
 
 export {

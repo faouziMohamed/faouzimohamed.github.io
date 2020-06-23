@@ -2,6 +2,11 @@ import {
     newElement
 } from "./nav.js";
 
+export {
+    displayModalContent,
+} from "./modal-things.js";
+
+
 function insertAfter(el, ref) {
     ref.parentNode.insertBefore(el, ref.nextSibling);
 }
@@ -98,7 +103,6 @@ function executeBody(){
     clickOnInternalLinkCSSTransition();
 }
 export {
-    newElement,
     createListLeftNav,
     clickOnInternalLinkCSSTransition,
     executeBody,

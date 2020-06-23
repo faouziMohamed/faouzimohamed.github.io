@@ -78,7 +78,7 @@ function hideSubmenuEvent(parent) {
             return;
         }
 
-        while ((relatedTarget !== this) && (relatedTarget.nodeName !== "BODY")) {
+        while (relatedTarget && (relatedTarget !== this)) {
             relatedTarget = relatedTarget.parentNode;
         }
         if (relatedTarget !== this) {
@@ -111,7 +111,7 @@ function makeVoidNullLink() {
     document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }
 
-function mainNavMenu() {
+function executeMainNavMenu() {
     let ul = document.querySelectorAll(".submenu");
     let y = window.matchMedia("(max-width: 536px)");
 
@@ -134,7 +134,7 @@ function mainNavMenu() {
 export {
     newTxtNode,
     newElement,
-    mainNavMenu
+    executeMainNavMenu
 };
 
 /*
