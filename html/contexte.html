@@ -10,25 +10,25 @@
     <meta name="color-scheme" content="dark light">
     <meta name='description' content="Explication des relation entre l'intelligence artificielle et la classification
  automatiques des images ainsi que des règle utiles à utiliser" />
- <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ['$', '$'],
-                ['\\(', '\\)']
-            ]
-        },
-        svg: {
-            fontCache: 'global'
-        }
-    };
-</script>
-<!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<noscript>
-    <link rel="stylesheet" href="../css/noscript.css" />
-</noscript>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="../css/noscript.css" />
+    </noscript>
 
 </head>
 
@@ -404,15 +404,17 @@
                         <div class="figure-layout slide-container">
                             <figure class="slide" id="ex-resol1">
                                 <span class="number-text">1/2</span>
-                                <img src="../img/ex0-resolution.svg" alt="I mage dune voiture sur différentes résolution">
-                                <figcaption class="caption-text">La même image avec différentes résolution et une
-                                    même définition
-                                    Source : Wikipédia</figcaption>
+                                <img src="../img/ex0-resolution.svg"
+                                    alt="Image dune voiture sur différentes résolution">
+                                <figcaption class=" caption-text">
+                                    Image dune voiture sur différentes résolution
+                                </figcaption>
                             </figure>
                             <figure class="slide" id="ex-resol2">
                                 <span class="number-text">2/2</span>
-                                <img src="../img/ex1-resolution.svg" alt="I mage dune femme sur différentes résolution">
-                                <figcaption class="caption-text">Variation du nombre de pixels.</figcaption>
+                                <img src="../img/ex1-resolution.svg"
+                                    alt="Image dune femme sur différentes résolution">
+                                <figcaption class=" caption-text">Image dune femme sur différentes résolution</figcaption>
                             </figure>
                         </div>
                     </section>
@@ -625,6 +627,13 @@
                         couteuse à acquérir pour un être humain en raison notamment de contraintes physiques comme la
                         concentration, la fatigue ou le temps nécessité par un volume important de données images.
                     </p>
+
+                    <div class="figure-layout">
+                        <figure id="contraintes">
+                            <img src="../img/contraintes.svg" alt="contraintes physiques">
+                            <figcaption>Contraintes physiques</figcaption>
+                        </figure>
+                    </div>
                     <p>
                         Les applications de la classification automatique d’images sont nombreuses et le point commun à
                         toutes
@@ -692,29 +701,27 @@
                             échantillon est utilisé pour l'apprentissage des règles de classement.
                         </p>
 
-                        <div class="list-p">
-                            <p>
-                                La procédure est la suivante :
-                            </p>
-                            <ul>
-                                <li>
-                                    On montre à un algorithme d’apprentissage automatique des objets à classifier en lui
-                                    donnant aussi
-                                    les étiquettes d’appartenance d’une classe pour chaque objet.
-                                </li>
-                                <li>
-                                    Cet algorithme va chercher tout seul les règles qui permettent de reconnaitre ces
-                                    objets pour bien
-                                    les classer.
-                                </li>
-                                <li>
-                                    Après cet étape, l’algorithme aura découvert les différentes caractéristiques des
-                                    objets et on pourra
-                                    lui donner d’autres objets qu’il n’a pas encore vu pour nous donner leur classe
-                                    d’appartenance.
-                                </li>
-                            </ul>
-                        </div>
+                        <p>
+                            La procédure est la suivante :
+                        </p>
+                        <ul>
+                            <li>
+                                On montre à un algorithme d’apprentissage automatique des objets à classifier en lui
+                                donnant aussi
+                                les étiquettes d’appartenance d’une classe pour chaque objet.
+                            </li>
+                            <li>
+                                Cet algorithme va chercher tout seul les règles qui permettent de reconnaitre ces
+                                objets pour bien
+                                les classer.
+                            </li>
+                            <li>
+                                Après cet étape, l’algorithme aura découvert les différentes caractéristiques des
+                                objets et on pourra
+                                lui donner d’autres objets qu’il n’a pas encore vu pour nous donner leur classe
+                                d’appartenance.
+                            </li>
+                        </ul>
                     </section>
                     <section>
                         <h4>Jeu de données <strong lang="en">Dataset</strong></h4>
@@ -734,94 +741,89 @@
                             justes possible.
                         </p>
 
-                        <div class="list-p">
-                            <div id="list">
-                                <p>Le dataset doit être formaté de la façon suivante :</p>
-                                <ul>
-                                    <li>
-                                        <span class="bold">Train set</span> :
-                                        Celui-ci va être le plus volumineux en termes de
-                                        donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
-                                        la phase d’entrainement pour pouvoir s’approprier des
-                                        paramètres, et les ajuster au mieux. Certaines règles préconisent
-                                        qu’il soit composé de 80% des données disponibles. C’est la
-                                        phase d’apprentissage.
-                                    </li>
-                                    <li>
-                                        <span class="bold">Validation set</span> :
-                                        Quant à lui, on préconise d’avoir environ 10%
-                                        des données disponible. Ce jeu sera appelé une seule fois, à la
-                                        fin de chaque itération d’entrainement. Il va permettre
-                                        d’équilibrer le système. C’est la phase d’ajustage.
-                                    </li>
-                                    <li>
-                                        <span class="bold">Test set</span> :
-                                        Test set : Ce dernier va avoir un rôle bien différent des autres,
-                                        puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
-                                        avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
-                                        voir comment il arrive à prédire. C’est pour cela qu’il doit être
-                                        composé exclusivement de nouveaux échantillons, encore
-                                        jamais utilisé pour éviter de biaiser les résultats en lui envoyant
-                                        des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
-                                        de la phase d’entrainement ou de validation. Celui-ci encore
-                                        peut être estimé de l’ordre de 10% des données disponible.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id='fig' class="figure-layout">
-                                <figure id="pie-chart">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="50 0 700 800" enable-background="new 0 0 1000 1000" width="550"
-                                        height='450'>
-                                        <g clip-path="url(#clip0)" transform="translate(-718 -123)">
-                                            <g clip-path="url(#clip10)" class='train-set'>
-                                                <path d="M1133.71 274.228C1295.21 274.228 1426.21 
+                        <p>Le dataset doit être formaté de la façon suivante :</p>
+                        <ul>
+                            <li>
+                                <span class="bold">Train set</span> :
+                                Celui-ci va être le plus volumineux en termes de
+                                donnée. En effet, c’est sur ce jeu ci que le réseau va itérer durant
+                                la phase d’entrainement pour pouvoir s’approprier des
+                                paramètres, et les ajuster au mieux. Certaines règles préconisent
+                                qu’il soit composé de 80% des données disponibles. C’est la
+                                phase d’apprentissage.
+                            </li>
+                            <li>
+                                <span class="bold">Validation set</span> :
+                                Quant à lui, on préconise d’avoir environ 10%
+                                des données disponible. Ce jeu sera appelé une seule fois, à la
+                                fin de chaque itération d’entrainement. Il va permettre
+                                d’équilibrer le système. C’est la phase d’ajustage.
+                            </li>
+                            <li>
+                                <span class="bold">Test set</span> :
+                                Test set : Ce dernier va avoir un rôle bien différent des autres,
+                                puisqu’il ne servira pas à ajuster notre réseau. En effet, il va
+                                avoir pour rôle d’évaluer le réseau sous sa forme finale, et de
+                                voir comment il arrive à prédire. C’est pour cela qu’il doit être
+                                composé exclusivement de nouveaux échantillons, encore
+                                jamais utilisé pour éviter de biaiser les résultats en lui envoyant
+                                des donnés, qu’il connaîtrait déjà et qu’il aurait déjà appris lors
+                                de la phase d’entrainement ou de validation. Celui-ci encore
+                                peut être estimé de l’ordre de 10% des données disponible.
+                            </li>
+                        </ul>
+                        <div id='fig' class="figure-layout">
+                            <figure id="pie-chart">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="50 0 700 800"
+                                    enable-background="new 0 0 1000 1000" width="550" height='450'>
+                                    <g clip-path="url(#clip0)" transform="translate(-718 -123)">
+                                        <g clip-path="url(#clip10)" class='train-set'>
+                                            <path d="M1133.71 274.228C1295.21 274.228 1426.21 
                                                 405.23 1426.21 566.828 1426.21 728.427 1295.21 859.428 
                                                 1133.61 859.428 972.008 859.428 841.007 728.427 
                                                 841.007 566.828 841.007 536.124 845.839 505.611 855.327 
                                                 476.41L1133.61 566.828Z" fill-rule="evenodd" />
-                                            </g>
-                                            <g clip-path="url(#clip11)" class="validation-set">
-                                                <path d="M852.96 474.69C872.055 415.923 909.264 
-                                                364.71 959.254 328.39L1131.24 565.109Z" fill-rule="evenodd" />
-                                            </g>
-                                            <g clip-path="url(#clip12)" class="test-set">
-                                                <path d="M960.717 327.327C1010.71 291.007 1070.91 
-                                                271.445 1132.7 271.445L1132.7 564.046Z" fill-rule="evenodd" />
-                                            </g>
-                                            <g clip-path="url(#clip13)" class='train-set'>
-                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
-                                                    font-weight="700" font-size="29" transform="translate(1321.56 844)">
-                                                    Train set
-                                                    <tspan y='1cm' x='1.1cm'>80%</tspan>
-                                                </text>
-                                            </g>
-
-                                            <g clip-path="url(#clip15)" class="validation-set">
-                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
-                                                    font-weight="700" font-size="29" transform="translate(775.776 320)">
-                                                    Validation
-                                                    <tspan y='1cm' x='0.5cm'>set 10%</tspan>
-                                                </text>
-                                            </g>
-                                            <g clip-path="url(#clip18)" class="test-set">
-                                                <text font-family="Calibri,Calibri_MSFontService,sans-serif"
-                                                    font-weight="700" font-size="29" transform="translate(939.77 228)">
-                                                    Test set
-                                                    <tspan y='1cm' x='1.1cm'>10%</tspan>
-                                                </text>
-                                            </g>
-                                            <g clip-path="url(#clip20)" class="pie-chart-title">
-                                                <text font-family="Times new roman,Calibri_MSFontService,sans-serif"
-                                                    font-weight="700" font-size="44" transform="translate(775.08 180)"
-                                                    align='center'>DIVISION DU JEU DE DONNÉES</text>
-                                            </g>
                                         </g>
-                                    </svg>
-                                    <figcaption>Division du jeu de données en 3 groupes</figcaption>
-                                </figure>
-                            </div>
+                                        <g clip-path="url(#clip11)" class="validation-set">
+                                            <path d="M852.96 474.69C872.055 415.923 909.264 
+                                                364.71 959.254 328.39L1131.24 565.109Z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#clip12)" class="test-set">
+                                            <path d="M960.717 327.327C1010.71 291.007 1070.91 
+                                                271.445 1132.7 271.445L1132.7 564.046Z" fill-rule="evenodd" />
+                                        </g>
+                                        <g clip-path="url(#clip13)" class='train-set'>
+                                            <text font-family="Calibri,Calibri_MSFontService,sans-serif"
+                                                font-weight="700" font-size="29" transform="translate(1321.56 844)">
+                                                Train set
+                                                <tspan y='1cm' x='1.1cm'>80%</tspan>
+                                            </text>
+                                        </g>
+
+                                        <g clip-path="url(#clip15)" class="validation-set">
+                                            <text font-family="Calibri,Calibri_MSFontService,sans-serif"
+                                                font-weight="700" font-size="29" transform="translate(775.776 320)">
+                                                Validation
+                                                <tspan y='1cm' x='0.5cm'>set 10%</tspan>
+                                            </text>
+                                        </g>
+                                        <g clip-path="url(#clip18)" class="test-set">
+                                            <text font-family="Calibri,Calibri_MSFontService,sans-serif"
+                                                font-weight="700" font-size="29" transform="translate(939.77 228)">
+                                                Test set
+                                                <tspan y='1cm' x='1.1cm'>10%</tspan>
+                                            </text>
+                                        </g>
+                                        <g clip-path="url(#clip20)" class="pie-chart-title">
+                                            <text font-family="Times new roman,Calibri_MSFontService,sans-serif"
+                                                font-weight="700" font-size="44" transform="translate(775.08 180)"
+                                                align='center'>DIVISION DU JEU DE DONNÉES</text>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <figcaption>Division du jeu de données en 3 groupes</figcaption>
+                            </figure>
                         </div>
                     </section>
                 </section>
@@ -846,71 +848,67 @@
                         classification
                         parvient à classifier correctement.
                     </p>
-                    <div class="list-p">
-                        <p>
-                            Prenons l’exemple d’un classifieur binaire, c’est-à-dire, qui prédit 2 classes notées classe
-                            0 et classe
-                            1. Pour mesurer les performances de ce classifieur, il est d’usage de distinguer 4 types
-                            d’éléments classés
-                            pour la classe voulue :
-                        </p>
-                        <ul class="align-left">
-                            <li>
-                                <strong>Vrai positif (VP)</strong> &nbsp;&nbsp;&nbsp;:
-                                Elément de la classe 1 correctement prédit
-                            </li>
-                            <li>
-                                <strong>Vrai Négatif (VN)</strong> &nbsp;:
-                                Elément de la classe 0 correctement prédit
-                            </li>
-                            <li>
-                                <strong>Faux positif (FP)</strong>&nbsp; &nbsp;:
-                                Elément de la classe 0 correctement prédit
-                            </li>
-                            <li>
-                                <strong>Faux Négatif (FN)</strong> :
-                                Elément de la classe 0 correctement prédit
-                            </li>
-                        </ul>
-                    </div>
+                    <p>
+                        Prenons l’exemple d’un classifieur binaire, c’est-à-dire, qui prédit 2 classes notées classe
+                        0 et classe
+                        1. Pour mesurer les performances de ce classifieur, il est d’usage de distinguer 4 types
+                        d’éléments classés
+                        pour la classe voulue :
+                    </p>
+                    <ul class="align-left">
+                        <li>
+                            <strong>Vrai positif (VP)</strong> &nbsp;&nbsp;&nbsp;:
+                            Elément de la classe 1 correctement prédit
+                        </li>
+                        <li>
+                            <strong>Vrai Négatif (VN)</strong> &nbsp;:
+                            Elément de la classe 0 correctement prédit
+                        </li>
+                        <li>
+                            <strong>Faux positif (FP)</strong>&nbsp; &nbsp;:
+                            Elément de la classe 0 correctement prédit
+                        </li>
+                        <li>
+                            <strong>Faux Négatif (FN)</strong> :
+                            Elément de la classe 0 correctement prédit
+                        </li>
+                    </ul>
 
-                    <div class="table-p">
-                        <p>
-                            Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
-                            matrice de confusion.
-                            Dans le cas d’un classifieur binaire, on obtient :
-                        </p>
-                        <figure class="table-center center">
-                            <figcaption>Matrice de confusion</figcaption>
-                            <table>
-                                <thead rowspan="2">
-                                    <tr>
-                                        <td colspan="2" rowspan="2" class="empty"></td>
-                                        <th scope="col" colspan="2">
-                                            Classe prédite
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Classe 0</th>
-                                        <th scope="col">Classe 1</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
-                                        <th scope="row">Classe 0</th>
-                                        <td>VN</td>
-                                        <td>FN</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Classe 1</th>
-                                        <td>FP</th>
-                                        <td>VP</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </figure>
-                    </div>
+                    <p>
+                        Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
+                        matrice de confusion.
+                        Dans le cas d’un classifieur binaire, on obtient :
+                    </p>
+                    <figure class="table-center center">
+                        <figcaption>Matrice de confusion</figcaption>
+                        <table>
+                            <thead rowspan="2">
+                                <tr>
+                                    <td colspan="2" rowspan="2" class="empty"></td>
+                                    <th scope="col" colspan="2">
+                                        Classe prédite
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Classe 0</th>
+                                    <th scope="col">Classe 1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
+                                    <th scope="row">Classe 0</th>
+                                    <td>VN</td>
+                                    <td>FN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Classe 1</th>
+                                    <td>FP</th>
+                                    <td>VP</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
 
                     <section>
                         <h4>Exemple</h4>
@@ -928,83 +926,79 @@
                             est testé avec un jeu de 200 mails, dont 100 sont des courriels pertinents et les 100 autres
                             sont des pourriels.
                         </p>
-                        <div class="liste-p">
-                            <p>Pour cela, on veut savoir :</p>
-                            <ul>
-                                <li>Combien de courriels seront faussement estimés comme des pourriels (fausses alarmes)
-                                    et</li>
-                                <li>Combien de pourriels ne seront pas estimés comme tels et classifiés à tort comme
-                                    courriels.</li>
-                            </ul>
-                            <p>
-                                La matrice de confusion suivante se lit alors comme suit :
-                            </p>
-                            <ul>
-                                <li>
-                                    Horizontalement, sur les 100 courriels initiaux (i.e. : 95+5), 95 ont été estimés
-                                    par le système de
-                                    classification comme tels et 5 ont été estimés comme pourriels (i.e. : 5
-                                    faux-négatifs),
-                                </li>
-                                <li>
-                                    Horizontalement, sur les 100 pourriels initiaux (i.e. : 3+97), 3 ont été estimés
-                                    comme courriels
-                                    (i.e. : 3 faux-positifs) et 97 ont été estimés comme pourriels,
-                                </li>
-                                <li>
-                                    Verticalement, sur les 98 mails (i.e. : 95+3) estimés par le système comme
-                                    courriels, 3 sont en fait
-                                    des pourriels,
-                                </li>
-                                <li>
-                                    Verticalement, sur les 102 mails (i.e. : 5+97) estimés par le système comme
-                                    pourriels, 5 sont en fait
-                                    des courriels.
-                                </li>
-                                <li>
-                                    Diagonalement (du haut gauche, au bas droit), sur les 200 courriels initiaux, 192
-                                    (95 + 97) ont été
-                                    estimés correctement par le système.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="table-p">
-                            <p>
-                                Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
-                                matrice de confusion.
-                                Dans le cas d’un classifieur binaire, on obtient :
-                            </p>
-                            <figure class="table-center-2 center" id="fig-table-2">
-                                <figcaption>Exemple de matrice de confusion</figcaption>
-                                <table id="table-2">
-                                    <thead rowspan="2">
-                                        <tr>
-                                            <td colspan="2" rowspan="2" class="empty"></td>
-                                            <th scope="col" colspan="2">
-                                                Classe estimée par le classificateur
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">Courriel</th>
-                                            <th scope="col">Pourriel</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
-                                            <th scope="row">Courriel</th>
-                                            <td>95 (vrais positifs)</td>
-                                            <td>5 (faux négatifs)</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Pourriel</th>
-                                            <td>3 (faux positifs)</th>
-                                            <td>97 (vrais négatifs)</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </figure>
-                        </div>
+                        <p>Pour cela, on veut savoir :</p>
+                        <ul>
+                            <li>Combien de courriels seront faussement estimés comme des pourriels (fausses alarmes)
+                                et</li>
+                            <li>Combien de pourriels ne seront pas estimés comme tels et classifiés à tort comme
+                                courriels.</li>
+                        </ul>
+                        <p>
+                            La matrice de confusion suivante se lit alors comme suit :
+                        </p>
+                        <ul>
+                            <li>
+                                Horizontalement, sur les 100 courriels initiaux (i.e. : 95+5), 95 ont été estimés
+                                par le système de
+                                classification comme tels et 5 ont été estimés comme pourriels (i.e. : 5
+                                faux-négatifs),
+                            </li>
+                            <li>
+                                Horizontalement, sur les 100 pourriels initiaux (i.e. : 3+97), 3 ont été estimés
+                                comme courriels
+                                (i.e. : 3 faux-positifs) et 97 ont été estimés comme pourriels,
+                            </li>
+                            <li>
+                                Verticalement, sur les 98 mails (i.e. : 95+3) estimés par le système comme
+                                courriels, 3 sont en fait
+                                des pourriels,
+                            </li>
+                            <li>
+                                Verticalement, sur les 102 mails (i.e. : 5+97) estimés par le système comme
+                                pourriels, 5 sont en fait
+                                des courriels.
+                            </li>
+                            <li>
+                                Diagonalement (du haut gauche, au bas droit), sur les 200 courriels initiaux, 192
+                                (95 + 97) ont été
+                                estimés correctement par le système.
+                            </li>
+                        </ul>
+                        <p>
+                            Ces informations peuvent être rassemblés et visualisés sous forme de tableau dans une
+                            matrice de confusion.
+                            Dans le cas d’un classifieur binaire, on obtient :
+                        </p>
+                        <figure class="table-center-2 center" id="fig-table-2">
+                            <figcaption>Exemple de matrice de confusion</figcaption>
+                            <table id="table-2">
+                                <thead rowspan="2">
+                                    <tr>
+                                        <td colspan="2" rowspan="2" class="empty"></td>
+                                        <th scope="col" colspan="2">
+                                            Classe estimée par le classificateur
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Courriel</th>
+                                        <th scope="col">Pourriel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" id="rotate" rowspan="2">Classe réelle</th>
+                                        <th scope="row">Courriel</th>
+                                        <td>95 (vrais positifs)</td>
+                                        <td>5 (faux négatifs)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Pourriel</th>
+                                        <td>3 (faux positifs)</th>
+                                        <td>97 (vrais négatifs)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
                         <p class="alinea">
                             Cette notion s'étend à un nombre quelconque de classes. On peut normaliser cette matrice
                             pour en simplifier
@@ -1019,22 +1013,54 @@
                             manière générale, on préfère donner une fraction d'erreurs à un nombre total d'erreurs.
                             Voici quelques exemples de mesures de performance souvent utilisées :
                         </p>
-                        <div class="math-p">
-                            <p>
-                                La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi
-                                les points que l’on a prédits positifs :
-                                $$précision = {VP \over VP + FP}.$$
-                            </p>
-                            <p>
-                                Rappel. Proportion d’éléments bien classés par rapport au nombre d’éléments de la classe
-                                à prédire :
-                                $$Rappel = {VP \over VP + FN}$$
-                            </p>
-                            <p>
-                                F-mesure. Mesure de compromis entre précision et rappel :
-                                $$F - mesure = 2×{Précision × Rapel \over Précision + Rapel}$$
-                            </p>
+                        <p>
+                            La <strong>précision</strong>, c’est-à-dire la proportion de prédictions correctes parmi
+                            les points que l’on a prédits positifs :
+                            $$précision = {VP \over VP + FP}.$$
+                        </p>
+                        <p>
+                            Rappel. Proportion d’éléments bien classés par rapport au nombre d’éléments de la classe
+                            à prédire :
+                            $$Rappel = {VP \over VP + FN}$$
+                        </p>
+                        <p>
+                            F-mesure. Mesure de compromis entre précision et rappel :
+                            $$F - mesure = 2×{Précision × Rapel \over Précision + Rapel}$$
+                        </p>
 
+                        <p>
+                            Dans notre cas d'étude on va représenter les matrices de confusions de la manière suivante :
+                        </p>
+                        <p>
+                            On pourrait avoir deux cas de figures :
+                        </p>
+                        <ul>
+                            <li>
+                                Une matrice dont la diagonale est très foncé (sombre) : Ce qui veut dire que le système
+                                de classifcation
+                                fait bien sont travail.
+                            </li>
+                            <li>
+                                Une matrice dont la diagonale ne contient pas le maximum de couleur foncés: dans ce cas
+                                il faut
+                                revoir le système et modifier certains paramètres afin que cette matrice devien
+                                diagonal.
+                            </li>
+                        </ul>
+
+                        <div class="figure-layout slide-container dark-font">
+                            <figure class="slide" id="ex1-matrice-confusion">
+                                <span class="number-text">1/2</span>
+                                <img src="../img/conf-matrix-1.svg" alt="Exemple d'une matrice de confusion diagonal">
+                                <figcaption class="caption-text">Exemple d'une matrice de confusion diagonal
+                                </figcaption>
+                            </figure>
+                            <figure class="slide" id="ex2-matrice-confusion">
+                                <span class="number-text">2/2</span>
+                                <img src="../img/conf-matrix-2.svg"
+                                    alt="Exemple d'une matrice de confusion non diagonal">
+                                <figcaption class="caption-text">Matrice de confusion non diagonal.</figcaption>
+                            </figure>
                         </div>
                     </section>
                 </section>

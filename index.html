@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>La classification automatique</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name='author' content="Faouzi Mohamed">
-    <meta name="keywords" content="classification, deep-learning"/>
+    <meta name="keywords" content="classification, deep-learning" />
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--<link rel='stylesheet'
                     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>-->
     <noscript>
-            <link rel="stylesheet" href="css/noscript.css"/>
+        <link rel="stylesheet" href="css/noscript.css" />
     </noscript>
 </head>
 
@@ -20,9 +20,7 @@
     <span id="top"></span>
     <nav id='header-nav'>
         <div id="menu-icon-wrapper">
-            <svg version="1.1" x="0px" y="0px" 
-                viewBox="0 0 1000 1000" 
-                enable-background="new 0 0 1000 1000"
+            <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000"
                 xml:space="preserve" width="32" height='32'>
                 <g>
                     <path d="M896.6,291.5H103.5c-51.5,0-93.5-41.9-93.5-93.5c0-51.5,
@@ -145,9 +143,7 @@
             <span class="slider round"></span>
         </label>
         <a href="#" id="github">
-            <svg version="1.1" x="0px" y="0px" 
-                width="32" height="32" 
-                viewBox="0 0 1000 1000" aria-hidden="true"
+            <svg version="1.1" x="0px" y="0px" width="32" height="32" viewBox="0 0 1000 1000" aria-hidden="true"
                 enable-background="new 0 0 1000 1000" xml:space="preserve">
                 <g>
                     <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
@@ -199,16 +195,36 @@
                 </p>
                 <p>
                     Vous avez généralement le choix entre deux approches : la classification non-supervisée et
-                    supervisé.</p>
+                    supervisé.
+                </p>
+
                 <p>
                     La classification non-supervisée consiste à laisser l'ordinateur calculer automatiquement les
-                    classes sur la
-                    base de plusieurs (en tout cas plus d'une). Cela vous laisse la tâche d'identifier le bon nombre et
-                    la nature
-                    réelle des classes obtenues. Dans l’approche supervisée, chaque image est associée à une étiquette
-                    qui décrit
-                    sa classe d’appartenance. Dans notre travail on s’intéresse uniquement sur l’approche supervisée.
+                    classes sur la base de plusieurs (en tout cas plus d'une). Cela vous laisse la tâche d'identifier le
+                    bon nombre et
+                    la nature réelle des classes obtenues.
                 </p>
+
+                <div class="figure-layout">
+                    <figure id="non-supervisee">
+                        <img src="img/unsup-learn.svg">
+                        <figcaption>Approche Non supervisée</figcaption>
+                    </figure>
+                </div>
+
+                <p>Dans l’approche supervisée, chaque image est associée à une étiquette
+                    qui décrit sa classe d’appartenance. Dans notre travail on s’intéresse uniquement sur l’approche
+                    supervisée.
+                </p>
+
+
+                <div class="figure-layout">
+                    <figure id="supervisee">
+                        <img src="img/sup-learn.svg">
+                        <figcaption>Approche supervisée</figcaption>
+                    </figure>
+                </div>
+
             </section>
 
             <section class="main-section" role="doc-abstract">
@@ -264,14 +280,14 @@
         </article>
     </main>
     <a href="#top" class="to-top"></a>
-    <script type="module" src="js/script.js" ></script>
-    <noscript >
+    <script type="module" src="js/script.js"></script>
+    <noscript>
         <div id="noscript-layout">
             <p id="no-script-before-main">
                 <i class="fa fa-warning"></i>
                 <i class="fas fa-exclamation-triangle"></i>
                 <span>La page web fonctionne bien avec javascript activé</span>
-            </p>        
+            </p>
         </div>
     </noscript>
 </body>

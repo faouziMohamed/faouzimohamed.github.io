@@ -52,6 +52,18 @@ figure#pie-chart>svg {
     background-color: var(--svg-bg);
 }
 
+.dark-font{
+    background-color: #000c11;
+}
+
+.dark-font [id*="matrice"] img {
+    background-color: #000c11;
+}
+
+.dark-font figcaption {
+    color: antiquewhite;
+}
+
 figure#pie-chart>svg {
     padding: 20px;
     width: 100%;
@@ -60,6 +72,7 @@ figure#pie-chart>svg {
 
 .figure-layout figure {
     width: 90%;
+    max-width: 590px;
     margin: auto;
     text-align: center;
 }

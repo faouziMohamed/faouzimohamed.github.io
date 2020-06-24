@@ -15,10 +15,34 @@
     max-width: 770px;
     position: relative;
     margin: auto;
-    background-color: #517468;
-    padding: 8px 8px;
+    padding: 15px 8px;
+    background-color: #000c11;
 }
 
+figcaption.caption-text {
+    color: antiquewhite;
+}
+
+.black-arrow span,
+.black-arrow .prev,
+.black-arrow .next {
+    color: #a0850b;
+    z-index: 1;
+    font-size: 110%;
+}
+
+.black-arrow img {
+    max-width: 100%;
+    opacity: var(--slide-opacity);
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin{
+    margin: 0em;
+}
 
 .slide {
     position: relative;
@@ -53,22 +77,6 @@ img {
     border-radius: 3px 0 0 3px;
 }
 
-.black-arrow  span,
-.slide-container figcaption,
-.black-arrow .prev,
-.black-arrow .next {
-    color: #01161f;
-    z-index: 1;
-    font-size: 110%;
-}
-
-.black-arrow img {
-    max-width: 100%;
-    opacity: var(--slide-opacity);
-}
-
-
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -88,7 +96,6 @@ img {
     position: absolute;
     top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot-wrapper {
     text-align: center;
