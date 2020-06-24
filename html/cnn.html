@@ -307,6 +307,7 @@
                                 <figcaption>Application d'un filtre de convolution</figcaption>
                             </figure>
                         </div>
+                        
                         <p>
                             Appliquer donc une convolution consiste à sélectionner un pixel $\boldsymbol{𝒊}$ sur une
                             image, le
@@ -319,33 +320,28 @@
                             les valeurs négatives reçues en entrées par des zéros. Cela peut sembler étrange mais voici
                             certains résultats :
                         </p>
-                        <div class="figure-layout slide-container">
-                            <figure class="slide" id="ex-conv0">
-                                <span class="number-text">1/5</span>
+                        <div class="figure-layout slide-container" id="conv-slide">
+                            <figure id="ex-conv0">
                                 <img src="../img/ex-conv0.svg" alt="Extraction de caractéristiques">
-                                <figcaption class="caption-text hide">Extraction de caractéristiques</figcaption>
+                                <figcaption class="hide">Extraction de caractéristiques</figcaption>
                             </figure>
-                            <figure class="slide" id="ex-conv1">
-                                <span class="number-text">2/5</span>
+                            <figure id="ex-conv1">
                                 <img src="../img/ex-conv1.svg" alt="Détection de lignes">
-                                <figcaption class="caption-text hide">Détection de lignes verticales</figcaption>
+                                <figcaption class="hide">Détection de lignes verticales</figcaption>
                             </figure>
-                            <figure class="slide" id="ex-conv2">
-                                <span class="number-text">3/5</span>
+                            <figure id="ex-conv2">
                                 <img src="../img/ex-conv2.svg" alt="Détection de lignes">
-                                <figcaption class="caption-text hide">Détection de lignes horizontales</figcaption>
+                                <figcaption class="hide">Détection de lignes horizontales</figcaption>
                             </figure>
-                            <figure class="slide" id="ex-conv3">
-                                <span class="number-text">4/5</span>
+                            <figure id="ex-conv3">
                                 <img src="../img/ex-conv3.svg" alt="Détection de formes">
-                                <figcaption class="caption-text hide">Détection de formes (<span lang="en">shape</span>)
+                                <figcaption class="hide">Détection de formes (<span lang="en">shape</span>)
                                 </figcaption>
                             </figure>
-                            <figure class="slide" id="ex-conv4">
-                                <span class="number-text">5/5</span>
+                            <figure id="ex-conv4">
                                 <img src="../img/ex-conv4.svg"
                                     alt="Extraction de caractéristiques pour la reconnaisance d'un chat">
-                                <figcaption class="caption-text hide">Détection de formes</figcaption>
+                                <figcaption class="hide">Détection de formes</figcaption>
                             </figure>
                             <a class="prev" onclick="changeImg(-1)"><i class="fas fa-angle-left fa-3x"></i></a>
                             <a class="next" onclick="changeImg(1)"><i class="fas fa-angle-right fa-3x"></i></a>
@@ -393,11 +389,17 @@
                         divisées par deux par ce processus. Les caractéristiques sont maintenues malgré cette
                         compression.
                     </p>
-                    <div class="figure-layout">
+                    <div class="figure-layout slide-container" id="slide-pool">
                         <figure id="ex-max-pool">
                             <img src="../img/maxPooling.svg" alt="Exemple de max pooling">
                             <figcaption>Pooling maximal</figcaption>
                         </figure>
+
+                            <figure id="gif-pooling">
+                                <img src="../img/pooling.gif" title="Application d'une couche de pooling"
+                                    alt="Convolution.gif" />
+                                <figcaption>Diminution des caractéristique avec un max pooling</figcaption>
+                            </figure>
                     </div>
                 </section>
                 <section>
@@ -463,7 +465,6 @@
 
                 <section>
                     <h3>La couche de convolution</h3>
-                    <div class="list-p">
                         <p>La couche de convolution possède quatre hyperparamètres :</p>
                         <ol>
                             <li>Le nombre de filtres $\boldsymbol{k}$</li>
@@ -480,19 +481,23 @@
                                 perd donc beaucoup
                                 d'informations rapidement, ce qui rend la tâche d'extraction de features difficile.</li>
                         </ol>
-                    </div>
+
+                        <div class="figure-layout">
+                            <figure id="gif-conv">
+                                <img src="../img/convolution.gif" title="Application d'un noyau de convolution"
+                                    alt="Convolution.gif" />
+                                <figcaption>Application d'un filtre de convolution</figcaption>
+                            </figure>
+                        </div>
                 </section>
                 <section>
                     <h3>La couche de pooling</h3>
-                    <div>
                         <p>La couche de pooling présente seulement deux hyperparamètres :</p>
                         <ol>
-                            <li>La taille \boldsymbol{f} des cellules : l'image est découpée en cellules carrées de
-                                taille \boldsymbol{f × f} pixels</li>
-                            <li>Le pas \boldsymbol{s} : les cellules sont séparées les unes des autres de \boldsymbol{s}
-                                pixels</li>
+                            <li>La taille $\boldsymbol{f}$ des cellules : l'image est découpée en cellules carrées de
+                                taille $\boldsymbol{f × f}$ pixels</li>
+                            <li>Le pas $\boldsymbol{s}$ : les cellules sont séparées les unes des autres de $\boldsymbol{s} pixels$</li>
                         </ol>
-                    </div>
                 </section>
             </section>
 

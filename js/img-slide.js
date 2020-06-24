@@ -6,6 +6,7 @@ function randomId(size) {
     }
     return randHash;
 }
+
 function newTxtNode(text) {
     return document.createTextNode(text);
 }
@@ -99,13 +100,22 @@ function arrow(direction) {
     return a;
 }
 
-void(function configureSlideShow() {
-    let i = Math.random();
+void(function main() {
     document.querySelectorAll(".slide-container").forEach((slideShowParent) => {
-        slideShowParent.dataset.id = randomId(30);
+        slideShowParent.dataset.id = randomId(35);
         let figures = slideShowParent.querySelectorAll("figure");
         let slideIndex = Number(localStorage.getItem(`slideIndex_${slideShowParent.dataset.id}`));
 
+        let i = 1;
+        figures.forEach((slide) => {
+            slide.classList.add("slide");
+            slide.insertBefore(newElement("span", {
+                class: "number-text"
+            }, `${i++}/${figures.length}`), slide.querySelector("img"));
+        });
+        slideShowParent.querySelectorAll("figcaption").forEach((figcaption) => {
+            figcaption.classList.add("caption-text");
+        });
         slideShowParent.appendChild(arrow("left"));
         slideShowParent.appendChild(arrow("right"));
         slideShowParent.appendChild(sliderDots(figures.length));

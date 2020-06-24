@@ -45,8 +45,6 @@ figcaption {
     color: var(--figcaption-color);
 }
 
-.figure-layout img[src*="dark"],
-.figure-layout img[src*="light"],
 .figure-layout img[src*="svg"],
 figure#pie-chart>svg {
     background-color: var(--svg-bg);
@@ -98,4 +96,12 @@ figure#pie-chart>svg {
 figure[id*='bias-'] img,
 figure[id*='xor'] img {
     max-height: 370px;
+}
+
+.figure-layout img[src*="sup"]{
+    height: 350px;
+}
+
+#gif-conv>img{
+    max-height: 300px;
 }
