@@ -1,0 +1,12 @@
+langage: javascript
+dist: bionic
+
+os:
+ - linux
+
+branches:
+ only:
+  - master
+
+script:
+- js/img-slide.js 
