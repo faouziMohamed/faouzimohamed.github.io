@@ -25,15 +25,15 @@
 }
 
 /* Images */
-button#github i{
+a#github i{
     position: absolute;
     right: 7px;
-    top: 8px;
+    top: 6px;
     font-size: 2em;
     color: var(--github-fill);
 }
 
-button#github>i:hover {
+a#github>i:hover {
     color: var(--github-hover-fill);
 }
 
