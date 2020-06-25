@@ -1,4 +1,4 @@
-langage: javascript
+language: javascript
 dist: bionic
 
 os:
