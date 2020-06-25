@@ -66,6 +66,7 @@ body {
     font-size: 100%;
     min-width: 360px;
     margin-top: 20px;
+    transition: color ease-in-out 1s;
 }
 
 main {
@@ -109,6 +110,7 @@ section.main-section {
     border: 1px solid var(--main-section-border-color);
     letter-spacing: .05em;
     line-height: 1.39em;
+    transition:  width ease 1.5s;
 }
 
 @media screen and (min-width: 472px) {

@@ -37,18 +37,7 @@ a#github>svg:hover {
     fill: var(--github-hover-fill);
 }
 
-a>svg#home {
-    position: relative;
-    top: -7px;
-    padding-top: 0;
-    width: 30px;
-    height: 25px;
-    fill: var(--home-fill);
-}
-
-.li-label,
-ul#main-list>li:nth-child(1)~li svg,
-#menu-icon-wrapper>svg {
+#menu-icon-wrapper>i{
     display: none;
 }
 
@@ -56,20 +45,20 @@ ul#main-list>li:nth-child(1)~li svg,
 nav#header-nav {
     display: block;
     position: fixed;
-    background-color: var(--nav-header-bg);
     top: 0;
     left: 0;
     right: 0;
     padding: 0;
     z-index: 100;
-    transition: visibility ease-in-out 1s, opacity ease 1s;
+    background-color: var(--nav-header-bg);
+    transition: background ease-out 0.8s, color ease 1.5s;
 }
 
-nav#header-nav::after {
+/*nav#header-nav::after {
     content: '';
     display: block;
     clear: both;
-}
+}*/
 
 ul#main-list {
     font-weight: normal;
@@ -79,6 +68,7 @@ ul#main-list {
 }
 
 ul#main-list>li {
+    position: relative;
     display: block;
     float: left;
     padding: 0;
@@ -93,11 +83,13 @@ ul#main-list a,
 .submenu-parent button {
     text-decoration: none;
     color: var(--main-list-a-color);
+    width: 100%;
+    display: block;
+    transition: background ease-in-out 0.09s;
 }
 
 ul#main-list>li>a,
 .submenu-parent button {
-    display: block;
     padding: 13px 15px;
 }
 
@@ -106,25 +98,35 @@ ul#main-list button {
     border: none;
     font-size: inherit;
     font-family: inherit;
+    outline: none;
+    user-select: none;
 }
 
-.submenu-parent button{
+.submenu-parent button {
     background: inherit;
+    text-align: left;
 }
 
-.submenu>li:not(:nth-child(2)) a {
-    padding-top: 5px;
+.submenu {
+    position: relative;
 }
 
-.submenu a:hover {
-    background: var(--submenu-a-bg-hover);
+.submenu li {
+    display: inline-block;
+    position: relative;
+    max-width: 280px;
+    min-width: 275px;
 }
 
 .submenu>li>a {
-    background-color: var(--submenu-li-a-bg);
-    display: inline-block;
-    padding: 10px 15px;
     width: 100%;
+    background-color: var(--submenu-li-a-bg);
+    padding: 15px;
+    border-bottom: 1px solid rgba(48, 58, 52, 0.863);
+}
+
+.submenu>li>a:hover {
+    background: var(--submenu-a-bg-hover);
 }
 
 ul#main-list>li:first-child>a {
@@ -138,6 +140,7 @@ ul#main-list>li>a:hover,
 }
 
 .submenu {
+    text-align: left;
     display: none;
     position: absolute;
     top: 98%;
@@ -148,10 +151,4 @@ ul#main-list>li>a:hover,
     width: 20px;
     height: 20px;
     z-index: 45;
-}
-
-@media only screen and (max-width: 768px) {
-    nav#header-nav {
-        position: fixed;
-    }
 }
