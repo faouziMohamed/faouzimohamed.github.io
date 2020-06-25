@@ -103,12 +103,12 @@ function togglingSubMenuClass(y) {
 }
 
 function makeVoidNullLink() {
-    document.querySelectorAll("a[href='#']:not(#github)").forEach((a) => {
+    document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
+    document.querySelectorAll("a[href='#']").forEach((a) => {
         a.addEventListener("click", (e) => {
             e.preventDefault();
         });
     });
-    document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
 }
 
 function executeMainNavMenu() {
@@ -129,6 +129,25 @@ function executeMainNavMenu() {
     togglingSubMenuClass(y);
     makeVoidNullLink();
     y.addListener(togglingSubMenuClass);
+
+    let toc = newElement("i", {
+        class: "fas fa-stream fa-chevron-right",
+        id: "open-toc",
+        title: "Appuyez pour ouvrir le sommaire"
+    });
+    document.body.insertBefore(toc, document.querySelector("main"));
+    sessionStorage.setItem("asideLeftOpen", "closed");
+    toc.addEventListener("click", function (e) {
+        if (sessionStorage.getItem("asideLeftOpen") === "oppened") {
+            document.querySelector("aside#left-aside").style.transform = "translateX(0)";
+            sessionStorage.setItem("asideLeftOpen", "closed");
+            console.log(sessionStorage.getItem("asideLeftOpen"));
+        } else {
+            document.querySelector("aside#left-aside").style.transform = "translateX(-200%)";
+            sessionStorage.setItem("asideLeftOpen", "oppened");
+            console.log(sessionStorage.getItem("asideLeftOpen"));
+        }
+    });
 }
 
 export {

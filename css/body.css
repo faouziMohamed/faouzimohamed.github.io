@@ -455,6 +455,45 @@ td.empty {
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    #open-toc {
+        position: fixed;
+        display: block;
+        cursor: pointer;
+        top: 44px;
+        right: 0px;
+        width: 45px;
+        height: 45px;
+        z-index: 100;
+        rotate: 180deg;
+        font-size: 1.8em;
+        color: var(--menu-fill);
+        border-radius: 0 300px 30px 0;
+        background-color: rgb(0, 4, 20);
+        transition: transform ease-in-out 0.5s;
+    }
+
+    #open-toc:hover,
+    #open-toc:active {
+        background-color: rgb(3, 26, 48);
+        color: rgb(43, 226, 98);
+    }
+
+    #open-toc::before {
+        display: inline-block;
+        padding: 0;
+        margin: 11px 3px;
+        position: relative;
+        border: none;
+    }
+
+    aside#left-aside {
+        left: inherit;
+        right: -430px;
+    }
+}
+
 @media only screen and (max-width: 478px) {
     #fig-table-2,
     .table-center {

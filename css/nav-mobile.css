@@ -25,7 +25,6 @@
 @media only screen and (max-width: 595px) {
     nav#header-nav {
         display: block;
-        height: 44px;
         padding-bottom: 0;
     }
 
