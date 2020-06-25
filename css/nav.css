@@ -37,7 +37,7 @@ a#github>svg:hover {
     fill: var(--github-hover-fill);
 }
 
-#menu-icon-wrapper>i{
+#menu-icon-wrapper>i {
     display: none;
 }
 
@@ -54,12 +54,6 @@ nav#header-nav {
     transition: background ease-out 0.8s, color ease 1.5s;
 }
 
-/*nav#header-nav::after {
-    content: '';
-    display: block;
-    clear: both;
-}*/
-
 ul#main-list {
     font-weight: normal;
     padding: 0;
@@ -73,6 +67,11 @@ ul#main-list>li {
     float: left;
     padding: 0;
     margin: 0;
+    transition: color ease 1s;
+}
+ul#main-list>li i {
+    display: inline;
+    color: var(--home-fill);
 }
 
 ul#main-list li {
@@ -86,65 +85,55 @@ ul#main-list a,
     width: 100%;
     display: block;
     transition: background ease-in-out 0.09s;
+    padding: 15px;
 }
 
-ul#main-list>li>a,
-.submenu-parent button {
-    padding: 13px 15px;
-}
-
-ul#main-list button {
-    cursor: pointer;
+nav#header-nav button {
     border: none;
-    font-size: inherit;
-    font-family: inherit;
     outline: none;
     user-select: none;
-}
-
-.submenu-parent button {
+    cursor: pointer;
     background: inherit;
+    font-size: inherit;
+    font-family: inherit;
     text-align: left;
 }
 
+ul#main-list>li>a:hover,
+ul#main-list .submenu-parent button:hover {
+    background-color: var(--main-list-a-bg-hover);
+}
+
 .submenu {
-    position: relative;
+    position: absolute;
+    overflow-x: visible;
+    text-align: left;
+    display: none;
+    top: 100%;
+    padding-left: 0;
 }
 
 .submenu li {
     display: inline-block;
     position: relative;
     max-width: 280px;
-    min-width: 275px;
+    min-width: 200px;
+    width: 190%;
 }
 
 .submenu>li>a {
-    width: 100%;
+    word-wrap: normal;
+    display: block;
     background-color: var(--submenu-li-a-bg);
-    padding: 15px;
-    border-bottom: 1px solid rgba(48, 58, 52, 0.863);
+    border-bottom: 1px solid rgba(90, 107, 97, 0.863);
+}
+
+.submenu>li:last-child>a {
+    border-bottom: none;
 }
 
 .submenu>li>a:hover {
     background: var(--submenu-a-bg-hover);
-}
-
-ul#main-list>li:first-child>a {
-    padding-top: 13px;
-    padding-bottom: 3px;
-}
-
-ul#main-list>li>a:hover,
-.submenu-parent button:hover {
-    background-color: var(--main-list-a-bg-hover);
-}
-
-.submenu {
-    text-align: left;
-    display: none;
-    position: absolute;
-    top: 98%;
-    padding-left: 0;
 }
 
 .submenu a>img {

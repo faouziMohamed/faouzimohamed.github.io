@@ -20,7 +20,7 @@ function displayMenuAnyway() {
 }
 
 function toggleOpenAndCloseMenu() {
-    document.querySelector("#menu-icon-wrapper>svg").addEventListener("click", function openCloseMenu() {
+    document.querySelector("#menu-icon-wrapper>i").addEventListener("click", function openCloseMenu() {
         /*Use of media query to control responsive layout for the menubar"s layout*/
         let x = window.matchMedia("(max-width: 536px)"); //width<=536px 
         if (x.matches) {
@@ -56,7 +56,7 @@ function newElement(name, attributes = {}, text = "") {
 
 function showSubmenuEvent(parent) {
     parent.addEventListener("click", function (e) {
-        let angle = this.querySelector("button i");
+        let angle = this.querySelector("button i[class*='angle']");
         if (this.lastElementChild.style.display !== "block") {
             this.querySelector("button").replaceChild(newElement("i", {
                 class: "fas fa-angle-up"
@@ -85,7 +85,7 @@ function hideSubmenuEvent(parent) {
             this.lastElementChild.style.display = "none";
             this.querySelector("button").replaceChild(newElement("i", {
                 class: "fa fa-angle-down"
-            }), this.querySelector("button i"));
+            }), this.querySelector("button i[class*='angle']"));
         }
     });
 }

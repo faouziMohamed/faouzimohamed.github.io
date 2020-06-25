@@ -8,14 +8,17 @@
     --menu-fill: rgb(45, 173, 146);
 }
 
-#menu-icon-wrapper>svg {
+#menu-icon-wrapper>i {
     position: relative;
-    top: 5px;
-    fill: var(--menu-fill);
-    margin-left: 15px;
+    color: var(--menu-fill);
+    left: 15px;
+    top: 0px;
+    font-size: 2.8em;
+    vertical-align: middle;
+    transition: color ease-out 1s;
 }
 
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 595px) {
     nav#header-nav {
         display: block;
         height: 44px;
@@ -23,10 +26,10 @@
     }
 
     ul#main-list {
-        width: 100%;
         position: absolute;
+        width: 100%;
         top: 100%;
-        /*display: none;*/
+        display: none;
     }
 
     ul#main-list>li {
@@ -36,7 +39,7 @@
     }
 
     .li-label,
-    #menu-icon-wrapper i{
+    #menu-icon-wrapper i {
         display: inline;
     }
 
@@ -46,38 +49,16 @@
         font-weight: bold;
     }
 
-    ul#main-list>li i{
-        display: inline;
-        fill: var(--home-fill);
-    }
-
     a.li-txt {
         position: relative;
-    }
-
-    ul#main-list a {
-        padding-bottom: 0;
     }
 
     .subMenuParent li a {
         top: 100%;
     }
 
-    ul#main-list>li:nth-child(1)>a {
-        bottom: 0;
-    }
-
-    ul#main-list>li:nth-child(1)+li>a>svg,
-    .li-txt {
-        top: -4px;
-    }
-
-    ul#main-list>li:nth-child(2) .li-txt {
-        top: -10px;
-    }
-
     .submenu {
-        z-index: 101;
+        z-index: 100;
     }
 
     .subMenuParent {
