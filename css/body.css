@@ -463,7 +463,7 @@ td.empty {
         display: block;
         cursor: pointer;
         top: 44px;
-        right: 0px;
+        right: 0;
         width: 45px;
         height: 45px;
         z-index: 1;
