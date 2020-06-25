@@ -89,14 +89,27 @@ ul#main-list li {
     list-style-type: none;
 }
 
-ul#main-list a {
+ul#main-list a,
+.submenu-parent button {
     text-decoration: none;
     color: var(--main-list-a-color);
 }
 
-ul#main-list>li>a {
+ul#main-list>li>a,
+.submenu-parent button {
     display: block;
     padding: 13px 15px;
+}
+
+ul#main-list button {
+    cursor: pointer;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.submenu-parent button{
+    background: inherit;
 }
 
 .submenu>li:not(:nth-child(2)) a {
@@ -119,7 +132,8 @@ ul#main-list>li:first-child>a {
     padding-bottom: 3px;
 }
 
-ul#main-list>li>a:hover {
+ul#main-list>li>a:hover,
+.submenu-parent button:hover {
     background-color: var(--main-list-a-bg-hover);
 }
 

@@ -56,14 +56,14 @@ function newElement(name, attributes = {}, text = "") {
 
 function showSubmenuEvent(parent) {
     parent.addEventListener("click", function (e) {
-        let angle = this.querySelector("a i");
+        let angle = this.querySelector("button i");
         if (this.lastElementChild.style.display !== "block") {
-            this.querySelector("a").replaceChild(newElement("i", {
+            this.querySelector("button").replaceChild(newElement("i", {
                 class: "fas fa-angle-up"
             }), angle);
             this.lastElementChild.style.display = "block";
         } else {
-            this.querySelector("a").replaceChild(newElement("i", {
+            this.querySelector("button").replaceChild(newElement("i", {
                 class: "fas fa-angle-down"
             }), angle);
             this.lastElementChild.style.display = "none";
@@ -83,9 +83,9 @@ function hideSubmenuEvent(parent) {
         }
         if (relatedTarget !== this) {
             this.lastElementChild.style.display = "none";
-            this.querySelector("a").replaceChild(newElement("i", {
+            this.querySelector("button").replaceChild(newElement("i", {
                 class: "fa fa-angle-down"
-            }), this.querySelector("a i"));
+            }), this.querySelector("button i"));
         }
     });
 }
@@ -120,7 +120,7 @@ function executeMainNavMenu() {
 
     ul.forEach((submenu) => {
         let subMenuParent = submenu.parentElement;
-        subMenuParent.querySelector("a").appendChild(newElement("i", {
+        subMenuParent.querySelector("button").appendChild(newElement("i", {
             class: "fas fa-angle-down"
         }));
         showSubmenuEvent(subMenuParent);
