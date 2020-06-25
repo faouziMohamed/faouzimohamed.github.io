@@ -9,4 +9,4 @@ branches:
   - master
 
 script:
-- js/img-slide.js 
+- echo " "
