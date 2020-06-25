@@ -466,12 +466,24 @@ td.empty {
         width: 45px;
         height: 45px;
         z-index: 100;
-        rotate: 180deg;
+        transform: rotate(180deg);
         font-size: 1.8em;
         color: var(--menu-fill);
-        border-radius: 0 300px 30px 0;
-        background-color: rgb(0, 4, 20);
+        border-radius: 0 600px 30px 0;
+        background-color: var(--toc-btn-bg);
         transition: transform ease-in-out 0.5s;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+
+    .theme-dark {
+        --toc-btn-bg: rgb(13, 16, 29);
+    }
+
+    .theme-light {
+        --toc-btn-bg: rgb(11, 39, 44);
     }
 
     #open-toc:hover,
@@ -495,6 +507,7 @@ td.empty {
 }
 
 @media only screen and (max-width: 478px) {
+
     #fig-table-2,
     .table-center {
         width: 100%;
