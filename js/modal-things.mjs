@@ -1,6 +1,6 @@
 import {
     newElement
-} from "./nav.js";
+} from "./nav.mjs";
 
 function modalContent(img) {
     let modal = newElement("section", {

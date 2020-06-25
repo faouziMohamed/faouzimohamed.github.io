@@ -1,11 +1,6 @@
 import {
     newElement
-} from "./nav.js";
-
-export {
-    displayModalContent,
-} from "./modal-things.js";
-
+} from "./nav.mjs";
 
 function insertAfter(el, ref) {
     ref.parentNode.insertBefore(el, ref.nextSibling);

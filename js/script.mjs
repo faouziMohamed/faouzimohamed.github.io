@@ -1,18 +1,21 @@
 import {
+    newElement,
+    executeMainNavMenu,
+} from "./nav.mjs";
+
+
+import {
     setThemeAfterPageLoaded,
-} from "./switch.js";
+} from "./switch.mjs";
 
 import {
     displayModalContent,
-} from "./modal-things.js";
-import {
-    executeBody,
-} from "./body.js";
+} from "./modal-things.mjs";
 
 import {
-    newElement,
-    executeMainNavMenu,
-} from "./nav.js";
+    executeBody,
+} from "./body.mjs";
+
 
 function include(fileName, isModule = false) {
     let prefix, type;
@@ -36,5 +39,5 @@ void(function main() {
     displayModalContent();
     executeMainNavMenu();
     executeBody();
-    include("img-slide.js",false);
+    include("img-slide.js", false);
 }());
