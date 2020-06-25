@@ -18,6 +18,10 @@
     transition: color ease-out 1s;
 }
 
+#menu-icon-wrapper>i:hover{
+    color: var(--github-hover-fill);
+}
+
 @media only screen and (max-width: 595px) {
     nav#header-nav {
         display: block;

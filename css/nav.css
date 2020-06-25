@@ -25,16 +25,16 @@
 }
 
 /* Images */
-a#github>svg {
-    width: 29px;
+button#github i{
     position: absolute;
     right: 7px;
-    top: 6px;
-    fill: var(--github-fill);
+    top: 8px;
+    font-size: 2em;
+    color: var(--github-fill);
 }
 
-a#github>svg:hover {
-    fill: var(--github-hover-fill);
+button#github>i:hover {
+    color: var(--github-hover-fill);
 }
 
 #menu-icon-wrapper>i {
