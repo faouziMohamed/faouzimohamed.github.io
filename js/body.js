@@ -25,14 +25,8 @@ function addLiToUl(ul, node, id) {
 function createListLeftNav() {
     let ul = document.querySelector("#ul-aside-nav");
     let title = document.querySelectorAll("section h2, section h3, section h4");
-    let node = null,
-        n = 1,
-        id = null,
-        li = null;
-    let ul_ = null,
-        li_ = null,
-        _ul = null,
-        c = title.length;
+    let node = null, n = 1, id = null, li = null;
+    let ul_ = null, li_ = null, _ul = null, c = title.length;
     /*For H1*/
     let H1 = document.querySelector(".main-article H1");
     H1.id = "top-h1";
