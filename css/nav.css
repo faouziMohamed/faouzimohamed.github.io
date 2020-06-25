@@ -25,7 +25,7 @@
 }
 
 /* Images */
-a#github i{
+a#github i {
     position: absolute;
     right: 7px;
     top: 6px;
@@ -69,6 +69,7 @@ ul#main-list>li {
     margin: 0;
     transition: color ease 1s;
 }
+
 ul#main-list>li i {
     display: inline;
     color: var(--home-fill);

@@ -37,11 +37,11 @@ figcaption.caption-text {
 }
 
 .no-padding {
-    padding: 0px;
+    padding: 0;
 }
 
 .no-margin {
-    margin: 0em;
+    margin: 0;
 }
 
 .slide {
@@ -146,10 +146,8 @@ img {
     }
 }
 
-
 #slide-pool img {
     height: 300px;
-    ;
 }
 
 #conv-slide img {
@@ -165,7 +163,6 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
     .prev,
     .next,
     .text {

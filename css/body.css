@@ -110,7 +110,7 @@ section.main-section {
     border: 1px solid var(--main-section-border-color);
     letter-spacing: .05em;
     line-height: 1.39em;
-    transition:  width ease 1.5s;
+    transition: width ease 1.5s;
 }
 
 @media screen and (min-width: 472px) {
@@ -125,11 +125,11 @@ section.main-section h2 {
     font-size: 170%;
 }
 
-summary::marker{
+summary::marker {
     color: var(--main-section-h2-color);
 }
 
-summary:focus{
+summary:focus {
     outline: none;
 }
 
@@ -456,7 +456,6 @@ td.empty {
 }
 
 @media only screen and (max-width: 478px) {
-
     #fig-table-2,
     .table-center {
         width: 100%;

@@ -1,5 +1,5 @@
 function randomId(size) {
-    var randHash = '';
+    var randHash = "";
     var characters = "ABCD45678EFGHITUhijklVWXYZabcdefgmnopqrJKLMNOPQRSstuvwxyz01239_";
     for (var i = 0; i < size; i++) {
         randHash += characters.charAt(Math.floor(Math.random() * 50));
