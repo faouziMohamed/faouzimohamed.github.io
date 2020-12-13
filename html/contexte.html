@@ -23,8 +23,9 @@
             }
         };
     </script>
-    <!--<script id="MathJax-script" async src="../mathjax/es5/tex-svg-full.js"></script>-->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <noscript>
         <link rel="stylesheet" href="../css/noscript.css" />
@@ -34,7 +35,7 @@
 
 <body>
     <span id="top"></span>
-    <nav id='header-nav'>
+    <nav id='header-nav' aria-label="Site menu">
         <div id="menu-icon-wrapper">
             <i class="fas fa-bars fa-3x"></i>
         </div>
@@ -83,7 +84,7 @@
     <!--Main content-->
     <main>
         <aside id="left-aside">
-            <nav id="aside-nav">
+            <nav id="aside-nav" aria-label="Left side menu">
                 <h1>Sommaire</h1>
                 <ul id="ul-aside-nav"></ul>
             </nav>
@@ -1055,14 +1056,12 @@
                     des meilleurs résultats.
                 </p>
             </section>
-            <!--<section class="main-section">
-                    <h2>Template</h2>
-                    <p>
-                    </p>
-                </section>-->
+
             <footer>
                 <p>Coded by
-                    <a href="https://github.com/faouziMohamed/" target="_blank" title="Facebook account">
+                    <a rel="noopener noreferrer" 
+                    href="https://github.com/faouziMohamed/" 
+                    target="_blank" title="Facebook account">
                         FAOUZI MOHAMED
                     </a>
                 </p>
