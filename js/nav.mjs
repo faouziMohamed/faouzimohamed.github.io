@@ -33,7 +33,7 @@ function toggleOpenAndCloseMenu() {
         } else { //width >536px
             displayMenuAnyway(); //remove for some events to handle the closing of menu
         }
-        x.addListener(openCloseMenu);
+        x.addEventListener("change", openCloseMenu);
     });
 }
 
@@ -102,7 +102,7 @@ function togglingSubMenuClass(y) {
     }
 }
 
-function makeVoidNullLink() {
+function preventDefaultToEmptyLink() {
     document.querySelector("#github").href = "https://github.com/faouziMohamed/faouzimohamed.github.io";
     document.querySelectorAll("a[href='#']").forEach((a) => {
         a.addEventListener("click", (e) => {
@@ -146,9 +146,9 @@ function executeMainNavMenu() {
         hideSubmenuEvent(subMenuParent);
     });
     togglingSubMenuClass(y);
-    makeVoidNullLink();
+    preventDefaultToEmptyLink();
     tweakTableOfCOntent();
-    y.addEventListener(togglingSubMenuClass);
+    y.addEventListener("change", togglingSubMenuClass);
 }
 
 export {
