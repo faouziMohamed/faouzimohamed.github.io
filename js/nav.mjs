@@ -148,7 +148,7 @@ function executeMainNavMenu() {
     togglingSubMenuClass(y);
     makeVoidNullLink();
     tweakTableOfCOntent();
-    y.addListener(togglingSubMenuClass);
+    y.addEventListener(togglingSubMenuClass);
 }
 
 export {
